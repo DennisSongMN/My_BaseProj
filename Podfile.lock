@@ -1,0 +1,226 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AYCheckVersion (1.3.5)
+  - BEMCheckBox (1.4.1)
+  - DDProgressView (0.1)
+  - DTCoreText (1.6.21):
+    - DTCoreText/Core (= 1.6.21)
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTCoreText/Core (1.6.21):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.13)
+  - DTFoundation/DTAnimatedGIF (1.7.13)
+  - DTFoundation/DTHTMLParser (1.7.13):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.13):
+    - DTFoundation/Core
+  - EAIntroView (2.12.0):
+    - EARestrictedScrollView (~> 1.1.0)
+  - EARestrictedScrollView (1.1.0)
+  - FDFullscreenPopGesture (1.1)
+  - FLEX (3.0.0)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HCSStarRatingView (1.5)
+  - IQKeyboardManager (6.3.0)
+  - JhtFloatingBall (1.0.3)
+  - Masonry (1.1.0)
+  - "MBProgressHUD+WJExtension (1.3.1)"
+  - MJExtension (3.0.17)
+  - MJRefresh (3.2.0)
+  - NJKWebViewProgress (0.2.3):
+    - NJKWebViewProgress/Core (= 0.2.3)
+    - NJKWebViewProgress/ProgressView (= 0.2.3)
+  - NJKWebViewProgress/Core (0.2.3)
+  - NJKWebViewProgress/ProgressView (0.2.3)
+  - OpenUDID (1.0.0)
+  - PGBanner (1.0.4)
+  - PINCache (3.0.1-beta.6):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
+    - PINCache/Core (= 3.0.1-beta.6)
+  - PINCache/Arc-exception-safe (3.0.1-beta.6):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.6):
+    - PINOperation (~> 1.1.0)
+  - PINOperation (1.1.1)
+  - PINRemoteImage/Core (3.0.0-beta.13):
+    - PINOperation
+  - PINRemoteImage/iOS (3.0.0-beta.13):
+    - PINRemoteImage/Core
+  - PINRemoteImage/PINCache (3.0.0-beta.13):
+    - PINCache (= 3.0.1-beta.6)
+    - PINRemoteImage/Core
+  - pop (1.0.12)
+  - Reachability (3.2)
+  - ReactiveObjC (3.1.1)
+  - RegexKitLite (4.0)
+  - SDWebImage (5.0.3):
+    - SDWebImage/Core (= 5.0.3)
+  - SDWebImage/Core (5.0.3)
+  - SGQRCode (3.0.1)
+  - Shimmer (1.0.2)
+  - SVProgressHUD (2.2.5)
+  - Texture (2.8.1):
+    - Texture/AssetsLibrary (= 2.8.1)
+    - Texture/Core (= 2.8.1)
+    - Texture/MapKit (= 2.8.1)
+    - Texture/Photos (= 2.8.1)
+    - Texture/PINRemoteImage (= 2.8.1)
+    - Texture/Video (= 2.8.1)
+  - Texture/AssetsLibrary (2.8.1):
+    - Texture/Core
+  - Texture/Core (2.8.1)
+  - Texture/MapKit (2.8.1):
+    - Texture/Core
+  - Texture/Photos (2.8.1):
+    - Texture/Core
+  - Texture/PINRemoteImage (2.8.1):
+    - PINRemoteImage/iOS (= 3.0.0-beta.13)
+    - PINRemoteImage/PINCache
+    - Texture/Core
+  - Texture/Video (2.8.1):
+    - Texture/Core
+  - TXScrollLabelView (1.3.2)
+  - UICountingLabel (1.4.1)
+  - WPAttributedMarkup (1.0.0)
+  - ZXingObjC/Core (3.6.5)
+  - ZXingObjC/QRCode (3.6.5):
+    - ZXingObjC/Core
+
+DEPENDENCIES:
+  - AFNetworking
+  - AYCheckVersion
+  - BEMCheckBox
+  - DDProgressView
+  - DTCoreText
+  - EAIntroView
+  - FDFullscreenPopGesture
+  - FLEX
+  - FMDB
+  - HCSStarRatingView
+  - IQKeyboardManager
+  - JhtFloatingBall
+  - Masonry
+  - "MBProgressHUD+WJExtension"
+  - MJExtension
+  - MJRefresh
+  - NJKWebViewProgress
+  - OpenUDID
+  - PGBanner
+  - pop
+  - Reachability
+  - ReactiveObjC
+  - RegexKitLite
+  - SDWebImage
+  - SGQRCode
+  - Shimmer
+  - SVProgressHUD
+  - Texture
+  - TXScrollLabelView
+  - UICountingLabel
+  - WPAttributedMarkup
+  - ZXingObjC/QRCode
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - AYCheckVersion
+    - BEMCheckBox
+    - DDProgressView
+    - DTCoreText
+    - DTFoundation
+    - EAIntroView
+    - EARestrictedScrollView
+    - FDFullscreenPopGesture
+    - FLEX
+    - FMDB
+    - HCSStarRatingView
+    - IQKeyboardManager
+    - JhtFloatingBall
+    - Masonry
+    - "MBProgressHUD+WJExtension"
+    - MJExtension
+    - MJRefresh
+    - NJKWebViewProgress
+    - OpenUDID
+    - PGBanner
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - pop
+    - Reachability
+    - ReactiveObjC
+    - RegexKitLite
+    - SDWebImage
+    - SGQRCode
+    - Shimmer
+    - SVProgressHUD
+    - Texture
+    - TXScrollLabelView
+    - UICountingLabel
+    - WPAttributedMarkup
+    - ZXingObjC
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AYCheckVersion: 3a313028a34ddfc5ccd16417d0a364fce2bb0add
+  BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  DDProgressView: d5a8983e5585217ee58f4a046bb4038f6e1b6306
+  DTCoreText: e5d688cffc9f6a61eddd1a4f94e2046851230de3
+  DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
+  EAIntroView: 249559079ddfdbe80e5bcb755c04c3b964b2ac27
+  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  FLEX: d66c759bce0f6ebbbf472c742380874d846f2883
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
+  IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
+  JhtFloatingBall: 5a8d8fe6d331cd763eab5c2e81daa6fdaa89fd36
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  "MBProgressHUD+WJExtension": 1d9c93951b49e8c711fef6e6089aa6d7d3321192
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
+  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
+  PGBanner: 0c52ab4ce9e04ad17f8dd0627b45951b96770c67
+  PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
+  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
+  PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
+  SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
+  SGQRCode: bf02d60e18d6660a9d75ff1c8b9b467f064f054e
+  Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
+  TXScrollLabelView: 0e1650caf61198bf5dc0938ea6493254aeb80f90
+  UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
+  WPAttributedMarkup: eb50878af4ec647d8d2090f721a5cfe7d29c27fe
+  ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
+
+PODFILE CHECKSUM: 43730f8819bfb647f9aeb47d5d7dd160109aa158
+
+COCOAPODS: 1.6.1

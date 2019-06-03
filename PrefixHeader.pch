@@ -1,0 +1,88 @@
+//
+//  PrefixHeader.pch
+//  My_BaseProj
+//
+//  Created by Administrator on 03/06/2019.
+//  Copyright © 2019 Administrator. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//Pods
+#import "AFNetworking.h"
+#import "AYCheckManager.h"
+#import "BEMCheckBox.h"
+#import "DDProgressView.h"
+#import "DTCoreText.h"
+#import "EAIntroView.h"
+#import "EARestrictedScrollView.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "FLEX.h"
+#import "FMDB.h"
+#import "HCSStarRatingView.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <Masonry/Masonry.h>
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+WJExtension.h"
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "NJKWebViewProgress.h"
+#import "OpenUDID.h"
+#import "PGBanner.h"
+#import "PINCache.h"
+#import "PINOperation.h"
+#import "PINRemoteImage.h"//支持带标记的图片后处理。对于同一张图片，当需要不同的后处理方式时（a 界面需要正圆角，b 界面需要小幅度的圆角），尤为有用 https://juejin.im/post/5a96a9b4f265da4e7f35d24e#heading-4
+#import "POP.h"
+#import "Reachability.h"
+#import <ReactiveObjC.h>
+#import "SDWebImage.h"//不支持图片后处理
+#import "SGQRCode.h"
+#import "FBShimmering.h"
+#import "SVProgressHUD.h"
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import "TXScrollLabelView.h"
+#import "NSString+WPAttributedMarkup.h"//富文本编辑
+#import "ZXingObjC.h"
+
+//🔨Manual_Add_ThirdParty
+#import "NSObject+Extras.h"
+#import "NSString+Extras.h"
+#import "UIView+Extras.h"
+#import "UIImage+Extras.h"
+#import "UIButton+Extras.h"
+#import "AABlock.h"
+#import "YBNotificationManager.h"
+#import "Judgement_Environment.h"
+#import "YBSystemTool.h"
+#import "YBGeneralColor.h"
+#import "YBGeneralFont.h"
+#import "ToolMacro.h"
+#import "DHAreaPickerView.h"
+#import "LongPressToDeleteImageView.h"
+#import "RYCuteView.h"
+#import "XWCountryCodeController.h"
+#import "HAHandleDemoView.h"
+#import "AESCrypt.h"
+#import "BadgeButton.h"
+#import "SDCycleScrollView.h"
+#import "LeePhotoOrAlbumImagePicker.h"
+#import "LZBTabbarViewController.h"
+#import "MMButton.h"
+#import "SoundBtn.h"
+#import "LXTagsView.h"
+#import "TouchID.h"
+#import "UIControl+XY.h"
+#import "VerifyCodeButton.h"
+#import "WJItemsControlView.h"
+#import "XDSDropDownMenu.h"
+#import "XLSphereView.h"
+#import "UICountingLabel.h"//数字可以一直变化到指定值的UILable
+#import "AnimateToSpecifiedDateView.h"
+#import "YBFrameTool.h"
+#import "PlaySound.h"//播放自定义声音关键代码
+#import "UIColor+Hex.h"
+#import "RegexKitLite.h"//第三方正则表达式开源库
+
+
+#endif /* PrefixHeader_pch */
