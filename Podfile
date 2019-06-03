@@ -12,7 +12,9 @@ pod 'FLEX'#调试界面相关插件
 pod 'ReactiveObjC'    #重量级框架
 pod 'EAIntroView'#启动图
 pod 'Texture' #Facebook
-pod 'Masonry'
+pod 'Masonry' #布局
+#pod 'PureLayout'
+#pod 'MyLayout'
 pod 'AFNetworking'
 pod 'Reachability'              #检查联网情况
 pod 'MJRefresh'
@@ -27,7 +29,7 @@ pod 'DTCoreText'  #解析HTML与CSS最终用CoreText绘制出来，通常用于�
 #pod 'MWPhotoBrowser'#一个简单的iOS照片和视频浏览器，带有可选的网格视图，标题和选择
 pod 'FDFullscreenPopGesture'#一个丝滑的全屏滑动返回手势
 pod 'JhtFloatingBall'    #轻量级悬浮球
-pod 'FMDB'     
+pod 'FMDB'     #数据库第三方框架
 pod 'Shimmer'  #Facebook 推出的一款具有闪烁效果的第三方控件
 pod 'BEMCheckBox'               #复选框 更炫
 pod 'PGBanner'                  #轮播图
@@ -36,7 +38,7 @@ pod 'HCSStarRatingView'         #星级评分显示
 pod 'NJKWebViewProgress'        #Web_View进度条
 #pod 'MBProgressHUD'
 pod 'MBProgressHUD+WJExtension' #基于 MBProgressHUD 的封装、并增加了操作成功与失败的HUD动画与祝贺撒花效果
-pod 'SVProgressHUD'
+pod 'SVProgressHUD' #是一个弹出提示层，用来提示 网络加载 或 提示对错
 pod 'DDProgressView'            #加载状态显示
 pod 'pop'     #动画
 pod 'AYCheckVersion'            #提示更新
