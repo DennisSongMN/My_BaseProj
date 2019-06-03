@@ -42,6 +42,7 @@ pod 'pop'     #动画
 pod 'AYCheckVersion'            #提示更新
 pod 'UICountingLabel'           #Lable上的默认值持续变动到指定值
 pod 'RegexKitLite'  #第三方正则表达式开源库
+pod 'AwesomeMenu'
 
 #https://github.com/honcheng/PaperFold-for-iOS
 #https://github.com/tomaz/appledoc

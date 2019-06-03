@@ -82,6 +82,13 @@
 		C3F570A022A50F83009E9691 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5709F22A50F83009E9691 /* UIColor+Hex.m */; };
 		C3F570A322A5128A009E9691 /* IsLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570A122A5128A009E9691 /* IsLogin.m */; };
 		C3F570AE22A521E7009E9691 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570AC22A521E7009E9691 /* ZYTextField.m */; };
+		C3F570B622A534E7009E9691 /* CollectionAccountEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570B422A534E7009E9691 /* CollectionAccountEditor.m */; };
+		C3F570BE22A538D2009E9691 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570B922A538D1009E9691 /* BaseVC.m */; };
+		C3F570BF22A538D2009E9691 /* UIViewController+YBGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570BB22A538D1009E9691 /* UIViewController+YBGeneral.m */; };
+		C3F570C022A538D2009E9691 /* UIViewController+YBGeneralHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570BD22A538D2009E9691 /* UIViewController+YBGeneralHook.m */; };
+		C3F570C722A53933009E9691 /* UIScrollView+YBGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570C622A53933009E9691 /* UIScrollView+YBGeneral.m */; };
+		C3F570CB22A53949009E9691 /* YBNaviagtionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570CA22A53949009E9691 /* YBNaviagtionViewController.m */; };
+		C3F570CE22A53955009E9691 /* UITableView+YBGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570CC22A53954009E9691 /* UITableView+YBGeneral.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,6 +283,21 @@
 		C3F570A222A5128A009E9691 /* IsLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsLogin.h; sourceTree = "<group>"; };
 		C3F570AC22A521E7009E9691 /* ZYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
 		C3F570AD22A521E7009E9691 /* ZYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
+		C3F570B322A534D8009E9691 /* 弹窗小控件（高仿今日头条App评论弹窗框架） */ = {isa = PBXFileReference; lastKnownFileType = text; path = "弹窗小控件（高仿今日头条App评论弹窗框架）"; sourceTree = "<group>"; };
+		C3F570B422A534E7009E9691 /* CollectionAccountEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionAccountEditor.m; sourceTree = "<group>"; };
+		C3F570B522A534E7009E9691 /* CollectionAccountEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionAccountEditor.h; sourceTree = "<group>"; };
+		C3F570B822A538D1009E9691 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		C3F570B922A538D1009E9691 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		C3F570BA22A538D1009E9691 /* UIViewController+YBGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YBGeneral.h"; sourceTree = "<group>"; };
+		C3F570BB22A538D1009E9691 /* UIViewController+YBGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YBGeneral.m"; sourceTree = "<group>"; };
+		C3F570BC22A538D2009E9691 /* UIViewController+YBGeneralHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YBGeneralHook.h"; sourceTree = "<group>"; };
+		C3F570BD22A538D2009E9691 /* UIViewController+YBGeneralHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YBGeneralHook.m"; sourceTree = "<group>"; };
+		C3F570C522A53933009E9691 /* UIScrollView+YBGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YBGeneral.h"; sourceTree = "<group>"; };
+		C3F570C622A53933009E9691 /* UIScrollView+YBGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YBGeneral.m"; sourceTree = "<group>"; };
+		C3F570C922A53949009E9691 /* YBNaviagtionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBNaviagtionViewController.h; sourceTree = "<group>"; };
+		C3F570CA22A53949009E9691 /* YBNaviagtionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBNaviagtionViewController.m; sourceTree = "<group>"; };
+		C3F570CC22A53954009E9691 /* UITableView+YBGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+YBGeneral.m"; sourceTree = "<group>"; };
+		C3F570CD22A53955009E9691 /* UITableView+YBGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+YBGeneral.h"; sourceTree = "<group>"; };
 		E3F9D199A57739F10C8BE43B /* Pods-My_BaseProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjTests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjTests/Pods-My_BaseProjTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -398,6 +420,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C3F570B222A534C3009E9691 /* CollectionAccountEditor */,
 				C3F5706A22A4FC86009E9691 /* DHAreaPickerView */,
 				C3F5706422A4FBC6009E9691 /* LongPressToDeleteImageView */,
 				C3F5705E22A4FB93009E9691 /* Judgement_Environment */,
@@ -798,6 +821,9 @@
 				C3F5709322A50E05009E9691 /* YBFrameTool.h */,
 				C3F5709222A50E05009E9691 /* YBFrameTool.m */,
 				C3F5707F22A5040F009E9691 /* UIView */,
+				C3F570C822A53941009E9691 /* UINavigationController */,
+				C3F570C422A53929009E9691 /* UIScrollView */,
+				C3F570B722A53857009E9691 /* UIViewController */,
 				C3F570A522A51B4B009E9691 /* UITableView */,
 				C3F5703E22A4FA3F009E9691 /* UITableViewCell */,
 				C3F5703B22A4FA3F009E9691 /* UICollectionView */,
@@ -809,8 +835,51 @@
 		C3F570A522A51B4B009E9691 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				C3F570CD22A53955009E9691 /* UITableView+YBGeneral.h */,
+				C3F570CC22A53954009E9691 /* UITableView+YBGeneral.m */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		C3F570B222A534C3009E9691 /* CollectionAccountEditor */ = {
+			isa = PBXGroup;
+			children = (
+				C3F570B322A534D8009E9691 /* 弹窗小控件（高仿今日头条App评论弹窗框架） */,
+				C3F570B522A534E7009E9691 /* CollectionAccountEditor.h */,
+				C3F570B422A534E7009E9691 /* CollectionAccountEditor.m */,
+			);
+			path = CollectionAccountEditor;
+			sourceTree = "<group>";
+		};
+		C3F570B722A53857009E9691 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C3F570B822A538D1009E9691 /* BaseVC.h */,
+				C3F570B922A538D1009E9691 /* BaseVC.m */,
+				C3F570BA22A538D1009E9691 /* UIViewController+YBGeneral.h */,
+				C3F570BB22A538D1009E9691 /* UIViewController+YBGeneral.m */,
+				C3F570BC22A538D2009E9691 /* UIViewController+YBGeneralHook.h */,
+				C3F570BD22A538D2009E9691 /* UIViewController+YBGeneralHook.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		C3F570C422A53929009E9691 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C3F570C522A53933009E9691 /* UIScrollView+YBGeneral.h */,
+				C3F570C622A53933009E9691 /* UIScrollView+YBGeneral.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		C3F570C822A53941009E9691 /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				C3F570C922A53949009E9691 /* YBNaviagtionViewController.h */,
+				C3F570CA22A53949009E9691 /* YBNaviagtionViewController.m */,
+			);
+			path = UINavigationController;
 			sourceTree = "<group>";
 		};
 		C55CB09E4B41ABD8B535A2B2 /* Pods */ = {
@@ -971,6 +1040,20 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-My_BaseProj/Pods-My_BaseProj-resources.sh",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus@2x.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-star.png",
+				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-star@2x.png",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle",
@@ -980,6 +1063,20 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-addbutton-highlighted.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-addbutton-highlighted@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-addbutton.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-addbutton@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-menuitem-highlighted.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-menuitem-highlighted@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-menuitem.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-menuitem@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-plus-highlighted.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-plus-highlighted@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-plus.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-plus@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-star.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-star@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SGQRCode.bundle",
@@ -1063,6 +1160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F570CB22A53949009E9691 /* YBNaviagtionViewController.m in Sources */,
 				C3F56F6D22A4C731009E9691 /* ViewController.m in Sources */,
 				C3F570A022A50F83009E9691 /* UIColor+Hex.m in Sources */,
 				C3F5709722A50E3A009E9691 /* UIImage+Extras.m in Sources */,
@@ -1073,8 +1171,10 @@
 				C3F5701422A4F94D009E9691 /* XLSphereView.m in Sources */,
 				C3F5703322A4F996009E9691 /* SDCycleScrollView+UIScrollViewDelegate.m in Sources */,
 				C3F56FFB22A4F7CE009E9691 /* XDSDropDownMenu.m in Sources */,
+				C3F570CE22A53955009E9691 /* UITableView+YBGeneral.m in Sources */,
 				C3F5708E22A5055C009E9691 /* NSObject+Extras.m in Sources */,
 				C3F5708522A50486009E9691 /* YBSystemTool.m in Sources */,
+				C3F570B622A534E7009E9691 /* CollectionAccountEditor.m in Sources */,
 				C3F5702F22A4F996009E9691 /* SDCycleScrollView+UICollectionViewDataSource.m in Sources */,
 				C3F56FF822A4F7CE009E9691 /* UIColor+LXExpand.m in Sources */,
 				C3F5704522A4FA40009E9691 /* TBVCell_style_01.m in Sources */,
@@ -1083,11 +1183,14 @@
 				C3F56FB622A4F749009E9691 /* SoundBtn.m in Sources */,
 				C3F5705C22A4FB29009E9691 /* RYCuteView.m in Sources */,
 				C3F56FEF22A4F7CE009E9691 /* UIControl+XY.m in Sources */,
+				C3F570BE22A538D2009E9691 /* BaseVC.m in Sources */,
 				C3F56FAF22A4F4E7009E9691 /* LZBTabBarViewController.m in Sources */,
 				C3F56FF722A4F7CE009E9691 /* NSString+Extension.m in Sources */,
+				C3F570BF22A538D2009E9691 /* UIViewController+YBGeneral.m in Sources */,
 				C3F5700D22A4F8B1009E9691 /* AnimateToSpecifiedDateView.m in Sources */,
 				C3F570A322A5128A009E9691 /* IsLogin.m in Sources */,
 				C3F5709422A50E05009E9691 /* YBFrameTool.m in Sources */,
+				C3F570C022A538D2009E9691 /* UIViewController+YBGeneralHook.m in Sources */,
 				C3F5707822A4FC92009E9691 /* DHAreasModel.m in Sources */,
 				C3F5709122A50D60009E9691 /* NSString+Extras.m in Sources */,
 				C3F5706922A4FC71009E9691 /* LongPressToDeleteImageView.m in Sources */,
@@ -1112,6 +1215,7 @@
 				C3F5703722A4F9C4009E9691 /* HAHandleDemoView.m in Sources */,
 				C3F56FC222A4F783009E9691 /* AESCrypt.m in Sources */,
 				C3F5702E22A4F996009E9691 /* TAAbstractDotView.m in Sources */,
+				C3F570C722A53933009E9691 /* UIScrollView+YBGeneral.m in Sources */,
 				C3F5707E22A50316009E9691 /* TouchID.m in Sources */,
 				C3F56FF422A4F7CE009E9691 /* LeePhotoOrAlbumImagePicker.m in Sources */,
 				C3F56FF022A4F7CE009E9691 /* WJItemsControlView.m in Sources */,

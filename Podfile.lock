@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - AwesomeMenu (1.0.0)
   - AYCheckVersion (1.3.5)
   - BEMCheckBox (1.4.1)
   - DDProgressView (0.1)
@@ -110,6 +111,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - AwesomeMenu
   - AYCheckVersion
   - BEMCheckBox
   - DDProgressView
@@ -145,6 +147,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - AwesomeMenu
     - AYCheckVersion
     - BEMCheckBox
     - DDProgressView
@@ -184,6 +187,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AwesomeMenu: 34bad7f873e4b3cfaa6651fabbb96607d0e8f2b3
   AYCheckVersion: 3a313028a34ddfc5ccd16417d0a364fce2bb0add
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   DDProgressView: d5a8983e5585217ee58f4a046bb4038f6e1b6306
@@ -221,6 +225,6 @@ SPEC CHECKSUMS:
   WPAttributedMarkup: eb50878af4ec647d8d2090f721a5cfe7d29c27fe
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 43730f8819bfb647f9aeb47d5d7dd160109aa158
+PODFILE CHECKSUM: 6d753bbc4681904b55d074740b7bf6c6b8ba4e2e
 
 COCOAPODS: 1.6.1

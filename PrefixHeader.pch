@@ -44,6 +44,7 @@
 #import "TXScrollLabelView.h"
 #import "NSString+WPAttributedMarkup.h"//富文本编辑
 #import "ZXingObjC.h"
+#import "AwesomeMenu.h"
 
 //🔨Manual_Add_ThirdParty
 #import "NSObject+Extras.h"
@@ -61,6 +62,7 @@
 #import "Judgement_Environment.h"
 #import "YBFrameTool.h"
 #import "YBSystemTool.h"
+#import "CollectionAccountEditor.h"//弹窗小控件（高仿今日头条App评论弹窗框架）
 #import "ToolMacro.h"
 #import "DHAreaPickerView.h"
 #import "LongPressToDeleteImageView.h"
@@ -86,6 +88,7 @@
 #import "PlaySound.h"//播放自定义声音关键代码
 #import "RegexKitLite.h"//第三方正则表达式开源库
 
+#import "AppDelegate.h"
 
 
 #endif /* PrefixHeader_pch */
