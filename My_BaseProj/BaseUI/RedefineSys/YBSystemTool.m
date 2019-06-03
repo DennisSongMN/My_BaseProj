@@ -8,7 +8,7 @@
 
 #import "YBSystemTool.h"
 #import <sys/utsname.h>
-//liu_geng
+
 @implementation YBSystemTool
 
 + (BOOL)isIphoneX {

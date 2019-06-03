@@ -32,6 +32,7 @@ typedef void (^ActionBlock)(id data);
 @property (nonatomic, copy) ActionBlock leftLittleButtonEventBlock;
 @property (nonatomic, copy) ActionBlock leftButtonEventBlock;
 @property (nonatomic, copy) ActionBlock rightButtonEventBlock;
+
 - (void)loginRightButtonInSuperView:(UIView*)superView withTitle:(NSString*)title rightButtonEvent:(ActionBlock)rightButtonEventBlock;
 
 - (void)goBackButtonInSuperView:(UIView*)superView leftButtonEvent:(ActionBlock)leftButtonEventBlock;
