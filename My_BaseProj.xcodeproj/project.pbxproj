@@ -89,6 +89,9 @@
 		C3F570C722A53933009E9691 /* UIScrollView+YBGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570C622A53933009E9691 /* UIScrollView+YBGeneral.m */; };
 		C3F570CB22A53949009E9691 /* YBNaviagtionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570CA22A53949009E9691 /* YBNaviagtionViewController.m */; };
 		C3F570CE22A53955009E9691 /* UITableView+YBGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570CC22A53954009E9691 /* UITableView+YBGeneral.m */; };
+		C3F570D122A53F71009E9691 /* UILabel+TextAlign.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */; };
+		C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570D522A53FFA009E9691 /* NSString+Url_Chinese.m */; };
+		C3F570DA22A5403F009E9691 /* DeleteSystemUITabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570D822A5403E009E9691 /* DeleteSystemUITabBarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -298,6 +301,15 @@
 		C3F570CA22A53949009E9691 /* YBNaviagtionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBNaviagtionViewController.m; sourceTree = "<group>"; };
 		C3F570CC22A53954009E9691 /* UITableView+YBGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+YBGeneral.m"; sourceTree = "<group>"; };
 		C3F570CD22A53955009E9691 /* UITableView+YBGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+YBGeneral.h"; sourceTree = "<group>"; };
+		C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextAlign.m"; sourceTree = "<group>"; };
+		C3F570D022A53F71009E9691 /* UILabel+TextAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextAlign.h"; sourceTree = "<group>"; };
+		C3F570D222A53FCC009E9691 /* UITableView+EmptyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UITableView+EmptyData.h"; path = "../../../../../item/ShengAi/ShengAi/🔨Manual_Add_ThirdParty /其他🍎/UITableView+EmptyData.h"; sourceTree = "<group>"; };
+		C3F570D322A53FCC009E9691 /* UITableView+EmptyData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UITableView+EmptyData.m"; path = "../../../../../item/ShengAi/ShengAi/🔨Manual_Add_ThirdParty /其他🍎/UITableView+EmptyData.m"; sourceTree = "<group>"; };
+		C3F570D422A53FFA009E9691 /* NSString+Url_Chinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Url_Chinese.h"; sourceTree = "<group>"; };
+		C3F570D522A53FFA009E9691 /* NSString+Url_Chinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Url_Chinese.m"; sourceTree = "<group>"; };
+		C3F570D822A5403E009E9691 /* DeleteSystemUITabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteSystemUITabBarButton.m; sourceTree = "<group>"; };
+		C3F570D922A5403E009E9691 /* DeleteSystemUITabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteSystemUITabBarButton.h; sourceTree = "<group>"; };
+		C3F570DC22A5405C009E9691 /* 移除 系统自带的 UITabBarButton */ = {isa = PBXFileReference; lastKnownFileType = text; path = "移除 系统自带的 UITabBarButton"; sourceTree = "<group>"; };
 		E3F9D199A57739F10C8BE43B /* Pods-My_BaseProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjTests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjTests/Pods-My_BaseProjTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -801,11 +813,10 @@
 		C3F570A422A5198A009E9691 /* RedefineSys */ = {
 			isa = PBXGroup;
 			children = (
+				C3F570DB22A54046009E9691 /* DeleteSystemUITabBarButton */,
 				C3F5704722A4FA7F009E9691 /* Notification */,
 				C3F5708C22A5055B009E9691 /* NSObject+Extras.h */,
 				C3F5708D22A5055B009E9691 /* NSObject+Extras.m */,
-				C3F5709022A50D60009E9691 /* NSString+Extras.h */,
-				C3F5708F22A50D60009E9691 /* NSString+Extras.m */,
 				C3F5709522A50E39009E9691 /* UIImage+Extras.h */,
 				C3F5709622A50E3A009E9691 /* UIImage+Extras.m */,
 				C3F5709822A50E5F009E9691 /* UIButton+Extras.h */,
@@ -820,6 +831,9 @@
 				C3F5708322A50486009E9691 /* YBSystemTool.m */,
 				C3F5709322A50E05009E9691 /* YBFrameTool.h */,
 				C3F5709222A50E05009E9691 /* YBFrameTool.m */,
+				C3F570D022A53F71009E9691 /* UILabel+TextAlign.h */,
+				C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */,
+				C3F570D722A54005009E9691 /* NSString */,
 				C3F5707F22A5040F009E9691 /* UIView */,
 				C3F570C822A53941009E9691 /* UINavigationController */,
 				C3F570C422A53929009E9691 /* UIScrollView */,
@@ -835,6 +849,8 @@
 		C3F570A522A51B4B009E9691 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				C3F570D222A53FCC009E9691 /* UITableView+EmptyData.h */,
+				C3F570D322A53FCC009E9691 /* UITableView+EmptyData.m */,
 				C3F570CD22A53955009E9691 /* UITableView+YBGeneral.h */,
 				C3F570CC22A53954009E9691 /* UITableView+YBGeneral.m */,
 			);
@@ -880,6 +896,27 @@
 				C3F570CA22A53949009E9691 /* YBNaviagtionViewController.m */,
 			);
 			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		C3F570D722A54005009E9691 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				C3F5709022A50D60009E9691 /* NSString+Extras.h */,
+				C3F5708F22A50D60009E9691 /* NSString+Extras.m */,
+				C3F570D422A53FFA009E9691 /* NSString+Url_Chinese.h */,
+				C3F570D522A53FFA009E9691 /* NSString+Url_Chinese.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		C3F570DB22A54046009E9691 /* DeleteSystemUITabBarButton */ = {
+			isa = PBXGroup;
+			children = (
+				C3F570DC22A5405C009E9691 /* 移除 系统自带的 UITabBarButton */,
+				C3F570D922A5403E009E9691 /* DeleteSystemUITabBarButton.h */,
+				C3F570D822A5403E009E9691 /* DeleteSystemUITabBarButton.m */,
+			);
+			path = DeleteSystemUITabBarButton;
 			sourceTree = "<group>";
 		};
 		C55CB09E4B41ABD8B535A2B2 /* Pods */ = {
@@ -1167,7 +1204,9 @@
 				C3F5709A22A50E5F009E9691 /* UIButton+Extras.m in Sources */,
 				C3F56F7322A4C731009E9691 /* My_BaseProj.xcdatamodeld in Sources */,
 				C3F56FC322A4F783009E9691 /* NSData+CommonCrypto.m in Sources */,
+				C3F570D122A53F71009E9691 /* UILabel+TextAlign.m in Sources */,
 				C3F5709D22A50EB2009E9691 /* PlaySound.m in Sources */,
+				C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */,
 				C3F5701422A4F94D009E9691 /* XLSphereView.m in Sources */,
 				C3F5703322A4F996009E9691 /* SDCycleScrollView+UIScrollViewDelegate.m in Sources */,
 				C3F56FFB22A4F7CE009E9691 /* XDSDropDownMenu.m in Sources */,
@@ -1178,6 +1217,7 @@
 				C3F5702F22A4F996009E9691 /* SDCycleScrollView+UICollectionViewDataSource.m in Sources */,
 				C3F56FF822A4F7CE009E9691 /* UIColor+LXExpand.m in Sources */,
 				C3F5704522A4FA40009E9691 /* TBVCell_style_01.m in Sources */,
+				C3F570DA22A5403F009E9691 /* DeleteSystemUITabBarButton.m in Sources */,
 				C3F56FF322A4F7CE009E9691 /* LeePhotoOrAlbumImagePicker+DelegateProtocol.m in Sources */,
 				C3F5708822A504B8009E9691 /* YBGeneralColor.m in Sources */,
 				C3F56FB622A4F749009E9691 /* SoundBtn.m in Sources */,

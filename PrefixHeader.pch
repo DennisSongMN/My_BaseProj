@@ -34,7 +34,7 @@
 #import "PINOperation.h"
 #import "PINRemoteImage.h"//支持带标记的图片后处理。对于同一张图片，当需要不同的后处理方式时（a 界面需要正圆角，b 界面需要小幅度的圆角），尤为有用 https://juejin.im/post/5a96a9b4f265da4e7f35d24e#heading-4
 #import "POP.h"
-#import "Reachability.h"
+#import "Reachability.h"//检查联网情况
 #import <ReactiveObjC.h>
 #import "SDWebImage.h"//不支持图片后处理
 #import "SGQRCode.h"
@@ -52,6 +52,7 @@
 #import "UIView+Extras.h"
 #import "UIImage+Extras.h"
 #import "UIButton+Extras.h"
+#import "UILabel+TextAlign.h"//UILabel文字的调整:利用往文字后面活前面下面添加”\n”来实现文字填充满整个UILable控件实现置顶/置顶效果
 #import "ZYTextField.h"
 #import "MMButton.h"
 #import "YBGeneralColor.h"
@@ -87,6 +88,8 @@
 #import "YBFrameTool.h"
 #import "PlaySound.h"//播放自定义声音关键代码
 #import "RegexKitLite.h"//第三方正则表达式开源库
+#import "DeleteSystemUITabBarButton.h"//移除 系统自带的 UITabBarButton
+
 
 #import "AppDelegate.h"
 

@@ -23,21 +23,6 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-//    UITextField *tf = [[UITextField alloc]initWithFrame:CGRectMake(100, 100, 400, 100)];
-//
-//    tf.placeholder = @"12345";
-//
-//    [self.view addSubview:tf];
-    
-    ZYTextField *tf = [[ZYTextField alloc]initWithFrame:CGRectMake(100, 100, 400, 100)];
-
-//    tf.textColor = kClearColor;
-
-    tf.placeholder = @"12345";
-
-    [self.view addSubview:tf];
-
 
 }
 
