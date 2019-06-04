@@ -16,8 +16,6 @@
  */
 #define UserAccess_token @"23cb324c5257c4a78d1cb1b08e316deb"
 
-
-
 //正式
 //#define REQUEST_URL @"http://api.qijiwang.cn/app_v1.0/"
 

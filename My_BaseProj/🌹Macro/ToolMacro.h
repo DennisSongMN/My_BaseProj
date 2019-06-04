@@ -160,8 +160,8 @@ ITTDPRINT(xx, ##__VA_ARGS__);\
 ///根据ip6的屏幕来拉伸
 #define kRealValue(with)((with)*(([[UIScreen mainScreen] bounds].size.width)/375.0f))
 ///缩放比例
-#define SCALING_RATIO ([[UIScreen mainScreen] bounds].size.width)/375.0f//全局比例尺
-#define kGETVALUE_HEIGHT(width,height,limit_width) ((limit_width)*(height)/(width))//为了让图片不是真
+#define SCALING_RATIO(UISize) (UISize)*([[UIScreen mainScreen] bounds].size.width)/375.0f//全局比例尺
+#define kGETVALUE_HEIGHT(width,height,limit_width) ((limit_width)*(height)/(width))//为了让图片不失真
 
 #define kHeightForListHeaderInSections 5
 
@@ -250,7 +250,7 @@ dispatch_async(queue, block);\
 #define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 
 #pragma mark - 强弱引用
-#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
+//#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
 #define kWeakSelf(type)  __weak typeof(type) weak##type = type
 #define kStrongSelf(type)  __strong typeof(type) type = weak##type
 
