@@ -10,18 +10,35 @@
 #import <objc/runtime.h>
 
 #define LZB_TABBAR_DEFULT_HEIGHT 49
+
 @interface LZBTabBarViewController ()<LZBTabBarDelegate>
+
 @property(nonatomic, strong)  UIViewController *selectedViewController;
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) LZBTabBar *tabbar;
+
 @end
 
 @implementation LZBTabBarViewController
 
+-(void)setLZB_TABBAR_HEIGHT:(CGFloat)LZB_TABBAR_HEIGHT{
+    
+    if (LZB_TABBAR_HEIGHT == 0) {
+        
+        _LZB_TABBAR_HEIGHT = LZB_TABBAR_DEFULT_HEIGHT;
+    }
+    
+    _LZB_TABBAR_HEIGHT = LZB_TABBAR_HEIGHT;
+}
+
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
     [self.view addSubview:self.contentView];
+    
     [self.view addSubview:self.tabbar];
+    
     self.isShouldAnimation = NO;
 }
 
@@ -149,7 +166,7 @@
         
         CGFloat tabBarHeight = CGRectGetHeight(weakSelf.lzb_tabBar.frame);
         
-        if(!tabBarHeight)  tabBarHeight = LZB_TABBAR_DEFULT_HEIGHT;
+        if(!tabBarHeight)  tabBarHeight = self.LZB_TABBAR_HEIGHT;
         
         if(!lzb_tabBarHidden){//显示
             tabBarStartingY = fullSize.height - tabBarHeight;
@@ -280,7 +297,7 @@ didSelectItemAtIndex:(NSInteger)index{
                                    UIViewAutoresizingFlexibleLeftMargin|
                                    UIViewAutoresizingFlexibleRightMargin|
                                     UIViewAutoresizingFlexibleBottomMargin;
-       _tabbar.frame = CGRectMake(0, self.contentView.frame.size.height - LZB_TABBAR_DEFULT_HEIGHT, [UIScreen mainScreen].bounds.size.width, LZB_TABBAR_DEFULT_HEIGHT);
+       _tabbar.frame = CGRectMake(0, self.contentView.frame.size.height - self.LZB_TABBAR_HEIGHT, [UIScreen mainScreen].bounds.size.width, self.LZB_TABBAR_HEIGHT);
        _tabbar.delegate = self;
    }
     return _tabbar;

@@ -92,6 +92,20 @@
 		C3F570D122A53F71009E9691 /* UILabel+TextAlign.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */; };
 		C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570D522A53FFA009E9691 /* NSString+Url_Chinese.m */; };
 		C3F570DA22A5403F009E9691 /* DeleteSystemUITabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570D822A5403E009E9691 /* DeleteSystemUITabBarButton.m */; };
+		C3F570DF22A60B8C009E9691 /* CustomSYSUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570DE22A60B8C009E9691 /* CustomSYSUITabBarController.m */; };
+		C3F570E522A60CEF009E9691 /* ViewController@2.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570E422A60CEF009E9691 /* ViewController@2.m */; };
+		C3F570E822A60D0A009E9691 /* ViewController@1.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570E722A60D0A009E9691 /* ViewController@1.m */; };
+		C3F570EB22A60D1C009E9691 /* ViewController@3.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570EA22A60D1C009E9691 /* ViewController@3.m */; };
+		C3F570EF22A60DF3009E9691 /* Home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F570ED22A60DF3009E9691 /* Home@2x.png */; };
+		C3F570F022A60DF3009E9691 /* Home@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F570EE22A60DF3009E9691 /* Home@3x.png */; };
+		C3F570F322A60E1C009E9691 /* MyStore@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F570F122A60E1C009E9691 /* MyStore@3x.png */; };
+		C3F570F422A60E1C009E9691 /* MyStore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F570F222A60E1C009E9691 /* MyStore@2x.png */; };
+		C3F570F722A60E46009E9691 /* ShoppingCart@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F570F522A60E46009E9691 /* ShoppingCart@3x.png */; };
+		C3F570F822A60E46009E9691 /* ShoppingCart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F570F622A60E46009E9691 /* ShoppingCart@2x.png */; };
+		C3F570FB22A60E5F009E9691 /* My@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F570F922A60E5F009E9691 /* My@3x.png */; };
+		C3F570FC22A60E5F009E9691 /* My@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F570FA22A60E5F009E9691 /* My@2x.png */; };
+		C3F570FF22A61052009E9691 /* ViewController@4.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570FE22A61052009E9691 /* ViewController@4.m */; };
+		C3F5710222A612AD009E9691 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5710022A612AD009E9691 /* NavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -310,6 +324,26 @@
 		C3F570D822A5403E009E9691 /* DeleteSystemUITabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteSystemUITabBarButton.m; sourceTree = "<group>"; };
 		C3F570D922A5403E009E9691 /* DeleteSystemUITabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteSystemUITabBarButton.h; sourceTree = "<group>"; };
 		C3F570DC22A5405C009E9691 /* 移除 系统自带的 UITabBarButton */ = {isa = PBXFileReference; lastKnownFileType = text; path = "移除 系统自带的 UITabBarButton"; sourceTree = "<group>"; };
+		C3F570DD22A60B8C009E9691 /* CustomSYSUITabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomSYSUITabBarController.h; sourceTree = "<group>"; };
+		C3F570DE22A60B8C009E9691 /* CustomSYSUITabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSYSUITabBarController.m; sourceTree = "<group>"; };
+		C3F570E322A60CEF009E9691 /* ViewController@2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController@2.h"; sourceTree = "<group>"; };
+		C3F570E422A60CEF009E9691 /* ViewController@2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController@2.m"; sourceTree = "<group>"; };
+		C3F570E622A60D0A009E9691 /* ViewController@1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController@1.h"; sourceTree = "<group>"; };
+		C3F570E722A60D0A009E9691 /* ViewController@1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController@1.m"; sourceTree = "<group>"; };
+		C3F570E922A60D1C009E9691 /* ViewController@3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController@3.h"; sourceTree = "<group>"; };
+		C3F570EA22A60D1C009E9691 /* ViewController@3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController@3.m"; sourceTree = "<group>"; };
+		C3F570ED22A60DF3009E9691 /* Home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@2x.png"; sourceTree = "<group>"; };
+		C3F570EE22A60DF3009E9691 /* Home@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home@3x.png"; sourceTree = "<group>"; };
+		C3F570F122A60E1C009E9691 /* MyStore@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyStore@3x.png"; sourceTree = "<group>"; };
+		C3F570F222A60E1C009E9691 /* MyStore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyStore@2x.png"; sourceTree = "<group>"; };
+		C3F570F522A60E46009E9691 /* ShoppingCart@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShoppingCart@3x.png"; sourceTree = "<group>"; };
+		C3F570F622A60E46009E9691 /* ShoppingCart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShoppingCart@2x.png"; sourceTree = "<group>"; };
+		C3F570F922A60E5F009E9691 /* My@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My@3x.png"; sourceTree = "<group>"; };
+		C3F570FA22A60E5F009E9691 /* My@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My@2x.png"; sourceTree = "<group>"; };
+		C3F570FD22A61052009E9691 /* ViewController@4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController@4.h"; sourceTree = "<group>"; };
+		C3F570FE22A61052009E9691 /* ViewController@4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController@4.m"; sourceTree = "<group>"; };
+		C3F5710022A612AD009E9691 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		C3F5710122A612AD009E9691 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		E3F9D199A57739F10C8BE43B /* Pods-My_BaseProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjTests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjTests/Pods-My_BaseProjTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -355,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				C3F56F9D22A4F1D1009E9691 /* PrefixHeader.pch */,
+				C3F570EC22A60D66009E9691 /* PicResource */,
 				C3F56F6722A4C731009E9691 /* My_BaseProj */,
 				C3F56FB022A4F52E009E9691 /* Other */,
 				C55CB09E4B41ABD8B535A2B2 /* Pods */,
@@ -378,6 +413,10 @@
 			children = (
 				C3F56F6822A4C731009E9691 /* AppDelegate.h */,
 				C3F56F6922A4C731009E9691 /* AppDelegate.m */,
+				C3F570DD22A60B8C009E9691 /* CustomSYSUITabBarController.h */,
+				C3F570DE22A60B8C009E9691 /* CustomSYSUITabBarController.m */,
+				C3F5710122A612AD009E9691 /* NavigationViewController.h */,
+				C3F5710022A612AD009E9691 /* NavigationViewController.m */,
 				C3F570A222A5128A009E9691 /* IsLogin.h */,
 				C3F570A122A5128A009E9691 /* IsLogin.m */,
 				C3F56F7922A4C732009E9691 /* Info.plist */,
@@ -387,6 +426,14 @@
 				C3F56F9E22A4F38C009E9691 /* 🌹Macro */,
 				C3F56F6B22A4C731009E9691 /* ViewController.h */,
 				C3F56F6C22A4C731009E9691 /* ViewController.m */,
+				C3F570E622A60D0A009E9691 /* ViewController@1.h */,
+				C3F570E722A60D0A009E9691 /* ViewController@1.m */,
+				C3F570E322A60CEF009E9691 /* ViewController@2.h */,
+				C3F570E422A60CEF009E9691 /* ViewController@2.m */,
+				C3F570E922A60D1C009E9691 /* ViewController@3.h */,
+				C3F570EA22A60D1C009E9691 /* ViewController@3.m */,
+				C3F570FD22A61052009E9691 /* ViewController@4.h */,
+				C3F570FE22A61052009E9691 /* ViewController@4.m */,
 			);
 			path = My_BaseProj;
 			sourceTree = "<group>";
@@ -919,6 +966,21 @@
 			path = DeleteSystemUITabBarButton;
 			sourceTree = "<group>";
 		};
+		C3F570EC22A60D66009E9691 /* PicResource */ = {
+			isa = PBXGroup;
+			children = (
+				C3F570F222A60E1C009E9691 /* MyStore@2x.png */,
+				C3F570F122A60E1C009E9691 /* MyStore@3x.png */,
+				C3F570ED22A60DF3009E9691 /* Home@2x.png */,
+				C3F570EE22A60DF3009E9691 /* Home@3x.png */,
+				C3F570F622A60E46009E9691 /* ShoppingCart@2x.png */,
+				C3F570F522A60E46009E9691 /* ShoppingCart@3x.png */,
+				C3F570FA22A60E5F009E9691 /* My@2x.png */,
+				C3F570F922A60E5F009E9691 /* My@3x.png */,
+			);
+			path = PicResource;
+			sourceTree = "<group>";
+		};
 		C55CB09E4B41ABD8B535A2B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1040,14 +1102,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F56F7822A4C732009E9691 /* LaunchScreen.storyboard in Resources */,
+				C3F570FC22A60E5F009E9691 /* My@2x.png in Resources */,
+				C3F570F022A60DF3009E9691 /* Home@3x.png in Resources */,
+				C3F570F422A60E1C009E9691 /* MyStore@2x.png in Resources */,
+				C3F570FB22A60E5F009E9691 /* My@3x.png in Resources */,
+				C3F570F322A60E1C009E9691 /* MyStore@3x.png in Resources */,
 				C3F5705222A4FA9F009E9691 /* sortedNameCH.plist in Resources */,
 				C3F5707522A4FC92009E9691 /* area.db in Resources */,
 				C3F5707622A4FC92009E9691 /* hotelcity.json in Resources */,
 				C3F56F7522A4C732009E9691 /* Assets.xcassets in Resources */,
 				C3F5707A22A4FC92009E9691 /* address.json in Resources */,
+				C3F570EF22A60DF3009E9691 /* Home@2x.png in Resources */,
 				C3F5705122A4FA9F009E9691 /* sortedNameEN.plist in Resources */,
 				C3F56FB722A4F749009E9691 /* Sound.wav in Resources */,
+				C3F570F722A60E46009E9691 /* ShoppingCart@3x.png in Resources */,
 				C3F56F7022A4C731009E9691 /* Main.storyboard in Resources */,
+				C3F570F822A60E46009E9691 /* ShoppingCart@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1211,6 +1281,8 @@
 				C3F5703322A4F996009E9691 /* SDCycleScrollView+UIScrollViewDelegate.m in Sources */,
 				C3F56FFB22A4F7CE009E9691 /* XDSDropDownMenu.m in Sources */,
 				C3F570CE22A53955009E9691 /* UITableView+YBGeneral.m in Sources */,
+				C3F570E522A60CEF009E9691 /* ViewController@2.m in Sources */,
+				C3F570EB22A60D1C009E9691 /* ViewController@3.m in Sources */,
 				C3F5708E22A5055C009E9691 /* NSObject+Extras.m in Sources */,
 				C3F5708522A50486009E9691 /* YBSystemTool.m in Sources */,
 				C3F570B622A534E7009E9691 /* CollectionAccountEditor.m in Sources */,
@@ -1229,7 +1301,9 @@
 				C3F570BF22A538D2009E9691 /* UIViewController+YBGeneral.m in Sources */,
 				C3F5700D22A4F8B1009E9691 /* AnimateToSpecifiedDateView.m in Sources */,
 				C3F570A322A5128A009E9691 /* IsLogin.m in Sources */,
+				C3F570DF22A60B8C009E9691 /* CustomSYSUITabBarController.m in Sources */,
 				C3F5709422A50E05009E9691 /* YBFrameTool.m in Sources */,
+				C3F570FF22A61052009E9691 /* ViewController@4.m in Sources */,
 				C3F570C022A538D2009E9691 /* UIViewController+YBGeneralHook.m in Sources */,
 				C3F5707822A4FC92009E9691 /* DHAreasModel.m in Sources */,
 				C3F5709122A50D60009E9691 /* NSString+Extras.m in Sources */,
@@ -1246,6 +1320,7 @@
 				C3F56FC422A4F783009E9691 /* NSString+Base64.m in Sources */,
 				C3F5704B22A4FA7F009E9691 /* YBNotificationManager.m in Sources */,
 				C3F56F7B22A4C732009E9691 /* main.m in Sources */,
+				C3F570E822A60D0A009E9691 /* ViewController@1.m in Sources */,
 				C3F5703122A4F996009E9691 /* SDCollectionViewCell.m in Sources */,
 				C3F5700C22A4F8B1009E9691 /* AnimateToSpecifiedDate_Init.m in Sources */,
 				C3F56F6A22A4C731009E9691 /* AppDelegate.m in Sources */,
@@ -1257,6 +1332,7 @@
 				C3F5702E22A4F996009E9691 /* TAAbstractDotView.m in Sources */,
 				C3F570C722A53933009E9691 /* UIScrollView+YBGeneral.m in Sources */,
 				C3F5707E22A50316009E9691 /* TouchID.m in Sources */,
+				C3F5710222A612AD009E9691 /* NavigationViewController.m in Sources */,
 				C3F56FF422A4F7CE009E9691 /* LeePhotoOrAlbumImagePicker.m in Sources */,
 				C3F56FF022A4F7CE009E9691 /* WJItemsControlView.m in Sources */,
 				C3F5703222A4F996009E9691 /* SDCycleScrollView.m in Sources */,

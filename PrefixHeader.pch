@@ -94,5 +94,6 @@
 
 #import "AppDelegate.h"
 
+#import "CustomSYSUITabBarController.h"
 
 #endif /* PrefixHeader_pch */
