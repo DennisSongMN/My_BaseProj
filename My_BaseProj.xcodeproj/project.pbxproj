@@ -106,6 +106,7 @@
 		C3F570FC22A60E5F009E9691 /* My@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3F570FA22A60E5F009E9691 /* My@2x.png */; };
 		C3F570FF22A61052009E9691 /* ViewController@4.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570FE22A61052009E9691 /* ViewController@4.m */; };
 		C3F5710222A612AD009E9691 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5710022A612AD009E9691 /* NavigationViewController.m */; };
+		C3F5710922A63B0A009E9691 /* NSlogToDocumentFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5710822A63B0A009E9691 /* NSlogToDocumentFolder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,6 +345,9 @@
 		C3F570FE22A61052009E9691 /* ViewController@4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController@4.m"; sourceTree = "<group>"; };
 		C3F5710022A612AD009E9691 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 		C3F5710122A612AD009E9691 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		C3F5710622A63AC7009E9691 /* 调试时候添加日志时使用,上线需要去掉 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "调试时候添加日志时使用,上线需要去掉"; sourceTree = "<group>"; };
+		C3F5710722A63B0A009E9691 /* NSlogToDocumentFolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSlogToDocumentFolder.h; sourceTree = "<group>"; };
+		C3F5710822A63B0A009E9691 /* NSlogToDocumentFolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSlogToDocumentFolder.m; sourceTree = "<group>"; };
 		E3F9D199A57739F10C8BE43B /* Pods-My_BaseProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjTests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjTests/Pods-My_BaseProjTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -389,6 +393,7 @@
 			isa = PBXGroup;
 			children = (
 				C3F56F9D22A4F1D1009E9691 /* PrefixHeader.pch */,
+				C3F5710522A63AB2009E9691 /* Log */,
 				C3F570EC22A60D66009E9691 /* PicResource */,
 				C3F56F6722A4C731009E9691 /* My_BaseProj */,
 				C3F56FB022A4F52E009E9691 /* Other */,
@@ -989,6 +994,16 @@
 			path = "🍌Manual_Add_ThirdFont";
 			sourceTree = "<group>";
 		};
+		C3F5710522A63AB2009E9691 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				C3F5710622A63AC7009E9691 /* 调试时候添加日志时使用,上线需要去掉 */,
+				C3F5710722A63B0A009E9691 /* NSlogToDocumentFolder.h */,
+				C3F5710822A63B0A009E9691 /* NSlogToDocumentFolder.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 		C55CB09E4B41ABD8B535A2B2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1336,6 +1351,7 @@
 				C3F5702B22A4F996009E9691 /* TADotView.m in Sources */,
 				C3F5706122A4FBA7009E9691 /* Judgement_Environment.m in Sources */,
 				C3F5703722A4F9C4009E9691 /* HAHandleDemoView.m in Sources */,
+				C3F5710922A63B0A009E9691 /* NSlogToDocumentFolder.m in Sources */,
 				C3F56FC222A4F783009E9691 /* AESCrypt.m in Sources */,
 				C3F5702E22A4F996009E9691 /* TAAbstractDotView.m in Sources */,
 				C3F570C722A53933009E9691 /* UIScrollView+YBGeneral.m in Sources */,

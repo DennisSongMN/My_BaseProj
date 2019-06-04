@@ -96,4 +96,6 @@
 
 #import "CustomSYSUITabBarController.h"
 
+#import "NSlogToDocumentFolder.h"//上线需要去掉
+
 #endif /* PrefixHeader_pch */
