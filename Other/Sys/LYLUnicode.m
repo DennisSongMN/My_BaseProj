@@ -22,7 +22,6 @@ static inline void LYL_swizzleSelector(Class class, SEL originalSelector, SEL sw
 }
 
 @implementation NSString (LYLUnicode)
-
 - (NSString *)stringByReplaceUnicode {
     NSMutableString *convertedString = [self mutableCopy];
     [convertedString replaceOccurrencesOfString:@"\\U"

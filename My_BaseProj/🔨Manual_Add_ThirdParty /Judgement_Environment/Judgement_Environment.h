@@ -28,6 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(BOOL)judgement;
 
+/**
+ 校验是否为Xcode模拟器
+ */
++(BOOL)isSimulator;
+
 @end
 
 NS_ASSUME_NONNULL_END

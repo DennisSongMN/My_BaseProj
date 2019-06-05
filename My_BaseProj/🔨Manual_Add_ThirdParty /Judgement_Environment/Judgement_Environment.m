@@ -142,4 +142,11 @@ struct utsname systemInfo;
     return YES;
 }
 
++(BOOL)isSimulator{
+    
+    NSString *str = [Judgement_Environment iphoneType];
+    
+    return [str isEqualToString:@"iPhone Simulator"]?YES:NO;
+}
+
 @end
