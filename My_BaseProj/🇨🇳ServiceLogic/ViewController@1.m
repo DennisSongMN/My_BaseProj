@@ -8,12 +8,14 @@
 
 #import "ViewController@1.h"
 
-@interface ViewController_1 (){
+@interface ViewController_1 ()<UITextFieldDelegate>{
 
 }
 
-@property (nonatomic, assign) BOOL isShowEmailSuffix;   //是否在输入@后显示email后缀
-@property (nonatomic, assign) BOOL isAutoCompleterEmailSuffix;  //是否自动补全email后缀
+//@property (nonatomic, assign) BOOL isShowEmailSuffix;   //是否在输入@后显示email后缀
+//@property (nonatomic, assign) BOOL isAutoCompleterEmailSuffix;  //是否自动补全email后缀
+@property(nonatomic,strong)ZYTextField *textField;
+@property(nonatomic,strong)UIView *mainView;
 
 @end
 
@@ -36,7 +38,132 @@
 -(void)viewDidLoad{
     
     self.view.backgroundColor = RandomColor;
+    
+//    [self ddd];
+    
+    [self setView:self.mainView];
+    
+    NSLog(@"%@",self.mainView);
+    
+    [self.mainView addSubview:self.textField];
+    
+    [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.left.equalTo(self.mainView).offset(SCALING_RATIO(30));
+        
+        make.left.equalTo(self.mainView).offset(SCALING_RATIO(30) + rectOfStatusbar + rectOfNavigationbar);
+        
+        ///系统控件高度
+//#define rectOfStatusbar [[UIApplication sharedApplication] statusBarFrame].size.height//获取状态栏的高
+//#define rectOfNavigationbar self.navigationController.navigationBar.frame.size.height//获取导航栏的高
+        
+        make.right.equalTo(self.mainView).offset(-SCALING_RATIO(30));
+        
+        make.height.mas_equalTo((SCALING_RATIO(100)));
+    }];
 }
+
+-(UIView *)mainView{
+    
+    if (!_mainView) {
+        
+        _mainView = UIView.new;
+        
+        _mainView.frame = kAPPDelegate.window.frame;
+        
+        _mainView.backgroundColor = kRedColor;
+    }
+    
+    return _mainView;
+}
+
+-(ZYTextField *)textField{
+    
+    if (!_textField) {
+        
+        _textField = ZYTextField.new;
+        
+        [UIView cornerCutToCircleWithView:_textField
+                          AndCornerRadius:4];
+        
+        [UIView colourToLayerOfView:_textField WithColour:kCyanColor
+                     AndBorderWidth:1.0f];
+        
+        _textField.delegate = self;
+    }
+    
+    return _textField;
+}
+
+
+
+
+
+
+
+
+
+
+//通过plist文件储存历史输入
+//-(void)ddd{
+//    ////对plist文件进行读写
+//
+//    //获取路径对象
+//    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *path = [pathArray objectAtIndex:0];
+//    //获取文件的完整路径
+//    NSString *filePatch = [path stringByAppendingPathComponent:@"column.plist"];
+//
+//    NSLog(@"%@",filePatch);
+//
+//    //写入数据到plist文件
+//    NSMutableDictionary *dic1 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"小小虎",@"name",@"5",@"age",@"boy",@"sex",nil];
+//
+//    NSMutableDictionary *dic2 = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"小小兮",@"name",@"6",@"age",@"girl",@"sex",nil];
+//
+//    //将上面2个小字典保存到大字典里面
+//    NSMutableDictionary *dataDic = [NSMutableDictionary dictionary];
+//    [dataDic setObject:dic1 forKey:@"一年级"];
+//    [dataDic setObject:dic2 forKey:@"二年级"];
+//    //写入plist里面
+//    [dataDic writeToFile:filePatch atomically:YES];
+//
+//
+//    //读取plist文件的内容
+//    NSMutableDictionary *dataDictionary = [[NSMutableDictionary alloc] initWithContentsOfFile:filePatch];
+//    NSLog(@"---plist一开始保存时候的内容---%@",dataDictionary);
+//
+//    //////对pilst文件进行修改
+//    //修改字典里面的内容,先按照结构取到你想修改内容的小字典
+//    NSMutableDictionary *dd = [dataDictionary objectForKey:@"一年级"];
+//    [dd setObject:@"我改名字了哦" forKey:@"name"];
+//    [dd setObject:@"我添加的新内容" forKey:@"content"];
+//    [dd removeObjectForKey:@"age"];
+//
+//    //修改成功以后，将这个小字典重新添加到大字典里面
+//    [dataDictionary setObject:dd forKey:@"一年级"];
+//
+//    [dataDictionary writeToFile:filePatch atomically:YES];
+//    NSLog(@"---plist做过操作之后的字典里面内容---%@",dataDictionary);
+//
+//
+//    //////删除
+//    //清除plist文件，可以根据我上面讲的方式进去本地查看plist文件是否被清除
+//    NSFileManager *fileMger = [NSFileManager defaultManager];
+//
+//    NSString *xiaoXiPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingPathComponent:@"xiaoxi.plist"];
+//
+//    //如果文件路径存在的话
+//    BOOL bRet = [fileMger fileExistsAtPath:xiaoXiPath];
+//
+//    if (bRet) {
+//
+//        NSError *err;
+//
+//        [fileMger removeItemAtPath:xiaoXiPath error:&err];
+//    }
+//
+//}
 
 ////初始化
 //- (void)initialize{

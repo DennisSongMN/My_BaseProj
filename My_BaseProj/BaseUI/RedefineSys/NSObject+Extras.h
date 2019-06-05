@@ -17,35 +17,6 @@
 +(BOOL)isNSArrayClass:(id)object;
 
 /**
- 圆切角
- 
- @param view 目标View
- @param cornerRadiusValue 圆切角
- */
-+(void)cornerCutToCircleWithView:(UIView *)view
-                 AndCornerRadius:(CGFloat)cornerRadiusValue;
-
-/**
- 描边
- 
- @param view 目标View
- @param colour 色彩
- @param WidthOfBorder 线宽
- */
-+(void)colourToLayerOfView:(UIView *)view
-                WithColour:(UIColor *)colour
-            AndBorderWidth:(CGFloat)WidthOfBorder;
-
-/**
- *  指定圆切角
- */
-+(void)appointCornerCutToCircleWithTargetView:(UIView *)targetView
-                         TargetCorner_TopLeft:(UIRectCorner)targetCorner_TopLeft
-                        TargetCorner_TopRight:(UIRectCorner)targetCorner_TopRight
-                      TargetCorner_BottomLeft:(UIRectCorner)targetCorner_BottomLeft
-                     TargetCorner_BottomRight:(UIRectCorner)targetCorner_BottomRight;
-
-/**
  *  判断是否当日第一次启动App
  */
 +(BOOL)isFirstLaunchApp;

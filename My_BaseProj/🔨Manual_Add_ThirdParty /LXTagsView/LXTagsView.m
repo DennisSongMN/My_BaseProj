@@ -184,10 +184,10 @@
         
         button.tag = EnumActionTag0 + i;
         
-        [NSObject cornerCutToCircleWithView:button
+        [UIView cornerCutToCircleWithView:button
                             AndCornerRadius:self.cornerRadius];
         
-        [NSObject colourToLayerOfView:button
+        [UIView colourToLayerOfView:button
                            WithColour:self.borderColor
                        AndBorderWidth:self.borderWidth];
         
@@ -251,7 +251,7 @@
     [sender setTitleColor:HEXCOLOR(textColor)
                  forState:UIControlStateNormal];
     
-    [NSObject colourToLayerOfView:sender
+    [UIView colourToLayerOfView:sender
                        WithColour:HEXCOLOR(borderColor)
                    AndBorderWidth:borderWidth];
 }

@@ -159,7 +159,7 @@
             }
         }];
         
-        [NSObject cornerCutToCircleWithView:_contentView
+        [UIView cornerCutToCircleWithView:_contentView
                             AndCornerRadius:8];
     }
     

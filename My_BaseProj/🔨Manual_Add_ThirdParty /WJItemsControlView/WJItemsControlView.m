@@ -109,7 +109,7 @@
             
         }else if (self.config.type == XZBtnType_Button){
             
-            [NSObject colourToLayerOfView:btn
+            [UIView colourToLayerOfView:btn
                                WithColour:kBlackColor
                            AndBorderWidth:0.5f];
             

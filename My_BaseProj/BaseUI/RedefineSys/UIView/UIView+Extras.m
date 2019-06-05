@@ -931,6 +931,69 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
 }
 
 
+/**
+ 切角
+ 
+ @param view TargetView
+ @param cornerRadiusValue 切角参数
+ */
++(void)cornerCutToCircleWithView:(UIView *)view
+                 AndCornerRadius:(CGFloat)cornerRadiusValue{
+    
+    view.layer.cornerRadius = cornerRadiusValue;
+    
+    view.layer.masksToBounds = YES;
+    
+}
+
+/**
+ 描边
+ 
+ @param view TargetView
+ @param colour 颜色
+ @param WidthOfBorder 边线宽度
+ */
++(void)colourToLayerOfView:(UIView *)view
+                WithColour:(UIColor *)colour
+            AndBorderWidth:(CGFloat)WidthOfBorder{
+    
+    view.layer.borderColor = colour.CGColor;
+    
+    view.layer.borderWidth = WidthOfBorder;
+}
+
+
+/**
+ *  指定圆切角
+ */
++(void)appointCornerCutToCircleWithTargetView:(UIView *)targetView
+                         TargetCorner_TopLeft:(UIRectCorner)targetCorner_TopLeft
+                        TargetCorner_TopRight:(UIRectCorner)targetCorner_TopRight
+                      TargetCorner_BottomLeft:(UIRectCorner)targetCorner_BottomLeft
+                     TargetCorner_BottomRight:(UIRectCorner)targetCorner_BottomRight{
+    
+    //设置切哪个直角
+    //    UIRectCornerTopLeft     = 1 << 0,  左上角
+    //    UIRectCornerTopRight    = 1 << 1,  右上角
+    //    UIRectCornerBottomLeft  = 1 << 2,  左下角
+    //    UIRectCornerBottomRight = 1 << 3,  右下角
+    //    UIRectCornerAllCorners  = ~0UL     全部角
+    
+    //得到view的遮罩路径
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:targetView.bounds
+                                                   byRoundingCorners:targetCorner_TopLeft | targetCorner_TopRight | targetCorner_BottomLeft | targetCorner_BottomRight
+                                                         cornerRadii:CGSizeMake(10,10)];
+    //创建 layer
+    CAShapeLayer *maskLayer = [CAShapeLayer new];
+    
+    maskLayer.frame = targetView.bounds;
+    
+    //赋值
+    maskLayer.path = maskPath.CGPath;
+    
+    targetView.layer.mask = maskLayer;
+}
+
 
 @end
 
