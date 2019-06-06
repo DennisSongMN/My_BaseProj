@@ -8,23 +8,42 @@
 
 #import "ZYTextField.h"
 
+@interface ZYTextField (){
+    
+    
+}
+
+@property(nonatomic,strong)NSString *documentName;//数据文件名
+@property(nonatomic,strong)NSMutableArray *dataMutArr;
+@property(nonatomic,strong)NSMutableSet *mutSet;
+
+@end
+
 @implementation ZYTextField
 
 //通过代码创建
-- (instancetype)initWithFrame:(CGRect)frame{
+- (instancetype)initWithFrame:(CGRect)frame
+                 documentName:(NSString *)docName
+           isStoreHistoryInfo:(isStoreHistoryInfo)isStoreHistoryInfo{
     
     if (self = [super initWithFrame:frame]) {
         
+        self.documentName = docName;
+        
         [self setUpUI];
+        
+        if (isStoreHistoryInfo) {
+            
+            [self setUpData];
+        }
     }
     return self;
 }
-//通过xib创建
--(void)awakeFromNib{
+
+-(void)setUpData{
     
-    [super awakeFromNib];
-    
-    [self setUpUI];
+    //开始读取plist文件
+    self.dataMutArr = [[NSMutableArray alloc]initWithContentsOfFile:[self getPlistPath]];
 }
 
 - (void)setUpUI{
@@ -49,6 +68,18 @@
     
     // 修改占位文字颜色
     [self setValue:self.textColor forKeyPath:@"_placeholderLabel.textColor"];
+
+    if (self.dataMutArr.count > 0) {
+        //添加到父视图上
+        [self.superview addSubview:self.historyDataListTBV];
+        
+        self.historyDataListTBV.frame = CGRectMake(self.mj_x,
+                                                   self.mj_y + self.mj_h,
+                                                   self.mj_w,
+                                                   [HistoryDataListTBVCell cellHeightWithModel:Nil] * self.dataMutArr.count);
+        
+        [self.historyDataListTBV reloadData];
+    }
     
     return [super becomeFirstResponder];
 }
@@ -60,6 +91,13 @@
     
     // 修改占位文字颜色
     [self setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    
+    if (_historyDataListTBV) {//关闭
+        
+        [self.historyDataListTBV removeFromSuperview];
+        
+        _historyDataListTBV = Nil;
+    }
     
     return [super resignFirstResponder];
 }
@@ -85,6 +123,71 @@
     CGRect inset = CGRectMake(bounds.origin.x +15, bounds.origin.y, bounds.size.width -15, bounds.size.height);
     
     return inset;
+}
+//存取路径
+-(NSString *)getPlistPath{
+    
+    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    NSString *path = [pathArray objectAtIndex:0];
+    
+    NSString *dfe = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.plist",self.documentName]];
+
+    return [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.plist",self.documentName]];
+}
+//存方法
+-(void)store:(NSString *)str{
+    
+    //为空不存
+    if (![NSString isEmptyStr:str]) {
+        
+        if (self.dataMutArr.count != 0) {//本地有数据
+            
+            [self.mutSet addObjectsFromArray:self.dataMutArr];
+        }
+        
+        [self.mutSet addObject:str];
+        
+        [[self.mutSet allObjects] writeToFile:[self getPlistPath]
+                                   atomically:YES];
+        
+        [self.dataMutArr removeAllObjects];
+        
+        self.dataMutArr = [NSMutableArray arrayWithArray:[self.mutSet allObjects]];
+        
+    }else return;
+}
+
+#pragma mark —— lazyLoad
+-(HistoryDataListTBV *)historyDataListTBV{
+    
+    if (!_historyDataListTBV) {
+        
+        _historyDataListTBV = [HistoryDataListTBV initWithRequestParams:self.dataMutArr];
+        
+        [_historyDataListTBV deleteData:^(id  _Nullable data) {
+            
+            NSLog(@"%@",data);
+            
+            [self.dataMutArr removeObject:data];
+            
+            [self->_historyDataListTBV reloadData];
+        }];
+        
+        _historyDataListTBV.tableFooterView = UIView.new;
+    }
+    
+    return _historyDataListTBV;
+}
+
+-(NSMutableSet *)mutSet{
+    
+    if (!_mutSet) {
+        
+        _mutSet = NSMutableSet.set;
+    }
+    
+    return _mutSet;
 }
 
 @end
