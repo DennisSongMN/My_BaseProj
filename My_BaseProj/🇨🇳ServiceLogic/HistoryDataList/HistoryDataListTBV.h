@@ -8,15 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^deleteBlockinTBV)(id _Nullable data);
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HistoryDataListTBV : UITableView
 
 +(instancetype)initWithRequestParams:(id)requestParams;
 
--(void)deleteData:(deleteBlockinTBV)block;
+-(void)deleteData:(ActionBlock)block;
 
 @end
 

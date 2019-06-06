@@ -13,7 +13,7 @@
 }
 
 @property(nonatomic,strong)NSArray *dataArr;
-@property(nonatomic,copy)deleteBlockinTBV block;
+@property(nonatomic,copy)ActionBlock block;
 
 @end
 
@@ -51,7 +51,7 @@
     return self;
 }
 
--(void)deleteData:(deleteBlockinTBV)block{
+-(void)deleteData:(ActionBlock)block{
     
     self.block = block;
 }

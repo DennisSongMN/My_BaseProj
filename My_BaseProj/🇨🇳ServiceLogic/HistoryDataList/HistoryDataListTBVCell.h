@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^deleteBlockinCell)(id _Nullable data);
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HistoryDataListTBVCell : UITableViewCell
@@ -17,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)cellWith:(UITableView *)tableView;
 +(CGFloat)cellHeightWithModel:(id _Nullable)model;
 - (void)richElementsInCellWithModel:(id _Nullable)model;
--(void)deleteData:(deleteBlockinCell)block;
+-(void)deleteData:(ActionBlock)block;
 
 
 @end

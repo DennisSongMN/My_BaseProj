@@ -395,7 +395,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C3B1565622A7E20E009061F3 /* New Group */ = {
+		C3B1565622A7E20E009061F3 /* HistoryDataList */ = {
 			isa = PBXGroup;
 			children = (
 				C3B1565722A7E242009061F3 /* HistoryDataListTBV.h */,
@@ -403,7 +403,7 @@
 				C3B1565A22A7E45A009061F3 /* HistoryDataListTBVCell.h */,
 				C3B1565B22A7E45A009061F3 /* HistoryDataListTBVCell.m */,
 			);
-			path = "New Group";
+			path = HistoryDataList;
 			sourceTree = "<group>";
 		};
 		C3F56F5C22A4C731009E9691 = {
@@ -990,7 +990,7 @@
 		C3F5710322A61CDB009E9691 /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
-				C3B1565622A7E20E009061F3 /* New Group */,
+				C3B1565622A7E20E009061F3 /* HistoryDataList */,
 				C3F56F6B22A4C731009E9691 /* ViewController.h */,
 				C3F56F6C22A4C731009E9691 /* ViewController.m */,
 				C3F570E622A60D0A009E9691 /* ViewController@1.h */,

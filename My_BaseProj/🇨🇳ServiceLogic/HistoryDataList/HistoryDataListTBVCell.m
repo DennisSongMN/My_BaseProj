@@ -15,7 +15,7 @@
 
 @property(nonatomic,strong)UIButton *deleteBtn;
 @property(nonatomic,strong)UILabel *infoLab;
-@property(nonatomic,copy)deleteBlockinCell block;
+@property(nonatomic,copy)ActionBlock block;
 @property(nonatomic,strong)id sth;
 
 
@@ -52,7 +52,7 @@
     return SCALING_RATIO(30);
 }
 
--(void)deleteData:(deleteBlockinCell)block{
+-(void)deleteData:(ActionBlock)block{
     
     self.block = block;
 }

@@ -67,7 +67,8 @@
 - (BOOL)becomeFirstResponder{
     
     // 修改占位文字颜色
-    [self setValue:self.textColor forKeyPath:@"_placeholderLabel.textColor"];
+    [self setValue:self.textColor
+        forKeyPath:@"_placeholderLabel.textColor"];
 
     if (self.dataMutArr.count > 0) {
         //添加到父视图上
