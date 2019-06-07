@@ -14,6 +14,7 @@
 
 @property(nonatomic,strong)NSArray *dataArr;
 @property(nonatomic,copy)ActionBlock block;
+@property(nonatomic,copy)ActionBlock block2;
 
 @end
 
@@ -56,6 +57,11 @@
     self.block = block;
 }
 
+-(void)showSelectedData:(ActionBlock)block{
+    
+    self.block2 = block;
+}
+
 #pragma mark —— UITableViewDelegate,UITableViewDataSource
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -63,6 +69,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    if (self.block2) {
+        
+        self.block2(self.dataArr[indexPath.row]);
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -95,6 +106,18 @@
     
     return 1;
 }
+
+////给cell添加动画
+//-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    //设置Cell的动画效果为3D效果
+//    //设置x和y的初始值为0.1；
+//    cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
+//    //x和y的最终值为1
+//    [UIView animateWithDuration:1 animations:^{
+//        cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+//    }];
+//}
 
 
 @end

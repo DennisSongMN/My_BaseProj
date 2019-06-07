@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)deleteData:(ActionBlock)block;
 
+-(void)showSelectedData:(ActionBlock)block;
+
 @end
 
 NS_ASSUME_NONNULL_END

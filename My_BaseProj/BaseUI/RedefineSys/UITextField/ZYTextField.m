@@ -175,6 +175,15 @@
             [self->_historyDataListTBV reloadData];
         }];
         
+        kWeakSelf(self);
+        
+        [_historyDataListTBV showSelectedData:^(id data) {
+            
+            kStrongSelf(self);
+            
+            self.text = data;
+        }];
+        
         _historyDataListTBV.tableFooterView = UIView.new;
     }
     
