@@ -166,7 +166,11 @@
         
         _historyDataListTBV = [HistoryDataListTBV initWithRequestParams:self.dataMutArr];
         
+        kWeakSelf(self);
+        
         [_historyDataListTBV deleteData:^(id  _Nullable data) {
+            
+            kStrongSelf(self);
             
             NSLog(@"%@",data);
             
@@ -174,8 +178,6 @@
             
             [self->_historyDataListTBV reloadData];
         }];
-        
-        kWeakSelf(self);
         
         [_historyDataListTBV showSelectedData:^(id data) {
             

@@ -45,15 +45,15 @@
     NSLog(@"%@",self.mainView);
     
     [self.mainView addSubview:self.textField];
-    
+
     [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
-        
+
         make.left.equalTo(self.mainView).offset(SCALING_RATIO(30));
         
         make.top.equalTo(self.mainView).offset(SCALING_RATIO(30) + rectOfStatusbar + rectOfNavigationbar);
-        
+
         make.right.equalTo(self.mainView).offset(-SCALING_RATIO(30));
-        
+
         make.height.mas_equalTo((SCALING_RATIO(100)));
     }];
 }
