@@ -129,6 +129,8 @@
                      AndBorderWidth:1.0f];
         
         _textField.delegate = self;
+        
+//        _textField.keyboardType = UIKeyboardTypeDecimalPad;
     }
     
     return _textField;
