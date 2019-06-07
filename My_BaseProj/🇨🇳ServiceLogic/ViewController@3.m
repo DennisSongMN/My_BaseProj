@@ -44,14 +44,10 @@
     
     [self.view addSubview:self.waterMark];
     
-//    self.waterMark.frame = CGRectMake(0, 0, MAINSCREEN_WIDTH * 2, MAINSCREEN_HEIGHT * 2);
-    
     [self.waterMark mas_makeConstraints:^(MASConstraintMaker *make) {
 
         make.edges.equalTo(self.view);
     }];
-    
-//    self.waterMark.transform = CGAffineTransformMakeRotation(M_PI * -40/180);
 }
 
 -(WaterMark *)waterMark{

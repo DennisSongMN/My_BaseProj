@@ -46,16 +46,16 @@
 
 -(void)makeLabel{
     
-//    int intNumRow =  MAINSCREEN_WIDTH / (self.lableWidth + self.lableOffset_level);
-//
-//    float floatNumRow = MAINSCREEN_WIDTH / (self.lableWidth + self.lableOffset_level);
+    int intNumRow =  MAINSCREEN_WIDTH / (self.lableWidth + self.lableOffset_level);
+
+    float floatNumRow = MAINSCREEN_WIDTH / (self.lableWidth + self.lableOffset_level);
     
     int intNumList = MAINSCREEN_HEIGHT / (self.lableHeight + self.lableOffset_vertical);
     
     float floatNumList = MAINSCREEN_HEIGHT / (self.lableHeight + self.lableOffset_vertical);
     
     //定义一行有多少个
-//    intNumRow = (floatNumRow - intNumRow >= 0.5)?++intNumRow:intNumRow;
+    intNumRow = (floatNumRow - intNumRow >= 0.5)?++intNumRow:intNumRow;
     
     //定义一列有多少个
     intNumList = (floatNumList - intNumList >= 0.5)?++intNumList:intNumList;
@@ -69,13 +69,13 @@
         
         NSMutableArray *copyRowLab = NSMutableArray.array;
         
-        for (row = 0; row < intNumList; row++) {//7
+        for (row = 0; row < intNumRow; row++) {//7
             
             UILabel *lab  = UILabel.new;
             
-            lab.text = @"牛批";
+            lab.text = @"💰";
             
-            lab.backgroundColor = RANDOMRGBCOLOR;
+//            lab.backgroundColor = RANDOMRGBCOLOR;
             
             [self addSubview:lab];
             
