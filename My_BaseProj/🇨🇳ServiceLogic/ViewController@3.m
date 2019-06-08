@@ -14,6 +14,8 @@
 }
 
 @property(nonatomic,strong)WaterMark *waterMark;
+@property(nonatomic,strong)UIImageView *imgView;
+
 
 @end
 
@@ -44,10 +46,17 @@
     
     [self.view addSubview:self.waterMark];
     
-    [self.waterMark mas_makeConstraints:^(MASConstraintMaker *make) {
+    self.waterMark.frame = CGRectMake(100, 100, 200, 400);//先要给个frame
+    
+    self.waterMark.backgroundColor = kRedColor;
 
-        make.edges.equalTo(self.view);
-    }];
+    self.imgView.frame = CGRectMake(100, 500, 300, 300);
+    
+    self.imgView.backgroundColor = kBlueColor;
+    
+    [self.view addSubview:self.imgView];
+    
+    self.imgView.image = [UIView getImageFromView:self.waterMark];
 }
 
 -(WaterMark *)waterMark{
@@ -63,6 +72,16 @@
     }
     
     return _waterMark;
+}
+
+-(UIImageView *)imgView{
+    
+    if (!_imgView) {
+        
+        _imgView = UIImageView.new;
+    }
+    
+    return _imgView;
 }
 
 @end

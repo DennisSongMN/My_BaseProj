@@ -103,5 +103,11 @@ typedef void (^ActionBlock)(id data);
                       TargetCorner_BottomLeft:(UIRectCorner)targetCorner_BottomLeft
                      TargetCorner_BottomRight:(UIRectCorner)targetCorner_BottomRight;
 
+//旋转
++(void)setTransform:(float)radians
+            forView:(UIView *)view;
+
+//UIView转UIImage
++ (UIImage *)getImageFromView:(UIView *)view;
 
 @end

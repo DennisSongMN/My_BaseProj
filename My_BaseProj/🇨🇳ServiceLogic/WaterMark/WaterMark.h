@@ -17,9 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
                 LableOffset_level:(CGFloat)lableOffset_level
              LableOffset_vertical:(CGFloat)lableOffset_vertical;
 
-+(void)setTransform:(float)radians
-            forView:(UIView *)view;
-
 @end
 
 NS_ASSUME_NONNULL_END
+
+/*
+ *  1、子视图超出父视图，超出部分裁剪掉;
+ *  2、使用的时候必须先给WaterMark的子类一个frame;
+ */

@@ -994,6 +994,27 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
     targetView.layer.mask = maskLayer;
 }
 
++(void)setTransform:(float)radians
+            forView:(UIView *)view{
+    
+    view.transform = CGAffineTransformMakeRotation(M_PI * radians);
+    
+    //    使用:例如逆时针旋转40度
+    //    [setTransform:40/180 forLable:label]
+}
+
++ (UIImage *)getImageFromView:(UIView *)view{
+    
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, NO, [UIScreen mainScreen].scale);
+    
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
 
 @end
 

@@ -9,8 +9,6 @@
 #import "WaterMark.h"
 
 @interface WaterMark (){
-    
-    
 }
 
 @property(nonatomic,assign)CGFloat lableWidth;
@@ -30,6 +28,8 @@
              LableOffset_vertical:(CGFloat)lableOffset_vertical{
     
     if (self = [super init]) {
+        
+        self.clipsToBounds = YES;//子视图超出父视图，超出部分裁剪掉
         
         self.lableWidth = lableWidth;
         
@@ -107,15 +107,6 @@
                    to:(int)to{
     
     return (int)(from + (arc4random() % (to - from + 1)));
-}
-
-+(void)setTransform:(float)radians
-            forView:(UIView *)view{
-    
-    view.transform = CGAffineTransformMakeRotation(M_PI * radians);
-    
-    //    使用:例如逆时针旋转40度
-    //    [setTransform:40/180 forLable:label]
 }
 
 -(NSMutableArray *)listLab{
