@@ -100,9 +100,6 @@
 }
 
 
-
-
-
 -(void)makeWaterMark{
     
     [self.view addSubview:self.waterMark];
