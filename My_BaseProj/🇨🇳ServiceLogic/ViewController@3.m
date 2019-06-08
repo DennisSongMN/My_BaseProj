@@ -14,10 +14,9 @@
     
 }
 
-//@property(nonatomic,strong)WaterMark *waterMark;
-//@property(nonatomic,strong)UIImageView *imgView;
+@property(nonatomic,strong)WaterMark *waterMark;
+@property(nonatomic,strong)UIImageView *imgView;
 @property(nonatomic,strong)HotLabel *hotLabel;
-//@property(nonatomic,assign)__block CGFloat hotLabelHeight;
 
 @end
 
@@ -27,9 +26,9 @@
     
     self.view.backgroundColor = RandomColor;
     
-//    [self makeWaterMark];
+    [self makeWaterMark];
     
-    [self makeHotLabel];
+//    [self makeHotLabel];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -103,7 +102,7 @@
 
 
 
-/* makeWaterMark
+
 -(void)makeWaterMark{
     
     [self.view addSubview:self.waterMark];
@@ -145,6 +144,6 @@
     
     return _imgView;
 }
-*/
+//*/  /* makeWaterMark
 
 @end
