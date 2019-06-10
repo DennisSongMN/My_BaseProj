@@ -131,8 +131,6 @@
     NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
     NSString *path = [pathArray objectAtIndex:0];
-    
-    NSString *dfe = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.plist",self.documentName]];
 
     return [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.plist",self.documentName]];
 }

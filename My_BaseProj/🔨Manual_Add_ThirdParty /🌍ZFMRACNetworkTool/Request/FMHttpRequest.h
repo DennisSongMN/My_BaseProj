@@ -29,22 +29,22 @@
 + (instancetype)extendsParameters;
 
 /// 用户token，默认空字符串
-@property (nonatomic, readonly, copy) NSString *token;
+@property(nonatomic,readonly,copy)NSString *token;
 
 /// 设备编号，自行生成
-@property (nonatomic, readonly, copy) NSString *deviceid;
+@property(nonatomic,readonly,copy)NSString *deviceid;
 
 /// app版本号
-@property (nonatomic, readonly, copy) NSString *version;
+@property(nonatomic,readonly,copy)NSString *version;
 
 /// 平台 pc,wap,android,iOS
-@property (nonatomic, readonly, copy) NSString *platform;
+@property(nonatomic,readonly,copy)NSString *platform;
 
 /// 渠道 AppStore
-@property (nonatomic, readonly, copy) NSString *channel;
+@property(nonatomic,readonly,copy)NSString *channel;
 
 /// 时间戳
-@property (nonatomic, readonly, copy) NSString *t;
+@property(nonatomic,readonly,copy)NSString *t;
 
 @end
 
@@ -52,13 +52,13 @@
 @interface FMHttpRequest : NSObject
 
 /// 路径 （v14/order）
-@property (nonatomic, readwrite, strong) NSString *path;
+@property(nonatomic,readwrite,strong)NSString *path;
 /// 参数列表
-@property (nonatomic, readwrite, strong) NSDictionary *parameters;
+@property(nonatomic,readwrite,strong)NSDictionary *parameters;
 /// 方法 （POST/GET）
-@property (nonatomic, readwrite, strong) NSString *method;
+@property(nonatomic,readwrite,strong)NSString *method;
 /// 拓展的参数属性 (开发人员不必关心)
-@property (nonatomic, readwrite, strong) ExtendsParameters *extendsParameters;
+@property(nonatomic,readwrite,strong)ExtendsParameters *extendsParameters;
 
 /**
  参数配置（统一用这个方法配置参数）
@@ -69,7 +69,9 @@
  @param parameters 具体参数 @{user_id:10013}
  @return 返回一个参数实例
  */
-+(instancetype)urlParametersWithMethod:(NSString *)method path:(NSString *)path parameters:(NSDictionary *)parameters;
++(instancetype)urlParametersWithMethod:(NSString *)method
+                                  path:(NSString *)path
+                            parameters:(NSDictionary *)parameters;
 
 
 @end

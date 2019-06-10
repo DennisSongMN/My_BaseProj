@@ -10,10 +10,9 @@
 #import "FMHttpConstant.h"
 #import "FMHttpRequest.h"
 #import "FMHttpResonse.h"
-#import "AFNetworking.h"
+//#import "AFNetworking.h"
 #import "AFNetworkActivityIndicatorManager.h"
-#import "JDStatusBarNotification.h"
-#import "MBProgressHUD.h"
+//#import "MBProgressHUD.h"
 
 /// 请求数据返回的状态码、根据自己的服务端数据来
 typedef NS_ENUM(NSUInteger, HTTPResponseCode) {
@@ -37,7 +36,7 @@ NSString * const HTTPServiceErrorMessagesKey = @"HTTPServiceErrorMessagesKey";
 
 @interface FMARCNetwork()
 //网络管理工具
-@property (nonatomic,strong) AFHTTPSessionManager * manager;
+@property(nonatomic,strong)AFHTTPSessionManager *manager;
 
 @end
 
@@ -119,21 +118,13 @@ static FMARCNetwork *_instance = nil;
         
         if (status == AFNetworkReachabilityStatusUnknown) {
             NSLog(@"--- 未知网络 ---");
-            [JDStatusBarNotification showWithStatus:@"网络状态未知"
-                                          styleName:JDStatusBarStyleWarning];
             
-            [JDStatusBarNotification showActivityIndicator:YES
-                                            indicatorStyle:UIActivityIndicatorViewStyleWhite];
+            [YKToastView showToastText:@"网络状态未知"];
         }else if (status == AFNetworkReachabilityStatusNotReachable) {
             
-            [JDStatusBarNotification showWithStatus:@"网络不给力，请检查网络"
-                                          styleName:JDStatusBarStyleWarning];
-            
-            [JDStatusBarNotification showActivityIndicator:YES
-                                            indicatorStyle:UIActivityIndicatorViewStyleWhite];
+            [YKToastView showToastText:@"网络不给力，请检查网络"];
         }else{
             NSLog(@"--- 有网络 ---");
-            [JDStatusBarNotification dismiss];
         }
     }];
     

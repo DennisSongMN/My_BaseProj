@@ -51,7 +51,7 @@
     return @"AppStore";
 }
 
-- (NSString *)t {
+- (NSString *)t{
     
     return [NSString stringWithFormat:@"%.f", [NSDate date].timeIntervalSince1970];
 }
@@ -64,9 +64,9 @@
                                   path:(NSString *)path
                             parameters:(NSDictionary *)parameters{
     
-    return [[self alloc] initUrlParametersWithMethod:method
-                                                path:path
-                                          parameters:parameters];
+    return [[self alloc]initUrlParametersWithMethod:method
+                                               path:path
+                                         parameters:parameters];
 }
 
 -(instancetype)initUrlParametersWithMethod:(NSString *)method
@@ -81,7 +81,7 @@
         
         self.parameters = parameters;
         
-        self.extendsParameters = [[ExtendsParameters alloc] init];
+        self.extendsParameters = ExtendsParameters.new;
     }
     
     return self;

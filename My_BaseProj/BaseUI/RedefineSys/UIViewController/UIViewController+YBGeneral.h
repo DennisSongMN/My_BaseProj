@@ -33,16 +33,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-typedef void(^ImagePickerCompletionHandler)(NSData *imageData, UIImage *image);
-
-@interface UIViewController (ImagePicker)
-
-- (void)pickImageFromAlbumWithCompletionHandler:(ImagePickerCompletionHandler)completionHandler;
-
-- (void)pickImageWithCompletionHandler:(ImagePickerCompletionHandler)completionHandler;
-
-- (void)pickImageWithpickImageCutImageWithImageSize:(CGSize)imageSize CompletionHandler:(ImagePickerCompletionHandler)completionHandler;
-
-@end
-
 NS_ASSUME_NONNULL_END

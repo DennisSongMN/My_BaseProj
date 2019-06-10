@@ -11,6 +11,7 @@
 		3599FB3289EE82D5677422D9 /* libPods-My_BaseProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */; };
 		9DFCE79F330877C9C84A0FBC /* libPods-My_BaseProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */; };
 		C301CEF822ADF94E00C0DCCC /* ArcTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */; };
+		C301CF0E22AE72BE00C0DCCC /* YKToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CF0D22AE72BE00C0DCCC /* YKToastView.m */; };
 		C3B1565922A7E242009061F3 /* HistoryDataListTBV.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */; };
 		C3B1565C22A7E45A009061F3 /* HistoryDataListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565B22A7E45A009061F3 /* HistoryDataListTBVCell.m */; };
 		C3B1566222AA3863009061F3 /* WaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1566122AA3863009061F3 /* WaterMark.m */; };
@@ -149,6 +150,8 @@
 		C301CF0822AE59E800C0DCCC /* FMHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMHttpRequest.h; sourceTree = "<group>"; };
 		C301CF0922AE59E800C0DCCC /* FMARCNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMARCNetwork.h; sourceTree = "<group>"; };
 		C301CF0A22AE59E800C0DCCC /* FMHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMHttpRequest.m; sourceTree = "<group>"; };
+		C301CF0C22AE72BE00C0DCCC /* YKToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKToastView.h; sourceTree = "<group>"; };
+		C301CF0D22AE72BE00C0DCCC /* YKToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKToastView.m; sourceTree = "<group>"; };
 		C3B1565722A7E242009061F3 /* HistoryDataListTBV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBV.h; sourceTree = "<group>"; };
 		C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDataListTBV.m; sourceTree = "<group>"; };
 		C3B1565A22A7E45A009061F3 /* HistoryDataListTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBVCell.h; sourceTree = "<group>"; };
@@ -448,6 +451,15 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		C301CF0B22AE72B300C0DCCC /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+				C301CF0C22AE72BE00C0DCCC /* YKToastView.h */,
+				C301CF0D22AE72BE00C0DCCC /* YKToastView.m */,
+			);
+			path = ToastView;
+			sourceTree = "<group>";
+		};
 		C3B1565622A7E20E009061F3 /* HistoryDataList */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +575,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C301CF0B22AE72B300C0DCCC /* ToastView */,
 				C301CEFF22AE59E800C0DCCC /* 🌍ZFMRACNetworkTool */,
 				C3F570B222A534C3009E9691 /* CollectionAccountEditor */,
 				C3F5706A22A4FC86009E9691 /* DHAreaPickerView */,
@@ -1442,6 +1455,7 @@
 				C3F5703122A4F996009E9691 /* SDCollectionViewCell.m in Sources */,
 				C3F5700C22A4F8B1009E9691 /* AnimateToSpecifiedDate_Init.m in Sources */,
 				C3F56F6A22A4C731009E9691 /* AppDelegate.m in Sources */,
+				C301CF0E22AE72BE00C0DCCC /* YKToastView.m in Sources */,
 				C3F5707922A4FC92009E9691 /* DHAreaPickerView+DelegateProtocal.m in Sources */,
 				C3F5702B22A4F996009E9691 /* TADotView.m in Sources */,
 				C3F5706122A4FBA7009E9691 /* Judgement_Environment.m in Sources */,
