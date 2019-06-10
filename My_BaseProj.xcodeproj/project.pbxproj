@@ -409,7 +409,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C301CEFF22AE59E800C0DCCC /* ZFMRACNetworkTool */ = {
+		C301CEFF22AE59E800C0DCCC /* 🌍ZFMRACNetworkTool */ = {
 			isa = PBXGroup;
 			children = (
 				C301CF0422AE59E800C0DCCC /* Constant */,
@@ -417,7 +417,7 @@
 				C301CF0022AE59E800C0DCCC /* Response */,
 				C301CF0322AE59E800C0DCCC /* ZFMRACNetworkTool.h */,
 			);
-			path = ZFMRACNetworkTool;
+			path = "🌍ZFMRACNetworkTool";
 			sourceTree = "<group>";
 		};
 		C301CF0022AE59E800C0DCCC /* Response */ = {
@@ -563,7 +563,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
-				C301CEFF22AE59E800C0DCCC /* ZFMRACNetworkTool */,
+				C301CEFF22AE59E800C0DCCC /* 🌍ZFMRACNetworkTool */,
 				C3F570B222A534C3009E9691 /* CollectionAccountEditor */,
 				C3F5706A22A4FC86009E9691 /* DHAreaPickerView */,
 				C3F5706422A4FBC6009E9691 /* LongPressToDeleteImageView */,
