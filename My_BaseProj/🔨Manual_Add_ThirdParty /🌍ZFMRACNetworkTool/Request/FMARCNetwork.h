@@ -9,7 +9,6 @@
 /**
  *  网络请求工具类
  */
-
 #import <Foundation/Foundation.h>
 @class FMHttpRequest;
 
@@ -31,7 +30,8 @@
  @param params 参数字典
  @return RACSignal
  */
-- (RACSignal *)requestSimpleNetworkPath:(NSString *)path params:(NSDictionary *)params;
+- (RACSignal *)requestSimpleNetworkPath:(NSString *)path
+                                 params:(NSDictionary *)params;
 
 
 /**
@@ -43,7 +43,11 @@
  @param name 指定数据关联的名称
  @return RACSignal
  */
-- (RACSignal *)uploadNetworkPath:(NSString *)path params:(NSDictionary *)params fileDatas:(NSArray<NSData *> *)fileDatas name:(NSString *)name mimeType:(NSString *)mimeType;
+- (RACSignal *)uploadNetworkPath:(NSString *)path
+                          params:(NSDictionary *)params
+                       fileDatas:(NSArray<NSData *> *)fileDatas
+                            name:(NSString *)name
+                        mimeType:(NSString *)mimeType;
 
 
 @end

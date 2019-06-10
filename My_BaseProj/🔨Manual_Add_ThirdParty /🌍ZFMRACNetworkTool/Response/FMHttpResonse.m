@@ -32,14 +32,18 @@
  @param code 码
  @return FMHttpResonse
  */
-- (instancetype)initWithResponseSuccess:(id)result code:(NSInteger )code{
-    self = [super init];
-    if (self) {
-        self.isSuccess = YES;
-        self.reqResult = result;
-        self.code = code;
+- (instancetype)initWithResponseSuccess:(id)result
+                                   code:(NSInteger)code{
+    
+    if (self = [super init]) {
         
+        self.isSuccess = YES;
+        
+        self.reqResult = result;
+        
+        self.code = code;
     }
+    
     return self;
 }
 
@@ -51,14 +55,21 @@
  @param message 信息
  @return FMHttpResonse
  */
-- (instancetype)initWithResponseError:(NSError *)error code:(NSInteger )code msg:(NSString *)message{
-    self = [super init];
-    if (self) {
+- (instancetype)initWithResponseError:(NSError *)error
+                                 code:(NSInteger)code
+                                  msg:(NSString *)message{
+    
+    if (self = [super init]) {
+        
         self.isSuccess = NO;
+        
         self.reqError = error;
+        
         self.code = code;
+        
         self.message = message;
     }
+    
     return self;
 }
 

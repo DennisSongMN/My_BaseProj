@@ -26,7 +26,6 @@ typedef NS_ENUM(NSUInteger, HTTPResponseCode) {
 NSString *const HTTPServiceErrorDomain = @"HTTPServiceErrorDomain";
 /// 请求成功，但statusCode != 0
 NSString *const HTTPServiceErrorResponseCodeKey = @"HTTPServiceErrorResponseCodeKey";
-
 //请求地址错误
 NSString * const HTTPServiceErrorRequestURLKey = @"HTTPServiceErrorRequestURLKey";
 //请求错误的code码key: 请求成功了，但code码是错误提示的code,比如参数错误
@@ -57,6 +56,7 @@ static FMARCNetwork * _instance = nil;
     }
     return _instance;
 }
+
 + (id)allocWithZone:(struct _NSZone *)zone{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -65,6 +65,7 @@ static FMARCNetwork * _instance = nil;
     });
     return _instance;
 }
+
 - (id)copyWithZone:(NSZone *)zone {
     return _instance;
 }
@@ -113,14 +114,18 @@ static FMARCNetwork * _instance = nil;
         
         if (status == AFNetworkReachabilityStatusUnknown) {
             NSLog(@"--- 未知网络 ---");
-            [JDStatusBarNotification showWithStatus:@"网络状态未知" styleName:JDStatusBarStyleWarning];
+            [JDStatusBarNotification showWithStatus:@"网络状态未知"
+                                          styleName:JDStatusBarStyleWarning];
             
-            [JDStatusBarNotification showActivityIndicator:YES indicatorStyle:UIActivityIndicatorViewStyleWhite];
+            [JDStatusBarNotification showActivityIndicator:YES
+                                            indicatorStyle:UIActivityIndicatorViewStyleWhite];
         }else if (status == AFNetworkReachabilityStatusNotReachable) {
             
-            [JDStatusBarNotification showWithStatus:@"网络不给力，请检查网络" styleName:JDStatusBarStyleWarning];
+            [JDStatusBarNotification showWithStatus:@"网络不给力，请检查网络"
+                                          styleName:JDStatusBarStyleWarning];
             
-            [JDStatusBarNotification showActivityIndicator:YES indicatorStyle:UIActivityIndicatorViewStyleWhite];
+            [JDStatusBarNotification showActivityIndicator:YES
+                                            indicatorStyle:UIActivityIndicatorViewStyleWhite];
         }else{
             NSLog(@"--- 有网络 ---");
             [JDStatusBarNotification dismiss];
@@ -140,7 +145,9 @@ static FMARCNetwork * _instance = nil;
 
 - (RACSignal *)requestNetworkData:(FMHttpRequest *)req{
     /// request 必须的有值
-    if (!req) return [RACSignal error:[NSError errorWithDomain:HTTPServiceErrorDomain code:-1 userInfo:nil]];
+    if (!req) return [RACSignal error:[NSError errorWithDomain:HTTPServiceErrorDomain
+                                                          code:-1 
+                                                      userInfo:nil]];
     
     @weakify(self);
     /// 创建信号
@@ -210,7 +217,9 @@ static FMARCNetwork * _instance = nil;
                         //可以在此处理需要登录的逻辑、比如说弹出登录框，但是，一般请求某个 api 判断了是否需要登录就不会进入
                         //如果进入可一做错误处理
                         NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+                        
                         userInfo[HTTPServiceErrorHTTPStatusCodeKey] = @(statusCode);
+                        
                         userInfo[HTTPServiceErrorDescriptionKey] = @"请登录!";
                         
                         NSError *noLoginError = [NSError errorWithDomain:HTTPServiceErrorDomain
@@ -307,16 +316,20 @@ static FMARCNetwork * _instance = nil;
                       });
                       // 设置时间格式
                       [formatter setDateFormat:@"yyyyMMddHHmmss"];
+                      
                       NSString *dateString = [formatter stringFromDate:[NSDate date]];
+                      
                       NSString *fileName = [NSString  stringWithFormat:@"senba_empty_%@_%d.jpg", dateString , i];
                       
                       [formData appendPartWithFileData:fileData name:name fileName:fileName mimeType:!(mimeType.length == 0 || mimeType == nil || [mimeType isKindOfClass:[NSNull class]])?mimeType:@"application/octet-stream"];
-                      
                   }
               }] replayLazily];
 }
 
-- (RACSignal *)UploadRequestWithPath:(NSString *)path parameters:(id)parameters constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block{
+- (RACSignal *)UploadRequestWithPath:(NSString *)path
+                          parameters:(id)parameters
+           constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block{
+    
     @weakify(self);
     /// 创建信号
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
@@ -404,6 +417,7 @@ static FMARCNetwork * _instance = nil;
                         
                     }else{
                         NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+                        
                         userInfo[HTTPServiceErrorResponseCodeKey] = @(statusCode);
                         //取出服务给的提示
                         NSString *msgTips = responseObject[HTTPServiceResponseMsgKey];

@@ -10,23 +10,24 @@
 
 @implementation ExtendsParameters
 
-+ (instancetype)extendsParameters
-{
-    return [[self alloc] init];
++ (instancetype)extendsParameters{
+    
+    return self.new;
 }
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-    }
-    return self;
+- (instancetype)init{
+    
+    if (self = [super init]) {
+    }return self;
 }
 
 - (NSString *)version{
+    
     static NSString *version = nil;
+    
     if (version == nil) version = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
-    return (version.length>0)?version:@"";
+    
+    return (version.length > 0) ? version:@"";
 }
 
 - (NSString *)token {
@@ -41,14 +42,17 @@
 }
 
 - (NSString *)platform{
+    
     return @"iOS";
 }
 
 - (NSString *)channel{
+    
     return @"AppStore";
 }
 
 - (NSString *)t {
+    
     return [NSString stringWithFormat:@"%.f", [NSDate date].timeIntervalSince1970];
 }
 
@@ -56,20 +60,30 @@
 
 @implementation FMHttpRequest
 
-+(instancetype)urlParametersWithMethod:(NSString *)method path:(NSString *)path parameters:(NSDictionary *)parameters
-{
-    return [[self alloc] initUrlParametersWithMethod:method path:path parameters:parameters];
++(instancetype)urlParametersWithMethod:(NSString *)method
+                                  path:(NSString *)path
+                            parameters:(NSDictionary *)parameters{
+    
+    return [[self alloc] initUrlParametersWithMethod:method
+                                                path:path
+                                          parameters:parameters];
 }
 
--(instancetype)initUrlParametersWithMethod:(NSString *)method path:(NSString *)path parameters:(NSDictionary *)parameters
-{
-    self = [super init];
-    if (self) {
+-(instancetype)initUrlParametersWithMethod:(NSString *)method
+                                      path:(NSString *)path
+                                parameters:(NSDictionary *)parameters{
+    
+    if (self = [super init]) {
+        
         self.method = method;
+        
         self.path = path;
+        
         self.parameters = parameters;
+        
         self.extendsParameters = [[ExtendsParameters alloc] init];
     }
+    
     return self;
 }
 
