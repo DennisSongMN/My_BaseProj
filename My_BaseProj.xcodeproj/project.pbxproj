@@ -10,6 +10,7 @@
 		014874CCC2B5911781B42F74 /* libPods-My_BaseProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */; };
 		3599FB3289EE82D5677422D9 /* libPods-My_BaseProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */; };
 		9DFCE79F330877C9C84A0FBC /* libPods-My_BaseProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */; };
+		C301CEF822ADF94E00C0DCCC /* ArcTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */; };
 		C3B1565922A7E242009061F3 /* HistoryDataListTBV.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */; };
 		C3B1565C22A7E45A009061F3 /* HistoryDataListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565B22A7E45A009061F3 /* HistoryDataListTBVCell.m */; };
 		C3B1566222AA3863009061F3 /* WaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1566122AA3863009061F3 /* WaterMark.m */; };
@@ -138,6 +139,8 @@
 		A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProjTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67D74E51242D15226C4693B /* Pods-My_BaseProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjUITests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjUITests/Pods-My_BaseProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C301CEF622ADF94E00C0DCCC /* ArcTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcTBVCell.h; sourceTree = "<group>"; };
+		C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcTBVCell.m; sourceTree = "<group>"; };
 		C3B1565722A7E242009061F3 /* HistoryDataListTBV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBV.h; sourceTree = "<group>"; };
 		C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDataListTBV.m; sourceTree = "<group>"; };
 		C3B1565A22A7E45A009061F3 /* HistoryDataListTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBVCell.h; sourceTree = "<group>"; };
@@ -1011,6 +1014,8 @@
 		C3F5710322A61CDB009E9691 /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
+				C301CEF622ADF94E00C0DCCC /* ArcTBVCell.h */,
+				C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */,
 				C3B1566322AB551F009061F3 /* HotLabel */,
 				C3B1565F22AA3830009061F3 /* WaterMark */,
 				C3B1565622A7E20E009061F3 /* HistoryDataList */,
@@ -1392,6 +1397,7 @@
 				C3F5707922A4FC92009E9691 /* DHAreaPickerView+DelegateProtocal.m in Sources */,
 				C3F5702B22A4F996009E9691 /* TADotView.m in Sources */,
 				C3F5706122A4FBA7009E9691 /* Judgement_Environment.m in Sources */,
+				C301CEF822ADF94E00C0DCCC /* ArcTBVCell.m in Sources */,
 				C3F5703722A4F9C4009E9691 /* HAHandleDemoView.m in Sources */,
 				C3F5710922A63B0A009E9691 /* NSlogToDocumentFolder.m in Sources */,
 				C3F56FC222A4F783009E9691 /* AESCrypt.m in Sources */,
