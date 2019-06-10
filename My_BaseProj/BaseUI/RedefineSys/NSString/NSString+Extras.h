@@ -9,19 +9,6 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef NS_ENUM(NSUInteger,InputCharType){
-    InputCharNone = 0 ,
-    InputCharChinese  ,
-    InputCharOnlyUpperEnglish  ,
-    InputCharOnlyLowerEnglish ,
-    InputCharOnlyNumber ,
-    
-    InputCharLoseUpperEnglish  ,
-    InputCharLoseLowerEnglish ,
-    InputCharLoseNumber ,
-    
-    InputCharAll  ,
-};
 
 @interface NSString (Extras)
 
@@ -30,13 +17,8 @@ typedef NS_ENUM(NSUInteger,InputCharType){
  *  为空返回 YES
  *  不为空返回 NO
  */
-+(BOOL)isEmptyStr:(NSString *)value;
-+(BOOL)judgeIsDoubleStr:(NSString *)str1 with:(NSString *)str2;
++(BOOL)isEmptyStr:(NSString *)value; 
 +(BOOL)isContainAllCharType:(NSString*)originString;
-+(InputCharType)getInputCharType:(NSString*)originString;
-+(NSString*)getPaywayAppendingString:(NSString*)payString;
-
-- (NSString *)yb_encodingUTF8;
 //MD5加密🔐,加盐操作在内部进行
 + (NSString *)MD5WithString:(NSString *)string
                 isLowercase:(BOOL)isLowercase;
@@ -98,7 +80,7 @@ typedef NS_ENUM(NSUInteger,InputCharType){
             andMaxSize:(CGSize)size;
 
 // 判断纯整数
-+(BOOL)judgeiphoneNumberInt:(NSString*)nuber;
++(BOOL)judgeiphoneNumberInt:(NSString*)number;
 
 
 // 金额字符串格式化

@@ -36,19 +36,6 @@
     return NO;
 }
 
-//ios oc 判断输入的数是否是另一个的整数倍
-+(BOOL)judgeIsDoubleStr:(NSString *)str1 with:(NSString *)str2
-{
-    int str1Int=[str1 intValue];
-    
-    double str2Double=[str2 doubleValue];
-    int str2Int=[str2 intValue];
-    
-    if (str2Double/str1Int-str2Int/str1Int  > 0) {
-        return NO;
-    }
-    return YES;
-}
 /*
  分开来注释一下：
  ^ 匹配一行的开头位置
@@ -66,6 +53,7 @@
 
  */
 +(BOOL)isContainAllCharType:(NSString*)originString{
+    
     NSString * regex = @"^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,16}$";
 
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
@@ -90,123 +78,16 @@
 //
 //    }
 //    return NO;
-    
-
-    
 }
 
 // 判断纯整数
-+(BOOL)judgeiphoneNumberInt:(NSString*)nuber{
-    NSScanner* scan = [NSScanner scannerWithString:nuber];
++(BOOL)judgeiphoneNumberInt:(NSString *)number{
+    
+    NSScanner *scan = [NSScanner scannerWithString:number];
+    
     int val;
+    
     return [scan scanInt:&val] && [scan isAtEnd];
-}
-
-
-+(InputCharType)getInputCharType:(NSString*)originString{
-    if ([NSString isEmpty:originString]) {
-        return InputCharNone;
-    }
-    NSString *testString = originString;
-    
-    InputCharType charType = InputCharNone;
-    
-//    NSPredicate *predAll = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^[A-Za-z0-9]+$"];
-//
-//    BOOL isMatchAll = [predAll evaluateWithObject:testString];
-    
-    NSPredicate *predUpper = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^(?![A-Z]+$)[0-9A-Za-z]{8,16}$"];
-    
-    BOOL isMatchUpper = [predUpper evaluateWithObject:testString];
-    //不全是大写
-    NSPredicate *predLower = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^(?![a-z]+$)[0-9A-Za-z]{8,16}$"];
-    
-    BOOL isMatchLower = [predLower evaluateWithObject:testString];
-    //不全是小写
-    
-//    NSRegularExpression *numberRegular = [NSRegularExpression regularExpressionWithPattern:@"[0-9]" options:NSRegularExpressionCaseInsensitive error:nil];
-//    NSInteger count = [numberRegular numberOfMatchesInString:testString options:NSMatchingReportProgress range:NSMakeRange(0, testString.length)];
-//
-//    BOOL isMatchNumber = count > 0?YES:NO;
-    NSPredicate *predNumber = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^(?![0-9]+$)[0-9A-Za-z]{8,16}$"];
-
-    BOOL isMatchNumber = [predNumber evaluateWithObject:testString];
-    //不全是数字
-    
-    
-        if(isMatchLower
-           &&isMatchNumber){
-            NSLog(@"字符串中缺大写英文字母");
-            charType = InputCharLoseUpperEnglish;
-            
-        }else if(isMatchUpper
-                 &&isMatchNumber){
-            NSLog(@"字符串中缺小写英文字母");
-            charType = InputCharLoseLowerEnglish;
-        }else if(isMatchUpper
-                 &&isMatchLower){
-            NSLog(@"字符串中缺有数字");
-            charType = InputCharLoseNumber;
-        }
-        else if(!isMatchUpper){
-            
-            NSLog(@"字符串中只含有大写英文字母");
-            charType = InputCharOnlyUpperEnglish;
-        }else if(!isMatchLower){
-            
-            NSLog(@"字符串中只含有小写英文字母");
-            charType = InputCharOnlyLowerEnglish;
-        }else if(!isMatchNumber){
-
-            NSLog(@"字符串中只含有数字");
-            charType = InputCharOnlyNumber;
-        }
-    
-    return charType;
-}
-
-+(NSString*)getPaywayAppendingString:(NSString*)payString{
-    NSMutableArray *pays = [NSMutableArray arrayWithCapacity:3];
-    
-    NSArray  *paymentways = [NSArray array];
-    if ([payString containsString:@","]) {
-        paymentways = [payString componentsSeparatedByString:@","];
-    }else{
-        paymentways = @[payString];
-    }
-    
-    for (NSString * data in paymentways) {
-        PaywayType type = [data intValue];
-        switch (type) {
-            case PaywayTypeWX:
-            {
-                [pays addObject:@"微信"];
-            }
-                break;
-                
-            case PaywayTypeZFB:
-            {
-                [pays addObject:@"支付宝"];
-            }
-                break;
-                
-            case PaywayTypeCard:
-            {
-                [pays addObject:@"银行卡"];
-            }
-                break;
-            default:
-                break;
-        }
-        
-        
-    }
-    NSString *string = [[pays mutableCopy] componentsJoinedByString:@"、"];
-    return string;
-}
-- (NSString *)yb_encodingUTF8 {
-    NSString *result = (NSString*)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault,(CFStringRef)self, NULL,CFSTR("!*'();:@&=+$,/?%#[]"),kCFStringEncodingUTF8));
-    return result;
 }
 
 + (NSString *)MD5WithString:(NSString *)string
@@ -311,36 +192,6 @@
     }
     return resultStr;
 }
-//+(BOOL)getLNDataSuccessed:(NSDictionary *)dic
-//{
-//    if ([NSObject isNSDictionaryClass:dic]) {
-//        int successed = [dic intForKey:@"code"];
-//        if (successed == 200) {
-//            return YES;
-//        } else {
-//            return NO;
-//        }
-//    } else {
-//        //        (@"后台返回数据有错误：%s",dic.description.UTF8String);
-//        return NO;
-//    }
-//}
-//+(BOOL)getDataSuccessed:(NSDictionary *)dic
-//{
-//    if ([NSObject isNSDictionaryClass:dic]) {
-//        int successed = [dic intForKey:@"errcode"];
-//
-////        -成功，2-请求参数类错误，3-未登录，9-系统异常，10-未设置支付密码，11-普通用户额度不够，12-实名认证用户额度不够，13-高级认证用户额度不够
-//        if (successed == 1) {
-//            return YES;
-//        } else {
-//            return NO;
-//        }
-//    } else {
-////        (@"后台返回数据有错误：%s",dic.description.UTF8String);
-//        return NO;
-//    }
-//}
 
 + (NSString*)fliterLeadingZeroInString:(NSString*)originString{
     if (originString.length>0) {
@@ -352,7 +203,6 @@
                 [carries addObject:tempString];
             }
         }
-        
     }
     return NO;
 }
