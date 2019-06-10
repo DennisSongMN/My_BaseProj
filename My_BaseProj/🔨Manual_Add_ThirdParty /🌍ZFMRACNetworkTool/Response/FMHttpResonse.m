@@ -11,15 +11,11 @@
 @interface FMHttpResonse()
 
 
-@property (nonatomic,assign,readwrite) Boolean isSuccess;
-
-@property (nonatomic,assign,readwrite) NSInteger code;
-
-@property (nonatomic,copy,readwrite) NSString *message;
-
-@property (nonatomic,strong,readwrite) id  reqResult;
-
-@property (nonatomic,strong,readwrite) NSError * reqError;
+@property(nonatomic,assign,readwrite)Boolean isSuccess;
+@property(nonatomic,assign,readwrite)NSInteger code;
+@property(nonatomic,copy,readwrite)NSString *message;
+@property(nonatomic,strong,readwrite)id reqResult;
+@property(nonatomic,strong,readwrite)NSError *reqError;
 
 @end
 
