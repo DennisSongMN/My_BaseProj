@@ -15,80 +15,55 @@
                          Member_id:(NSNumber *)member_id
                         User_token:(NSString *)user_token
                              IsVip:(NSNumber *)isVip{
-
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-
-    [userDefaults setObject:username
-                     forKey:@"name"];
-
-    [userDefaults setObject:member_id
-                     forKey:@"member_id"];
-
-    [userDefaults setObject:user_token
-                     forKey:@"user_token"];
-
-    [userDefaults setObject:isVip
-                     forKey:@"isVip"];
-
-    [userDefaults synchronize];
+    
+    SetUserDefaultKeyWithObject(@"name", isVip);
+    
+    SetUserDefaultKeyWithObject(@"member_id", isVip);
+    
+    SetUserDefaultKeyWithObject(@"user_token", isVip);
+    
+    SetUserDefaultKeyWithObject(@"isVip", isVip);
+    
+    UserDefaultSynchronize;
 }
 
 //登录成功,获取用户名
 +(NSString *)getUserName{
 
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-
-    NSString *userName = [userDefault objectForKey:@"name"];
-
-    return userName;
+    return GetUserDefaultWithKey(@"name");
 }
 
 //登录成功,获取Member_id
 +(NSNumber *)getMember_id{
 
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-
-    NSNumber *member_id = [userDefault objectForKey:@"member_id"];
-
-    return member_id;
+    return GetUserDefaultWithKey(@"member_id");
 }
 
 //登录成功,获取User_token
 +(NSString *)getUser_token{
-
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-
-    NSString *user_token = [userDefault objectForKey:@"user_token"];
-
-    return user_token;
+    
+    return GetUserDefaultWithKey(@"user_token");
 }
 
 //登录成功,获取IsVip
 +(NSString *)getIsVip{
-
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-
-    NSString *isVip = [userDefault objectForKey:@"isVip"];
-
-    return isVip;
+    
+    return GetUserDefaultWithKey(@"isVip");
 }
 
 //退出登录
 +(void)logout{
 
     //退出的时候删除UserDefaults单例中的用户信息
+    DeleUserDefaultWithKey(@"name");
+    
+    DeleUserDefaultWithKey(@"member_id");
+    
+    DeleUserDefaultWithKey(@"user_token");
+    
+    DeleUserDefaultWithKey(@"isVip");
 
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-
-    [userDefaults removeObjectForKey:@"name"];
-
-    [userDefaults removeObjectForKey:@"member_id"];
-
-    [userDefaults removeObjectForKey:@"user_token"];
-
-    [userDefaults removeObjectForKey:@"isVip"];
-
-    [userDefaults synchronize];
+    UserDefaultSynchronize;
 }
 
 /**
@@ -101,10 +76,7 @@
 
     NSLog(@"[IsLogin getUserName] = %@",[IsLogin getUserName]);
 
-    if ([NSString isEmptyStr:[IsLogin getUserName]]) {//为空返回 YES
-
-        return NO;//未登录
-    }
+    if ([NSString isEmptyStr:[IsLogin getUserName]]) return NO;//未登录
 
     return YES;//已登录
 }
