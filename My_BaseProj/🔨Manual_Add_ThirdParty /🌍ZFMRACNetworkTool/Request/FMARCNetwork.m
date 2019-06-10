@@ -43,34 +43,39 @@ NSString * const HTTPServiceErrorMessagesKey = @"HTTPServiceErrorMessagesKey";
 
 @implementation FMARCNetwork
 
-static FMARCNetwork * _instance = nil;
+static FMARCNetwork *_instance = nil;
 
 #pragma mark -  HTTPService
-+(instancetype) sharedInstance {
++(instancetype)sharedInstance {
     if (_instance == nil) {
+        
         _instance = [[super alloc] init];
         //初始化 网络管理器
         _instance.manager = [AFHTTPSessionManager manager];
+        
         [_instance configHTTPService];
         
-    }
-    return _instance;
+    }return _instance;
 }
 
 + (id)allocWithZone:(struct _NSZone *)zone{
+    
     static dispatch_once_t onceToken;
+    
     dispatch_once(&onceToken, ^{
+        
         _instance = [super allocWithZone:zone];
         
-    });
-    return _instance;
+    }); return _instance;
 }
 
 - (id)copyWithZone:(NSZone *)zone {
+    
     return _instance;
 }
 
 -(id)mutableCopyWithZone:(NSZone *)zone{
+    
     return _instance;
 }
 
@@ -310,8 +315,11 @@ static FMARCNetwork * _instance = nil;
                       // 可以在上传时使用当前的系统事件作为文件名
                       
                       static NSDateFormatter *formatter = nil;
+                      
                       static dispatch_once_t onceToken;
+                      
                       dispatch_once(&onceToken, ^{
+                          
                           formatter = [[NSDateFormatter alloc] init];
                       });
                       // 设置时间格式
@@ -333,6 +341,7 @@ static FMARCNetwork * _instance = nil;
     @weakify(self);
     /// 创建信号
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
+        
         @strongify(self);
         /// 获取request
         NSError *serializationError = nil;
@@ -360,7 +369,9 @@ static FMARCNetwork * _instance = nil;
                                                                                 progress:nil
                                                                        completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
             @strongify(self);
+                                                                           
             if (error) {
+                
                 NSError *parseError = [self errorFromRequestWithTask:task
                                                         httpResponse:(NSHTTPURLResponse *)response
                                                       responseObject:responseObject
@@ -411,6 +422,7 @@ static FMARCNetwork * _instance = nil;
                                                                                            msg:@"请登录!"];
                         
                         [subscriber sendNext:response];
+                        
                         [subscriber sendCompleted];
                         
                         [self showMsgtext:@"请登录"];
@@ -566,6 +578,7 @@ static FMARCNetwork * _instance = nil;
     
     // Set the text mode to show only text.
     hud.mode = MBProgressHUDModeText;
+    
     hud.label.text = text;
     // Move to bottm center.
     hud.offset = CGPointMake(0.f, MBProgressMaxOffset);
