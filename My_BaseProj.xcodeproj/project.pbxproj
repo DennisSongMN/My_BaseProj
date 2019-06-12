@@ -1272,50 +1272,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-My_BaseProj/Pods-My_BaseProj-resources.sh",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton-highlighted@2x.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-addbutton@2x.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem-highlighted@2x.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/bg-menuitem@2x.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus-highlighted@2x.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-plus@2x.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-star.png",
-				"${PODS_ROOT}/AwesomeMenu/AwesomeMenu/Images/icon-star@2x.png",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-My_BaseProj/Pods-My_BaseProj-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-addbutton-highlighted.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-addbutton-highlighted@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-addbutton.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-addbutton@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-menuitem-highlighted.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-menuitem-highlighted@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-menuitem.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg-menuitem@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-plus-highlighted.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-plus-highlighted@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-plus.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-plus@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-star.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/icon-star@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SGQRCode.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-My_BaseProj/Pods-My_BaseProj-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

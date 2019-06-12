@@ -93,6 +93,7 @@
 #import "DeleteSystemUITabBarButton.h"//移除 系统自带的 UITabBarButton
 #import "YKToastView.h"
 #import "ZFMRACNetworkTool.h"//网络请求 RAC+MVVM
+#import <PYSearch.h>
 
 #import "AppDelegate.h"
 

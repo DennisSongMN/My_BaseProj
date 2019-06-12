@@ -45,6 +45,7 @@ pod 'AYCheckVersion'            #提示更新
 pod 'UICountingLabel'           #Lable上的默认值持续变动到指定值
 pod 'RegexKitLite'  #第三方正则表达式开源库
 pod 'AwesomeMenu'
+pod 'PYSearch'  #优雅的搜索控制器取代了UISearchController for iOS（iPhone和iPad）
 #pod 'SearchTextField'
 
 
