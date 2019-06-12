@@ -44,8 +44,11 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - HCSStarRatingView (1.5)
+  - HWPanModal (0.2.6):
+    - KVOController
   - IQKeyboardManager (6.3.0)
   - JhtFloatingBall (1.0.3)
+  - KVOController (1.2.0)
   - Masonry (1.1.0)
   - "MBProgressHUD+WJExtension (1.3.1)"
   - MJExtension (3.0.17)
@@ -103,6 +106,7 @@ PODS:
     - Texture/Core
   - Texture/Video (2.8.1):
     - Texture/Core
+  - TTTAttributedLabel (2.0.0)
   - TXScrollLabelView (1.3.2)
   - UICountingLabel (1.4.1)
   - WPAttributedMarkup (1.0.0)
@@ -122,6 +126,7 @@ DEPENDENCIES:
   - FLEX
   - FMDB
   - HCSStarRatingView
+  - HWPanModal
   - IQKeyboardManager
   - JhtFloatingBall
   - Masonry
@@ -141,6 +146,7 @@ DEPENDENCIES:
   - Shimmer
   - SVProgressHUD
   - Texture
+  - TTTAttributedLabel
   - TXScrollLabelView
   - UICountingLabel
   - WPAttributedMarkup
@@ -161,8 +167,10 @@ SPEC REPOS:
     - FLEX
     - FMDB
     - HCSStarRatingView
+    - HWPanModal
     - IQKeyboardManager
     - JhtFloatingBall
+    - KVOController
     - Masonry
     - "MBProgressHUD+WJExtension"
     - MJExtension
@@ -183,6 +191,7 @@ SPEC REPOS:
     - Shimmer
     - SVProgressHUD
     - Texture
+    - TTTAttributedLabel
     - TXScrollLabelView
     - UICountingLabel
     - WPAttributedMarkup
@@ -202,8 +211,10 @@ SPEC CHECKSUMS:
   FLEX: d66c759bce0f6ebbbf472c742380874d846f2883
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
+  HWPanModal: 4e3ed51577418a0994e2043ed90cb6bd5b74df71
   IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
   JhtFloatingBall: 5a8d8fe6d331cd763eab5c2e81daa6fdaa89fd36
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   "MBProgressHUD+WJExtension": 1d9c93951b49e8c711fef6e6089aa6d7d3321192
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
@@ -224,11 +235,12 @@ SPEC CHECKSUMS:
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TXScrollLabelView: 0e1650caf61198bf5dc0938ea6493254aeb80f90
   UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
   WPAttributedMarkup: eb50878af4ec647d8d2090f721a5cfe7d29c27fe
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: 62f32c61cb5094ab81c964ac3b7526f8a38d5e9d
+PODFILE CHECKSUM: fe2f512399e9772808df184f220a0b29f8549ad5
 
 COCOAPODS: 1.7.1

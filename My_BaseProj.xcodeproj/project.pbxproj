@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		9DFCE79F330877C9C84A0FBC /* libPods-My_BaseProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */; };
 		C301CEF822ADF94E00C0DCCC /* ArcTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */; };
 		C301CF0E22AE72BE00C0DCCC /* YKToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CF0D22AE72BE00C0DCCC /* YKToastView.m */; };
+		C3229A7A22B0D39F0044BB5E /* XDTextBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3229A7922B0D39F0044BB5E /* XDTextBtnView.m */; };
 		C3B1565922A7E242009061F3 /* HistoryDataListTBV.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */; };
 		C3B1565C22A7E45A009061F3 /* HistoryDataListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565B22A7E45A009061F3 /* HistoryDataListTBVCell.m */; };
 		C3B1566222AA3863009061F3 /* WaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1566122AA3863009061F3 /* WaterMark.m */; };
@@ -152,6 +153,8 @@
 		C301CF0A22AE59E800C0DCCC /* FMHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMHttpRequest.m; sourceTree = "<group>"; };
 		C301CF0C22AE72BE00C0DCCC /* YKToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKToastView.h; sourceTree = "<group>"; };
 		C301CF0D22AE72BE00C0DCCC /* YKToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKToastView.m; sourceTree = "<group>"; };
+		C3229A7822B0D39F0044BB5E /* XDTextBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDTextBtnView.h; sourceTree = "<group>"; };
+		C3229A7922B0D39F0044BB5E /* XDTextBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XDTextBtnView.m; sourceTree = "<group>"; };
 		C3B1565722A7E242009061F3 /* HistoryDataListTBV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBV.h; sourceTree = "<group>"; };
 		C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDataListTBV.m; sourceTree = "<group>"; };
 		C3B1565A22A7E45A009061F3 /* HistoryDataListTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBVCell.h; sourceTree = "<group>"; };
@@ -460,6 +463,15 @@
 			path = ToastView;
 			sourceTree = "<group>";
 		};
+		C3229A7722B0D38E0044BB5E /* XDTextBtnView */ = {
+			isa = PBXGroup;
+			children = (
+				C3229A7822B0D39F0044BB5E /* XDTextBtnView.h */,
+				C3229A7922B0D39F0044BB5E /* XDTextBtnView.m */,
+			);
+			path = XDTextBtnView;
+			sourceTree = "<group>";
+		};
 		C3B1565622A7E20E009061F3 /* HistoryDataList */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +587,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				C3229A7722B0D38E0044BB5E /* XDTextBtnView */,
 				C301CF0B22AE72B300C0DCCC /* ToastView */,
 				C301CEFF22AE59E800C0DCCC /* 🌍ZFMRACNetworkTool */,
 				C3F570B222A534C3009E9691 /* CollectionAccountEditor */,
@@ -1414,6 +1427,7 @@
 				C3F56F7B22A4C732009E9691 /* main.m in Sources */,
 				C3F570E822A60D0A009E9691 /* ViewController@1.m in Sources */,
 				C3F5703122A4F996009E9691 /* SDCollectionViewCell.m in Sources */,
+				C3229A7A22B0D39F0044BB5E /* XDTextBtnView.m in Sources */,
 				C3F5700C22A4F8B1009E9691 /* AnimateToSpecifiedDate_Init.m in Sources */,
 				C3F56F6A22A4C731009E9691 /* AppDelegate.m in Sources */,
 				C301CF0E22AE72BE00C0DCCC /* YKToastView.m in Sources */,
