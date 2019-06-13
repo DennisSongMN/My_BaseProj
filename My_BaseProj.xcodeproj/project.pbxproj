@@ -22,6 +22,7 @@
 		C3229A9422B21D400044BB5E /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C3229A8D22B21D400044BB5E /* TAPageControl.m */; };
 		C3229A9522B21D400044BB5E /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3229A8E22B21D400044BB5E /* TAAnimatedDotView.m */; };
 		C3229A9622B21D400044BB5E /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3229A8F22B21D400044BB5E /* TAAbstractDotView.m */; };
+		C3229A9A22B21DA30044BB5E /* 无限循环自动图片轮播器（可点击图片） in Resources */ = {isa = PBXBuildFile; fileRef = C3229A9922B21DA30044BB5E /* 无限循环自动图片轮播器（可点击图片） */; };
 		C3B1565922A7E242009061F3 /* HistoryDataListTBV.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */; };
 		C3B1565C22A7E45A009061F3 /* HistoryDataListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565B22A7E45A009061F3 /* HistoryDataListTBVCell.m */; };
 		C3B1566222AA3863009061F3 /* WaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1566122AA3863009061F3 /* WaterMark.m */; };
@@ -172,6 +173,7 @@
 		C3229A9022B21D400044BB5E /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
 		C3229A9122B21D400044BB5E /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
 		C3229A9222B21D400044BB5E /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		C3229A9922B21DA30044BB5E /* 无限循环自动图片轮播器（可点击图片） */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "无限循环自动图片轮播器（可点击图片）"; sourceTree = "<group>"; };
 		C3B1565722A7E242009061F3 /* HistoryDataListTBV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBV.h; sourceTree = "<group>"; };
 		C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDataListTBV.m; sourceTree = "<group>"; };
 		C3B1565A22A7E45A009061F3 /* HistoryDataListTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBVCell.h; sourceTree = "<group>"; };
@@ -262,7 +264,6 @@
 		C3F5701122A4F94D009E9691 /* XLSphereView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSphereView.m; sourceTree = "<group>"; };
 		C3F5701222A4F94D009E9691 /* XLPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPoint.h; sourceTree = "<group>"; };
 		C3F5701322A4F94D009E9691 /* XLSphereView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSphereView.h; sourceTree = "<group>"; };
-		C3F5701622A4F982009E9691 /* 无限循环自动图片轮播器（可点击图片） */ = {isa = PBXFileReference; lastKnownFileType = text; path = "无限循环自动图片轮播器（可点击图片）"; sourceTree = "<group>"; };
 		C3F5703522A4F9C4009E9691 /* HAHandleDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAHandleDemoView.m; sourceTree = "<group>"; };
 		C3F5703622A4F9C4009E9691 /* HAHandleDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAHandleDemoView.h; sourceTree = "<group>"; };
 		C3F5703822A4F9CF009E9691 /* 高仿Uber取消叫车按钮效果(按住放大) */ = {isa = PBXFileReference; lastKnownFileType = text; path = "高仿Uber取消叫车按钮效果(按住放大)"; sourceTree = "<group>"; };
@@ -815,7 +816,7 @@
 		C3F5701522A4F96E009E9691 /* SDCycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				C3F5701622A4F982009E9691 /* 无限循环自动图片轮播器（可点击图片） */,
+				C3229A9922B21DA30044BB5E /* 无限循环自动图片轮播器（可点击图片） */,
 				C3229A8A22B21D400044BB5E /* PageControl */,
 				C3229A8022B21D110044BB5E /* SDCollectionViewCell.h */,
 				C3229A8422B21D110044BB5E /* SDCollectionViewCell.m */,
@@ -1248,6 +1249,7 @@
 				C3F56F7522A4C732009E9691 /* Assets.xcassets in Resources */,
 				C3F5707A22A4FC92009E9691 /* address.json in Resources */,
 				C3F570EF22A60DF3009E9691 /* Home@2x.png in Resources */,
+				C3229A9A22B21DA30044BB5E /* 无限循环自动图片轮播器（可点击图片） in Resources */,
 				C3F5705122A4FA9F009E9691 /* sortedNameEN.plist in Resources */,
 				C3F56FB722A4F749009E9691 /* Sound.wav in Resources */,
 				C3F570F722A60E46009E9691 /* ShoppingCart@3x.png in Resources */,
