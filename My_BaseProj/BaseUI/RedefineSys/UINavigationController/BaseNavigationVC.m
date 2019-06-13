@@ -38,8 +38,6 @@
         [self configBackgroundImage];
         
         [self configTitleTextStyle];
-        
-//        [self setupEditBtn];
     }
     return self;
 }
@@ -47,16 +45,16 @@
 #pragma mark - private
 - (void)configNavigationBar {
     
-//    self.navigationBar.translucent = NO;
-//    
-//    self.navigationBar.barTintColor = YBGeneralColor.navigationBarColor;
-//    
-//    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:YBGeneralColor.navigationBarTitleColor, NSFontAttributeName:YBGeneralFont.navigationBarTitleFont}];
-//    
-//    [self.navigationBar setBackgroundImage:UIImage.new
-//                             forBarMetrics:UIBarMetricsDefault];
-//    
-//    [self.navigationBar setShadowImage:UIImage.new];
+    self.navigationBar.translucent = NO;
+    
+    self.navigationBar.barTintColor = YBGeneralColor.navigationBarColor;
+    
+    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:YBGeneralColor.navigationBarTitleColor, NSFontAttributeName:YBGeneralFont.navigationBarTitleFont}];
+    
+    [self.navigationBar setBackgroundImage:UIImage.new
+                             forBarMetrics:UIBarMetricsDefault];
+    
+    [self.navigationBar setShadowImage:UIImage.new];
 }
 
 /**
@@ -87,7 +85,9 @@
     UIColor *textColor = kWhiteColor;
 
     [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                textColor, NSForegroundColorAttributeName,shadow, NSShadowAttributeName,[UIFont fontWithName:@"PingFang SC" size:18.0f], NSFontAttributeName,
+                                                textColor,NSForegroundColorAttributeName,
+                                                shadow,NSShadowAttributeName,
+                                                [UIFont fontWithName:@"PingFang SC" size:18.0f],NSFontAttributeName,
                                                 nil]];
 }
 
@@ -102,43 +102,19 @@
     [super pushViewController:viewController animated:animated];//只能写在后面
 }
 
--(void)setupEditBtn{
+-(void)setupEditBtn:(UIViewController *)vc{
 
     UIBarButtonItem *editBarBtnItems = [[UIBarButtonItem alloc]initWithTitle:@"编辑"
                                                                        style:UIBarButtonItemStylePlain
                                                                       target:self
                                                                       action:@selector(action_EditBtn:)];
-    
-    
 
-    self.navigationController.navigationItem.rightBarButtonItem = editBarBtnItems;
+
+    vc.navigationItem.rightBarButtonItem = editBarBtnItems;
 }
 
-//-(UIButton *)editBtn{
-//
-//    if (!_editBtn) {
-//
-//        _editBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//
-//        _editBtn.uxy_acceptEventInterval = 0.5f;
-//
-//        [_editBtn setTitle:@"编辑"
-//                  forState:UIControlStateNormal];
-//
-//        _editBtn.backgroundColor = [UIColor redColor];
-//
-//        [_editBtn setTitleColor:[UIColor whiteColor]
-//                       forState:UIControlStateNormal];
-//
-//        [_editBtn addTarget:self
-//                     action:@selector(action_EditBtn:)
-//           forControlEvents:UIControlEventTouchUpInside];
-//    }
-//
-//    return _editBtn;
-//}
-
 -(void)action_EditBtn:(UIButton *)sender{
+    NSLog(@"123");
 }
 
 

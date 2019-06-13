@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(UINavigationController *)rootNavigationController;
 
+-(void)setupEditBtn:(UIViewController *)vc;
+
 @end
 
 NS_ASSUME_NONNULL_END

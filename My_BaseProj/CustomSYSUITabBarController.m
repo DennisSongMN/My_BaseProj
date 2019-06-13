@@ -151,7 +151,7 @@
     
     if (!_mutArr) {
         
-        _mutArr = [NSMutableArray array];
+        _mutArr = NSMutableArray.array;
     }
     
     return _mutArr;

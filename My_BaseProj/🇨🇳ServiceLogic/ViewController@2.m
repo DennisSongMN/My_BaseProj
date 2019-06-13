@@ -20,7 +20,6 @@
 
 @end
 
-
 @implementation ViewController_2
 
 - (void)dealloc {
@@ -30,11 +29,11 @@
 
 #pragma mark - Lifecycle
 -(instancetype)init{
-    
+
     if (self = [super init]) {
-        
+
         [self value];
-        
+
     }return self;
 }
 
@@ -54,28 +53,23 @@
     self.view.backgroundColor = RandomColor;
     
     [self setView:self.mainView];
-    
+
     [self.mainView addSubview:self.btn];
-    
+
     [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
-        
+
         make.left.equalTo(self.mainView).offset(SCALING_RATIO(30));
-        
+
         make.top.equalTo(self.mainView).offset(SCALING_RATIO(30) + rectOfStatusbar + rectOfNavigationbar);
-        
+
         make.right.equalTo(self.mainView).offset(-SCALING_RATIO(30));
-        
+
         make.height.mas_equalTo((SCALING_RATIO(100)));
     }];
     
-    UIBarButtonItem *editBarBtnItems = [[UIBarButtonItem alloc]initWithTitle:@"编辑"
-                                                                       style:UIBarButtonItemStylePlain
-                                                                      target:self
-                                                                      action:@selector(action_EditBtn:)];
-    
-    
-    
-    self.navigationController.navigationItem.rightBarButtonItem = editBarBtnItems;
+    BaseNavigationVC *nav = (BaseNavigationVC *)self.navigationController;
+
+    [nav setupEditBtn:self];
 }
 
 -(void)btnClickEvent:(UIButton *)sender{
