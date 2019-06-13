@@ -7,7 +7,7 @@
 //
 
 #import "CustomSYSUITabBarController.h"
-#import "NavigationViewController.h"
+#import "BaseNavigationVC.h"
 
 #import "ViewController@1.h"
 #import "ViewController@2.h"
@@ -19,7 +19,7 @@
 @property(nonatomic,strong)NSMutableArray<UIImage *> *customUnselectedImgMutArr;
 @property(nonatomic,strong)NSMutableArray<UIImage *> *customSelectedImgMutArr;
 @property(nonatomic,strong)NSMutableArray<UIViewController *> *viewControllerMutArr;
-@property(nonatomic,strong)NavigationViewController *customNavigationVC;
+@property(nonatomic,strong)BaseNavigationVC *customNavigationVC;
 @property(nonatomic,strong)NSMutableArray *mutArr;
 
 @end
@@ -70,7 +70,7 @@
 
     for (int i = 0; i < self.viewControllerMutArr.count; i ++) {
 
-        self.customNavigationVC = [[NavigationViewController alloc]initWithRootViewController:(UIViewController *)self.viewControllerMutArr[i]];
+        self.customNavigationVC = [[BaseNavigationVC alloc]initWithRootViewController:(UIViewController *)self.viewControllerMutArr[i]];
 
         [self.mutArr addObject:self.customNavigationVC];
     }

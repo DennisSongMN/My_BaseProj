@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NavigationViewController : UINavigationController
+@interface BaseNavigationVC : UINavigationController<UINavigationControllerDelegate>
 
 @property(nonatomic,strong)UIButton *editBtn;
+
++(UINavigationController *)rootNavigationController;
 
 @end
 
