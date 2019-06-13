@@ -67,6 +67,15 @@
         
         make.height.mas_equalTo((SCALING_RATIO(100)));
     }];
+    
+    UIBarButtonItem *editBarBtnItems = [[UIBarButtonItem alloc]initWithTitle:@"编辑"
+                                                                       style:UIBarButtonItemStylePlain
+                                                                      target:self
+                                                                      action:@selector(action_EditBtn:)];
+    
+    
+    
+    self.navigationController.navigationItem.rightBarButtonItem = editBarBtnItems;
 }
 
 -(void)btnClickEvent:(UIButton *)sender{

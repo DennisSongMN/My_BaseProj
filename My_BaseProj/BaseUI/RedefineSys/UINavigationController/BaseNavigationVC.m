@@ -39,7 +39,7 @@
         
         [self configTitleTextStyle];
         
-        [self setupEditBtn];
+//        [self setupEditBtn];
     }
     return self;
 }
@@ -47,16 +47,16 @@
 #pragma mark - private
 - (void)configNavigationBar {
     
-    self.navigationBar.translucent = NO;
-    
-    self.navigationBar.barTintColor = YBGeneralColor.navigationBarColor;
-    
-    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:YBGeneralColor.navigationBarTitleColor, NSFontAttributeName:YBGeneralFont.navigationBarTitleFont}];
-    
-    [self.navigationBar setBackgroundImage:UIImage.new
-                             forBarMetrics:UIBarMetricsDefault];
-    
-    [self.navigationBar setShadowImage:UIImage.new];
+//    self.navigationBar.translucent = NO;
+//    
+//    self.navigationBar.barTintColor = YBGeneralColor.navigationBarColor;
+//    
+//    [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:YBGeneralColor.navigationBarTitleColor, NSFontAttributeName:YBGeneralFont.navigationBarTitleFont}];
+//    
+//    [self.navigationBar setBackgroundImage:UIImage.new
+//                             forBarMetrics:UIBarMetricsDefault];
+//    
+//    [self.navigationBar setShadowImage:UIImage.new];
 }
 
 /**
@@ -111,7 +111,7 @@
     
     
 
-    self.navigationItem.rightBarButtonItem = editBarBtnItems;
+    self.navigationController.navigationItem.rightBarButtonItem = editBarBtnItems;
 }
 
 //-(UIButton *)editBtn{
