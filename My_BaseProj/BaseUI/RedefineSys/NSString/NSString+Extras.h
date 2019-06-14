@@ -87,6 +87,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)formatDecimalNumber;
 
 +(NSString *)getMMSSFromSS:(NSInteger)totalTime; // 时间转 小时 / d分 、秒
+
++(NSString *)numberSuitScanf:(NSString*)number;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -691,4 +691,12 @@
     }
     return format_time;
 }
+
++(NSString *)numberSuitScanf:(NSString*)number{
+    
+    NSString *numberString = [number stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
+    
+    return numberString;
+}
+
 @end
