@@ -9,6 +9,7 @@ target 'My_BaseProj' do
   # Pods for My_BaseProj
   
 pod 'FLEX'#调试界面相关插件
+pod 'TWPageViewController'
 pod 'ReactiveObjC'    #重量级框架
 pod 'EAIntroView'#启动图
 pod 'Texture' #Facebook
