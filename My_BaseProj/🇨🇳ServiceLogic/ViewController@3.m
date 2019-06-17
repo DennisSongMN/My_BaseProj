@@ -49,6 +49,8 @@
     
     NSArray *dataArr = @[@"1",@"22",@"333",@"4444",@"55555",@"666666",@"7777777",@"88888888",@"999999999",@"AAAAAAAAAA",@"BBBBBBBBBBB",@"CCCCCCCCCCCC"];
     
+//    [dataArr mutableCopy];
+    
     [self.view addSubview:self.hotLabel];
     
 //    [self.hotLabel mas_makeConstraints:^(MASConstraintMaker *make) {
