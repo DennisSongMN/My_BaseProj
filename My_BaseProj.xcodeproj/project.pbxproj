@@ -27,6 +27,7 @@
 		C3B1565C22A7E45A009061F3 /* HistoryDataListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565B22A7E45A009061F3 /* HistoryDataListTBVCell.m */; };
 		C3B1566222AA3863009061F3 /* WaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1566122AA3863009061F3 /* WaterMark.m */; };
 		C3B1566622AB555C009061F3 /* HotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1566522AB555C009061F3 /* HotLabel.m */; };
+		C3EDA78F22B740E8002F49D6 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = C3EDA78E22B740E8002F49D6 /* readme */; };
 		C3F56F6A22A4C731009E9691 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F56F6922A4C731009E9691 /* AppDelegate.m */; };
 		C3F56F7022A4C731009E9691 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F56F6E22A4C731009E9691 /* Main.storyboard */; };
 		C3F56F7322A4C731009E9691 /* My_BaseProj.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3F56F7122A4C731009E9691 /* My_BaseProj.xcdatamodeld */; };
@@ -182,6 +183,7 @@
 		C3B1566122AA3863009061F3 /* WaterMark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterMark.m; sourceTree = "<group>"; };
 		C3B1566422AB555C009061F3 /* HotLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotLabel.h; sourceTree = "<group>"; };
 		C3B1566522AB555C009061F3 /* HotLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotLabel.m; sourceTree = "<group>"; };
+		C3EDA78E22B740E8002F49D6 /* readme */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme; sourceTree = "<group>"; };
 		C3F56F6522A4C731009E9691 /* My_BaseProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_BaseProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F56F6822A4C731009E9691 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3F56F6922A4C731009E9691 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -517,6 +519,7 @@
 		C3F56F5C22A4C731009E9691 = {
 			isa = PBXGroup;
 			children = (
+				C3EDA78E22B740E8002F49D6 /* readme */,
 				C3F56F9D22A4F1D1009E9691 /* PrefixHeader.pch */,
 				C3F5710522A63AB2009E9691 /* Log */,
 				C3F570EC22A60D66009E9691 /* PicResource */,
@@ -1242,6 +1245,7 @@
 				C3F570F022A60DF3009E9691 /* Home@3x.png in Resources */,
 				C3F570F422A60E1C009E9691 /* MyStore@2x.png in Resources */,
 				C3F570FB22A60E5F009E9691 /* My@3x.png in Resources */,
+				C3EDA78F22B740E8002F49D6 /* readme in Resources */,
 				C3F570F322A60E1C009E9691 /* MyStore@3x.png in Resources */,
 				C3F5705222A4FA9F009E9691 /* sortedNameCH.plist in Resources */,
 				C3F5707522A4FC92009E9691 /* area.db in Resources */,
