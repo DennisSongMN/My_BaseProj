@@ -98,6 +98,7 @@
 //#import <HWPanModal/HWPanModal.h>
 #import "XDTextBtnView.h"//自适应文字按钮
 #import "TWPageViewController.h"//https://www.jianshu.com/p/25b1a3888bb8
+#import "WebViewJavascriptBridge.h"
 
 #import "AppDelegate.h"
 #import "BaseNavigationVC.h"
