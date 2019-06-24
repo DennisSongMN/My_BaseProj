@@ -49,6 +49,7 @@ pod 'AwesomeMenu'
 pod 'PYSearch'  #优雅的搜索控制器取代了UISearchController for iOS（iPhone和iPad）
 pod 'TTTAttributedLabel'#替代UILabel https://github.com/TTTAttributedLabel/TTTAttributedLabel
 pod 'WebViewJavascriptBridge'
+pod 'HBDNavigationBar'  #自定义UINavigationBar，用于在各种状态之间平滑切换，包括条形样式，条形色调，背景图像，背景alpha，条形隐藏，标题文本属性，色调颜色，阴影隐藏... https://github.com/listenzz/HBDNavigationBar
 #pod 'HWPanModal'#HWPanModal 用于从底部弹出控制器（UIViewController），并用拖拽手势来关闭控制器。提供了自定义视图大小和位置，高度自定义弹出视图的各个属性。 https://github.com/HeathWang/HWPanModal
 #pod 'SearchTextField'
 

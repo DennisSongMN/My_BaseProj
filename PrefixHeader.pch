@@ -10,6 +10,7 @@
 #define PrefixHeader_pch
 
 //Pods
+#import <HBDNavigationBar/HBDNavigationController.h>
 #import "AFNetworking.h"
 #import "AYCheckManager.h"
 #import "BEMCheckBox.h"

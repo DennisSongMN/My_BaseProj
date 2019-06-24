@@ -137,8 +137,35 @@ ITTDPRINT(xx, ##__VA_ARGS__);\
 #define IS_IPHONE6_PLUS ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
 //#define IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
-///判断手机是否为iPhone X 及其以上机型（根据屏幕长度来进行判断）
-#define isiPhoneX_series MAINSCREEN_HEIGHT >= 812 ? YES : NO
+/**
+ 是否是iPhoneX系列（X/XS/XR/XS Max)
+ 
+ @return YES 是该系列 NO 不是该系列
+ */
+static inline BOOL isiPhoneX_series() {
+    BOOL iPhoneXSeries = NO;
+    if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+        return iPhoneXSeries;
+    }
+    
+    if (@available(iOS 11.0, *)) {
+        UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+        if (mainWindow.safeAreaInsets.bottom > 0.0) {
+            iPhoneXSeries = YES;
+        }
+    }
+    
+    return iPhoneXSeries;
+}
+
+//判断是否登录,没有登录进行跳转
+#define kGuardLogin if ([IsLogin isLogin]) { \
+UIViewController *rootViewController = kKeyWindow.rootViewController; \
+TopicLoginViewController *vc = [[TopicLoginViewController alloc] init]; \
+UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc]; \
+[rootViewController presentViewController:nav animated:YES completion:nil]; \
+return; \
+} \
 
 #define isiPhoneX_seriesBottom 30
 #define isiPhoneX_seriesTop 34
