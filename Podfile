@@ -29,7 +29,7 @@ pod 'WPAttributedMarkup'  #富文本编辑 WPAttributedMarkup能给Label中某�
 pod 'DTCoreText'  #解析HTML与CSS最终用CoreText绘制出来，通常用于在一些需要显示富文本的场景下代替低性能的UIWebView
 #pod 'MWPhotoBrowser'#一个简单的iOS照片和视频浏览器，带有可选的网格视图，标题和选择
 pod 'FDFullscreenPopGesture'#一个丝滑的全屏滑动返回手势
-pod 'JhtFloatingBall'    #轻量级悬浮球
+pod 'ZYSuspensionView/SuspensionView'    #悬浮球带点击事件 https://github.com/ripperhe/ZYSuspensionView
 pod 'FMDB'     #数据库第三方框架
 pod 'Shimmer'  #Facebook 推出的一款具有闪烁效果的第三方控件
 pod 'BEMCheckBox'               #复选框 更炫
