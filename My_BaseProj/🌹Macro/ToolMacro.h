@@ -21,24 +21,6 @@
 #define AppLocalString(x, ...)  NSLocalizedStringFromTable(x, @"someName", nil)
 #define LRToast(str) [NSString stringWithFormat:@"%@",@#str]
 
-#pragma mark - Keys & OtherConfig
-#define PhotoEndPoint @"oss-cn-hongkong.aliyuncs.com"
-#define SERVICE_ID @"KEFU155119713095416"
-//se
-#define JPush_Key  @"d27651c3960383fb99f2a7e6"
-#define JPush_Channel @"Publish channel"
-
-#define ZCKey @"81c98f2c7c054ecb93d0ee92c6b666ed"
-
-//外包的
-//#define JPush_Key  @"b07cefbde8fee58c3a22d6aa"
-//#define JPush_Channel @"App Store"
-//#define RongCloud_Key @"qd46yzrfqp0af" //dis
-#define RongCloud_Key @"25wehl3u2gq4w" //外包的dev
-#define WYVertifyID_Key @"af45977d53044827af6ee8968a3d550e"
-#define AliYun_Key @"LTAIJ02GVyFdCID8"
-#define AliYun_Secret @"hkYskQyGqrsvfAqDbTjezR6396OYwu"
-
 #pragma mark - Sys.
 ///获取Xcode的版本号
 #define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
@@ -124,18 +106,7 @@ ITTDPRINT(xx, ##__VA_ARGS__);\
 
 #endif
 
-#pragma mark - 尺寸相关
 
-#define IS_IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
-//#define isiPhoneX_series SCREEN_HEIGHT >= 812 ? YES : NO///判断手机是否为iPhone X 及其以上机型（根据屏幕长度来进行判断）
-
-///判断手机型号
-#define IS_IPHONE4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
-#define IS_IPHONE5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
-#define IS_IPHONE6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size)) : NO)
-#define IS_IPHONE6_PLUS_SCALE ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) : NO)
-#define IS_IPHONE6_PLUS ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
-//#define IS_IPHONE_X ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 /**
  是否是iPhoneX系列（X/XS/XR/XS Max)
@@ -167,30 +138,17 @@ UINavigationController *nav = [[UINavigationController alloc] initWithRootViewCo
 return; \
 } \
 
+#pragma mark - 尺寸相关
 #define isiPhoneX_seriesBottom 30
 #define isiPhoneX_seriesTop 34
-
-///之前留下的
-#define VicNativeHeight [UIScreen mainScreen].nativeBounds.size.height
-#define VicScreenScale [UIScreen mainScreen].scale
-#define VicNavigationHeight (VicNativeHeight == 812.000000*VicScreenScale ? 84.f : 64.f)
-#define VicRateW(value) ([UIScreen mainScreen].nativeBounds.size.width == 375*[UIScreen mainScreen].scale ? value : value*[UIScreen mainScreen].nativeBounds.size.width/(375*[UIScreen mainScreen].scale))
-#define VicRateH(value) ([UIScreen mainScreen].nativeBounds.size.height == 667*[UIScreen mainScreen].scale ? value : value*[UIScreen mainScreen].nativeBounds.size.height/(667*[UIScreen mainScreen].scale))
-
 ///自读屏宽高
 #define MAINSCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
 #define MAINSCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
-
 ///系统控件高度
 #define rectOfStatusbar [[UIApplication sharedApplication] statusBarFrame].size.height//获取状态栏的高
 #define rectOfNavigationbar self.navigationController.navigationBar.frame.size.height//获取导航栏的高
-///根据ip6的屏幕来拉伸
-#define kRealValue(with)((with)*(([[UIScreen mainScreen] bounds].size.width)/375.0f))
 ///缩放比例
 #define SCALING_RATIO(UISize) (UISize)*([[UIScreen mainScreen] bounds].size.width)/375.0f//全局比例尺
-#define kGETVALUE_HEIGHT(width,height,limit_width) ((limit_width)*(height)/(width))//为了让图片不失真
-
-#define kHeightForListHeaderInSections 5
 
 #pragma mark - 色彩相关
 #define kTableViewBackgroundColor HEXCOLOR(0xf6f5fa)
@@ -223,7 +181,6 @@ alpha:1.0]
 ///RGB颜色
 #define RGBSAMECOLOR(x) [UIColor colorWithRed:(x)/255.0 green:(x)/255.0 blue:(x)/255.0 alpha:1]
 #define COLOR_RGB(r,g,b,a)  [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
-#define RANDOMRGBCOLOR RGBCOLOR((arc4random() % 256), (arc4random() % 256), (arc4random() % 256))
 #define RGBCOLOR(r,g,b)  [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 ///随机颜色
 #define RandomColor [UIColor colorWithRed:arc4random_uniform(256) / 255.0 \
@@ -281,14 +238,8 @@ dispatch_async(queue, block);\
 #define kWeakSelf(type)  __weak typeof(type) weak##type = type
 #define kStrongSelf(type)  __strong typeof(type) type = weak##type
 
-
-#define singLeton  [GTSingLeton singletonDefau]
-#pragma mark - 融云
-#define RCDLocalizedString(key) NSLocalizedStringFromTable(key, @"SealTalk", nil)
-
 #pragma mark - MD5加盐
 //#define MD5_Salt(String) [NSString stringWithFormat:@"*bub#{%@}#fly*",String]
-
 
 #define LoadMsg @"加载中..."
 #define Toast(msg)  [YKToastView showToastText:msg]
