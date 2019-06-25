@@ -61,7 +61,7 @@
     
     self.sth = model;
     
-    self.backgroundColor = RANDOMRGBCOLOR;
+    self.backgroundColor = RandomColor;
     
     [self.contentView addSubview:self.deleteBtn];
     

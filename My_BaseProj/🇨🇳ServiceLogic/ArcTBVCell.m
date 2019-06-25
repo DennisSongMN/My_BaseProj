@@ -36,7 +36,7 @@
     if (self = [super initWithStyle:style
                     reuseIdentifier:reuseIdentifier]) {
         
-        self.backgroundColor = RANDOMRGBCOLOR;
+        self.backgroundColor = RandomColor;
         
     }
     

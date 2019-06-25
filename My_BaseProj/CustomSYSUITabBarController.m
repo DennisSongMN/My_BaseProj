@@ -35,7 +35,7 @@
     
     if (self = [super init]) {
         
-        self.LZB_TABBAR_HEIGHT = isiPhoneX_series?80:49;
+        self.LZB_TABBAR_HEIGHT = isiPhoneX_series()?80:49;
     }
     
     return self;

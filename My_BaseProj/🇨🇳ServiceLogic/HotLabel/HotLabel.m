@@ -55,7 +55,7 @@
 
         UILabel *lable = UILabel.new;
         
-        lable.backgroundColor = RANDOMRGBCOLOR;
+        lable.backgroundColor = RandomColor;
 
         lable.text = dataArr[i];
         
