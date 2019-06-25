@@ -293,3 +293,9 @@ dispatch_async(queue, block);\
 #define LoadMsg @"加载中..."
 #define Toast(msg)  [YKToastView showToastText:msg]
 #endif /* ToolMacro_h */
+
+#define kApplyShadowForView(view, radius) view.layer.masksToBounds = NO; \
+view.layer.shadowOffset = CGSizeMake(0, 1.5); \
+view.layer.shadowRadius = radius; \
+view.layer.shadowOpacity = 0.4; \
+view.layer.shadowColor = [UIColor lightGrayColor].CGColor; \
