@@ -50,6 +50,7 @@
 #import "AwesomeMenu.h"
 #import "EScrollPageView.h"
 #import "ENestScrollPageView.h"
+#import <JhtFloatingBall/JhtFloatingBall.h>
 
 
 //🔨Manual_Add_ThirdParty
