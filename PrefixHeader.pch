@@ -48,6 +48,9 @@
 #import "NSString+WPAttributedMarkup.h"//富文本编辑
 #import "ZXingObjC.h"
 #import "AwesomeMenu.h"
+#import "EScrollPageView.h"
+#import "ENestScrollPageView.h"
+
 
 //🔨Manual_Add_ThirdParty
 #import "NSObject+Extras.h"

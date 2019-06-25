@@ -38,6 +38,7 @@ PODS:
   - EAIntroView (2.12.0):
     - EARestrictedScrollView (~> 1.1.0)
   - EARestrictedScrollView (1.1.0)
+  - EScrollPageView (1.0.0)
   - FDFullscreenPopGesture (1.1)
   - FLEX (3.0.0)
   - FMDB (2.7.5):
@@ -122,6 +123,7 @@ DEPENDENCIES:
   - DDProgressView
   - DTCoreText
   - EAIntroView
+  - EScrollPageView
   - FDFullscreenPopGesture
   - FLEX
   - FMDB
@@ -165,6 +167,7 @@ SPEC REPOS:
     - DTFoundation
     - EAIntroView
     - EARestrictedScrollView
+    - EScrollPageView
     - FDFullscreenPopGesture
     - FLEX
     - FMDB
@@ -210,6 +213,7 @@ SPEC CHECKSUMS:
   DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
   EAIntroView: 249559079ddfdbe80e5bcb755c04c3b964b2ac27
   EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+  EScrollPageView: 6fd67fd563fa0a806f58d9c0c14ebceef9788164
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FLEX: d66c759bce0f6ebbbf472c742380874d846f2883
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
@@ -245,6 +249,6 @@ SPEC CHECKSUMS:
   WPAttributedMarkup: eb50878af4ec647d8d2090f721a5cfe7d29c27fe
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
 
-PODFILE CHECKSUM: fa8d3faa1ab11deecce6a7eba10f0f1b73150473
+PODFILE CHECKSUM: e1c99c11c3aaa44bedc9f081e805730c6d868853
 
 COCOAPODS: 1.7.2
