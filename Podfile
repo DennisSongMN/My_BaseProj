@@ -54,6 +54,12 @@ pod 'EScrollPageView'#嵌套滚动,分页滚动 https://github.com/EasySnail/ESc
 #pod 'HWPanModal'#HWPanModal 用于从底部弹出控制器（UIViewController），并用拖拽手势来关闭控制器。提供了自定义视图大小和位置，高度自定义弹出视图的各个属性。 https://github.com/HeathWang/HWPanModal
 #pod 'SearchTextField'
 
+#视频相关框架
+pod 'ZFPlayer/ControlView'
+pod 'ZFPlayer/AVPlayer'
+pod 'ZFPlayer/ijkplayer'
+pod 'ZFPlayer/KSYMediaPlayer'
+
 
 #https://github.com/honcheng/PaperFold-for-iOS
 #https://github.com/tomaz/appledoc
