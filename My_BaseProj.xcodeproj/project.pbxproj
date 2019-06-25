@@ -552,7 +552,7 @@
 				C3F570A122A5128A009E9691 /* IsLogin.m */,
 				C3F56F7922A4C732009E9691 /* Info.plist */,
 				C3F5703A22A4FA13009E9691 /* BaseUI */,
-				C3F5710422A61D32009E9691 /* 🍌Manual_Add_ThirdFont */,
+				CEA4C98722C1CF18004E89B7 /* 🍌Manual_Add_ThirdFont */,
 				C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */,
 				C3F56F9E22A4F38C009E9691 /* 🌹Macro */,
 				C3F5710322A61CDB009E9691 /* 🇨🇳ServiceLogic */,
@@ -1103,13 +1103,6 @@
 			path = "🇨🇳ServiceLogic";
 			sourceTree = "<group>";
 		};
-		C3F5710422A61D32009E9691 /* 🍌Manual_Add_ThirdFont */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "🍌Manual_Add_ThirdFont";
-			sourceTree = "<group>";
-		};
 		C3F5710522A63AB2009E9691 /* Log */ = {
 			isa = PBXGroup;
 			children = (
@@ -1131,6 +1124,13 @@
 				6034DD6DF7212D7FC23F03FC /* Pods-My_BaseProjUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CEA4C98722C1CF18004E89B7 /* 🍌Manual_Add_ThirdFont */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "🍌Manual_Add_ThirdFont";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
