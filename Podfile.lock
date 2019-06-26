@@ -110,6 +110,9 @@ PODS:
   - UICountingLabel (1.4.1)
   - WebViewJavascriptBridge (6.0.3)
   - WPAttributedMarkup (1.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
   - ZXingObjC/Core (3.6.5)
   - ZXingObjC/QRCode (3.6.5):
     - ZXingObjC/Core
@@ -153,6 +156,7 @@ DEPENDENCIES:
   - UICountingLabel
   - WebViewJavascriptBridge
   - WPAttributedMarkup
+  - YYKit
   - ZXingObjC/QRCode
   - ZYSuspensionView/SuspensionView
 
@@ -200,6 +204,7 @@ SPEC REPOS:
     - UICountingLabel
     - WebViewJavascriptBridge
     - WPAttributedMarkup
+    - YYKit
     - ZXingObjC
     - ZYSuspensionView
 
@@ -246,9 +251,10 @@ SPEC CHECKSUMS:
   UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   WPAttributedMarkup: eb50878af4ec647d8d2090f721a5cfe7d29c27fe
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
   ZYSuspensionView: 40731a4c873d67f5c4aa4b2c3172aeae9a776440
 
-PODFILE CHECKSUM: 00447750159193f82f95339a05e67bcdaac671b9
+PODFILE CHECKSUM: 39d1b89264e8f947c8445587d3ebe25489b16b05
 
 COCOAPODS: 1.7.2

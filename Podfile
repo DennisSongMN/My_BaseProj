@@ -20,6 +20,7 @@ pod 'AFNetworking'
 pod 'Reachability'              #检查联网情况
 pod 'MJRefresh'
 pod 'MJExtension'    #上拉加载、下拉刷新
+pod 'YYKit'
 pod 'SDWebImage'
 pod 'IQKeyboardManager'
 pod 'OpenUDID'
