@@ -110,4 +110,8 @@
 
 #import "NSlogToDocumentFolder.h"//上线需要去掉
 
+//FFmpeg 需要
+#import <VideoToolbox/VideoToolbox.h>
+
+
 #endif /* PrefixHeader_pch */

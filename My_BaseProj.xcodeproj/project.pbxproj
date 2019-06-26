@@ -114,6 +114,7 @@
 		C3F570FF22A61052009E9691 /* ViewController@4.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570FE22A61052009E9691 /* ViewController@4.m */; };
 		C3F5710222A612AD009E9691 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5710022A612AD009E9691 /* BaseNavigationVC.m */; };
 		C3F5710922A63B0A009E9691 /* NSlogToDocumentFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5710822A63B0A009E9691 /* NSlogToDocumentFolder.m */; };
+		CEA4CAEF22C3176F004E89B7 /* File in Resources */ = {isa = PBXBuildFile; fileRef = CEA4CAEE22C3176F004E89B7 /* File */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -374,6 +375,7 @@
 		C3F5710622A63AC7009E9691 /* 调试时候添加日志时使用,上线需要去掉 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "调试时候添加日志时使用,上线需要去掉"; sourceTree = "<group>"; };
 		C3F5710722A63B0A009E9691 /* NSlogToDocumentFolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSlogToDocumentFolder.h; sourceTree = "<group>"; };
 		C3F5710822A63B0A009E9691 /* NSlogToDocumentFolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSlogToDocumentFolder.m; sourceTree = "<group>"; };
+		CEA4CAEE22C3176F004E89B7 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		E3F9D199A57739F10C8BE43B /* Pods-My_BaseProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjTests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjTests/Pods-My_BaseProjTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -601,6 +603,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				CEA4CAED22C31760004E89B7 /* FFmpeg */,
 				C3229A7722B0D38E0044BB5E /* XDTextBtnView */,
 				C301CF0B22AE72B300C0DCCC /* ToastView */,
 				C301CEFF22AE59E800C0DCCC /* 🌍ZFMRACNetworkTool */,
@@ -1133,6 +1136,14 @@
 			path = "🍌Manual_Add_ThirdFont";
 			sourceTree = "<group>";
 		};
+		CEA4CAED22C31760004E89B7 /* FFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				CEA4CAEE22C3176F004E89B7 /* File */,
+			);
+			path = FFmpeg;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1244,6 +1255,7 @@
 				C3F570FC22A60E5F009E9691 /* My@2x.png in Resources */,
 				C3F570F022A60DF3009E9691 /* Home@3x.png in Resources */,
 				C3F570F422A60E1C009E9691 /* MyStore@2x.png in Resources */,
+				CEA4CAEF22C3176F004E89B7 /* File in Resources */,
 				C3F570FB22A60E5F009E9691 /* My@3x.png in Resources */,
 				C3EDA78F22B740E8002F49D6 /* readme in Resources */,
 				C3F570F322A60E1C009E9691 /* MyStore@3x.png in Resources */,
