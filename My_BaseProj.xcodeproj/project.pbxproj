@@ -115,6 +115,9 @@
 		C3F5710222A612AD009E9691 /* BaseNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5710022A612AD009E9691 /* BaseNavigationVC.m */; };
 		C3F5710922A63B0A009E9691 /* NSlogToDocumentFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5710822A63B0A009E9691 /* NSlogToDocumentFolder.m */; };
 		CEA4CAEF22C3176F004E89B7 /* File in Resources */ = {isa = PBXBuildFile; fileRef = CEA4CAEE22C3176F004E89B7 /* File */; };
+		CEF7C40922C31E4F0068AF35 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF7C40822C31E4F0068AF35 /* libz.tbd */; };
+		CEF7C40B22C31E580068AF35 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF7C40A22C31E580068AF35 /* libbz2.tbd */; };
+		CEF7C40D22C31E600068AF35 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF7C40C22C31E600068AF35 /* libiconv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -376,6 +379,9 @@
 		C3F5710722A63B0A009E9691 /* NSlogToDocumentFolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSlogToDocumentFolder.h; sourceTree = "<group>"; };
 		C3F5710822A63B0A009E9691 /* NSlogToDocumentFolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSlogToDocumentFolder.m; sourceTree = "<group>"; };
 		CEA4CAEE22C3176F004E89B7 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		CEF7C40822C31E4F0068AF35 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CEF7C40A22C31E580068AF35 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		CEF7C40C22C31E600068AF35 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		E3F9D199A57739F10C8BE43B /* Pods-My_BaseProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjTests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjTests/Pods-My_BaseProjTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -384,6 +390,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF7C40D22C31E600068AF35 /* libiconv.tbd in Frameworks */,
+				CEF7C40B22C31E580068AF35 /* libbz2.tbd in Frameworks */,
+				CEF7C40922C31E4F0068AF35 /* libz.tbd in Frameworks */,
 				014874CCC2B5911781B42F74 /* libPods-My_BaseProj.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +419,9 @@
 		473FE5B56C6760D4864A3383 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEF7C40C22C31E600068AF35 /* libiconv.tbd */,
+				CEF7C40A22C31E580068AF35 /* libbz2.tbd */,
+				CEF7C40822C31E4F0068AF35 /* libz.tbd */,
 				A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */,
 				A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */,
 				7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */,
