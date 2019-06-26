@@ -17,6 +17,25 @@
 
 @implementation AppDelegate
 
++ (instancetype)sharedInstance {
+    
+    static AppDelegate *_instace = nil;
+    
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        
+        if (!_instace) {
+            
+            _instace = [[super allocWithZone:NULL] init];
+        }
+    });
+    return _instace;
+}
+
++ (id)allocWithZone:(struct _NSZone *)zone{
+    return [self sharedInstance];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
