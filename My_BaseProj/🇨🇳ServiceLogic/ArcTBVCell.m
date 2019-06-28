@@ -30,13 +30,18 @@
     return cell;
 }
 
++(CGFloat)cellHeight:(id)model{
+
+    return 30;
+}
+
 -(instancetype)initWithStyle:(UITableViewCellStyle)style
              reuseIdentifier:(NSString *)reuseIdentifier{
     
     if (self = [super initWithStyle:style
                     reuseIdentifier:reuseIdentifier]) {
         
-        self.backgroundColor = RandomColor;
+//        self.backgroundColor = RandomColor;
         
     }
     

@@ -118,6 +118,9 @@
 		CEF7C40922C31E4F0068AF35 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF7C40822C31E4F0068AF35 /* libz.tbd */; };
 		CEF7C40B22C31E580068AF35 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF7C40A22C31E580068AF35 /* libbz2.tbd */; };
 		CEF7C40D22C31E600068AF35 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF7C40C22C31E600068AF35 /* libiconv.tbd */; };
+		CEF8254F22C5B2A800A50884 /* 图片.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF8254C22C5B2A800A50884 /* 图片.png */; };
+		CEF8255022C5B2A800A50884 /* 图片@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF8254D22C5B2A800A50884 /* 图片@2x.png */; };
+		CEF8255122C5B2A800A50884 /* 图片@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEF8254E22C5B2A800A50884 /* 图片@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -382,6 +385,9 @@
 		CEF7C40822C31E4F0068AF35 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CEF7C40A22C31E580068AF35 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
 		CEF7C40C22C31E600068AF35 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		CEF8254C22C5B2A800A50884 /* 图片.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图片.png"; sourceTree = "<group>"; };
+		CEF8254D22C5B2A800A50884 /* 图片@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图片@2x.png"; sourceTree = "<group>"; };
+		CEF8254E22C5B2A800A50884 /* 图片@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图片@3x.png"; sourceTree = "<group>"; };
 		E3F9D199A57739F10C8BE43B /* Pods-My_BaseProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjTests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjTests/Pods-My_BaseProjTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1086,6 +1092,9 @@
 		C3F570EC22A60D66009E9691 /* PicResource */ = {
 			isa = PBXGroup;
 			children = (
+				CEF8254C22C5B2A800A50884 /* 图片.png */,
+				CEF8254D22C5B2A800A50884 /* 图片@2x.png */,
+				CEF8254E22C5B2A800A50884 /* 图片@3x.png */,
 				C3F570F222A60E1C009E9691 /* MyStore@2x.png */,
 				C3F570F122A60E1C009E9691 /* MyStore@3x.png */,
 				C3F570ED22A60DF3009E9691 /* Home@2x.png */,
@@ -1264,6 +1273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F56F7822A4C732009E9691 /* LaunchScreen.storyboard in Resources */,
+				CEF8255022C5B2A800A50884 /* 图片@2x.png in Resources */,
 				C3F570FC22A60E5F009E9691 /* My@2x.png in Resources */,
 				C3F570F022A60DF3009E9691 /* Home@3x.png in Resources */,
 				C3F570F422A60E1C009E9691 /* MyStore@2x.png in Resources */,
@@ -1281,6 +1291,8 @@
 				C3F5705122A4FA9F009E9691 /* sortedNameEN.plist in Resources */,
 				C3F56FB722A4F749009E9691 /* Sound.wav in Resources */,
 				C3F570F722A60E46009E9691 /* ShoppingCart@3x.png in Resources */,
+				CEF8254F22C5B2A800A50884 /* 图片.png in Resources */,
+				CEF8255122C5B2A800A50884 /* 图片@3x.png in Resources */,
 				C3F56F7022A4C731009E9691 /* Main.storyboard in Resources */,
 				C3F570F822A60E46009E9691 /* ShoppingCart@2x.png in Resources */,
 			);

@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(instancetype)cellWith:(UITableView *)tableView;
 
++(CGFloat)cellHeight:(id)model;
+
 @end
 
 NS_ASSUME_NONNULL_END
