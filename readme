@@ -34,3 +34,10 @@ iOS App Icon启动图尺寸配置适配iPhone XS XR XS Max等
 
 修改Xcode工程名称
 https://juejin.im/post/5a5725a76fb9a01ca602b6ac
+
+子类化UINavigationBar的方式修改导航栏的高度
+https://github.com/feng520ckx/CustomNavigationBar
+https://blog.csdn.net/gaoyp/article/details/52806519
+
+MBProgressHUD
+https://www.jianshu.com/p/cd2d2adde73c
