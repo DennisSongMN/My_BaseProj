@@ -208,7 +208,6 @@
 		C3F56F9122A4C732009E9691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3F56F9D22A4F1D1009E9691 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C3F56F9F22A4F39D009E9691 /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
-		C3F56FA022A4F3B6009E9691 /* AppMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacro.h; sourceTree = "<group>"; };
 		C3F56FA122A4F41F009E9691 /* ToolMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolMacro.h; sourceTree = "<group>"; };
 		C3F56FA322A4F43A009E9691 /* LYLUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYLUnicode.m; sourceTree = "<group>"; };
 		C3F56FA422A4F43A009E9691 /* LYLUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYLUnicode.h; sourceTree = "<group>"; };
@@ -602,7 +601,6 @@
 			isa = PBXGroup;
 			children = (
 				C3F56F9F22A4F39D009E9691 /* APIKey.h */,
-				C3F56FA022A4F3B6009E9691 /* AppMacro.h */,
 				C3F56FA122A4F41F009E9691 /* ToolMacro.h */,
 			);
 			path = "🌹Macro";
