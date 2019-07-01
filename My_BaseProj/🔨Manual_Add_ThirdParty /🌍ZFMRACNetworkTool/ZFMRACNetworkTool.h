@@ -9,10 +9,10 @@
 #ifndef ZFMRACNetworkTool_h
 #define ZFMRACNetworkTool_h
 
-#import "FMHttpConstant.h"
-#import "FMHttpResonse.h"
-#import "FMHttpRequest.h"
-#import "FMARCNetwork.h"
+#import "FMHttpConstant.h"//网络请求相关的宏定义
+#import "FMHttpResonse.h"//请求相关的参数配置
+#import "FMHttpRequest.h"//网络请求响应的，信号返回的数据模型
+#import "FMARCNetwork.h"//网络请求主要的工具类
 
 #endif /* ZFMRACNetworkTool_h */
 
