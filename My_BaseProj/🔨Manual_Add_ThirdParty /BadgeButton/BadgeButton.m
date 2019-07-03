@@ -66,16 +66,16 @@
         }
 
         //建立约束
-
         [self.badgeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
 
             make.left.mas_equalTo(self.titleLabel.mas_right).mas_offset(-5);
 
             make.bottom.mas_equalTo(self.titleLabel.mas_top).mas_offset(5);
 
-            make.height.mas_equalTo(12);
-
+            make.size.mas_equalTo(CGSizeMake(12, 12));
         }];
+        
+        [self layoutIfNeeded];
     }
 
     return self;

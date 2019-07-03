@@ -77,7 +77,7 @@
 #import "XWCountryCodeController.h"
 #import "HAHandleDemoView.h"
 #import "AESCrypt.h"
-#import "BadgeButton.h"
+#import "BadgeButton.h"//Btn右上方红点
 #import "SDCycleScrollView.h"
 #import "LeePhotoOrAlbumImagePicker.h"
 #import "LZBTabbarViewController.h"
