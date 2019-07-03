@@ -34,6 +34,8 @@
     [self prepareHeaderView];
     
     _statusBarStyle = UIStatusBarStyleLightContent;
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:19], NSForegroundColorAttributeName:[UIColor redColor]}];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
