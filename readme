@@ -48,3 +48,12 @@ https://blog.wskfz.com/index.php/archives/59/
 A powerful and easy to use category view (segmentedcontrol, segmentview, pagingview, pagerview, pagecontrol) (腾讯新闻、今日头条、QQ音乐、网易云音乐、京东、爱奇艺、腾讯视频、淘宝、天猫、简书、微博等所有主流APP分类切换滚动视图)
 https://github.com/pujiaxin33/JXCategoryView
 
+XLChannelControl
+参考了今日头条、网易、腾讯这几个新闻客户端的频道管理功能
+觉得腾讯的逻辑和操作还是比较清晰的
+所以仿照这腾讯新闻的客户端做了一个这个频道管理的功能；
+实现原理是利用UICollectionView+UIGestureRecognizer实现的
+https://github.com/mengxianliang/XLChannelControl
+
+高仿苹果按住图标抖动
+https://blog.csdn.net/weixin_34357436/article/details/92053677
