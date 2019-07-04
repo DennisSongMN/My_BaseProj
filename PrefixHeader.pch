@@ -51,7 +51,6 @@
 #import "EScrollPageView.h"
 #import "ENestScrollPageView.h"
 
-
 //🔨Manual_Add_ThirdParty
 #import "NSObject+Extras.h"
 #import "NSString+Extras.h"
@@ -107,6 +106,7 @@
 #import "AppDelegate.h"
 #import "BaseNavigationVC.h"
 #import "CustomSYSUITabBarController.h"
+#import "XLChannelControl.h"//https://github.com/mengxianliang/XLChannelControl
 
 #import "NSlogToDocumentFolder.h"//上线需要去掉
 
