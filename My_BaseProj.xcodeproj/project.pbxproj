@@ -118,6 +118,7 @@
 		CE1319A322CDA6F6002BA1A7 /* XLChannelHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE13199E22CDA6F6002BA1A7 /* XLChannelHeader.m */; };
 		CE1319A422CDA6F6002BA1A7 /* XLChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE13199F22CDA6F6002BA1A7 /* XLChannelView.m */; };
 		CE1319A522CDA6F6002BA1A7 /* XLChannelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1319A122CDA6F6002BA1A7 /* XLChannelItem.m */; };
+		CE1319C022CDB7DB002BA1A7 /* LGiOSBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1319BF22CDB7DB002BA1A7 /* LGiOSBtn.m */; };
 		CEA4CAEF22C3176F004E89B7 /* File in Resources */ = {isa = PBXBuildFile; fileRef = CEA4CAEE22C3176F004E89B7 /* File */; };
 		CEF7C40922C31E4F0068AF35 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF7C40822C31E4F0068AF35 /* libz.tbd */; };
 		CEF7C40B22C31E580068AF35 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF7C40A22C31E580068AF35 /* libbz2.tbd */; };
@@ -393,6 +394,8 @@
 		CE1319A022CDA6F6002BA1A7 /* XLChannelControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLChannelControl.h; sourceTree = "<group>"; };
 		CE1319A122CDA6F6002BA1A7 /* XLChannelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLChannelItem.m; sourceTree = "<group>"; };
 		CE1319A622CDA724002BA1A7 /* XLChannelControl */ = {isa = PBXFileReference; lastKnownFileType = text; path = XLChannelControl; sourceTree = "<group>"; };
+		CE1319BE22CDB7DB002BA1A7 /* LGiOSBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGiOSBtn.h; sourceTree = "<group>"; };
+		CE1319BF22CDB7DB002BA1A7 /* LGiOSBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGiOSBtn.m; sourceTree = "<group>"; };
 		CEA4CAEE22C3176F004E89B7 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		CEF7C40822C31E4F0068AF35 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CEF7C40A22C31E580068AF35 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
@@ -554,7 +557,7 @@
 				C3EDA78E22B740E8002F49D6 /* readme */,
 				C3F56F9D22A4F1D1009E9691 /* PrefixHeader.pch */,
 				C3F5710522A63AB2009E9691 /* Log */,
-				C3F570EC22A60D66009E9691 /* PicResource */,
+				C3F570EC22A60D66009E9691 /* ⚽️PicResource */,
 				C3F56F6722A4C731009E9691 /* My_BaseProj */,
 				C3F56FB022A4F52E009E9691 /* Other */,
 				C55CB09E4B41ABD8B535A2B2 /* Pods */,
@@ -1101,7 +1104,7 @@
 			path = DeleteSystemUITabBarButton;
 			sourceTree = "<group>";
 		};
-		C3F570EC22A60D66009E9691 /* PicResource */ = {
+		C3F570EC22A60D66009E9691 /* ⚽️PicResource */ = {
 			isa = PBXGroup;
 			children = (
 				CEF8254C22C5B2A800A50884 /* 图片.png */,
@@ -1116,12 +1119,13 @@
 				C3F570FA22A60E5F009E9691 /* My@2x.png */,
 				C3F570F922A60E5F009E9691 /* My@3x.png */,
 			);
-			path = PicResource;
+			path = "⚽️PicResource";
 			sourceTree = "<group>";
 		};
 		C3F5710322A61CDB009E9691 /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
+				CE1319BD22CDB7A9002BA1A7 /* 高仿iOS长按删除+抖动 */,
 				C301CEF622ADF94E00C0DCCC /* ArcTBVCell.h */,
 				C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */,
 				C3B1566322AB551F009061F3 /* HotLabel */,
@@ -1176,6 +1180,15 @@
 				CE1319A622CDA724002BA1A7 /* XLChannelControl */,
 			);
 			path = XLChannelControl;
+			sourceTree = "<group>";
+		};
+		CE1319BD22CDB7A9002BA1A7 /* 高仿iOS长按删除+抖动 */ = {
+			isa = PBXGroup;
+			children = (
+				CE1319BE22CDB7DB002BA1A7 /* LGiOSBtn.h */,
+				CE1319BF22CDB7DB002BA1A7 /* LGiOSBtn.m */,
+			);
+			path = "高仿iOS长按删除+抖动";
 			sourceTree = "<group>";
 		};
 		CEA4C98722C1CF18004E89B7 /* 🍌Manual_Add_ThirdFont */ = {
@@ -1521,6 +1534,7 @@
 				C3F5700022A4F7CE009E9691 /* BadgeButton.m in Sources */,
 				C3F5708222A50419009E9691 /* UIView+Extras.m in Sources */,
 				C3229A8622B21D110044BB5E /* UIView+SDExtension.m in Sources */,
+				CE1319C022CDB7DB002BA1A7 /* LGiOSBtn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

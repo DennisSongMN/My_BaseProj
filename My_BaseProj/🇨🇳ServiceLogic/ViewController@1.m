@@ -10,7 +10,9 @@
 #import "HistoryDataListTBV.h"
 #import "HistoryDataListTBVCell.h"
 
-@interface ViewController_1 ()<UITextFieldDelegate>{
+#import "LGiOSBtn.h"
+
+@interface ViewController_1 ()<UITextFieldDelegate,DZDeleteButtonDelegate>{
 
 }
 
@@ -40,24 +42,42 @@
 
 -(void)viewDidLoad{
     
-    self.view.backgroundColor = RandomColor;
     
-    [self setView:self.mainView];
+    LGiOSBtn *button = [[LGiOSBtn alloc] init];
+    [button setImage:[UIImage imageNamed:@"图片"] forState:UIControlStateNormal];
+    [button setTitle:@"百思" forState:UIControlStateNormal];
+    button.delegate = self;
+    button.frame = CGRectMake(20, 20, 60, 80);
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
     
-    NSLog(@"%@",self.mainView);
+//    self.view.backgroundColor = RandomColor;
     
-    [self.mainView addSubview:self.textField];
+//    [self setView:self.mainView];
+//
+//    NSLog(@"%@",self.mainView);
+//
+//    [self.mainView addSubview:self.textField];
+//
+//    [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
+//
+//        make.left.equalTo(self.mainView).offset(SCALING_RATIO(30));
+//
+//        make.top.equalTo(self.mainView).offset(SCALING_RATIO(30) + rectOfStatusbar + rectOfNavigationbar);
+//
+//        make.right.equalTo(self.mainView).offset(-SCALING_RATIO(30));
+//
+//        make.height.mas_equalTo((SCALING_RATIO(100)));
+//    }];
+}
 
-    [self.textField mas_makeConstraints:^(MASConstraintMaker *make) {
+- (void)btnClick {
+    NSLog(@"点击button");
+}
 
-        make.left.equalTo(self.mainView).offset(SCALING_RATIO(30));
-        
-        make.top.equalTo(self.mainView).offset(SCALING_RATIO(30) + rectOfStatusbar + rectOfNavigationbar);
-
-        make.right.equalTo(self.mainView).offset(-SCALING_RATIO(30));
-
-        make.height.mas_equalTo((SCALING_RATIO(100)));
-    }];
+- (void)deleteButtonRemoveSelf:(LGiOSBtn *)button {
+    NSLog(@"已经删除，要做什么事");
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
