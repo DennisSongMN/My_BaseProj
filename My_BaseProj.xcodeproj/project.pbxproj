@@ -119,6 +119,7 @@
 		CE1319A422CDA6F6002BA1A7 /* XLChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE13199F22CDA6F6002BA1A7 /* XLChannelView.m */; };
 		CE1319A522CDA6F6002BA1A7 /* XLChannelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1319A122CDA6F6002BA1A7 /* XLChannelItem.m */; };
 		CE1319C022CDB7DB002BA1A7 /* LGiOSBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1319BF22CDB7DB002BA1A7 /* LGiOSBtn.m */; };
+		CE2C16E022D0526D00433397 /* UITableView+EmptyData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C16DF22D0526D00433397 /* UITableView+EmptyData.m */; };
 		CEA4CAEF22C3176F004E89B7 /* File in Resources */ = {isa = PBXBuildFile; fileRef = CEA4CAEE22C3176F004E89B7 /* File */; };
 		CEF7C40922C31E4F0068AF35 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF7C40822C31E4F0068AF35 /* libz.tbd */; };
 		CEF7C40B22C31E580068AF35 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF7C40A22C31E580068AF35 /* libbz2.tbd */; };
@@ -355,8 +356,6 @@
 		C3F570CD22A53955009E9691 /* UITableView+YBGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+YBGeneral.h"; sourceTree = "<group>"; };
 		C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextAlign.m"; sourceTree = "<group>"; };
 		C3F570D022A53F71009E9691 /* UILabel+TextAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextAlign.h"; sourceTree = "<group>"; };
-		C3F570D222A53FCC009E9691 /* UITableView+EmptyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UITableView+EmptyData.h"; path = "../../../../../item/ShengAi/ShengAi/🔨Manual_Add_ThirdParty /其他🍎/UITableView+EmptyData.h"; sourceTree = "<group>"; };
-		C3F570D322A53FCC009E9691 /* UITableView+EmptyData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UITableView+EmptyData.m"; path = "../../../../../item/ShengAi/ShengAi/🔨Manual_Add_ThirdParty /其他🍎/UITableView+EmptyData.m"; sourceTree = "<group>"; };
 		C3F570D422A53FFA009E9691 /* NSString+Url_Chinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Url_Chinese.h"; sourceTree = "<group>"; };
 		C3F570D522A53FFA009E9691 /* NSString+Url_Chinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Url_Chinese.m"; sourceTree = "<group>"; };
 		C3F570D822A5403E009E9691 /* DeleteSystemUITabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteSystemUITabBarButton.m; sourceTree = "<group>"; };
@@ -396,6 +395,8 @@
 		CE1319A622CDA724002BA1A7 /* XLChannelControl */ = {isa = PBXFileReference; lastKnownFileType = text; path = XLChannelControl; sourceTree = "<group>"; };
 		CE1319BE22CDB7DB002BA1A7 /* LGiOSBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGiOSBtn.h; sourceTree = "<group>"; };
 		CE1319BF22CDB7DB002BA1A7 /* LGiOSBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGiOSBtn.m; sourceTree = "<group>"; };
+		CE2C16DE22D0526C00433397 /* UITableView+EmptyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyData.h"; sourceTree = "<group>"; };
+		CE2C16DF22D0526D00433397 /* UITableView+EmptyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmptyData.m"; sourceTree = "<group>"; };
 		CEA4CAEE22C3176F004E89B7 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		CEF7C40822C31E4F0068AF35 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CEF7C40A22C31E580068AF35 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
@@ -1034,8 +1035,8 @@
 		C3F570A522A51B4B009E9691 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
-				C3F570D222A53FCC009E9691 /* UITableView+EmptyData.h */,
-				C3F570D322A53FCC009E9691 /* UITableView+EmptyData.m */,
+				CE2C16DE22D0526C00433397 /* UITableView+EmptyData.h */,
+				CE2C16DF22D0526D00433397 /* UITableView+EmptyData.m */,
 				C3F570CD22A53955009E9691 /* UITableView+YBGeneral.h */,
 				C3F570CC22A53954009E9691 /* UITableView+YBGeneral.m */,
 			);
@@ -1125,6 +1126,7 @@
 		C3F5710322A61CDB009E9691 /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
+				CEC2B76322CE0FA30097747C /* New Group */,
 				CE1319BD22CDB7A9002BA1A7 /* 高仿iOS长按删除+抖动 */,
 				C301CEF622ADF94E00C0DCCC /* ArcTBVCell.h */,
 				C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */,
@@ -1204,6 +1206,13 @@
 				CEA4CAEE22C3176F004E89B7 /* File */,
 			);
 			path = FFmpeg;
+			sourceTree = "<group>";
+		};
+		CEC2B76322CE0FA30097747C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1454,6 +1463,7 @@
 				C3F56F7322A4C731009E9691 /* My_BaseProj.xcdatamodeld in Sources */,
 				C3F56FC322A4F783009E9691 /* NSData+CommonCrypto.m in Sources */,
 				C3F570D122A53F71009E9691 /* UILabel+TextAlign.m in Sources */,
+				CE2C16E022D0526D00433397 /* UITableView+EmptyData.m in Sources */,
 				C3F5709D22A50EB2009E9691 /* PlaySound.m in Sources */,
 				C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */,
 				C3229A9522B21D400044BB5E /* TAAnimatedDotView.m in Sources */,

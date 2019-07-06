@@ -57,3 +57,7 @@ https://github.com/mengxianliang/XLChannelControl
 
 高仿苹果按住图标抖动
 https://blog.csdn.net/weixin_34357436/article/details/92053677
+
+直接隐藏当前页面的 UITabBar
+https://www.cnblogs.com/gfxxbk/p/5595335.html
+propertyVC.hidesBottomBarWhenPushed = YES;

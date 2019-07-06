@@ -30,12 +30,12 @@
     return cell;
 }
 
-+(CGFloat)cellHeight:(id)model{
++(CGFloat)cellHeight:(nullable id)model{
 
     return 30;
 }
 
--(void)richElementsInCellWithModel:(id)model{
+-(void)richElementsInCellWithModel:(nullable id)model{
     
 }
 
