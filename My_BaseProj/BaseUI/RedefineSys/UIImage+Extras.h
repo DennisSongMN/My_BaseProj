@@ -14,20 +14,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  根据颜色生成图片
-
+ 
  @param color 颜色
  @return --
  */
 + (UIImage *)imageWithColor:(UIColor *)color;
++ (UIImage *)createImageWithColor:(UIColor *)color;
 
 /**
  根据颜色生成图片
-
+ 
  @param color 颜色
  @param rect 大小
  @return --
  */
-+ (UIImage *)imageWithColor:(UIColor *)color rect:(CGRect)rect;
++ (UIImage *)imageWithColor:(UIColor *)color
+                       rect:(CGRect)rect;
 
 @end
 
