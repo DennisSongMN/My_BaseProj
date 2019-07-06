@@ -98,7 +98,11 @@
         x = _config.itemWidth * i;
         
         BadgeButton *btn = [[BadgeButton alloc]initWithFrame:CGRectMake(x, y, width, height)
-                                                   StyleType:BadgeButtonType_Solid];
+                                                LocationType:BadgeButtonLocationType_leftTop
+                                     BadgeLabBackgroundColor:[UIColor redColor]
+                                           BadgeLabTextColor:[UIColor blueColor]
+                                            BadgeborderColor:NULL
+                                            BadgeWithContent:@""];
         
         [self.btnMutArr addObject:btn];
 
