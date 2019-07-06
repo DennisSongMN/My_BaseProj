@@ -7,91 +7,90 @@
 //
 
 #import "BadgeButton.h"
+#import "UIColor+YYAdd.h"
+#import "NSString+Extras.h"
 
 @interface BadgeButton()
 
-@property (nonatomic, strong) UILabel *badgeLabel;
+@property(nonatomic,strong)UILabel *badgeLabel;
+@property(nonatomic,assign)CGFloat badgeLabelHeight;
 
 @end
 
 @implementation BadgeButton
 
 -(instancetype)initWithFrame:(CGRect)frame
-                   StyleType:(BadgeButtonType)type{
+                LocationType:(BadgeButtonLocationType)locationType
+     BadgeLabBackgroundColor:(nullable UIColor *)backgroundColor
+           BadgeLabTextColor:(nullable UIColor *)textColor
+            BadgeborderColor:(nullable UIColor *)borderColor
+            BadgeWithContent:(nullable NSString *)contentStr{
     
     if (self = [super initWithFrame:frame]) {
-
-        self.clipsToBounds = NO;
-
-        [self.titleLabel setFont:[UIFont systemFontOfSize:15]];
-
-        [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         
-        if (type == BadgeButtonType_Hollow) {//空心
-            
-            self.badgeLabel = [[UILabel alloc]init];
-            
-            [self addSubview:self.badgeLabel];
-            
-            self.badgeLabel.backgroundColor = [UIColor clearColor];
-            
-            self.badgeLabel.font = [UIFont systemFontOfSize:10];
-            
-            self.badgeLabel.layer.borderWidth = 1;
-            
-            self.badgeLabel.layer.borderColor = [[UIColor greenColor] CGColor];
-            
-            self.badgeLabel.textColor = [UIColor redColor];
-            
-            self.badgeLabel.layer.cornerRadius = 6;
-            
-            self.badgeLabel.clipsToBounds = YES;
-
-        }
-        else if (type == BadgeButtonType_Solid){//实心
-            
-            self.badgeLabel = [[UILabel alloc]init];
-            
-            [self addSubview:self.badgeLabel];
-            
-            self.badgeLabel.backgroundColor = [UIColor redColor];
-            
-            self.badgeLabel.font = [UIFont systemFontOfSize:10];
-            
-            self.badgeLabel.textColor = [UIColor whiteColor];
-            
-            self.badgeLabel.layer.cornerRadius = 6;
-            
-            self.badgeLabel.clipsToBounds = YES;
-        }
-
+        self.clipsToBounds = NO;
+        [self.titleLabel setFont:[UIFont systemFontOfSize:15]];
+        [self setTitleColor:[UIColor blackColor]
+                   forState:UIControlStateNormal];
+        
+        self.badgeLabel.layer.borderColor = [borderColor CGColor];
+        self.badgeLabel.textColor = textColor;
+        self.badgeLabel.backgroundColor = backgroundColor;
+        self.badgeLabel.text = contentStr;
+        
         //建立约束
-        [self.badgeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-
-            make.left.mas_equalTo(self.titleLabel.mas_right).mas_offset(-5);
-
-            make.bottom.mas_equalTo(self.titleLabel.mas_top).mas_offset(5);
-
-            make.size.mas_equalTo(CGSizeMake(12, 12));
-        }];
+        switch (locationType) {
+            case BadgeButtonLocationType_leftTop:{
+                
+                [self.badgeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+                    
+                    make.right.mas_equalTo(self.mas_left).mas_offset(5);
+                    make.bottom.mas_equalTo(self.mas_top).mas_offset(5);
+                    [NSString isEmptyStr:contentStr] ? make.size.mas_equalTo(CGSizeMake(10,10)) : make.height.mas_equalTo(10) ;
+                }];
+            }
+                break;
+            case BadgeButtonLocationType_rightTop:{
+                
+                [self.badgeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+                    
+                    make.left.mas_equalTo(self.mas_right).mas_offset(-5);
+                    make.bottom.mas_equalTo(self.mas_top).mas_offset(5);
+                    [NSString isEmptyStr:contentStr] ? make.size.mas_equalTo(CGSizeMake(10,10)) : make.height.mas_equalTo(10) ;
+                }];
+                [self layoutIfNeeded];
+            }
+                break;
+            default:
+                break;
+        }
         
         [self layoutIfNeeded];
     }
-
+    
     return self;
 }
 
-#pragma mark ======== 显示角标 ======
--(void)showBadgeWithNumber:(NSInteger)badgeNumber{
-
-    self.badgeLabel.hidden = NO;
+#pragma mark ======== lazyLoad ======
+-(UILabel *)badgeLabel{
     
-    self.badgeLabel.text = [NSString stringWithFormat:@" %ld ",badgeNumber];
+    if (!_badgeLabel) {
+        _badgeLabel = UILabel.new;
+        [self addSubview:_badgeLabel];
+        _badgeLabel.clipsToBounds = YES;
+        _badgeLabel.adjustsFontSizeToFitWidth = YES;
+        _badgeLabel.layer.cornerRadius = 10 / 2;
+        _badgeLabel.font = [UIFont systemFontOfSize:10];
+        _badgeLabel.layer.borderWidth = 0.5f;
+        
+    }
+    
+    return _badgeLabel;
 }
 
 #pragma mark ======== 隐藏角标 ======
 -(void)hideBadge{
-
+    
     self.badgeLabel.hidden = YES;
     
 }

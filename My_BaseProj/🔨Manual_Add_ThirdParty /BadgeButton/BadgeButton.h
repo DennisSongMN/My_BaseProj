@@ -16,12 +16,20 @@ typedef NS_ENUM(NSInteger, BadgeButtonType) {
     BadgeButtonType_Solid//实心状态
 };
 
+typedef NS_ENUM(NSInteger, BadgeButtonLocationType) {
+    
+    BadgeButtonLocationType_leftTop,//左上
+    BadgeButtonLocationType_rightTop//右上
+};
+
 @interface BadgeButton : UIButton
 
 -(instancetype)initWithFrame:(CGRect)frame
-                   StyleType:(BadgeButtonType)type;
-
--(void)showBadgeWithNumber:(NSInteger)badgeNumber;
+                LocationType:(BadgeButtonLocationType)locationType
+     BadgeLabBackgroundColor:(nullable UIColor *)backgroundColor
+           BadgeLabTextColor:(nullable UIColor *)textColor
+            BadgeborderColor:(nullable UIColor *)borderColor
+            BadgeWithContent:(nullable NSString *)contentStr;
 
 -(void)hideBadge;
 
