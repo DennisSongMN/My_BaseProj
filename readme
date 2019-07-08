@@ -61,3 +61,30 @@ https://blog.csdn.net/weixin_34357436/article/details/92053677
 直接隐藏当前页面的 UITabBar
 https://www.cnblogs.com/gfxxbk/p/5595335.html
 propertyVC.hidesBottomBarWhenPushed = YES;
+
+友盟封装demo
+https://github.com/zhouxihi/ThirdPartDemo
+https://www.cnblogs.com/zhouxihi/p/7128567.html
+
+mansonry 高级用法
+@property (nonatomic, strong) MASConstraint *Topic_headerViewHeightConstraint;
+
+[_Topic_headerView mas_makeConstraints:^(MASConstraintMaker *make) {
+make.top.left.right.equalTo(self.view);
+self.Topic_headerViewHeightConstraint = make.height.mas_equalTo(0.0);
+}];
+
+self.Topic_headerView.Topic_showBlock = ^(BOOL isShow) {
+if (isShow) {
+CGFloat headerViewHeight = CGRectGetWidth([[UIScreen mainScreen] bounds])/5.5;
+weakSelf.Topic_headerViewHeightConstraint.mas_equalTo(headerViewHeight);
+weakSelf.Topic_headerView.hidden = NO;
+} else {
+weakSelf.Topic_headerViewHeightConstraint.mas_equalTo(0.0);
+weakSelf.Topic_headerView.hidden = YES;
+}
+[weakSelf.Topic_headerView layoutIfNeeded];
+};
+
+监听UIScrollView滑动和停止滑动
+https://blog.csdn.net/haha223545/article/details/80008279
