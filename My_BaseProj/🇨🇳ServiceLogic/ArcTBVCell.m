@@ -25,6 +25,8 @@
         
         cell = [[ArcTBVCell alloc]initWithStyle:UITableViewCellStyleDefault
                                 reuseIdentifier:ReuseIdentifier];
+        
+        [UIView cornerCutToCircleWithView:<#(UIView *)#> AndCornerRadius:<#(CGFloat)#>];
     }
     
     return cell;

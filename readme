@@ -88,3 +88,8 @@ weakSelf.Topic_headerView.hidden = YES;
 
 监听UIScrollView滑动和停止滑动
 https://blog.csdn.net/haha223545/article/details/80008279
+
+https://www.jianshu.com/p/6517ab655be7
+[爆栈热门 iOS 问题] performSelector may cause a leak because its selector is unknown
+
+https://github.com/QMUI/QMUI_iOS_CodeSnippets
