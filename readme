@@ -93,3 +93,14 @@ https://www.jianshu.com/p/6517ab655be7
 [爆栈热门 iOS 问题] performSelector may cause a leak because its selector is unknown
 
 https://github.com/QMUI/QMUI_iOS_CodeSnippets
+
+https://github.com/kingsic/SGPagingView
+
+项目中各个地方都会用到文本框，TextView的，他们输入也会有各种需求，各种限制，每次用到的时候要重写一遍这些限制，导致各种垃圾代码，各种重复，有一天，我终于看不下去了，于是把他们进行了一层封装，方便后续开发使用，代码量也减少了很多，这里把封装的查看提供出来，有需要的可以参考一下。
+https://github.com/qqcc1388/TYLimitInputDemo
+
+iOS-拍照后裁剪,不可拖动照片的问题
+https://www.jianshu.com/p/9474ca73e269
+demo:
+https://github.com/jianyang1990/YYImageClipViewControllerDemo
+
