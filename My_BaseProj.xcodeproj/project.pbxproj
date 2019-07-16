@@ -557,7 +557,6 @@
 			children = (
 				C3EDA78E22B740E8002F49D6 /* readme */,
 				C3F56F9D22A4F1D1009E9691 /* PrefixHeader.pch */,
-				C3F5710522A63AB2009E9691 /* Log */,
 				C3F570EC22A60D66009E9691 /* ⚽️PicResource */,
 				C3F56F6722A4C731009E9691 /* My_BaseProj */,
 				C3F56FB022A4F52E009E9691 /* Other */,
@@ -682,6 +681,7 @@
 		C3F56FB022A4F52E009E9691 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C3F5710522A63AB2009E9691 /* Log */,
 				C3F56F7A22A4C732009E9691 /* main.m */,
 				C3F56F6E22A4C731009E9691 /* Main.storyboard */,
 				C3F56F7422A4C732009E9691 /* Assets.xcassets */,
@@ -1152,7 +1152,8 @@
 				C3F5710722A63B0A009E9691 /* NSlogToDocumentFolder.h */,
 				C3F5710822A63B0A009E9691 /* NSlogToDocumentFolder.m */,
 			);
-			path = Log;
+			name = Log;
+			path = ../Log;
 			sourceTree = "<group>";
 		};
 		C55CB09E4B41ABD8B535A2B2 /* Pods */ = {
