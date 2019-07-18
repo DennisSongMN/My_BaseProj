@@ -661,7 +661,11 @@
 				C3F56FCD22A4F7CD009E9691 /* VerifyCodeButton */,
 				C3F56FCA22A4F7CD009E9691 /* WJItemsControlView */,
 				C3F56FE022A4F7CE009E9691 /* XDSDropDownMenu */,
+				C3B1566322AB551F009061F3 /* HotLabel */,
+				C3B1565F22AA3830009061F3 /* WaterMark */,
 				C3F5700E22A4F930009E9691 /* XLSphereView */,
+				C3B1565622A7E20E009061F3 /* HistoryDataList */,
+				CE1319BD22CDB7A9002BA1A7 /* 高仿iOS长按删除+抖动 */,
 			);
 			path = "🔨Manual_Add_ThirdParty ";
 			sourceTree = "<group>";
@@ -681,12 +685,12 @@
 		C3F56FB022A4F52E009E9691 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				C3F5710522A63AB2009E9691 /* Log */,
 				C3F56F7A22A4C732009E9691 /* main.m */,
 				C3F56F6E22A4C731009E9691 /* Main.storyboard */,
 				C3F56F7422A4C732009E9691 /* Assets.xcassets */,
 				C3F56F7622A4C732009E9691 /* LaunchScreen.storyboard */,
 				C3F56F7122A4C731009E9691 /* My_BaseProj.xcdatamodeld */,
+				C3F5710522A63AB2009E9691 /* Log */,
 				C3F56FA222A4F43A009E9691 /* Sys */,
 				C3F56F8322A4C732009E9691 /* My_BaseProjTests */,
 				C3F56F8E22A4C732009E9691 /* My_BaseProjUITests */,
@@ -885,6 +889,33 @@
 		C3F5703A22A4FA13009E9691 /* BaseUI */ = {
 			isa = PBXGroup;
 			children = (
+				C3F5708C22A5055B009E9691 /* NSObject+Extras.h */,
+				C3F5708D22A5055B009E9691 /* NSObject+Extras.m */,
+				C3F5709522A50E39009E9691 /* UIImage+Extras.h */,
+				C3F5709622A50E3A009E9691 /* UIImage+Extras.m */,
+				C3F5709822A50E5F009E9691 /* UIButton+Extras.h */,
+				C3F5709922A50E5F009E9691 /* UIButton+Extras.m */,
+				C3F5709E22A50F83009E9691 /* UIColor+Hex.h */,
+				C3F5709F22A50F83009E9691 /* UIColor+Hex.m */,
+				C3F5708922A50502009E9691 /* YBGeneralFont.h */,
+				C3F5708A22A50502009E9691 /* YBGeneralFont.m */,
+				C3F5708622A504B8009E9691 /* YBGeneralColor.h */,
+				C3F5708722A504B8009E9691 /* YBGeneralColor.m */,
+				C3F5708422A50486009E9691 /* YBSystemTool.h */,
+				C3F5708322A50486009E9691 /* YBSystemTool.m */,
+				C3F5709322A50E05009E9691 /* YBFrameTool.h */,
+				C3F5709222A50E05009E9691 /* YBFrameTool.m */,
+				C3F570D022A53F71009E9691 /* UILabel+TextAlign.h */,
+				C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */,
+				C3F570D722A54005009E9691 /* NSString */,
+				C3F5707F22A5040F009E9691 /* UIView */,
+				C3F570C822A53941009E9691 /* UINavigationController */,
+				C3F570C422A53929009E9691 /* UIScrollView */,
+				C3F570B722A53857009E9691 /* UIViewController */,
+				C3F570A522A51B4B009E9691 /* UITableView */,
+				C3F5703E22A4FA3F009E9691 /* UITableViewCell */,
+				C3F5703B22A4FA3F009E9691 /* UICollectionView */,
+				C3F5704122A4FA3F009E9691 /* UITextField */,
 				C3F570A422A5198A009E9691 /* RedefineSys */,
 			);
 			path = BaseUI;
@@ -1001,33 +1032,6 @@
 			children = (
 				C3F570DB22A54046009E9691 /* DeleteSystemUITabBarButton */,
 				C3F5704722A4FA7F009E9691 /* Notification */,
-				C3F5708C22A5055B009E9691 /* NSObject+Extras.h */,
-				C3F5708D22A5055B009E9691 /* NSObject+Extras.m */,
-				C3F5709522A50E39009E9691 /* UIImage+Extras.h */,
-				C3F5709622A50E3A009E9691 /* UIImage+Extras.m */,
-				C3F5709822A50E5F009E9691 /* UIButton+Extras.h */,
-				C3F5709922A50E5F009E9691 /* UIButton+Extras.m */,
-				C3F5709E22A50F83009E9691 /* UIColor+Hex.h */,
-				C3F5709F22A50F83009E9691 /* UIColor+Hex.m */,
-				C3F5708922A50502009E9691 /* YBGeneralFont.h */,
-				C3F5708A22A50502009E9691 /* YBGeneralFont.m */,
-				C3F5708622A504B8009E9691 /* YBGeneralColor.h */,
-				C3F5708722A504B8009E9691 /* YBGeneralColor.m */,
-				C3F5708422A50486009E9691 /* YBSystemTool.h */,
-				C3F5708322A50486009E9691 /* YBSystemTool.m */,
-				C3F5709322A50E05009E9691 /* YBFrameTool.h */,
-				C3F5709222A50E05009E9691 /* YBFrameTool.m */,
-				C3F570D022A53F71009E9691 /* UILabel+TextAlign.h */,
-				C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */,
-				C3F570D722A54005009E9691 /* NSString */,
-				C3F5707F22A5040F009E9691 /* UIView */,
-				C3F570C822A53941009E9691 /* UINavigationController */,
-				C3F570C422A53929009E9691 /* UIScrollView */,
-				C3F570B722A53857009E9691 /* UIViewController */,
-				C3F570A522A51B4B009E9691 /* UITableView */,
-				C3F5703E22A4FA3F009E9691 /* UITableViewCell */,
-				C3F5703B22A4FA3F009E9691 /* UICollectionView */,
-				C3F5704122A4FA3F009E9691 /* UITextField */,
 			);
 			path = RedefineSys;
 			sourceTree = "<group>";
@@ -1126,13 +1130,8 @@
 		C3F5710322A61CDB009E9691 /* 🇨🇳ServiceLogic */ = {
 			isa = PBXGroup;
 			children = (
-				CEC2B76322CE0FA30097747C /* New Group */,
-				CE1319BD22CDB7A9002BA1A7 /* 高仿iOS长按删除+抖动 */,
 				C301CEF622ADF94E00C0DCCC /* ArcTBVCell.h */,
 				C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */,
-				C3B1566322AB551F009061F3 /* HotLabel */,
-				C3B1565F22AA3830009061F3 /* WaterMark */,
-				C3B1565622A7E20E009061F3 /* HistoryDataList */,
 				C3F570E622A60D0A009E9691 /* ViewController@1.h */,
 				C3F570E722A60D0A009E9691 /* ViewController@1.m */,
 				C3F570E322A60CEF009E9691 /* ViewController@2.h */,
@@ -1207,13 +1206,6 @@
 				CEA4CAEE22C3176F004E89B7 /* File */,
 			);
 			path = FFmpeg;
-			sourceTree = "<group>";
-		};
-		CEC2B76322CE0FA30097747C /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

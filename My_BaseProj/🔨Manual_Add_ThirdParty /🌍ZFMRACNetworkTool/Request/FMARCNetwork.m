@@ -576,6 +576,10 @@ static FMARCNetwork *_instance = nil;
     
     [hud hideAnimated:YES
            afterDelay:2.f];
+    
+//    hud.labelText = text;
+//    
+//    [hud hide:YES afterDelay:2.f];
 }
 
 
