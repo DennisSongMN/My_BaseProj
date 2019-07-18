@@ -10,12 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSInteger, BadgeButtonType) {
-    
-    BadgeButtonType_Hollow,//空心状态
-    BadgeButtonType_Solid//实心状态
-};
-
 typedef NS_ENUM(NSInteger, BadgeButtonLocationType) {
     
     BadgeButtonLocationType_leftTop,//左上
