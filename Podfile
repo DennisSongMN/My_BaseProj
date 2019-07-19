@@ -1,6 +1,6 @@
 
 # Uncomment the next line to define a global platform for your project
- platform :ios, '9.0'
+ platform :ios, '12.2'
 
 target 'My_BaseProj' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
@@ -56,6 +56,7 @@ pod 'JDStatusBarNotification' #网络提示--> 网络监听显示，主要是展
 #pod 'HWPanModal'#HWPanModal 用于从底部弹出控制器（UIViewController），并用拖拽手势来关闭控制器。提供了自定义视图大小和位置，高度自定义弹出视图的各个属性。 https://github.com/HeathWang/HWPanModal
 #pod 'SearchTextField'
 pod 'ZFPlayer' #https://github.com/renzifeng/ZFPlayer
+pod 'JXCategoryView'
 
 #视频相关框架
 #pod 'ZFPlayer/ControlView'
