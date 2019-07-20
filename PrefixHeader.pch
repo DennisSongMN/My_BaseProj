@@ -45,7 +45,6 @@
 #import "SVProgressHUD.h"
 #import <AsyncDisplayKit/AsyncDisplayKit.h>
 #import "TXScrollLabelView.h"
-#import "NSString+WPAttributedMarkup.h"//富文本编辑
 #import "ZXingObjC.h"
 #import "AwesomeMenu.h"
 #import "EScrollPageView.h"

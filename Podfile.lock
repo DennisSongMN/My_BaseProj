@@ -48,6 +48,7 @@ PODS:
   - HCSStarRatingView (1.5)
   - IQKeyboardManager (6.3.0)
   - JDStatusBarNotification (1.6.0)
+  - JXCategoryView (1.3.14)
   - Masonry (1.1.0)
   - "MBProgressHUD+WJExtension (1.3.1)"
   - MJExtension (3.0.17)
@@ -110,7 +111,6 @@ PODS:
   - TXScrollLabelView (1.3.2)
   - UICountingLabel (1.4.1)
   - WebViewJavascriptBridge (6.0.3)
-  - WPAttributedMarkup (1.0.0)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -138,6 +138,7 @@ DEPENDENCIES:
   - HCSStarRatingView
   - IQKeyboardManager
   - JDStatusBarNotification
+  - JXCategoryView
   - Masonry
   - "MBProgressHUD+WJExtension"
   - MJExtension
@@ -160,7 +161,6 @@ DEPENDENCIES:
   - TXScrollLabelView
   - UICountingLabel
   - WebViewJavascriptBridge
-  - WPAttributedMarkup
   - YYKit
   - ZFPlayer
   - ZXingObjC/QRCode
@@ -185,6 +185,7 @@ SPEC REPOS:
     - HCSStarRatingView
     - IQKeyboardManager
     - JDStatusBarNotification
+    - JXCategoryView
     - Masonry
     - "MBProgressHUD+WJExtension"
     - MJExtension
@@ -210,7 +211,6 @@ SPEC REPOS:
     - TXScrollLabelView
     - UICountingLabel
     - WebViewJavascriptBridge
-    - WPAttributedMarkup
     - YYKit
     - ZFPlayer
     - ZXingObjC
@@ -234,6 +234,7 @@ SPEC CHECKSUMS:
   HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
   IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
   JDStatusBarNotification: 21b616e7432284fea6eb0ce9eadc37c8038a5544
+  JXCategoryView: 008a9d2eb3ba6035eb2df9a2b3e9a4806d6601a3
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   "MBProgressHUD+WJExtension": 1d9c93951b49e8c711fef6e6089aa6d7d3321192
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
@@ -259,12 +260,11 @@ SPEC CHECKSUMS:
   TXScrollLabelView: 0e1650caf61198bf5dc0938ea6493254aeb80f90
   UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
-  WPAttributedMarkup: eb50878af4ec647d8d2090f721a5cfe7d29c27fe
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZFPlayer: fdc92702cc611922182a951991dea78566da7605
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
   ZYSuspensionView: 40731a4c873d67f5c4aa4b2c3172aeae9a776440
 
-PODFILE CHECKSUM: 6c3b9610ffcdaf0012a7bf7e6b94ac0b47790bce
+PODFILE CHECKSUM: ed652249d4db1565ca17d31e2eab5b71f6b26912
 
 COCOAPODS: 1.7.4

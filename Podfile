@@ -26,7 +26,6 @@ pod 'IQKeyboardManager'
 pod 'OpenUDID'
 pod 'ZXingObjC/QRCode'#ZXing是一个开放源码的，用Java实现的多种格式的1D/2D条码图像处理库，目前由Google维护更新
 pod 'SGQRCode'#二维码生成、扫描及页面跳转
-pod 'WPAttributedMarkup'  #富文本编辑 WPAttributedMarkup能给Label中某关键字添加文字效果或点击事件。Label中的某个关键字词可以改变字体的特性如颜色、加粗，下划线等，也可以为某个关键字词添加点击事件
 pod 'DTCoreText'  #解析HTML与CSS最终用CoreText绘制出来，通常用于在一些需要显示富文本的场景下代替低性能的UIWebView
 #pod 'MWPhotoBrowser'#一个简单的iOS照片和视频浏览器，带有可选的网格视图，标题和选择
 pod 'FDFullscreenPopGesture'#一个丝滑的全屏滑动返回手势
