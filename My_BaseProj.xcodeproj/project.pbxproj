@@ -151,6 +151,7 @@
 		5C038405B6CC66D5B5E78792 /* Pods-My_BaseProjTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjTests.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProjTests/Pods-My_BaseProjTests.release.xcconfig"; sourceTree = "<group>"; };
 		6034DD6DF7212D7FC23F03FC /* Pods-My_BaseProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjUITests.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProjUITests/Pods-My_BaseProjUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProjUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		826DFEC822EAAE3D00464D1B /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		92651E6F9D3EC2845A164D47 /* Pods-My_BaseProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProj.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProj/Pods-My_BaseProj.release.xcconfig"; sourceTree = "<group>"; };
 		A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProjTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67D74E51242D15226C4693B /* Pods-My_BaseProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjUITests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjUITests/Pods-My_BaseProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -555,6 +556,7 @@
 		C3F56F5C22A4C731009E9691 = {
 			isa = PBXGroup;
 			children = (
+				826DFEC822EAAE3D00464D1B /* File */,
 				C3EDA78E22B740E8002F49D6 /* readme */,
 				C3F56F9D22A4F1D1009E9691 /* PrefixHeader.pch */,
 				C3F570EC22A60D66009E9691 /* ⚽️PicResource */,
