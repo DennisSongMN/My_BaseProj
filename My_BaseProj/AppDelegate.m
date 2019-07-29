@@ -46,22 +46,11 @@
     SuppressPerformSelectorLeakWarning(
                                        
                                        id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
-                                       
                                        [overlayClass performSelector:NSSelectorFromString(@"prepareDebuggingOverlay")];
-                                       
                                        );
     
 #endif
-    
-    self.window.frame = [UIScreen mainScreen].bounds;
-    
-    self.window.backgroundColor = kWhiteColor;
-    
-    //根试图
-    self.window.rootViewController = self.customSYSUITabBarController;
-    
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
@@ -96,15 +85,18 @@
 
 #pragma mark —— lazyLoad
 -(CustomSYSUITabBarController *)customSYSUITabBarController{
-    
     if (!_customSYSUITabBarController) {
-        
         _customSYSUITabBarController = CustomSYSUITabBarController.new;
-    }
-    
-    return _customSYSUITabBarController;
+    }return _customSYSUITabBarController;
 }
 
-
+-(UIWindow *)window{
+    if (!_window) {
+        _window = UIWindow.new;
+        _window.frame = [UIScreen mainScreen].bounds;
+        _window.backgroundColor = kWhiteColor;
+        _window.rootViewController = self.customSYSUITabBarController;//根试图
+    }return _window;
+}
 
 @end
