@@ -25,6 +25,8 @@
 
 @end
 
+CGFloat LZB_TABBAR_HEIGHT;
+
 @implementation CustomSYSUITabBarController
 
 - (void)dealloc {
@@ -34,7 +36,7 @@
 
 -(instancetype)init{
     if (self = [super init]) {
-        self.LZB_TABBAR_HEIGHT = isiPhoneX_series()?80:49;
+        LZB_TABBAR_HEIGHT = isiPhoneX_series()?80:49;
     }return self;
 }
 

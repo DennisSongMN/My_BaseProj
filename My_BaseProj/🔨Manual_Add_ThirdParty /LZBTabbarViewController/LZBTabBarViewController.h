@@ -21,8 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,weak)id<LZBTabBarViewControllerDelegate> delegate;
 
-@property(nonatomic,assign)CGFloat LZB_TABBAR_HEIGHT;
-
 /**
  *  子控制数组
  */

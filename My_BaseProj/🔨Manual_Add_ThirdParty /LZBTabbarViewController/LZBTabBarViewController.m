@@ -21,16 +21,6 @@
 
 @implementation LZBTabBarViewController
 
--(void)setLZB_TABBAR_HEIGHT:(CGFloat)LZB_TABBAR_HEIGHT{
-    
-    if (LZB_TABBAR_HEIGHT == 0) {
-        
-        _LZB_TABBAR_HEIGHT = LZB_TABBAR_DEFULT_HEIGHT;
-    }
-    
-    _LZB_TABBAR_HEIGHT = LZB_TABBAR_HEIGHT;
-}
-
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -156,7 +146,7 @@
     //定义Block处理隐藏的lzb_tabBarHidden
     __weak LZBTabBarViewController *weakSelf = self;
     
-    void(^blcokHidden)() = ^{
+    void(^blcokHidden)(void) = ^{
         
         CGSize fullSize = weakSelf.view.bounds.size;
         
@@ -165,8 +155,6 @@
         CGFloat contentViewHeight = fullSize.height;
         
         CGFloat tabBarHeight = CGRectGetHeight(weakSelf.lzb_tabBar.frame);
-        
-        if(!tabBarHeight)  tabBarHeight = self.LZB_TABBAR_HEIGHT;
         
         if(!lzb_tabBarHidden){//显示
             tabBarStartingY = fullSize.height - tabBarHeight;
@@ -297,7 +285,10 @@ didSelectItemAtIndex:(NSInteger)index{
                                    UIViewAutoresizingFlexibleLeftMargin|
                                    UIViewAutoresizingFlexibleRightMargin|
                                     UIViewAutoresizingFlexibleBottomMargin;
-       _tabbar.frame = CGRectMake(0, self.contentView.frame.size.height - self.LZB_TABBAR_HEIGHT, [UIScreen mainScreen].bounds.size.width, self.LZB_TABBAR_HEIGHT);
+       
+       extern CGFloat LZB_TABBAR_HEIGHT;
+       
+       _tabbar.frame = CGRectMake(0, self.contentView.frame.size.height - LZB_TABBAR_HEIGHT, [UIScreen mainScreen].bounds.size.width, LZB_TABBAR_HEIGHT);
        _tabbar.delegate = self;
    }
     return _tabbar;
