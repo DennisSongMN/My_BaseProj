@@ -18,6 +18,7 @@
 
 @property(nonatomic,strong)NSMutableArray<UIImage *> *customUnselectedImgMutArr;
 @property(nonatomic,strong)NSMutableArray<UIImage *> *customSelectedImgMutArr;
+@property(nonatomic,strong)NSMutableArray<NSString *> *titleStrMutArr;
 @property(nonatomic,strong)NSMutableArray<UIViewController *> *viewControllerMutArr;
 @property(nonatomic,strong)BaseNavigationVC *customNavigationVC;
 @property(nonatomic,strong)NSMutableArray *mutArr;
@@ -32,34 +33,18 @@
 }
 
 -(instancetype)init{
-    
     if (self = [super init]) {
-        
         self.LZB_TABBAR_HEIGHT = isiPhoneX_series()?80:49;
-    }
-    
-    return self;
+    }return self;
 }
 
 -(void)loadView{
-    
     [super loadView];
-    
-    [self value];
 }
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    
     [self p_setUpAllChildViewController];
-}
-
--(void)value{
-
-    self.customUnselectedImgMutArr = [NSMutableArray arrayWithObjects:kIMG(@"Home"),kIMG(@"MyStore"),kIMG(@"ShoppingCart"),kIMG(@"My"),nil];
-
-    self.customSelectedImgMutArr = [NSMutableArray arrayWithObjects:kIMG(@"Home"),kIMG(@"MyStore"),kIMG(@"ShoppingCart"),kIMG(@"My"),nil];;
 }
 
 - (void)p_setUpAllChildViewController {
@@ -69,36 +54,20 @@
     self.delegate = self;
 
     for (int i = 0; i < self.viewControllerMutArr.count; i ++) {
-
         self.customNavigationVC = [[BaseNavigationVC alloc]initWithRootViewController:(UIViewController *)self.viewControllerMutArr[i]];
-
         [self.mutArr addObject:self.customNavigationVC];
     }
 
     self.viewControllers = (NSArray *)self.mutArr;
 
-    [self p_setupCustomTBCWithViewController:self.viewControllerMutArr[0]
-                                       Title:@"首页"
-                                 SelectImage:(UIImage *)self.customSelectedImgMutArr[0]
-                               NnSelectImage:(UIImage *)self.customUnselectedImgMutArr[0]];
-
-    [self p_setupCustomTBCWithViewController:self.viewControllerMutArr[1]
-                                       Title:@"我的店铺"
-                                 SelectImage:(UIImage *)self.customSelectedImgMutArr[1]
-                               NnSelectImage:(UIImage *)self.customUnselectedImgMutArr[1]];
-
-    [self p_setupCustomTBCWithViewController:self.viewControllerMutArr[2]
-                                       Title:@"购物车"
-                                 SelectImage:(UIImage *)self.customSelectedImgMutArr[2]
-                               NnSelectImage:(UIImage *)self.customUnselectedImgMutArr[2]];
-
-    [self p_setupCustomTBCWithViewController:self.viewControllerMutArr[3]
-                                       Title:@"我的"
-                                 SelectImage:(UIImage *)self.customSelectedImgMutArr[3]
-                               NnSelectImage:(UIImage *)self.customUnselectedImgMutArr[3]];
-
+    for (int i = 0; i <self.titleStrMutArr.count; i++) {
+        [self p_setupCustomTBCWithViewController:self.viewControllerMutArr[i]
+                                           Title:self.titleStrMutArr[i]
+                                     SelectImage:(UIImage *)self.customSelectedImgMutArr[i]
+                                   NnSelectImage:(UIImage *)self.customUnselectedImgMutArr[i]];
+    }
+    
     self.lzb_tabBar.backgroundColor = kWhiteColor;
-
     self.isShouldAnimation = YES;
 }
 
@@ -148,13 +117,39 @@
 
 #pragma mark —— lazyLoad
 -(NSMutableArray *)mutArr{
-    
     if (!_mutArr) {
-        
         _mutArr = NSMutableArray.array;
-    }
-    
-    return _mutArr;
+    }return _mutArr;
+}
+
+-(NSMutableArray<NSString *> *)titleStrMutArr{
+    if (!_titleStrMutArr) {
+        _titleStrMutArr = NSMutableArray.array;
+        [_titleStrMutArr addObject:@"CASINO"];
+        [_titleStrMutArr addObject:@"POKER"];
+        [_titleStrMutArr addObject:@"VIET LOTTO"];
+        [_titleStrMutArr addObject:@"PROMOTION"];
+    }return _titleStrMutArr;
+}
+
+-(NSMutableArray<UIImage *> *)customUnselectedImgMutArr{
+    if (!_customUnselectedImgMutArr) {
+        _customUnselectedImgMutArr = NSMutableArray.array;
+        [_customUnselectedImgMutArr addObject:kIMG(@"Home")];
+        [_customUnselectedImgMutArr addObject:kIMG(@"MyStore")];
+        [_customUnselectedImgMutArr addObject:kIMG(@"ShoppingCart")];
+        [_customUnselectedImgMutArr addObject:kIMG(@"My")];
+    }return _customUnselectedImgMutArr;
+}
+
+-(NSMutableArray<UIImage *> *)customSelectedImgMutArr{
+    if (!_customSelectedImgMutArr) {
+        _customSelectedImgMutArr = NSMutableArray.array;
+        [_customSelectedImgMutArr addObject:kIMG(@"Home")];
+        [_customSelectedImgMutArr addObject:kIMG(@"MyStore")];
+        [_customSelectedImgMutArr addObject:kIMG(@"ShoppingCart")];
+        [_customSelectedImgMutArr addObject:kIMG(@"My")];
+    }return _customSelectedImgMutArr;
 }
 
 @end
