@@ -65,7 +65,7 @@
 #pragma mark —— UITableViewDelegate,UITableViewDataSource
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return [HistoryDataListTBVCell cellHeightWithModel:NULL];;
+    return [HistoryDataListTBVCell cellHeightWithModel:NULL];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

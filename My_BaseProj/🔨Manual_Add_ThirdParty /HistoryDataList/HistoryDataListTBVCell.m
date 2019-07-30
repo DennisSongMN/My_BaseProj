@@ -23,7 +23,7 @@
 
 @implementation HistoryDataListTBVCell
 
-+(instancetype)cellWith:(UITableView*)tableView{
++(instancetype)cellWith:(UITableView *)tableView{
     
     HistoryDataListTBVCell *cell = (HistoryDataListTBVCell *)[tableView dequeueReusableCellWithIdentifier:ReuseIdentifier];
     
