@@ -7,8 +7,8 @@
 //
 
 #import <WebKit/WebKit.h>
-#import "XZManager.h"
-#import "XZURIManager.h"
+//#import "XZManager.h"
+//#import "XZURIManager.h"
 #import "UIView+runtime.h"
 #import "UIView+category.h"
 

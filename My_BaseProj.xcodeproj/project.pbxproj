@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		014874CCC2B5911781B42F74 /* libPods-My_BaseProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */; };
 		3599FB3289EE82D5677422D9 /* libPods-My_BaseProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */; };
-		8BB8108222F13F8D00F2FD8E /* XZWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108122F13F8C00F2FD8E /* XZWebView.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
 		9DFCE79F330877C9C84A0FBC /* libPods-My_BaseProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */; };
 		C301CEF822ADF94E00C0DCCC /* ArcTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */; };
@@ -1492,7 +1491,6 @@
 				C3F5709722A50E3A009E9691 /* UIImage+Extras.m in Sources */,
 				C3F5709A22A50E5F009E9691 /* UIButton+Extras.m in Sources */,
 				C3F56F7322A4C731009E9691 /* My_BaseProj.xcdatamodeld in Sources */,
-				8BB8108222F13F8D00F2FD8E /* XZWebView.m in Sources */,
 				C3F56FC322A4F783009E9691 /* NSData+CommonCrypto.m in Sources */,
 				C3F570D122A53F71009E9691 /* UILabel+TextAlign.m in Sources */,
 				CE2C16E022D0526D00433397 /* UITableView+EmptyData.m in Sources */,
