@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		014874CCC2B5911781B42F74 /* libPods-My_BaseProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */; };
 		3599FB3289EE82D5677422D9 /* libPods-My_BaseProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */; };
+		8BB8108222F13F8D00F2FD8E /* XZWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108122F13F8C00F2FD8E /* XZWebView.m */; };
+		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
 		9DFCE79F330877C9C84A0FBC /* libPods-My_BaseProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */; };
 		C301CEF822ADF94E00C0DCCC /* ArcTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */; };
 		C301CF0E22AE72BE00C0DCCC /* YKToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CF0D22AE72BE00C0DCCC /* YKToastView.m */; };
@@ -151,6 +153,13 @@
 		6034DD6DF7212D7FC23F03FC /* Pods-My_BaseProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjUITests.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProjUITests/Pods-My_BaseProjUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProjUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		826DFEC822EAAE3D00464D1B /* Jose */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jose; sourceTree = "<group>"; };
+		8BB8107C22F13F3700F2FD8E /* 获取当前视图控制器.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "获取当前视图控制器.png"; sourceTree = "<group>"; };
+		8BB8107D22F13F3700F2FD8E /* cell重用.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell重用.png"; sourceTree = "<group>"; };
+		8BB8107E22F13F3700F2FD8E /* 葵花宝典.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "葵花宝典.m"; sourceTree = "<group>"; };
+		8BB8108022F13F8C00F2FD8E /* XZWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZWebView.h; sourceTree = "<group>"; };
+		8BB8108122F13F8C00F2FD8E /* XZWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZWebView.m; sourceTree = "<group>"; };
+		8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		8BB8108522F1404900F2FD8E /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		92651E6F9D3EC2845A164D47 /* Pods-My_BaseProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProj.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProj/Pods-My_BaseProj.release.xcconfig"; sourceTree = "<group>"; };
 		A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProjTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67D74E51242D15226C4693B /* Pods-My_BaseProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjUITests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjUITests/Pods-My_BaseProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -450,6 +459,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8BB8107B22F13F2300F2FD8E /* Doc */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8107C22F13F3700F2FD8E /* 获取当前视图控制器.png */,
+				8BB8107E22F13F3700F2FD8E /* 葵花宝典.m */,
+				8BB8107D22F13F3700F2FD8E /* cell重用.png */,
+				826DFEC822EAAE3D00464D1B /* Jose */,
+				C3EDA78E22B740E8002F49D6 /* readme */,
+			);
+			path = Doc;
+			sourceTree = "<group>";
+		};
+		8BB8107F22F13F8C00F2FD8E /* 程肖斌封装的WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8108022F13F8C00F2FD8E /* XZWebView.h */,
+				8BB8108122F13F8C00F2FD8E /* XZWebView.m */,
+			);
+			path = "程肖斌封装的WKWebView";
+			sourceTree = "<group>";
+		};
+		8BB8108322F1403D00F2FD8E /* 截获导航控制器系统返回按钮的点击pop及右滑pop事件 */ = {
+			isa = PBXGroup;
+			children = (
+				8BB8108522F1404900F2FD8E /* UIViewController+BackButtonHandler.h */,
+				8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */,
+			);
+			path = "截获导航控制器系统返回按钮的点击pop及右滑pop事件";
+			sourceTree = "<group>";
+		};
 		C301CEFF22AE59E800C0DCCC /* 🌍ZFMRACNetworkTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,8 +593,7 @@
 		C3F56F5C22A4C731009E9691 = {
 			isa = PBXGroup;
 			children = (
-				826DFEC822EAAE3D00464D1B /* Jose */,
-				C3EDA78E22B740E8002F49D6 /* readme */,
+				8BB8107B22F13F2300F2FD8E /* Doc */,
 				C3F56F9D22A4F1D1009E9691 /* PrefixHeader.pch */,
 				C3F570EC22A60D66009E9691 /* ⚽️PicResource */,
 				C3F56F6722A4C731009E9691 /* My_BaseProj */,
@@ -635,6 +673,8 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				8BB8108322F1403D00F2FD8E /* 截获导航控制器系统返回按钮的点击pop及右滑pop事件 */,
+				8BB8107F22F13F8C00F2FD8E /* 程肖斌封装的WKWebView */,
 				C301CEFF22AE59E800C0DCCC /* 🌍ZFMRACNetworkTool */,
 				CE1319BD22CDB7A9002BA1A7 /* 高仿iOS长按删除+抖动 */,
 				C3F56FB822A4F762009E9691 /* AESCrypt-ObjC */,
@@ -1452,6 +1492,7 @@
 				C3F5709722A50E3A009E9691 /* UIImage+Extras.m in Sources */,
 				C3F5709A22A50E5F009E9691 /* UIButton+Extras.m in Sources */,
 				C3F56F7322A4C731009E9691 /* My_BaseProj.xcdatamodeld in Sources */,
+				8BB8108222F13F8D00F2FD8E /* XZWebView.m in Sources */,
 				C3F56FC322A4F783009E9691 /* NSData+CommonCrypto.m in Sources */,
 				C3F570D122A53F71009E9691 /* UILabel+TextAlign.m in Sources */,
 				CE2C16E022D0526D00433397 /* UITableView+EmptyData.m in Sources */,
@@ -1523,6 +1564,7 @@
 				C3F5707E22A50316009E9691 /* TouchID.m in Sources */,
 				C3F5710222A612AD009E9691 /* BaseNavigationVC.m in Sources */,
 				C3F56FF422A4F7CE009E9691 /* LeePhotoOrAlbumImagePicker.m in Sources */,
+				8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */,
 				C3F56FF022A4F7CE009E9691 /* WJItemsControlView.m in Sources */,
 				C3F56FF922A4F7CE009E9691 /* LXTagsView.m in Sources */,
 				C3229A8922B21D110044BB5E /* SDCollectionViewCell.m in Sources */,
