@@ -51,25 +51,25 @@
 //登录成功,获取用户名
 +(NSString *)getUserName{
 
-    return GetUserDefaultWithKey(@"name");
+    return GetUserDefaultObjForKey(@"name");
 }
 
 //登录成功,获取Member_id
 +(NSNumber *)getMember_id{
 
-    return GetUserDefaultWithKey(@"member_id");
+    return GetUserDefaultObjForKey(@"member_id");
 }
 
 //登录成功,获取User_token
 +(NSString *)getUser_token{
     
-    return GetUserDefaultWithKey(@"user_token");
+    return GetUserDefaultObjForKey(@"user_token");
 }
 
 //登录成功,获取IsVip
 +(NSString *)getIsVip{
     
-    return GetUserDefaultWithKey(@"isVip");
+    return GetUserDefaultObjForKey(@"isVip");
 }
 
 //退出登录

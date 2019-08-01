@@ -95,7 +95,7 @@
         _window = UIWindow.new;
         _window.frame = [UIScreen mainScreen].bounds;
         _window.backgroundColor = kWhiteColor;
-        _window.rootViewController = self.customSYSUITabBarController;//根试图
+        _window.rootViewController = self.customSYSUITabBarController;//根视图
     }return _window;
 }
 

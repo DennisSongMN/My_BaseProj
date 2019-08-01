@@ -119,7 +119,7 @@
     
     kWeakSelf(self);
     
-    BOOL valueLogin = GetUserDefaultBoolWithKey(kIsLogin);
+    BOOL valueLogin = GetUserDefaultBoolForKey(kIsLogin);
 
     NSLog(@"%d",valueLogin);
     

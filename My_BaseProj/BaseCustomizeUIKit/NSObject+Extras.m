@@ -99,7 +99,7 @@
     
 //    NSDate *oldDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"APPFirstStartKey"];
 
-    NSDate *oldDate = GetUserDefaultWithKey(@"APPFirstStartKey");
+    NSDate *oldDate = GetUserDefaultObjForKey(@"APPFirstStartKey");
 
     UserDefaultSynchronize;
     
