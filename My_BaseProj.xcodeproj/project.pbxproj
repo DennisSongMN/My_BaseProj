@@ -624,9 +624,8 @@
 		C3F56F5C22A4C731009E9691 = {
 			isa = PBXGroup;
 			children = (
-				8BB8107B22F13F2300F2FD8E /* Doc */,
 				C3F56F9D22A4F1D1009E9691 /* PrefixHeader.pch */,
-				C3F570EC22A60D66009E9691 /* ⚽️PicResource */,
+				8BB8107B22F13F2300F2FD8E /* Doc */,
 				C3F56F6722A4C731009E9691 /* My_BaseProj */,
 				C3F56FB022A4F52E009E9691 /* Other */,
 				C55CB09E4B41ABD8B535A2B2 /* Pods */,
@@ -659,6 +658,7 @@
 				CEA4C98722C1CF18004E89B7 /* 🍌Manual_Add_ThirdFont */,
 				C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */,
 				C3F56F9E22A4F38C009E9691 /* 🌹Macro */,
+				C3F570EC22A60D66009E9691 /* ⚽️PicResource */,
 				C3F5710322A61CDB009E9691 /* 🇨🇳ServiceLogic */,
 			);
 			path = My_BaseProj;
