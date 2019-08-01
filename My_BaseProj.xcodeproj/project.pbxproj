@@ -10,6 +10,7 @@
 		014874CCC2B5911781B42F74 /* libPods-My_BaseProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */; };
 		3599FB3289EE82D5677422D9 /* libPods-My_BaseProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
+		8BF0756722F2BC34008858BC /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0756522F2BC34008858BC /* HQCollectionViewFlowLayout.m */; };
 		9DFCE79F330877C9C84A0FBC /* libPods-My_BaseProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */; };
 		C301CEF822ADF94E00C0DCCC /* ArcTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */; };
 		C301CF0E22AE72BE00C0DCCC /* YKToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CF0D22AE72BE00C0DCCC /* YKToastView.m */; };
@@ -159,6 +160,8 @@
 		8BB8108122F13F8C00F2FD8E /* XZWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZWebView.m; sourceTree = "<group>"; };
 		8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		8BB8108522F1404900F2FD8E /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		8BF0756522F2BC34008858BC /* HQCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		8BF0756622F2BC34008858BC /* HQCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		92651E6F9D3EC2845A164D47 /* Pods-My_BaseProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProj.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProj/Pods-My_BaseProj.release.xcconfig"; sourceTree = "<group>"; };
 		A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProjTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67D74E51242D15226C4693B /* Pods-My_BaseProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjUITests.debug.xcconfig"; path = "Target Support Files/Pods-My_BaseProjUITests/Pods-My_BaseProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -488,6 +491,16 @@
 			path = "截获导航控制器系统返回按钮的点击pop及右滑pop事件";
 			sourceTree = "<group>";
 		};
+		8BF0756422F2BC34008858BC /* UICollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8BF0756522F2BC34008858BC /* HQCollectionViewFlowLayout.m */,
+				8BF0756622F2BC34008858BC /* HQCollectionViewFlowLayout.h */,
+			);
+			name = UICollectionViewFlowLayout;
+			path = ../../../888b/888b/BaseCustomizeUIKit/UICollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
 		C301CEFF22AE59E800C0DCCC /* 🌍ZFMRACNetworkTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -623,7 +636,7 @@
 				C3F570A222A5128A009E9691 /* IsLogin.h */,
 				C3F570A122A5128A009E9691 /* IsLogin.m */,
 				C3F56F7922A4C732009E9691 /* Info.plist */,
-				C3F5703A22A4FA13009E9691 /* BaseUI */,
+				C3F5703A22A4FA13009E9691 /* BaseCustomizeUIKit */,
 				CEA4C98722C1CF18004E89B7 /* 🍌Manual_Add_ThirdFont */,
 				C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */,
 				C3F56F9E22A4F38C009E9691 /* 🌹Macro */,
@@ -924,7 +937,7 @@
 			path = HAHandleDemoView;
 			sourceTree = "<group>";
 		};
-		C3F5703A22A4FA13009E9691 /* BaseUI */ = {
+		C3F5703A22A4FA13009E9691 /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
 				C3F5708C22A5055B009E9691 /* NSObject+Extras.h */,
@@ -954,9 +967,10 @@
 				C3F5703E22A4FA3F009E9691 /* UITableViewCell */,
 				C3F5703B22A4FA3F009E9691 /* UICollectionView */,
 				C3F5704122A4FA3F009E9691 /* UITextField */,
+				8BF0756422F2BC34008858BC /* UICollectionViewFlowLayout */,
 				C3F570A422A5198A009E9691 /* RedefineSys */,
 			);
-			path = BaseUI;
+			path = BaseCustomizeUIKit;
 			sourceTree = "<group>";
 		};
 		C3F5703B22A4FA3F009E9691 /* UICollectionView */ = {
@@ -1560,6 +1574,7 @@
 				C3F570C722A53933009E9691 /* UIScrollView+YBGeneral.m in Sources */,
 				C3229A8822B21D110044BB5E /* SDCycleScrollView+UIScrollViewDelegate.m in Sources */,
 				C3F5707E22A50316009E9691 /* TouchID.m in Sources */,
+				8BF0756722F2BC34008858BC /* HQCollectionViewFlowLayout.m in Sources */,
 				C3F5710222A612AD009E9691 /* BaseNavigationVC.m in Sources */,
 				C3F56FF422A4F7CE009E9691 /* LeePhotoOrAlbumImagePicker.m in Sources */,
 				8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */,
