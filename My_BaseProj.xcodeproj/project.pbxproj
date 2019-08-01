@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		014874CCC2B5911781B42F74 /* libPods-My_BaseProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */; };
 		3599FB3289EE82D5677422D9 /* libPods-My_BaseProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */; };
+		8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A499F22F2C42B00AFDC59 /* HQTextField.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
 		8BF0756722F2BC34008858BC /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0756522F2BC34008858BC /* HQCollectionViewFlowLayout.m */; };
 		9DFCE79F330877C9C84A0FBC /* libPods-My_BaseProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */; };
@@ -153,6 +154,8 @@
 		6034DD6DF7212D7FC23F03FC /* Pods-My_BaseProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjUITests.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProjUITests/Pods-My_BaseProjUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProjUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		826DFEC822EAAE3D00464D1B /* Jose */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jose; sourceTree = "<group>"; };
+		8B8A499E22F2C42B00AFDC59 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
+		8B8A499F22F2C42B00AFDC59 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
 		8BB8107C22F13F3700F2FD8E /* 获取当前视图控制器.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "获取当前视图控制器.png"; sourceTree = "<group>"; };
 		8BB8107D22F13F3700F2FD8E /* cell重用.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell重用.png"; sourceTree = "<group>"; };
 		8BB8107E22F13F3700F2FD8E /* 葵花宝典.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "葵花宝典.m"; sourceTree = "<group>"; };
@@ -459,6 +462,22 @@
 				7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B8A499C22F2C41600AFDC59 /* ZYTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C3F570AD22A521E7009E9691 /* ZYTextField.h */,
+				C3F570AC22A521E7009E9691 /* ZYTextField.m */,
+			);
+			path = ZYTextField;
+			sourceTree = "<group>";
+		};
+		8B8A499D22F2C41E00AFDC59 /* HQTextField */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HQTextField;
 			sourceTree = "<group>";
 		};
 		8BB8107B22F13F2300F2FD8E /* Doc */ = {
@@ -994,8 +1013,10 @@
 		C3F5704122A4FA3F009E9691 /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
-				C3F570AD22A521E7009E9691 /* ZYTextField.h */,
-				C3F570AC22A521E7009E9691 /* ZYTextField.m */,
+				8B8A499D22F2C41E00AFDC59 /* HQTextField */,
+				8B8A499E22F2C42B00AFDC59 /* HQTextField.h */,
+				8B8A499F22F2C42B00AFDC59 /* HQTextField.m */,
+				8B8A499C22F2C41600AFDC59 /* ZYTextField */,
 			);
 			path = UITextField;
 			sourceTree = "<group>";
@@ -1586,6 +1607,7 @@
 				C3F5704422A4FA40009E9691 /* UICollectionView+YBGeneral.m in Sources */,
 				C3F570AE22A521E7009E9691 /* ZYTextField.m in Sources */,
 				C3F56FA522A4F43A009E9691 /* LYLUnicode.m in Sources */,
+				8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */,
 				CE1319A422CDA6F6002BA1A7 /* XLChannelView.m in Sources */,
 				C3F5700022A4F7CE009E9691 /* BadgeButton.m in Sources */,
 				C3F5708222A50419009E9691 /* UIView+Extras.m in Sources */,

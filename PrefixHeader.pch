@@ -60,6 +60,7 @@
 #import "UIButton+Extras.h"
 #import "UILabel+TextAlign.h"//UILabel文字的调整:利用往文字后面活前面下面添加”\n”来实现文字填充满整个UILable控件实现置顶/置顶效果
 #import "ZYTextField.h"
+#import "HQTextField.h"
 #import "MMButton.h"
 #import "YBGeneralColor.h"
 #import "YBGeneralFont.h"
