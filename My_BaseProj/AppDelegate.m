@@ -50,6 +50,9 @@
                                        );
     
 #endif
+    // 沙盒路径
+    NSString *directory = NSHomeDirectory();
+    NSLog(@"沙盒路径 : %@", directory);
     [self.window makeKeyAndVisible];
     return YES;
 }
