@@ -118,3 +118,6 @@ https://github.com/pili-engineering/PLPlayerKit/
 
 Class class = NSClassFromString([self.classes objectAtIndex:indexPath.row]);
 UIViewController *vc = [[class alloc]init];
+
+git commit但没push 想回退到commit
+git reset --soft HEAD^
