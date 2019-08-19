@@ -81,11 +81,11 @@
         _hotLabel = [[HotLabel alloc]initWithTopOffset:20
                                              eachOffset:10];
         
-        kWeakSelf(self);
+        @weakify(self)
         
         [_hotLabel actionBlock:^(id data) {
             
-            kStrongSelf(self);
+            @strongify(self)
             
             UILabel *lab = (UILabel *)data;
             

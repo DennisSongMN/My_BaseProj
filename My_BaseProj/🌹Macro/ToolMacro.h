@@ -9,6 +9,17 @@
 #ifndef ToolMacro_h
 #define ToolMacro_h
 
+/** DEBUG LOG **/
+#ifdef DEBUG
+
+#define DLog( s, ... ) NSLog( @"< %@:(%d) > %@", [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+
+#else
+
+#define DLog( s, ... )
+
+#endif
+
 #pragma mark - 其他
 #define FaceAuthAutoPhotoCount 3
 #define ReuseIdentifier NSStringFromClass ([self class])
@@ -105,8 +116,6 @@ ITTDPRINT(xx, ##__VA_ARGS__);\
 #endif
 
 #endif
-
-
 
 /**
  是否是iPhoneX系列（X/XS/XR/XS Max)
@@ -237,8 +246,8 @@ dispatch_async(queue, block);\
 
 #pragma mark - 强弱引用
 //#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
-#define kWeakSelf(type)  __weak typeof(type) weak##type = type
-#define kStrongSelf(type)  __strong typeof(type) type = weak##type
+//#define kWeakSelf(type)  __weak typeof(type) weak##type = type
+//#define kStrongSelf(type)  __strong typeof(type) type = weak##type
 
 #pragma mark - MD5加盐
 //#define MD5_Salt(String) [NSString stringWithFormat:@"*bub#{%@}#fly*",String]

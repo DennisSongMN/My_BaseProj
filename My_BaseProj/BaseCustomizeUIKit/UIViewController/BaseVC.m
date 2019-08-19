@@ -117,7 +117,7 @@
 
 - (BOOL)isloginBlock {
     
-    kWeakSelf(self);
+    @weakify(self)
     
     BOOL valueLogin = GetUserDefaultBoolForKey(kIsLogin);
 

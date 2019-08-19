@@ -11,11 +11,11 @@
 @implementation UIScrollView (YBGeneral)
 
 - (void)YBGeneral_addRefreshHeader:(void (^)(void))blockH footer:(void (^)(void))blockF {
-    kWeakSelf(self);
+    @weakify(self)
     [self YBGeneral_addRefreshHeader:^{
         if (blockH) blockH();
     } endRefresh:^{
-        kStrongSelf(self);
+        @strongify(self)
         if (!self.mj_footer) {
             [self YBGeneral_addRefreshFooter:^{
                 if (blockF) blockF();
@@ -33,9 +33,9 @@
 - (void)YBGeneral_addRefreshHeader:(void (^)(void))block
                         endRefresh:(void (^)(void))endRefresh {
     
-    kWeakSelf(self);
+    @weakify(self)
     MJRefreshNormalHeader *refreshHeader = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        kStrongSelf(self);
+        @strongify(self)
         BOOL isRefresh = self.mj_footer.state == MJRefreshStateRefreshing ||
         self.mj_footer.state == MJRefreshStateWillRefresh ||
         self.mj_footer.state == MJRefreshStatePulling;
@@ -60,9 +60,9 @@
 
 - (void)YBGeneral_addRefreshFooter:(void (^)(void))block {
     
-    kWeakSelf(self);
+    @weakify(self)
     MJRefreshAutoNormalFooter *refreshFooter = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        kStrongSelf(self);
+        @strongify(self)
         BOOL isRefresh = self.mj_header.state == MJRefreshStateRefreshing || self.mj_header.state == MJRefreshStateWillRefresh || self.mj_header.state == MJRefreshStatePulling;
         if (isRefresh) {
             [self.mj_footer endRefreshing];

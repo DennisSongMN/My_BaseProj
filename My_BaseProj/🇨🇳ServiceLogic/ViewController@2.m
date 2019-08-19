@@ -169,11 +169,11 @@
         
         _historyDataListTBV = [HistoryDataListTBV initWithRequestParams:self.dataMutArr];
         
-        kWeakSelf(self);
+        @weakify(self)
         
         [_historyDataListTBV deleteData:^(id  _Nullable data) {
             
-            kStrongSelf(self);
+            @strongify(self)
             
             NSLog(@"%@",data);
             
@@ -184,7 +184,7 @@
         
         [_historyDataListTBV showSelectedData:^(id data) {
             
-            kStrongSelf(self);
+            @strongify(self)
             
             [self.btn setTitle:(NSString *)data
                       forState:UIControlStateNormal];

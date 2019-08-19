@@ -29,7 +29,7 @@
                contentViewBlock:(DataBlock)contentViewBlock
                     finishBlock:(NoResultBlock)finishBlock{
     
-//    kWeakSelf(self);
+//     @weakify(self)
     
     CollectionAccountEditor *editorView = CollectionAccountEditor.new;
     
@@ -132,7 +132,7 @@
         
         _contentView.backgroundColor = kWhiteColor;
         
-        kWeakSelf(self);
+        @weakify(self)
         
         [_contentView actionBlock:^(id data) {
             
@@ -140,7 +140,7 @@
             
             NSLog(@"%d",[data intValue]);
             
-            kStrongSelf(self);
+            @strongify(self)
             
             switch ([data intValue]) {
                 
@@ -169,12 +169,12 @@
 //垂直消失
 -(void)hideInputView_vertical{
     
-    kWeakSelf(self);
+    @weakify(self)
 
     [UIView animateWithDuration:0.25f
                      animations:^{
                          
-                         kStrongSelf(self);
+                         @strongify(self)
                          
                          if (self.contentView.mj_y <= self.contentView.height / 2) {
                              
@@ -194,7 +194,7 @@
                      }
                      completion:^(BOOL finished) {//结束销毁
                          
-                         kStrongSelf(self);
+                         @strongify(self)
                          
                          if (self.contentView.mj_y > self.contentView.height / 2) {
                              
@@ -216,12 +216,12 @@
 //水平消失
 -(void)hideInputView_horizont{
     
-    kWeakSelf(self);
+    @weakify(self)
     
     [UIView animateWithDuration:0.25f
                      animations:^{
                          
-                         kStrongSelf(self);
+                         @strongify(self)
                          
                          if (self.contentView.mj_x <= MAINSCREEN_WIDTH / 2) {//回原位
 
@@ -241,7 +241,7 @@
                      }
                      completion:^(BOOL finished) {//结束销毁
                          
-                         kStrongSelf(self);
+                         @strongify(self)
                          
                          if (self.contentView.mj_x > MAINSCREEN_WIDTH / 2) {
                              
@@ -263,12 +263,12 @@
 //点击遮罩部分消失
 -(void)hideInputView{
     
-    kWeakSelf(self);
+    @weakify(self)
     
     [UIView animateWithDuration:0.25f
                      animations:^{
                          
-                         kStrongSelf(self);
+                         @strongify(self)
                          
                          self.contentView.mj_y = MAINSCREEN_HEIGHT;
                          
@@ -278,7 +278,7 @@
                      }
                      completion:^(BOOL finished) {//结束销毁
                          
-                         kStrongSelf(self);
+                         @strongify(self)
                          
                          [self.contentView removeFromSuperview];
                          

@@ -136,7 +136,7 @@
 #pragma mark - 照机/相册 授权判断
 - (NSInteger)AVAuthorizationStatusIsGranted{
 
-    kWeakSelf(self);
+    @weakify(self)
 
     NSString *mediaType = AVMediaTypeVideo;
 
@@ -155,8 +155,8 @@
                 [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
 
                     if (status == PHAuthorizationStatusAuthorized) { //授权成功
-
-                        [weakself presentPickerViewController];
+                        @strongify(self)
+                        [self presentPickerViewController];
                     }
                 }];
             }else{
@@ -164,8 +164,8 @@
                                          completionHandler:^(BOOL granted) {
 
                     if (granted) { //授权成功
-                        
-                        [weakself presentPickerViewController];
+                        @strongify(self)
+                        [self presentPickerViewController];
                     }
                 }];
             }

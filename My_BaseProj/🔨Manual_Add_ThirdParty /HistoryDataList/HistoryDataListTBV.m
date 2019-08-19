@@ -87,11 +87,11 @@
     
     [cell richElementsInCellWithModel:self.dataArr[indexPath.row]];
     
-    kWeakSelf(self);
+    @weakify(self)
     
     [cell deleteData:^(id data) {
         
-        kStrongSelf(self);
+        @strongify(self)
         
         if (self.block) {
             
