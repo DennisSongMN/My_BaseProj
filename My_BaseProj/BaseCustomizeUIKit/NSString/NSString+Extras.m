@@ -17,24 +17,21 @@
  *  不为空返回 NO
  */
 +(BOOL)isEmptyStr:(NSString *)value{
-    
+
     if (value == nil ||
         value == NULL) return YES;
-    
+
+    if((NSNull *)value == [NSNull null]) return YES;
+
     if ([value isKindOfClass:[NSString class]]){
-        
         if (((NSString *)value).length > 0){
-            
             if ([value isEqualToString:@"(null)"]||
                 [value isEqualToString:@"null"]||
                 [value isEqualToString:@"<null>"]) return YES;
-        }
-        
-        else return YES;
-    }
-    
-    return NO;
+        } else return YES;
+    } return NO;
 }
+
 
 /*
  分开来注释一下：
