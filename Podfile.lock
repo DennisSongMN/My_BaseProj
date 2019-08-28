@@ -87,6 +87,7 @@ PODS:
   - SDWebImage/Core (5.0.3)
   - SGQRCode (3.0.1)
   - Shimmer (1.0.2)
+  - SocketRocket (0.5.1)
   - SVProgressHUD (2.2.5)
   - Texture (2.8.1):
     - Texture/AssetsLibrary (= 2.8.1)
@@ -158,6 +159,7 @@ DEPENDENCIES:
   - SDWebImage
   - SGQRCode
   - Shimmer
+  - SocketRocket
   - SVProgressHUD
   - Texture
   - TTTAttributedLabel
@@ -210,6 +212,7 @@ SPEC REPOS:
     - SDWebImage
     - SGQRCode
     - Shimmer
+    - SocketRocket
     - SVProgressHUD
     - Texture
     - TTTAttributedLabel
@@ -261,6 +264,7 @@ SPEC CHECKSUMS:
   SDWebImage: d4f87d7d36c8a4d9f9459dc282e0caa057fdf935
   SGQRCode: bf02d60e18d6660a9d75ff1c8b9b467f064f054e
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
@@ -273,6 +277,6 @@ SPEC CHECKSUMS:
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
   ZYSuspensionView: 40731a4c873d67f5c4aa4b2c3172aeae9a776440
 
-PODFILE CHECKSUM: 1c8dc2f0742cc927f4458047760f4ea0ef18730a
+PODFILE CHECKSUM: ed5cdc8ec073eed9787750d58a5e1e1dcddbc023
 
 COCOAPODS: 1.7.4

@@ -7,7 +7,8 @@ target 'My_BaseProj' do
   # use_frameworks!
 
   # Pods for My_BaseProj
-  
+
+pod 'SocketRocket'
 pod 'FLEX'#调试界面相关插件
 pod 'TWPageViewController'
 pod 'ReactiveObjC'    #重量级框架
