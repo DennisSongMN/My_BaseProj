@@ -9,6 +9,15 @@
 #ifndef ToolMacro_h
 #define ToolMacro_h
 
+//// 判断是真机还是模拟器
+#if TARGET_OS_IPHONE
+// iPhone Device
+#endif
+
+#if TARGET_IPHONE_SIMULATOR
+// iPhone Simulator
+#endif
+
 /** DEBUG LOG **/
 #ifdef DEBUG
 
@@ -33,17 +42,26 @@
 #define LRToast(str) [NSString stringWithFormat:@"%@",@#str]
 
 #pragma mark - Sys.
-/** APP版本号 */
-#define HDAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
-/** APP BUILD 版本号 */
-#define HDAppBuildVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
-/** APP名字 */
-#define HDAppDisplayName [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"]
-/** 当前语言 */
-#define HDLocalLanguage [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode]
-/** 当前国家 */
-#define HDLocalCountry [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode]
 
+#define HDAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]//标识应用程序的发布版本号
+#define HDAppBuildVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]//APP BUILD 版本号
+#define HDAppDisplayName [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"]// APP名字
+#define HDLocalLanguage [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode]//当前语言
+#define HDLocalCountry [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode]//当前国家
+#define HDDevice [UIDevice currentDevice]
+#define HDDeviceName HDDevice.name                           // 设备名称
+#define HDDeviceModel HDDevice.model                         // 设备类型
+#define HDDeviceLocalizedModel HDDevice.localizedModel       // 本地化模式
+#define HDDeviceSystemName HDDevice.systemName               // 系统名字
+#define HDDeviceSystemVersion HDDevice.systemVersion         // 系统版本
+#define HDDeviceOrientation HDDevice.orientation             // 设备朝向
+#define CURRENTLANGUAGE ([[NSLocale preferredLanguages] objectAtIndex:0])// 当前语言
+#define UDID HDDevice.identifierForVendor.UUIDString // UUID // 使用苹果不让上传App Store!!!
+#define HDiPhone ([HDDeviceModel rangeOfString:@"iPhone"].length > 0)
+#define HDiPod ([HDDeviceModel rangeOfString:@"iPod"].length > 0)
+#define isPad (HDDevice.userInterfaceIdiom == UIUserInterfaceIdiomPad)// 是否iPad
+#define isiPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)//是否iPhone
+#define isRetina ([[UIScreen mainScreen] scale] >= 2.0)// 非Retain屏幕 1.0
 
 ///单例模式宏
 #define MACRO_SHARED_INSTANCE_INTERFACE +(instancetype)sharedInstance;
