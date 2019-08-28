@@ -82,12 +82,10 @@
 		C3F5707A22A4FC92009E9691 /* address.json in Resources */ = {isa = PBXBuildFile; fileRef = C3F5707322A4FC92009E9691 /* address.json */; };
 		C3F5707E22A50316009E9691 /* TouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5707C22A50316009E9691 /* TouchID.m */; };
 		C3F5708222A50419009E9691 /* UIView+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5708122A50419009E9691 /* UIView+Extras.m */; };
-		C3F5708522A50486009E9691 /* YBSystemTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5708322A50486009E9691 /* YBSystemTool.m */; };
 		C3F5708822A504B8009E9691 /* YBGeneralColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5708722A504B8009E9691 /* YBGeneralColor.m */; };
 		C3F5708B22A50502009E9691 /* YBGeneralFont.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5708A22A50502009E9691 /* YBGeneralFont.m */; };
 		C3F5708E22A5055C009E9691 /* NSObject+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5708D22A5055B009E9691 /* NSObject+Extras.m */; };
 		C3F5709122A50D60009E9691 /* NSString+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5708F22A50D60009E9691 /* NSString+Extras.m */; };
-		C3F5709422A50E05009E9691 /* YBFrameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5709222A50E05009E9691 /* YBFrameTool.m */; };
 		C3F5709722A50E3A009E9691 /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5709622A50E3A009E9691 /* UIImage+Extras.m */; };
 		C3F5709A22A50E5F009E9691 /* UIButton+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5709922A50E5F009E9691 /* UIButton+Extras.m */; };
 		C3F5709D22A50EB2009E9691 /* PlaySound.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5709C22A50EB2009E9691 /* PlaySound.m */; };
@@ -336,8 +334,6 @@
 		C3F5707D22A50316009E9691 /* TouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchID.h; sourceTree = "<group>"; };
 		C3F5708022A50419009E9691 /* UIView+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extras.h"; sourceTree = "<group>"; };
 		C3F5708122A50419009E9691 /* UIView+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extras.m"; sourceTree = "<group>"; };
-		C3F5708322A50486009E9691 /* YBSystemTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBSystemTool.m; sourceTree = "<group>"; };
-		C3F5708422A50486009E9691 /* YBSystemTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBSystemTool.h; sourceTree = "<group>"; };
 		C3F5708622A504B8009E9691 /* YBGeneralColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBGeneralColor.h; sourceTree = "<group>"; };
 		C3F5708722A504B8009E9691 /* YBGeneralColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBGeneralColor.m; sourceTree = "<group>"; };
 		C3F5708922A50502009E9691 /* YBGeneralFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBGeneralFont.h; sourceTree = "<group>"; };
@@ -346,8 +342,6 @@
 		C3F5708D22A5055B009E9691 /* NSObject+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extras.m"; sourceTree = "<group>"; };
 		C3F5708F22A50D60009E9691 /* NSString+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extras.m"; sourceTree = "<group>"; };
 		C3F5709022A50D60009E9691 /* NSString+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extras.h"; sourceTree = "<group>"; };
-		C3F5709222A50E05009E9691 /* YBFrameTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBFrameTool.m; sourceTree = "<group>"; };
-		C3F5709322A50E05009E9691 /* YBFrameTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBFrameTool.h; sourceTree = "<group>"; };
 		C3F5709522A50E39009E9691 /* UIImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extras.h"; sourceTree = "<group>"; };
 		C3F5709622A50E3A009E9691 /* UIImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extras.m"; sourceTree = "<group>"; };
 		C3F5709822A50E5F009E9691 /* UIButton+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extras.h"; sourceTree = "<group>"; };
@@ -997,10 +991,6 @@
 				C3F5708A22A50502009E9691 /* YBGeneralFont.m */,
 				C3F5708622A504B8009E9691 /* YBGeneralColor.h */,
 				C3F5708722A504B8009E9691 /* YBGeneralColor.m */,
-				C3F5708422A50486009E9691 /* YBSystemTool.h */,
-				C3F5708322A50486009E9691 /* YBSystemTool.m */,
-				C3F5709322A50E05009E9691 /* YBFrameTool.h */,
-				C3F5709222A50E05009E9691 /* YBFrameTool.m */,
 				C3F570D022A53F71009E9691 /* UILabel+TextAlign.h */,
 				C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */,
 				C3F570D722A54005009E9691 /* NSString */,
@@ -1584,7 +1574,6 @@
 				C3F570EB22A60D1C009E9691 /* ViewController@3.m in Sources */,
 				CE1319A322CDA6F6002BA1A7 /* XLChannelHeader.m in Sources */,
 				C3F5708E22A5055C009E9691 /* NSObject+Extras.m in Sources */,
-				C3F5708522A50486009E9691 /* YBSystemTool.m in Sources */,
 				C3F570B622A534E7009E9691 /* CollectionAccountEditor.m in Sources */,
 				C3F56FF822A4F7CE009E9691 /* UIColor+LXExpand.m in Sources */,
 				C3B1566222AA3863009061F3 /* WaterMark.m in Sources */,
@@ -1605,7 +1594,6 @@
 				C3F5700D22A4F8B1009E9691 /* AnimateToSpecifiedDateView.m in Sources */,
 				C3F570A322A5128A009E9691 /* IsLogin.m in Sources */,
 				C3F570DF22A60B8C009E9691 /* CustomSYSUITabBarController.m in Sources */,
-				C3F5709422A50E05009E9691 /* YBFrameTool.m in Sources */,
 				C3229A8522B21D110044BB5E /* SDCycleScrollView.m in Sources */,
 				C3F570FF22A61052009E9691 /* ViewController@4.m in Sources */,
 				C3F570C022A538D2009E9691 /* UIViewController+YBGeneralHook.m in Sources */,

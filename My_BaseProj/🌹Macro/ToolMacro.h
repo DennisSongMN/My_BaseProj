@@ -33,8 +33,17 @@
 #define LRToast(str) [NSString stringWithFormat:@"%@",@#str]
 
 #pragma mark - Sys.
-///获取Xcode的版本号
-#define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+/** APP版本号 */
+#define HDAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+/** APP BUILD 版本号 */
+#define HDAppBuildVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+/** APP名字 */
+#define HDAppDisplayName [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"]
+/** 当前语言 */
+#define HDLocalLanguage [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode]
+/** 当前国家 */
+#define HDLocalCountry [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode]
+
 
 ///单例模式宏
 #define MACRO_SHARED_INSTANCE_INTERFACE +(instancetype)sharedInstance;

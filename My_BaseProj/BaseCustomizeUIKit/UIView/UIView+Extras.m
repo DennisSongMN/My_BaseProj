@@ -186,7 +186,7 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
     leftButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     leftButton.titleLabel.adjustsFontSizeToFitWidth = YES;
     [leftButton addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
-    float top = YBSystemTool.isIphoneX? -5: -20;
+    float top = isiPhoneX_series() ? -5:-20;
     leftButton.frame = CGRectMake(25, top, MAINSCREEN_WIDTH/2-25, 54+2*36);
     [leftButton layoutButtonWithEdgeInsetsStyle:MKButtonEdgeInsetsStyleLeft imageTitleSpace:9];
     self.leftButtonEventBlock = leftButtonEventBlock;
@@ -201,7 +201,7 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
     leftButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
     leftButton.titleLabel.adjustsFontSizeToFitWidth = YES;
     [leftButton addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
-    float top =  YBSystemTool.isIphoneX ? 40 : 25;
+    float top = isiPhoneX_series() ? 40 : 25;
     leftButton.frame = CGRectMake(25, top, 50, 54);
     self.leftButtonEventBlock = leftButtonEventBlock;
 }
@@ -547,7 +547,7 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
     [superView addSubview:view];
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.equalTo(superView).offset(0);
-        make.bottom.equalTo(superView.mas_bottom).offset([YBSystemTool isIphoneX]? -[YBFrameTool iphoneBottomHeight]:0);
+        make.bottom.equalTo(superView.mas_bottom).offset(isiPhoneX_series() ? -34 : 0);
         make.height.mas_equalTo(@48.5);
     }];
     
@@ -603,7 +603,7 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
     [superView addSubview:view];
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.equalTo(superView).offset(0);
-        make.bottom.equalTo(superView.mas_bottom).offset([YBSystemTool isIphoneX]? -[YBFrameTool tabBarHeight]:0);
+        make.bottom.equalTo(superView.mas_bottom).offset(isiPhoneX_series()? -(34 + 49) : 0);
         
         make.height.mas_equalTo(@48.5);
     }];
@@ -668,7 +668,7 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
     [superView addSubview:view];
     [view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.leading.trailing.equalTo(superView).offset(0);
-        make.bottom.equalTo(superView.mas_bottom).offset([YBSystemTool isIphoneX]? -[YBFrameTool tabBarHeight]:0);
+        make.bottom.equalTo(superView.mas_bottom).offset(isiPhoneX_series()? -(34 + 49) :0);
         
         make.height.mas_equalTo(@48.5);
     }];
@@ -739,7 +739,7 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
         
         make.leading.trailing.equalTo(superView).offset(0);
         
-        make.bottom.equalTo(superView.mas_bottom).offset([YBSystemTool isIphoneX]? -[YBFrameTool iphoneBottomHeight]:0);
+        make.bottom.equalTo(superView.mas_bottom).offset(isiPhoneX_series()? -34 : 0);
         
         //        make.bottom.equalTo(superView.mas_bottom);
         

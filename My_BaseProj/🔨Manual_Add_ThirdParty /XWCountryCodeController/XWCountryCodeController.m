@@ -41,7 +41,7 @@
 - (void)creatSubviews{
     _results = [NSMutableArray arrayWithCapacity:1];
     
-    float top = YBSystemTool.isIphoneX ? 84 : 44;
+    float top = isiPhoneX_series() ? 84 : 44;
     
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, top, self.view.bounds.size.width, self.view.bounds.size.height-top) style:UITableViewStyleGrouped];
