@@ -32,7 +32,6 @@
 #pragma mark - 其他
 #define FaceAuthAutoPhotoCount 3
 #define ReuseIdentifier NSStringFromClass ([self class])
-#define MAINWINDOWSTAGVALUE     1888734
 
 #pragma mark - 本地化字符串
 /** NSLocalizedString宏做的其实就是在当前bundle中查找资源文件名“Localizable.strings”(参数:键＋注释) */
@@ -270,11 +269,6 @@ dispatch_async(queue, block);\
 #define PATH_OF_APP_HOME    NSHomeDirectory()
 #define PATH_OF_TEMP        NSTemporaryDirectory()
 #define PATH_OF_DOCUMENT    [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0]
-
-#pragma mark - 强弱引用
-//#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
-//#define kWeakSelf(type)  __weak typeof(type) weak##type = type
-//#define kStrongSelf(type)  __strong typeof(type) type = weak##type
 
 #pragma mark - MD5加盐
 //#define MD5_Salt(String) [NSString stringWithFormat:@"*bub#{%@}#fly*",String]
