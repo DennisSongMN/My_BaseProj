@@ -20,6 +20,9 @@
 //@property (nonatomic, assign) BOOL isAutoCompleterEmailSuffix;  //是否自动补全email后缀
 @property(nonatomic,strong)ZYTextField *textField;
 @property(nonatomic,strong)UIView *mainView;
+@property(nonatomic,strong)id requestParams;
+@property(nonatomic,copy)DataBlock successBlock;
+@property(nonatomic,assign)BOOL isPush;
 
 @end
 
@@ -28,6 +31,25 @@
 - (void)dealloc {
     
     NSLog(@"Running self.class = %@;NSStringFromSelector(_cmd) = '%@';__FUNCTION__ = %s", self.class, NSStringFromSelector(_cmd),__FUNCTION__);
+}
+
++ (instancetype)pushFromVC:(UIViewController *)rootVC
+             requestParams:(nullable id)requestParams
+                   success:(DataBlock)block{
+    ViewController_1 *vc = ViewController_1.new;
+    vc.successBlock = block;
+    vc.requestParams = requestParams;
+
+    if (rootVC.navigationController) {
+        vc.isPush = YES;
+        [rootVC.navigationController pushViewController:vc
+                                               animated:YES];
+    }else{
+        vc.isPush = NO;
+        [rootVC presentViewController:vc
+                             animated:YES
+                           completion:^{}];
+    }return vc;
 }
 
 #pragma mark - Lifecycle

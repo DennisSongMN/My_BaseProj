@@ -17,10 +17,32 @@
 @property(nonatomic,strong)WaterMark *waterMark;
 @property(nonatomic,strong)UIImageView *imgView;
 @property(nonatomic,strong)HotLabel *hotLabel;
+@property(nonatomic,strong)id requestParams;
+@property(nonatomic,copy)DataBlock successBlock;
+@property(nonatomic,assign)BOOL isPush;
 
 @end
 
 @implementation ViewController_3
+
++ (instancetype)pushFromVC:(UIViewController *)rootVC
+             requestParams:(nullable id)requestParams
+                   success:(DataBlock)block{
+    ViewController_3 *vc = ViewController_3.new;
+    vc.successBlock = block;
+    vc.requestParams = requestParams;
+
+    if (rootVC.navigationController) {
+        vc.isPush = YES;
+        [rootVC.navigationController pushViewController:vc
+                                               animated:YES];
+    }else{
+        vc.isPush = NO;
+        [rootVC presentViewController:vc
+                             animated:YES
+                           completion:^{}];
+    }return vc;
+}
 
 -(void)viewDidLoad{
     

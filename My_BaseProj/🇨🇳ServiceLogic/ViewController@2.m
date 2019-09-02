@@ -26,6 +26,9 @@
 @property(nonatomic,strong)UIView *mainView;
 @property(nonatomic,strong)HistoryDataListTBV *historyDataListTBV;
 @property(nonatomic,strong)NSMutableArray *dataMutArr;
+@property(nonatomic,strong)id requestParams;
+@property(nonatomic,copy)DataBlock successBlock;
+@property(nonatomic,assign)BOOL isPush;
 
 @end
 
@@ -36,13 +39,30 @@
     NSLog(@"Running self.class = %@;NSStringFromSelector(_cmd) = '%@';__FUNCTION__ = %s", self.class, NSStringFromSelector(_cmd),__FUNCTION__);
 }
 
++ (instancetype)pushFromVC:(UIViewController *)rootVC
+             requestParams:(nullable id)requestParams
+                   success:(DataBlock)block{
+    ViewController_2 *vc = ViewController_2.new;
+    vc.successBlock = block;
+    vc.requestParams = requestParams;
+
+    if (rootVC.navigationController) {
+        vc.isPush = YES;
+        [rootVC.navigationController pushViewController:vc
+                                               animated:YES];
+    }else{
+        vc.isPush = NO;
+        [rootVC presentViewController:vc
+                             animated:YES
+                           completion:^{}];
+    }return vc;
+}
+
 #pragma mark - Lifecycle
 -(instancetype)init{
 
     if (self = [super init]) {
-
         [self value];
-
     }return self;
 }
 

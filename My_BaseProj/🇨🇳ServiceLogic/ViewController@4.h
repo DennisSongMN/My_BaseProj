@@ -13,6 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewController_4 : BaseVC
 
++ (instancetype)pushFromVC:(UIViewController *)rootVC
+             requestParams:(nullable id)requestParams
+                   success:(DataBlock)block;
+
 @end
 
 NS_ASSUME_NONNULL_END

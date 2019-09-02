@@ -19,11 +19,32 @@
 @property(nonatomic,strong)UIImageView *headerImageView;
 @property(nonatomic,strong)UIView *lineView;
 @property(nonatomic,assign)UIStatusBarStyle statusBarStyle;
-
+@property(nonatomic,strong)id requestParams;
+@property(nonatomic,copy)DataBlock successBlock;
+@property(nonatomic,assign)BOOL isPush;
 
 @end
 
 @implementation ViewController_4
+
++ (instancetype)pushFromVC:(UIViewController *)rootVC
+             requestParams:(nullable id)requestParams
+                   success:(DataBlock)block{
+    ViewController_4 *vc = ViewController_4.new;
+    vc.successBlock = block;
+    vc.requestParams = requestParams;
+
+    if (rootVC.navigationController) {
+        vc.isPush = YES;
+        [rootVC.navigationController pushViewController:vc
+                                               animated:YES];
+    }else{
+        vc.isPush = NO;
+        [rootVC presentViewController:vc
+                             animated:YES
+                           completion:^{}];
+    }return vc;
+}
 
 -(void)viewDidLoad{
     
