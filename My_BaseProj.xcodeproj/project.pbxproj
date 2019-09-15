@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		014874CCC2B5911781B42F74 /* libPods-My_BaseProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */; };
 		3599FB3289EE82D5677422D9 /* libPods-My_BaseProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */; };
+		8B29BAFB232E5E67002114A0 /* ECAuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B29BAFA232E5E67002114A0 /* ECAuthorizationTools.m */; };
 		8B38342323164BB300091A6F /* SocketRocketUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38341F23164BB300091A6F /* SocketRocketUtility.m */; };
 		8B38342423164BB300091A6F /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38342023164BB300091A6F /* MessageModel.m */; };
 		8B6EB80A230A6F1E00F3995E /* ZHKeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB809230A6F1E00F3995E /* ZHKeyChainManager.m */; };
@@ -156,6 +157,8 @@
 		6034DD6DF7212D7FC23F03FC /* Pods-My_BaseProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjUITests.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProjUITests/Pods-My_BaseProjUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProjUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		826DFEC822EAAE3D00464D1B /* Jose */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jose; sourceTree = "<group>"; };
+		8B29BAF9232E5E67002114A0 /* ECAuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAuthorizationTools.h; sourceTree = "<group>"; };
+		8B29BAFA232E5E67002114A0 /* ECAuthorizationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAuthorizationTools.m; sourceTree = "<group>"; };
 		8B38341F23164BB300091A6F /* SocketRocketUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketRocketUtility.m; sourceTree = "<group>"; };
 		8B38342023164BB300091A6F /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
 		8B38342123164BB300091A6F /* SocketRocketUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketRocketUtility.h; sourceTree = "<group>"; };
@@ -470,6 +473,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B29BAF8232E5E5D002114A0 /* ECAuthorizationTools */ = {
+			isa = PBXGroup;
+			children = (
+				8B29BAF9232E5E67002114A0 /* ECAuthorizationTools.h */,
+				8B29BAFA232E5E67002114A0 /* ECAuthorizationTools.m */,
+			);
+			path = ECAuthorizationTools;
+			sourceTree = "<group>";
+		};
 		8B38341E23164BB300091A6F /* WebSocket */ = {
 			isa = PBXGroup;
 			children = (
@@ -739,6 +751,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				8B29BAF8232E5E5D002114A0 /* ECAuthorizationTools */,
 				8B38341E23164BB300091A6F /* WebSocket */,
 				8B6EB807230A6F1400F3995E /* KeyChainManager */,
 				8BB8108322F1403D00F2FD8E /* 截获导航控制器系统返回按钮的点击pop及右滑pop事件 */,
@@ -1625,6 +1638,7 @@
 				C3F56FAE22A4F4E7009E9691 /* LZBTabBar.m in Sources */,
 				C3F56FFD22A4F7CE009E9691 /* MMButton.m in Sources */,
 				C3F56FFC22A4F7CE009E9691 /* XDSDropDownMenu+DelegateProtocol.m in Sources */,
+				8B29BAFB232E5E67002114A0 /* ECAuthorizationTools.m in Sources */,
 				C3B1566622AB555C009061F3 /* HotLabel.m in Sources */,
 				C3F5708B22A50502009E9691 /* YBGeneralFont.m in Sources */,
 				C3F5707722A4FC92009E9691 /* DHAreaPickerView.m in Sources */,
