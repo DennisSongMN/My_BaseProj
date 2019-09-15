@@ -109,6 +109,7 @@
 #import "XLChannelControl.h"//https://github.com/mengxianliang/XLChannelControl
 
 #import "NSlogToDocumentFolder.h"//上线需要去掉
+#import "ECAuthorizationTools.h"//https://github.com/EchoZuo/ECAuthorizationTools/blob/master/README.md
 
 //FFmpeg 需要
 #import <VideoToolbox/VideoToolbox.h>
