@@ -123,3 +123,5 @@ git commit但没push 想回退到commit
 git reset --soft HEAD^
 
 https://github.com/fletcheryang2014/BundleLoader
+
+https://www.jianshu.com/p/37b3e382dcab //Label或Button自适应宽度或文字大小
