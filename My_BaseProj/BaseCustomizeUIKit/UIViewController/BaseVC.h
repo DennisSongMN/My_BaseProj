@@ -10,11 +10,27 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseVC : UIViewController
-- (void)loginSuccessBlockMethod;
-- (BOOL)isloginBlock;
+@interface BaseVC : GKNavigationBarViewController
+<
+UIGestureRecognizerDelegate
+,UINavigationControllerDelegate
+>
+
+@property(nonatomic,assign)BOOL isRequestFinish;//数据请求是否完毕
+@property(nonatomic,copy)void (^UnknownNetWorking)(void);
+@property(nonatomic,copy)void (^NotReachableNetWorking)(void);
+@property(nonatomic,copy)void (^ReachableViaWWANNetWorking)(void);
+@property(nonatomic,copy)void (^ReachableViaWiFiNetWorking)(void);
+
+-(void)AFNReachability;
+-(void)showLoginAlertView;
+-(void)showAlertViewTitle:(NSString *)title
+                  message:(NSString *)message
+           alertBtnAction:(NSArray *)alertBtnActionArr;
+
 -(void)locateTabBar:(NSInteger)index;
-- (void)setStatusBarBackgroundColor:(UIColor *)color;
+-(void)setStatusBarBackgroundColor:(UIColor *)color;
+
 @end
 
 NS_ASSUME_NONNULL_END

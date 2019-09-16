@@ -523,6 +523,8 @@
 		8B8A499D22F2C41E00AFDC59 /* HQTextField */ = {
 			isa = PBXGroup;
 			children = (
+				8B8A499E22F2C42B00AFDC59 /* HQTextField.h */,
+				8B8A499F22F2C42B00AFDC59 /* HQTextField.m */,
 			);
 			path = HQTextField;
 			sourceTree = "<group>";
@@ -560,8 +562,8 @@
 		8BF0756422F2BC34008858BC /* UICollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				8BF0756522F2BC34008858BC /* HQCollectionViewFlowLayout.m */,
 				8BF0756622F2BC34008858BC /* HQCollectionViewFlowLayout.h */,
+				8BF0756522F2BC34008858BC /* HQCollectionViewFlowLayout.m */,
 			);
 			name = UICollectionViewFlowLayout;
 			path = ../../../888b/888b/BaseCustomizeUIKit/UICollectionViewFlowLayout;
@@ -1009,7 +1011,6 @@
 		C3F5703A22A4FA13009E9691 /* BaseCustomizeUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				8B6EB817230A713200F3995E /* NSArray */,
 				C3F5708C22A5055B009E9691 /* NSObject+Extras.h */,
 				C3F5708D22A5055B009E9691 /* NSObject+Extras.m */,
 				C3F5709522A50E39009E9691 /* UIImage+Extras.h */,
@@ -1024,6 +1025,7 @@
 				C3F5708722A504B8009E9691 /* YBGeneralColor.m */,
 				C3F570D022A53F71009E9691 /* UILabel+TextAlign.h */,
 				C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */,
+				8B6EB817230A713200F3995E /* NSArray */,
 				C3F570D722A54005009E9691 /* NSString */,
 				C3F5707F22A5040F009E9691 /* UIView */,
 				C3F570C822A53941009E9691 /* UINavigationController */,
@@ -1051,8 +1053,8 @@
 		C3F5703E22A4FA3F009E9691 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				C3F5703F22A4FA3F009E9691 /* TBVCell_style_01.m */,
 				C3F5704022A4FA3F009E9691 /* TBVCell_style_01.h */,
+				C3F5703F22A4FA3F009E9691 /* TBVCell_style_01.m */,
 			);
 			path = UITableViewCell;
 			sourceTree = "<group>";
@@ -1061,8 +1063,6 @@
 			isa = PBXGroup;
 			children = (
 				8B8A499D22F2C41E00AFDC59 /* HQTextField */,
-				8B8A499E22F2C42B00AFDC59 /* HQTextField.h */,
-				8B8A499F22F2C42B00AFDC59 /* HQTextField.m */,
 				8B8A499C22F2C41600AFDC59 /* ZYTextField */,
 			);
 			path = UITextField;

@@ -14,6 +14,7 @@ pod 'TWPageViewController'
 pod 'ReactiveObjC'    #重量级框架
 pod 'EAIntroView'#启动图
 pod 'Texture' #Facebook
+pod 'GKNavigationBarViewController' 
 pod 'Masonry' #布局
 #pod 'PureLayout'
 #pod 'MyLayout'
@@ -59,6 +60,7 @@ pod 'ZFPlayer' #https://github.com/renzifeng/ZFPlayer
 pod 'JXCategoryView'
 pod 'LYEmptyView'#https://github.com/dev-liyang/LYEmptyView iOS一行代码集成空白页面占位图(无数据、无网络占位图)
 pod 'Reveal-SDK', :configurations => ['Debug']
+
 #视频相关框架
 #pod 'ZFPlayer/ControlView'
 #pod 'ZFPlayer/AVPlayer'
