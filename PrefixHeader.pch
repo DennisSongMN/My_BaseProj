@@ -52,6 +52,7 @@
 #import <GKNavigationBarViewController/GKNavigationBarViewController.h>
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import <HBDNavigationBar/HBDNavigationController.h>
+#import <GKPageScrollView.h>
 
 //🔨Manual_Add_ThirdParty
 #import "NSArray+Extension.h"
