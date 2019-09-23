@@ -20,6 +20,7 @@
 @property(nonatomic,strong)id requestParams;
 @property(nonatomic,copy)DataBlock successBlock;
 @property(nonatomic,assign)BOOL isPush;
+@property(nonatomic,assign)BOOL isPresent;
 
 @end
 
@@ -27,19 +28,23 @@
 
 + (instancetype)pushFromVC:(UIViewController *)rootVC
              requestParams:(nullable id)requestParams
-                   success:(DataBlock)block{
+                   success:(DataBlock)block
+                  animated:(BOOL)animated{
+
     ViewController_3 *vc = ViewController_3.new;
     vc.successBlock = block;
     vc.requestParams = requestParams;
 
     if (rootVC.navigationController) {
         vc.isPush = YES;
+        vc.isPresent = NO;
         [rootVC.navigationController pushViewController:vc
-                                               animated:YES];
+                                               animated:animated];
     }else{
         vc.isPush = NO;
+        vc.isPresent = YES;
         [rootVC presentViewController:vc
-                             animated:YES
+                             animated:animated
                            completion:^{}];
     }return vc;
 }

@@ -52,6 +52,7 @@
 #import <GKNavigationBarViewController/GKNavigationBarViewController.h>
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import <HBDNavigationBar/HBDNavigationController.h>
+#import "TZImagePickerController.h"
 
 //🔨Manual_Add_ThirdParty
 #import "NSArray+Extension.h"
@@ -80,7 +81,6 @@
 #import "AESCrypt.h"
 #import "BadgeButton.h"//Btn右上方红点
 #import "SDCycleScrollView.h"
-#import "LeePhotoOrAlbumImagePicker.h"
 #import "LZBTabbarViewController.h"
 #import "SoundBtn.h"
 #import "LXTagsView.h"
@@ -108,7 +108,6 @@
 #import "BaseNavigationVC.h"
 #import "CustomSYSUITabBarController.h"
 #import "XLChannelControl.h"//https://github.com/mengxianliang/XLChannelControl
-
 #import "NSlogToDocumentFolder.h"//上线需要去掉
 #import "ECAuthorizationTools.h"//https://github.com/EchoZuo/ECAuthorizationTools/blob/master/README.md
 

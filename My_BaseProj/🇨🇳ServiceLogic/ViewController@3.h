@@ -13,9 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewController_3 : BaseVC
 
-+ (instancetype)pushFromVC:(UIViewController *)rootVC
-             requestParams:(nullable id)requestParams
-                   success:(DataBlock)block;
++ (instancetype _Nonnull )pushFromVC:(UIViewController *_Nonnull)rootVC
+                       requestParams:(nullable id)requestParams
+                             success:(DataBlock _Nonnull )block
+                            animated:(BOOL)animated;
 
 @end
 
