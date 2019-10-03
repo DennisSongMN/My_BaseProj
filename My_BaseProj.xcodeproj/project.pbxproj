@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		014874CCC2B5911781B42F74 /* libPods-My_BaseProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */; };
 		3599FB3289EE82D5677422D9 /* libPods-My_BaseProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */; };
+		8B128BF12345A5750039B590 /* TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B128BEB2345A5750039B590 /* TBCityIconFont.m */; };
+		8B128BF22345A5750039B590 /* TBCityIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B128BEC2345A5750039B590 /* TBCityIconInfo.m */; };
+		8B128BF32345A5750039B590 /* UIImage+TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B128BED2345A5750039B590 /* UIImage+TBCityIconFont.m */; };
 		8B29BAFB232E5E67002114A0 /* ECAuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B29BAFA232E5E67002114A0 /* ECAuthorizationTools.m */; };
 		8B38342323164BB300091A6F /* SocketRocketUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38341F23164BB300091A6F /* SocketRocketUtility.m */; };
 		8B38342423164BB300091A6F /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38342023164BB300091A6F /* MessageModel.m */; };
@@ -157,6 +160,12 @@
 		6034DD6DF7212D7FC23F03FC /* Pods-My_BaseProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjUITests.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProjUITests/Pods-My_BaseProjUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProjUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		826DFEC822EAAE3D00464D1B /* Jose */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jose; sourceTree = "<group>"; };
+		8B128BEB2345A5750039B590 /* TBCityIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconFont.m; sourceTree = "<group>"; };
+		8B128BEC2345A5750039B590 /* TBCityIconInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconInfo.m; sourceTree = "<group>"; };
+		8B128BED2345A5750039B590 /* UIImage+TBCityIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TBCityIconFont.m"; sourceTree = "<group>"; };
+		8B128BEE2345A5750039B590 /* TBCityIconInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityIconInfo.h; sourceTree = "<group>"; };
+		8B128BEF2345A5750039B590 /* TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityIconFont.h; sourceTree = "<group>"; };
+		8B128BF02345A5750039B590 /* UIImage+TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBCityIconFont.h"; sourceTree = "<group>"; };
 		8B29BAF9232E5E67002114A0 /* ECAuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAuthorizationTools.h; sourceTree = "<group>"; };
 		8B29BAFA232E5E67002114A0 /* ECAuthorizationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAuthorizationTools.m; sourceTree = "<group>"; };
 		8B38341F23164BB300091A6F /* SocketRocketUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketRocketUtility.m; sourceTree = "<group>"; };
@@ -475,6 +484,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B128BEA2345A5750039B590 /* IconFont */ = {
+			isa = PBXGroup;
+			children = (
+				8B128BEB2345A5750039B590 /* TBCityIconFont.m */,
+				8B128BEC2345A5750039B590 /* TBCityIconInfo.m */,
+				8B128BED2345A5750039B590 /* UIImage+TBCityIconFont.m */,
+				8B128BEE2345A5750039B590 /* TBCityIconInfo.h */,
+				8B128BEF2345A5750039B590 /* TBCityIconFont.h */,
+				8B128BF02345A5750039B590 /* UIImage+TBCityIconFont.h */,
+			);
+			path = IconFont;
+			sourceTree = "<group>";
+		};
 		8B29BAF8232E5E5D002114A0 /* ECAuthorizationTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -769,6 +791,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				8B128BEA2345A5750039B590 /* IconFont */,
 				8B29BAF8232E5E5D002114A0 /* ECAuthorizationTools */,
 				8B38341E23164BB300091A6F /* WebSocket */,
 				8B6EB807230A6F1400F3995E /* KeyChainManager */,
@@ -1602,10 +1625,12 @@
 				C3F5709D22A50EB2009E9691 /* PlaySound.m in Sources */,
 				C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */,
 				C3229A9522B21D400044BB5E /* TAAnimatedDotView.m in Sources */,
+				8B128BF32345A5750039B590 /* UIImage+TBCityIconFont.m in Sources */,
 				C3F5701422A4F94D009E9691 /* XLSphereView.m in Sources */,
 				8B6EB81A230A713900F3995E /* NSArray+Extension.m in Sources */,
 				C3F56FFB22A4F7CE009E9691 /* XDSDropDownMenu.m in Sources */,
 				C3F570CE22A53955009E9691 /* UITableView+YBGeneral.m in Sources */,
+				8B128BF22345A5750039B590 /* TBCityIconInfo.m in Sources */,
 				C3F570E522A60CEF009E9691 /* ViewController@2.m in Sources */,
 				C3F570EB22A60D1C009E9691 /* ViewController@3.m in Sources */,
 				CE1319A322CDA6F6002BA1A7 /* XLChannelHeader.m in Sources */,
@@ -1616,6 +1641,7 @@
 				C3F5704522A4FA40009E9691 /* TBVCell_style_01.m in Sources */,
 				C3F570DA22A5403F009E9691 /* DeleteSystemUITabBarButton.m in Sources */,
 				C3B1565C22A7E45A009061F3 /* HistoryDataListTBVCell.m in Sources */,
+				8B128BF12345A5750039B590 /* TBCityIconFont.m in Sources */,
 				C3F5708822A504B8009E9691 /* YBGeneralColor.m in Sources */,
 				CE1319A522CDA6F6002BA1A7 /* XLChannelItem.m in Sources */,
 				C3F56FB622A4F749009E9691 /* SoundBtn.m in Sources */,

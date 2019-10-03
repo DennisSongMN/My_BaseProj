@@ -63,6 +63,11 @@
 #import "CustomSYSUITabBarController.h"
 #import "XLChannelControl.h"//https://github.com/mengxianliang/XLChannelControl
 #import "ECAuthorizationTools.h"//https://github.com/EchoZuo/ECAuthorizationTools/blob/master/README.md
+//iOS 教你如何使用iconfont图标    https://blog.csdn.net/u010960265/article/details/82531268
+//阿里巴巴矢量图标库   https://www.iconfont.cn
+#import "TBCityIconFont.h"
+#import "UIImage+TBCityIconFont.h"
+
 
 //#import "NSlogToDocumentFolder.h"//上线需要去掉
 
