@@ -12,6 +12,7 @@
 #import "NSArray+Extension.h"
 #import "NSObject+Extras.h"
 #import "NSString+Extras.h"
+#import "NSString+Emoji.h"
 #import "UIView+Extras.h"
 #import "UIImage+Extras.h"
 #import "UIButton+Extras.h"

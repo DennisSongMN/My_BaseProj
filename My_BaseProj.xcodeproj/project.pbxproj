@@ -19,6 +19,7 @@
 		8B55869E233C899B00132CF6 /* ViewForFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B55869A233C899B00132CF6 /* ViewForFooter.m */; };
 		8B6EB80A230A6F1E00F3995E /* ZHKeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB809230A6F1E00F3995E /* ZHKeyChainManager.m */; };
 		8B6EB81A230A713900F3995E /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB818230A713900F3995E /* NSArray+Extension.m */; };
+		8B6F2B9E234611FC00801607 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F2B9C234611FC00801607 /* NSString+Emoji.m */; };
 		8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A499F22F2C42B00AFDC59 /* HQTextField.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
 		8BF0756722F2BC34008858BC /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0756522F2BC34008858BC /* HQCollectionViewFlowLayout.m */; };
@@ -183,6 +184,8 @@
 		8B6EB809230A6F1E00F3995E /* ZHKeyChainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHKeyChainManager.m; sourceTree = "<group>"; };
 		8B6EB818230A713900F3995E /* NSArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extension.m"; sourceTree = "<group>"; };
 		8B6EB819230A713900F3995E /* NSArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
+		8B6F2B9C234611FC00801607 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		8B6F2B9D234611FC00801607 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		8B8A499E22F2C42B00AFDC59 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
 		8B8A499F22F2C42B00AFDC59 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
 		8BB8107C22F13F3700F2FD8E /* 获取当前视图控制器.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "获取当前视图控制器.png"; sourceTree = "<group>"; };
@@ -1238,6 +1241,8 @@
 		C3F570D722A54005009E9691 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				8B6F2B9D234611FC00801607 /* NSString+Emoji.h */,
+				8B6F2B9C234611FC00801607 /* NSString+Emoji.m */,
 				C3F5709022A50D60009E9691 /* NSString+Extras.h */,
 				C3F5708F22A50D60009E9691 /* NSString+Extras.m */,
 				C3F570D422A53FFA009E9691 /* NSString+Url_Chinese.h */,
@@ -1649,6 +1654,7 @@
 				C3F56FEF22A4F7CE009E9691 /* UIControl+XY.m in Sources */,
 				C3F570BE22A538D2009E9691 /* BaseVC.m in Sources */,
 				C3F56FAF22A4F4E7009E9691 /* LZBTabBarViewController.m in Sources */,
+				8B6F2B9E234611FC00801607 /* NSString+Emoji.m in Sources */,
 				C3F56FF722A4F7CE009E9691 /* NSString+Extension.m in Sources */,
 				C3229A9322B21D400044BB5E /* TADotView.m in Sources */,
 				C3F570BF22A538D2009E9691 /* UIViewController+YBGeneral.m in Sources */,
