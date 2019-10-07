@@ -43,10 +43,7 @@
         } @finally {
             
         }
-    }
-    else{
-        return [self newObjectAtIndex:index];
-    }
+    }else return [self newObjectAtIndex:index];
 }
 
 - (id)newObjectAtIndexedSubscript:(NSUInteger)index{
@@ -58,10 +55,7 @@
             return nil;
         } @finally {
         }
-    }
-    else{
-        return [self newObjectAtIndexedSubscript:index];
-    }
+    }else return [self newObjectAtIndexedSubscript:index];
 }
 
 - (id)newMutableObjectAtIndex:(NSUInteger)index{
@@ -74,10 +68,7 @@
         } @finally {
             
         }
-    }
-    else{
-        return [self newMutableObjectAtIndex:index];
-    }
+    } else return [self newMutableObjectAtIndex:index];
 }
 
 - (id)newMutableObjectAtIndexedSubscript:(NSUInteger)index{
@@ -89,10 +80,7 @@
             return nil;
         } @finally {
         }
-    }
-    else{
-        return [self newMutableObjectAtIndexedSubscript:index];
-    }
+    }else return [self newMutableObjectAtIndexedSubscript:index];
 }
 
 @end

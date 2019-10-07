@@ -22,6 +22,11 @@
 		8B6F2B9E234611FC00801607 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F2B9C234611FC00801607 /* NSString+Emoji.m */; };
 		8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A499F22F2C42B00AFDC59 /* HQTextField.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
+		8BD6DC28234B1C61003F1EE0 /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC26234B1C61003F1EE0 /* NSString+File.m */; };
+		8BD6DC2B234B1C7F003F1EE0 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC29234B1C7F003F1EE0 /* NSString+Password.m */; };
+		8BD6DC2E234B1D15003F1EE0 /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC2D234B1D15003F1EE0 /* NSArray+Extend.m */; };
+		8BD6DC4A234B23B0003F1EE0 /* CALayer+Anim.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC46234B23AF003F1EE0 /* CALayer+Anim.m */; };
+		8BD6DC4B234B23B0003F1EE0 /* CALayer+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC49234B23B0003F1EE0 /* CALayer+Transition.m */; };
 		8BF0756722F2BC34008858BC /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0756522F2BC34008858BC /* HQCollectionViewFlowLayout.m */; };
 		9DFCE79F330877C9C84A0FBC /* libPods-My_BaseProjTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6764CCCD705F818E526DC67 /* libPods-My_BaseProjTests.a */; };
 		C301CEF822ADF94E00C0DCCC /* ArcTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */; };
@@ -104,8 +109,6 @@
 		C3F570BF22A538D2009E9691 /* UIViewController+YBGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570BB22A538D1009E9691 /* UIViewController+YBGeneral.m */; };
 		C3F570C022A538D2009E9691 /* UIViewController+YBGeneralHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570BD22A538D2009E9691 /* UIViewController+YBGeneralHook.m */; };
 		C3F570C722A53933009E9691 /* UIScrollView+YBGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570C622A53933009E9691 /* UIScrollView+YBGeneral.m */; };
-		C3F570CE22A53955009E9691 /* UITableView+YBGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570CC22A53954009E9691 /* UITableView+YBGeneral.m */; };
-		C3F570D122A53F71009E9691 /* UILabel+TextAlign.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */; };
 		C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570D522A53FFA009E9691 /* NSString+Url_Chinese.m */; };
 		C3F570DA22A5403F009E9691 /* DeleteSystemUITabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570D822A5403E009E9691 /* DeleteSystemUITabBarButton.m */; };
 		C3F570DF22A60B8C009E9691 /* CustomSYSUITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570DE22A60B8C009E9691 /* CustomSYSUITabBarController.m */; };
@@ -195,6 +198,16 @@
 		8BB8108122F13F8C00F2FD8E /* XZWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZWebView.m; sourceTree = "<group>"; };
 		8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		8BB8108522F1404900F2FD8E /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		8BD6DC26234B1C61003F1EE0 /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
+		8BD6DC27234B1C61003F1EE0 /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
+		8BD6DC29234B1C7F003F1EE0 /* NSString+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Password.m"; sourceTree = "<group>"; };
+		8BD6DC2A234B1C7F003F1EE0 /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
+		8BD6DC2C234B1D15003F1EE0 /* NSArray+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extend.h"; sourceTree = "<group>"; };
+		8BD6DC2D234B1D15003F1EE0 /* NSArray+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Extend.m"; sourceTree = "<group>"; };
+		8BD6DC46234B23AF003F1EE0 /* CALayer+Anim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Anim.m"; sourceTree = "<group>"; };
+		8BD6DC47234B23AF003F1EE0 /* CALayer+Anim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Anim.h"; sourceTree = "<group>"; };
+		8BD6DC48234B23AF003F1EE0 /* CALayer+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Transition.h"; sourceTree = "<group>"; };
+		8BD6DC49234B23B0003F1EE0 /* CALayer+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Transition.m"; sourceTree = "<group>"; };
 		8BF0756522F2BC34008858BC /* HQCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		8BF0756622F2BC34008858BC /* HQCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		92651E6F9D3EC2845A164D47 /* Pods-My_BaseProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProj.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProj/Pods-My_BaseProj.release.xcconfig"; sourceTree = "<group>"; };
@@ -388,10 +401,6 @@
 		C3F570BD22A538D2009E9691 /* UIViewController+YBGeneralHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YBGeneralHook.m"; sourceTree = "<group>"; };
 		C3F570C522A53933009E9691 /* UIScrollView+YBGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+YBGeneral.h"; sourceTree = "<group>"; };
 		C3F570C622A53933009E9691 /* UIScrollView+YBGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+YBGeneral.m"; sourceTree = "<group>"; };
-		C3F570CC22A53954009E9691 /* UITableView+YBGeneral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+YBGeneral.m"; sourceTree = "<group>"; };
-		C3F570CD22A53955009E9691 /* UITableView+YBGeneral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+YBGeneral.h"; sourceTree = "<group>"; };
-		C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TextAlign.m"; sourceTree = "<group>"; };
-		C3F570D022A53F71009E9691 /* UILabel+TextAlign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TextAlign.h"; sourceTree = "<group>"; };
 		C3F570D422A53FFA009E9691 /* NSString+Url_Chinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Url_Chinese.h"; sourceTree = "<group>"; };
 		C3F570D522A53FFA009E9691 /* NSString+Url_Chinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Url_Chinese.m"; sourceTree = "<group>"; };
 		C3F570D822A5403E009E9691 /* DeleteSystemUITabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteSystemUITabBarButton.m; sourceTree = "<group>"; };
@@ -520,7 +529,7 @@
 			path = WebSocket;
 			sourceTree = "<group>";
 		};
-		8B558698233C899A00132CF6 /* UITableViewHeaderFooterView */ = {
+		8B558698233C899A00132CF6 /* 👌UITableViewHeaderFooterView */ = {
 			isa = PBXGroup;
 			children = (
 				8B55869B233C899B00132CF6 /* ViewForFooter.h */,
@@ -528,7 +537,7 @@
 				8B55869C233C899B00132CF6 /* ViewForHeader.h */,
 				8B558699233C899B00132CF6 /* ViewForHeader.m */,
 			);
-			path = UITableViewHeaderFooterView;
+			path = "👌UITableViewHeaderFooterView";
 			sourceTree = "<group>";
 		};
 		8B6EB807230A6F1400F3995E /* KeyChainManager */ = {
@@ -543,6 +552,8 @@
 		8B6EB817230A713200F3995E /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
+				8BD6DC2C234B1D15003F1EE0 /* NSArray+Extend.h */,
+				8BD6DC2D234B1D15003F1EE0 /* NSArray+Extend.m */,
 				8B6EB819230A713900F3995E /* NSArray+Extension.h */,
 				8B6EB818230A713900F3995E /* NSArray+Extension.m */,
 			);
@@ -595,6 +606,17 @@
 				8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */,
 			);
 			path = "截获导航控制器系统返回按钮的点击pop及右滑pop事件";
+			sourceTree = "<group>";
+		};
+		8BD6DC2F234B1D70003F1EE0 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				8BD6DC47234B23AF003F1EE0 /* CALayer+Anim.h */,
+				8BD6DC46234B23AF003F1EE0 /* CALayer+Anim.m */,
+				8BD6DC48234B23AF003F1EE0 /* CALayer+Transition.h */,
+				8BD6DC49234B23B0003F1EE0 /* CALayer+Transition.m */,
+			);
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 		8BF0756422F2BC34008858BC /* UICollectionViewFlowLayout */ = {
@@ -1052,9 +1074,8 @@
 				C3F5708A22A50502009E9691 /* YBGeneralFont.m */,
 				C3F5708622A504B8009E9691 /* YBGeneralColor.h */,
 				C3F5708722A504B8009E9691 /* YBGeneralColor.m */,
-				C3F570D022A53F71009E9691 /* UILabel+TextAlign.h */,
-				C3F570CF22A53F71009E9691 /* UILabel+TextAlign.m */,
-				8B558698233C899A00132CF6 /* UITableViewHeaderFooterView */,
+				8BD6DC2F234B1D70003F1EE0 /* CALayer */,
+				8B558698233C899A00132CF6 /* 👌UITableViewHeaderFooterView */,
 				8B6EB817230A713200F3995E /* NSArray */,
 				C3F570D722A54005009E9691 /* NSString */,
 				C3F5707F22A5040F009E9691 /* UIView */,
@@ -1191,8 +1212,6 @@
 			children = (
 				CE2C16DE22D0526C00433397 /* UITableView+EmptyData.h */,
 				CE2C16DF22D0526D00433397 /* UITableView+EmptyData.m */,
-				C3F570CD22A53955009E9691 /* UITableView+YBGeneral.h */,
-				C3F570CC22A53954009E9691 /* UITableView+YBGeneral.m */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -1241,6 +1260,10 @@
 		C3F570D722A54005009E9691 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				8BD6DC2A234B1C7F003F1EE0 /* NSString+Password.h */,
+				8BD6DC29234B1C7F003F1EE0 /* NSString+Password.m */,
+				8BD6DC27234B1C61003F1EE0 /* NSString+File.h */,
+				8BD6DC26234B1C61003F1EE0 /* NSString+File.m */,
 				8B6F2B9D234611FC00801607 /* NSString+Emoji.h */,
 				8B6F2B9C234611FC00801607 /* NSString+Emoji.m */,
 				C3F5709022A50D60009E9691 /* NSString+Extras.h */,
@@ -1624,8 +1647,8 @@
 				C3F5709722A50E3A009E9691 /* UIImage+Extras.m in Sources */,
 				C3F5709A22A50E5F009E9691 /* UIButton+Extras.m in Sources */,
 				C3F56F7322A4C731009E9691 /* My_BaseProj.xcdatamodeld in Sources */,
+				8BD6DC4A234B23B0003F1EE0 /* CALayer+Anim.m in Sources */,
 				C3F56FC322A4F783009E9691 /* NSData+CommonCrypto.m in Sources */,
-				C3F570D122A53F71009E9691 /* UILabel+TextAlign.m in Sources */,
 				CE2C16E022D0526D00433397 /* UITableView+EmptyData.m in Sources */,
 				C3F5709D22A50EB2009E9691 /* PlaySound.m in Sources */,
 				C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */,
@@ -1634,7 +1657,7 @@
 				C3F5701422A4F94D009E9691 /* XLSphereView.m in Sources */,
 				8B6EB81A230A713900F3995E /* NSArray+Extension.m in Sources */,
 				C3F56FFB22A4F7CE009E9691 /* XDSDropDownMenu.m in Sources */,
-				C3F570CE22A53955009E9691 /* UITableView+YBGeneral.m in Sources */,
+				8BD6DC28234B1C61003F1EE0 /* NSString+File.m in Sources */,
 				8B128BF22345A5750039B590 /* TBCityIconInfo.m in Sources */,
 				C3F570E522A60CEF009E9691 /* ViewController@2.m in Sources */,
 				C3F570EB22A60D1C009E9691 /* ViewController@3.m in Sources */,
@@ -1663,6 +1686,7 @@
 				C3F570A322A5128A009E9691 /* IsLogin.m in Sources */,
 				C3F570DF22A60B8C009E9691 /* CustomSYSUITabBarController.m in Sources */,
 				C3229A8522B21D110044BB5E /* SDCycleScrollView.m in Sources */,
+				8BD6DC2E234B1D15003F1EE0 /* NSArray+Extend.m in Sources */,
 				C3F570FF22A61052009E9691 /* ViewController@4.m in Sources */,
 				C3F570C022A538D2009E9691 /* UIViewController+YBGeneralHook.m in Sources */,
 				C3F5707822A4FC92009E9691 /* DHAreasModel.m in Sources */,
@@ -1686,6 +1710,7 @@
 				C3F570E822A60D0A009E9691 /* ViewController@1.m in Sources */,
 				C3229A7A22B0D39F0044BB5E /* XDTextBtnView.m in Sources */,
 				C3F5700C22A4F8B1009E9691 /* AnimateToSpecifiedDate_Init.m in Sources */,
+				8BD6DC4B234B23B0003F1EE0 /* CALayer+Transition.m in Sources */,
 				C3F56F6A22A4C731009E9691 /* AppDelegate.m in Sources */,
 				C301CF0E22AE72BE00C0DCCC /* YKToastView.m in Sources */,
 				C3F5707922A4FC92009E9691 /* DHAreaPickerView+DelegateProtocal.m in Sources */,
@@ -1707,6 +1732,7 @@
 				C3F56FF922A4F7CE009E9691 /* LXTagsView.m in Sources */,
 				C3229A8922B21D110044BB5E /* SDCollectionViewCell.m in Sources */,
 				C3F56FF222A4F7CE009E9691 /* VerifyCodeButton.m in Sources */,
+				8BD6DC2B234B1C7F003F1EE0 /* NSString+Password.m in Sources */,
 				C3F5705322A4FA9F009E9691 /* XWCountryCodeController.m in Sources */,
 				C3F5704422A4FA40009E9691 /* UICollectionView+YBGeneral.m in Sources */,
 				C3F570AE22A521E7009E9691 /* ZYTextField.m in Sources */,

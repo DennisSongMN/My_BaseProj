@@ -9,6 +9,7 @@
 #ifndef Other_h
 #define Other_h
 
+#import "AppDelegate.h"
 //FFmpeg 需要
 #import <VideoToolbox/VideoToolbox.h>
 

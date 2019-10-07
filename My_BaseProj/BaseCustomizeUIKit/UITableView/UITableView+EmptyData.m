@@ -10,7 +10,6 @@
 
 @implementation UITableView (EmptyData)
 
-
 - (void) tableViewDisplayWitMsg:(NSString *) message
          ifNecessaryForRowCount:(NSUInteger) rowCount{
     
