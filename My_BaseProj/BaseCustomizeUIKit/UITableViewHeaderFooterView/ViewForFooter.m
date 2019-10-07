@@ -10,6 +10,8 @@
 
 @interface ViewForFooter()
 
+@property(nonatomic,weak)DataBlock block;
+
 @end
 
 @implementation ViewForFooter
@@ -19,5 +21,17 @@
 
     }return self;
 }
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    if (self.block) {
+        self.block(@1);
+    }
+}
+
+-(void)actionBlock:(DataBlock)block{
+    _block = block;
+}
+
 
 @end

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ViewForFooter : UITableViewHeaderFooterView
 
 - (instancetype)initWithRequestParams:(id)requestParams;
+-(void)actionBlock:(DataBlock)block;
 
 @end
 
