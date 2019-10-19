@@ -1,0 +1,67 @@
+显示Mac OS X上的隐藏文件和文件夹
+defaults write com.apple.Finder AppleShowAllFiles YES
+Xcode Command Line Tools
+xcode-select —install
+
+Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew cask install cakebrew
+brew cask install launchrocket
+brew install carthage
+brew install php
+brew install mysql
+brew install tomcat
+brew install maven
+brew install java
+brew install -g node
+brew install nvm
+brew install docker
+brew install python3
+brew install openssl
+brew install wget
+brew install heroku
+brew install git
+brew install autojump
+brew install Mongodb
+brew install Nginx
+brew install iTerm2
+brew install xz
+brew install pkg-config
+brew install readline
+brew install coreutils
+brew install lrzsz
+brew install clang-format
+brew install git-flow
+brew install caskroom/cask/brew-cask
+
+###################################################
+
+升级Ruby环境，首先需要安装rvm
+curl -L get.rvm.io | bash -s stable
+source ~/.bashrc
+source ~/.bash_profile
+rvm -v
+rvm list known
+rvm install 2.6.3
+rvm docs generate-ri
+
+开始安装CocoaPods
+sudo gem install -n /usr/local/bin cocoapods
+安装本地库
+pod setup
+
+安装 oh-my-zsh
+# 1、打开 iTerm2
+# 2、 通过 git 下载：
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+# 3、 复制创建~/.zshrc配置文件：
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+# 4、bash 切换成 zsh ：
+chsh -s /bin/zsh
+# 5、按照提醒输入密码，完全退出iTerm2
+
+
+
+
+
