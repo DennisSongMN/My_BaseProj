@@ -177,7 +177,7 @@ DEPENDENCIES:
   - ZYSuspensionView/SuspensionView
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AFNetworking
     - AwesomeMenu
     - AYCheckVersion
@@ -287,4 +287,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 0a502e02f8cdc9c98149287e50b05a4cb3eff7e3
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

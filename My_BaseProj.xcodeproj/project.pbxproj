@@ -499,12 +499,12 @@
 		8B128BEA2345A5750039B590 /* IconFont */ = {
 			isa = PBXGroup;
 			children = (
-				8B128BEB2345A5750039B590 /* TBCityIconFont.m */,
-				8B128BEC2345A5750039B590 /* TBCityIconInfo.m */,
-				8B128BED2345A5750039B590 /* UIImage+TBCityIconFont.m */,
-				8B128BEE2345A5750039B590 /* TBCityIconInfo.h */,
 				8B128BEF2345A5750039B590 /* TBCityIconFont.h */,
+				8B128BEB2345A5750039B590 /* TBCityIconFont.m */,
+				8B128BEE2345A5750039B590 /* TBCityIconInfo.h */,
+				8B128BEC2345A5750039B590 /* TBCityIconInfo.m */,
 				8B128BF02345A5750039B590 /* UIImage+TBCityIconFont.h */,
+				8B128BED2345A5750039B590 /* UIImage+TBCityIconFont.m */,
 			);
 			path = IconFont;
 			sourceTree = "<group>";
