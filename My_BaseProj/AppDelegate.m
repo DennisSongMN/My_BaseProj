@@ -20,7 +20,7 @@
 + (instancetype)sharedInstance {
     
     static AppDelegate *_instace = nil;
-    
+
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
