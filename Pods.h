@@ -53,5 +53,6 @@
 #import <HBDNavigationBar/HBDNavigationController.h>
 #import "TZImagePickerController.h"
 //#import <YYText/YYText.h>
+#import <YYKit/YYKit.h>
 
 #endif /* Pods_h */
