@@ -127,3 +127,19 @@ https://github.com/fletcheryang2014/BundleLoader
 https://www.jianshu.com/p/37b3e382dcab //Label或Button自适应宽度或文字大小
 
 https://blog.csdn.net/ziyuzhiye/article/details/90677399 超级签名
+
+功能|YYLabel|YYTextView| TTTAttributedLabel|备注
+:---:|:---:|:---:|:---:
+字体|✔️|✔️|✔️|
+颜色|✔️|✔️|✔️|
+描边|✔️|✔️|✔️|
+删除样式|✔️|✔️|✔️|
+下划线|✔️|✔️|✔️|
+背景色|✔️|✔️|✔️|
+阴影|✔️|✔️|❌|
+斜体|❌|❌|❌|
+图片|✔️|✔️|❌|TTT不支持
+链接|✔️|✔️|✔️|
+数据探测器|❌|✔️|✔️|
+
+

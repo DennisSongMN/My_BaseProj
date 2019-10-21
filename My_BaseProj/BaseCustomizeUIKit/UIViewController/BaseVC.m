@@ -249,6 +249,5 @@
     }return _tableViewFooter;
 }
 
-
 @end
 
