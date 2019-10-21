@@ -54,5 +54,6 @@
 #import "TZImagePickerController.h"
 //#import <YYText/YYText.h>
 #import <YYKit/YYKit.h>
+#import "BRPickerView.h"
 
 #endif /* Pods_h */
