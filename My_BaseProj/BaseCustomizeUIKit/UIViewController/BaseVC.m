@@ -94,13 +94,14 @@
 
 -(void)showAlertViewTitle:(NSString *)title
                   message:(NSString *)message
-           alertBtnAction:(NSArray *)alertBtnActionArr{
+              btnTitleArr:(NSArray <NSString*>*)btnTitleArr
+           alertBtnAction:(NSArray <NSString*>*)alertBtnActionArr{
     @weakify(self)
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title
                                                                              message:message
                                                                       preferredStyle:UIAlertControllerStyleAlert];
     for (int i = 0; i < alertBtnActionArr.count; i++) {
-        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK"
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:btnTitleArr[i]
                                                            style:UIAlertActionStyleDefault
                                                          handler:^(UIAlertAction * _Nonnull action) {
                                                              @strongify(self)

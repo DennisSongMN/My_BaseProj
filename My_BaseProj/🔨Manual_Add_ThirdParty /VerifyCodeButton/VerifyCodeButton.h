@@ -13,25 +13,15 @@ NS_ASSUME_NONNULL_BEGIN
 @interface VerifyCodeButton : UIButton
 
 @property(nonatomic,strong)NSTimer *timer;
-
-@property(nonatomic,strong)NSString *titleBeginStr;
-
-@property(nonatomic,strong)NSString *titleEndStr;
-
+@property(nonatomic,copy)NSString *titleBeginStr;
+@property(nonatomic,copy)NSString *titleEndStr;
 @property(nonatomic,strong)UIColor *titleColor;
-
 @property(nonatomic,strong)UIColor *bgBeginColor;
-
 @property(nonatomic,strong)UIColor *bgEndColor;
-
 @property(nonatomic,strong)UIColor *layerBorderColor;
-
 @property(nonatomic,strong)UIFont *titleLabelFont;
-
 @property(nonatomic,assign)CGFloat layerCornerRadius;
-
 @property(nonatomic,assign)CGFloat layerBorderWidth;
-
 @property(nonatomic,assign)BOOL isClipsToBounds;
 
 - (void)timeFailBeginFrom:(NSInteger)timeCount;//倒计时时间次数

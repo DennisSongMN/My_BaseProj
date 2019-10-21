@@ -29,7 +29,8 @@ UIGestureRecognizerDelegate
 -(void)showLoginAlertView;
 -(void)showAlertViewTitle:(NSString *)title
                   message:(NSString *)message
-           alertBtnAction:(NSArray *)alertBtnActionArr;
+              btnTitleArr:(NSArray <NSString*>*)btnTitleArr
+           alertBtnAction:(NSArray <NSString*>*)alertBtnActionArr;
 
 -(void)locateTabBar:(NSInteger)index;
 -(void)setStatusBarBackgroundColor:(UIColor *)color;
