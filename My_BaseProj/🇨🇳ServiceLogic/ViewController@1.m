@@ -18,7 +18,7 @@
 
 //@property (nonatomic, assign) BOOL isShowEmailSuffix;   //是否在输入@后显示email后缀
 //@property (nonatomic, assign) BOOL isAutoCompleterEmailSuffix;  //是否自动补全email后缀
-@property(nonatomic,strong)ZYTextField *textField;
+@property(nonatomic,strong)ZYTextField_01 *textField;
 @property(nonatomic,strong)UIView *mainView;
 @property(nonatomic,strong)id requestParams;
 @property(nonatomic,copy)DataBlock successBlock;
@@ -160,11 +160,11 @@
     return _mainView;
 }
 
--(ZYTextField *)textField{
+-(ZYTextField_01 *)textField{
     
     if (!_textField) {
         
-        _textField = [[ZYTextField alloc]initWithFrame:CGRectZero
+        _textField = [[ZYTextField_01 alloc]initWithFrame:CGRectZero
                                           documentName:@"KKK"
                                     isStoreHistoryInfo:isStoreHistoryInfo_YES];
         

@@ -23,6 +23,7 @@
 		8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A499F22F2C42B00AFDC59 /* HQTextField.m */; };
 		8BA94BFB235AE6C800B00786 /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA94BF9235AE6C700B00786 /* HQCollectionViewFlowLayout.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
+		8BB8BD29235ED1A5008C7578 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8BD27235ED1A5008C7578 /* ZYTextField.m */; };
 		8BD6DC28234B1C61003F1EE0 /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC26234B1C61003F1EE0 /* NSString+File.m */; };
 		8BD6DC2B234B1C7F003F1EE0 /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC29234B1C7F003F1EE0 /* NSString+Password.m */; };
 		8BD6DC2E234B1D15003F1EE0 /* NSArray+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC2D234B1D15003F1EE0 /* NSArray+Extend.m */; };
@@ -103,7 +104,7 @@
 		C3F5709D22A50EB2009E9691 /* PlaySound.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5709C22A50EB2009E9691 /* PlaySound.m */; };
 		C3F570A022A50F83009E9691 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F5709F22A50F83009E9691 /* UIColor+Hex.m */; };
 		C3F570A322A5128A009E9691 /* IsLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570A122A5128A009E9691 /* IsLogin.m */; };
-		C3F570AE22A521E7009E9691 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570AC22A521E7009E9691 /* ZYTextField.m */; };
+		C3F570AE22A521E7009E9691 /* ZYTextField_01.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570AC22A521E7009E9691 /* ZYTextField_01.m */; };
 		C3F570B622A534E7009E9691 /* CollectionAccountEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570B422A534E7009E9691 /* CollectionAccountEditor.m */; };
 		C3F570BE22A538D2009E9691 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570B922A538D1009E9691 /* BaseVC.m */; };
 		C3F570BF22A538D2009E9691 /* UIViewController+YBGeneral.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F570BB22A538D1009E9691 /* UIViewController+YBGeneral.m */; };
@@ -200,6 +201,8 @@
 		8BB8108122F13F8C00F2FD8E /* XZWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZWebView.m; sourceTree = "<group>"; };
 		8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		8BB8108522F1404900F2FD8E /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		8BB8BD27235ED1A5008C7578 /* ZYTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
+		8BB8BD28235ED1A5008C7578 /* ZYTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
 		8BC2781C2359DD92004AA5F4 /* Computer_Config */ = {isa = PBXFileReference; lastKnownFileType = text; path = Computer_Config; sourceTree = "<group>"; };
 		8BD6DC26234B1C61003F1EE0 /* NSString+File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+File.m"; sourceTree = "<group>"; };
 		8BD6DC27234B1C61003F1EE0 /* NSString+File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+File.h"; sourceTree = "<group>"; };
@@ -389,8 +392,8 @@
 		C3F5709F22A50F83009E9691 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		C3F570A122A5128A009E9691 /* IsLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsLogin.m; sourceTree = "<group>"; };
 		C3F570A222A5128A009E9691 /* IsLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsLogin.h; sourceTree = "<group>"; };
-		C3F570AC22A521E7009E9691 /* ZYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
-		C3F570AD22A521E7009E9691 /* ZYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
+		C3F570AC22A521E7009E9691 /* ZYTextField_01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTextField_01.m; sourceTree = "<group>"; };
+		C3F570AD22A521E7009E9691 /* ZYTextField_01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTextField_01.h; sourceTree = "<group>"; };
 		C3F570B322A534D8009E9691 /* 弹窗小控件（高仿今日头条App评论弹窗框架） */ = {isa = PBXFileReference; lastKnownFileType = text; path = "弹窗小控件（高仿今日头条App评论弹窗框架）"; sourceTree = "<group>"; };
 		C3F570B422A534E7009E9691 /* CollectionAccountEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionAccountEditor.m; sourceTree = "<group>"; };
 		C3F570B522A534E7009E9691 /* CollectionAccountEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionAccountEditor.h; sourceTree = "<group>"; };
@@ -564,8 +567,10 @@
 		8B8A499C22F2C41600AFDC59 /* ZYTextField */ = {
 			isa = PBXGroup;
 			children = (
-				C3F570AD22A521E7009E9691 /* ZYTextField.h */,
-				C3F570AC22A521E7009E9691 /* ZYTextField.m */,
+				8BB8BD28235ED1A5008C7578 /* ZYTextField.h */,
+				8BB8BD27235ED1A5008C7578 /* ZYTextField.m */,
+				C3F570AD22A521E7009E9691 /* ZYTextField_01.h */,
+				C3F570AC22A521E7009E9691 /* ZYTextField_01.m */,
 			);
 			path = ZYTextField;
 			sourceTree = "<group>";
@@ -1708,6 +1713,7 @@
 				C3F56FC422A4F783009E9691 /* NSString+Base64.m in Sources */,
 				C3F5704B22A4FA7F009E9691 /* YBNotificationManager.m in Sources */,
 				C3229A8722B21D110044BB5E /* SDCycleScrollView+UICollectionViewDataSource.m in Sources */,
+				8BB8BD29235ED1A5008C7578 /* ZYTextField.m in Sources */,
 				C3F56F7B22A4C732009E9691 /* main.m in Sources */,
 				C3F570E822A60D0A009E9691 /* ViewController@1.m in Sources */,
 				C3229A7A22B0D39F0044BB5E /* XDTextBtnView.m in Sources */,
@@ -1736,7 +1742,7 @@
 				8BD6DC2B234B1C7F003F1EE0 /* NSString+Password.m in Sources */,
 				C3F5705322A4FA9F009E9691 /* XWCountryCodeController.m in Sources */,
 				C3F5704422A4FA40009E9691 /* UICollectionView+YBGeneral.m in Sources */,
-				C3F570AE22A521E7009E9691 /* ZYTextField.m in Sources */,
+				C3F570AE22A521E7009E9691 /* ZYTextField_01.m in Sources */,
 				C3F56FA522A4F43A009E9691 /* LYLUnicode.m in Sources */,
 				8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */,
 				CE1319A422CDA6F6002BA1A7 /* XLChannelView.m in Sources */,
