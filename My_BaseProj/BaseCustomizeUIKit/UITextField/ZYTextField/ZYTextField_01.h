@@ -30,11 +30,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ZYTextField_01 : UITextField
 
 @property(nonatomic,strong)HistoryDataListTBV *historyDataListTBV;
+@property(nonatomic,strong)MJRefreshAutoGifFooter *tableViewFooter;
+@property(nonatomic,strong)MJRefreshGifHeader *tableViewHeader;
+@property(nonatomic,strong)NSMutableArray *dataMutArr;
 
 - (instancetype)initWithFrame:(CGRect)frame
                  documentName:(NSString *)docName
            isStoreHistoryInfo:(isStoreHistoryInfo)isStoreHistoryInfo;
-
 -(NSString *)getPlistPath;//存取路径
 -(void)store:(NSString *)str;//存方法
 
