@@ -12,7 +12,6 @@
 }
 
 @property(nonatomic,copy)NSString *documentName;//数据文件名
-@property(nonatomic,strong)NSMutableArray *dataMutArr;
 @property(nonatomic,strong)NSMutableSet *mutSet;
 
 @end
@@ -43,12 +42,13 @@
                               150,
                               132);//字体颜色
     self.tintColor = self.textColor;//光标颜色
-    [self setValue:RGBCOLOR(167,
-                            167,
-                            167)
-        forKeyPath:@"_placeholderLabel.textColor"];//占位符的颜色和大小
-    [self setValue:[UIFont boldSystemFontOfSize:15]
-        forKeyPath:@"_placeholderLabel.font"];
+    
+    UILabel *placeholderLabel = object_getIvar(self, class_getInstanceVariable([UITextField class], "_placeholderLabel"));
+    placeholderLabel.textColor = RGBCOLOR(167,
+                                          167,
+                                          167);
+    placeholderLabel.font = [UIFont boldSystemFontOfSize:15];
+    
     [self resignFirstResponder];// 不成为第一响应者
 }
 /**
@@ -56,8 +56,8 @@
  */
 - (BOOL)becomeFirstResponder{
     // 修改占位文字颜色
-    [self setValue:self.textColor
-        forKeyPath:@"_placeholderLabel.textColor"];
+    UILabel *placeholderLabel = object_getIvar(self, class_getInstanceVariable([UITextField class], "_placeholderLabel"));
+    placeholderLabel.textColor = self.textColor;
     if (self.dataMutArr.count > 0) {
         //添加到父视图上
         [self.superview addSubview:self.historyDataListTBV];
@@ -72,8 +72,8 @@
  * 当前文本框失去焦点时就会调用
  */
 - (BOOL)resignFirstResponder{
-    [self setValue:[UIColor grayColor]
-        forKeyPath:@"_placeholderLabel.textColor"];// 修改占位文字颜色
+    UILabel *placeholderLabel = object_getIvar(self, class_getInstanceVariable([UITextField class], "_placeholderLabel"));
+    placeholderLabel.textColor = [UIColor grayColor];// 修改占位文字颜色
     if (_historyDataListTBV) {//关闭
         [self.historyDataListTBV removeFromSuperview];
         _historyDataListTBV = Nil;
@@ -133,16 +133,18 @@
     if (!_historyDataListTBV) {
         _historyDataListTBV = [HistoryDataListTBV initWithRequestParams:self.dataMutArr];
         @weakify(self)
-        [_historyDataListTBV deleteData:^(id  _Nullable data) {
-            @strongify(self)
-            NSLog(@"%@",data);
-            [self.dataMutArr removeObject:data];
-            [self->_historyDataListTBV reloadData];
-        }];
-        [_historyDataListTBV showSelectedData:^(id data) {
-            @strongify(self)
-            self.text = data;
-        }];
+//        [_historyDataListTBV dele];
+        
+//        [_historyDataListTBV deleteData:^(id  _Nullable data) {
+//            @strongify(self)
+//            NSLog(@"%@",data);
+//            [self.dataMutArr removeObject:data];
+//            [self->_historyDataListTBV reloadData];
+//        }];
+//        [_historyDataListTBV showSelectedData:^(id data) {
+//            @strongify(self)
+//            self.text = data;
+//        }];
         _historyDataListTBV.tableFooterView = UIView.new;
     }return _historyDataListTBV;
 }
