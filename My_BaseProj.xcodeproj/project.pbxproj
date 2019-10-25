@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		014874CCC2B5911781B42F74 /* libPods-My_BaseProj.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */; };
 		3599FB3289EE82D5677422D9 /* libPods-My_BaseProjUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */; };
+		8B070A432362EBF800462976 /* CountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B070A422362EBF800462976 /* CountdownView.m */; };
 		8B128BF12345A5750039B590 /* TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B128BEB2345A5750039B590 /* TBCityIconFont.m */; };
 		8B128BF22345A5750039B590 /* TBCityIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B128BEC2345A5750039B590 /* TBCityIconInfo.m */; };
 		8B128BF32345A5750039B590 /* UIImage+TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B128BED2345A5750039B590 /* UIImage+TBCityIconFont.m */; };
@@ -165,6 +166,8 @@
 		6034DD6DF7212D7FC23F03FC /* Pods-My_BaseProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_BaseProjUITests.release.xcconfig"; path = "Target Support Files/Pods-My_BaseProjUITests/Pods-My_BaseProjUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7505B070AA7519F6734AC2E9 /* libPods-My_BaseProjUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProjUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		826DFEC822EAAE3D00464D1B /* Jose */ = {isa = PBXFileReference; lastKnownFileType = text; path = Jose; sourceTree = "<group>"; };
+		8B070A412362EBF800462976 /* CountdownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownView.h; sourceTree = "<group>"; };
+		8B070A422362EBF800462976 /* CountdownView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownView.m; sourceTree = "<group>"; };
 		8B128BEB2345A5750039B590 /* TBCityIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconFont.m; sourceTree = "<group>"; };
 		8B128BEC2345A5750039B590 /* TBCityIconInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityIconInfo.m; sourceTree = "<group>"; };
 		8B128BED2345A5750039B590 /* UIImage+TBCityIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TBCityIconFont.m"; sourceTree = "<group>"; };
@@ -500,6 +503,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8B070A402362EBF800462976 /* 圆形倒计时进度条（中间有字，可点击回调） */ = {
+			isa = PBXGroup;
+			children = (
+				8B070A412362EBF800462976 /* CountdownView.h */,
+				8B070A422362EBF800462976 /* CountdownView.m */,
+			);
+			path = "圆形倒计时进度条（中间有字，可点击回调）";
+			sourceTree = "<group>";
+		};
 		8B128BEA2345A5750039B590 /* IconFont */ = {
 			isa = PBXGroup;
 			children = (
@@ -822,6 +834,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				8B070A402362EBF800462976 /* 圆形倒计时进度条（中间有字，可点击回调） */,
 				8B128BEA2345A5750039B590 /* IconFont */,
 				8B29BAF8232E5E5D002114A0 /* ECAuthorizationTools */,
 				8B38341E23164BB300091A6F /* WebSocket */,
@@ -1693,6 +1706,7 @@
 				C3F570A322A5128A009E9691 /* IsLogin.m in Sources */,
 				C3F570DF22A60B8C009E9691 /* CustomSYSUITabBarController.m in Sources */,
 				C3229A8522B21D110044BB5E /* SDCycleScrollView.m in Sources */,
+				8B070A432362EBF800462976 /* CountdownView.m in Sources */,
 				8BD6DC2E234B1D15003F1EE0 /* NSArray+Extend.m in Sources */,
 				C3F570FF22A61052009E9691 /* ViewController@4.m in Sources */,
 				C3F570C022A538D2009E9691 /* UIViewController+YBGeneralHook.m in Sources */,
