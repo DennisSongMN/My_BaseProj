@@ -33,8 +33,20 @@
                                  (int64_t)(self.time * NSEC_PER_SEC)),
                    dispatch_get_main_queue(), ^{
         @strongify(self)
-        [self tapAction];
+        [self animationFinished];
     });
+}
+#pragma mark —— 点击事件
+- (void)tapAction{//主动点击
+    if (self.blockTapAction) {
+        self.blockTapAction();
+    }
+}
+
+- (void)animationFinished{//动画结束
+    if (self.blockAnimationFinishedAction) {
+        self.blockAnimationFinishedAction();
+    }
 }
 
 -(void)setTime:(NSInteger)time{
@@ -70,13 +82,6 @@
                                                green:0.27f
                                                 blue:0.27f
                                                alpha:1.00f];
-    }
-}
-
-#pragma mark —— 点击事件
-- (void)tapAction{
-    if (self.blockTapAction) {
-        self.blockTapAction();
     }
 }
 #pragma mark —— lazyLoad
