@@ -137,48 +137,50 @@ didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
 
 #pragma mark -------------------- Contacts --------------------
 + (void)checkAndRequestAccessForContactsWithAccessStatus:(AccessForTypeResultBlock)accessStatusCallBack{
-    CNContactStore *contactStore = CNContactStore.new;
-    CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
-    if (status == CNAuthorizationStatusNotDetermined) {
-        if (!contactStore) {
-            [self executeCallBack:accessStatusCallBack
-                     accessStatus:ECAuthorizationStatus_NotSupport
-                             type:ECPrivacyType_Contacts];
-        }
-        [contactStore requestAccessForEntityType:CNEntityTypeContacts
-                               completionHandler:^(BOOL granted,
-                                                   NSError * _Nullable error) {
-                                   if (error) {
-                                       NSLog(@"error:%@",error);
-                                       [self executeCallBack:accessStatusCallBack
-                                                accessStatus:ECAuthorizationStatus_NotSupport
-                                                        type:ECPrivacyType_Contacts];
-                                   }else{
-                                       if (granted) {
+    if (@available(iOS 9.0, *)) {
+        CNContactStore *contactStore = CNContactStore.new;
+        CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
+        if (status == CNAuthorizationStatusNotDetermined) {
+            if (!contactStore) {
+                [self executeCallBack:accessStatusCallBack
+                         accessStatus:ECAuthorizationStatus_NotSupport
+                                 type:ECPrivacyType_Contacts];
+            }
+            [contactStore requestAccessForEntityType:CNEntityTypeContacts
+                                   completionHandler:^(BOOL granted,
+                                                       NSError * _Nullable error) {
+                                       if (error) {
+                                           NSLog(@"error:%@",error);
                                            [self executeCallBack:accessStatusCallBack
-                                                    accessStatus:ECAuthorizationStatus_Authorized
+                                                    accessStatus:ECAuthorizationStatus_NotSupport
                                                             type:ECPrivacyType_Contacts];
                                        }else{
-                                           [self executeCallBack:accessStatusCallBack
-                                                    accessStatus:ECAuthorizationStatus_Denied
-                                                            type:ECPrivacyType_Contacts];
+                                           if (granted) {
+                                               [self executeCallBack:accessStatusCallBack
+                                                        accessStatus:ECAuthorizationStatus_Authorized
+                                                                type:ECPrivacyType_Contacts];
+                                           }else{
+                                               [self executeCallBack:accessStatusCallBack
+                                                        accessStatus:ECAuthorizationStatus_Denied
+                                                                type:ECPrivacyType_Contacts];
+                                           }
                                        }
-                                   }
-                               }];
-    }else if (status == CNAuthorizationStatusRestricted) {
-        [self executeCallBack:accessStatusCallBack
-                 accessStatus:ECAuthorizationStatus_Restricted
-                         type:ECPrivacyType_Contacts];
-    }else if (status == CNAuthorizationStatusDenied) {
-        [self executeCallBack:accessStatusCallBack
-                 accessStatus:ECAuthorizationStatus_Denied
-                         type:ECPrivacyType_Contacts];
-    }else{
-        // CNAuthorizationStatusAuthorized
-        [self executeCallBack:accessStatusCallBack
-                 accessStatus:ECAuthorizationStatus_Authorized
-                         type:ECPrivacyType_Contacts];
-    }
+                                   }];
+        }else if (status == CNAuthorizationStatusRestricted) {
+            [self executeCallBack:accessStatusCallBack
+                     accessStatus:ECAuthorizationStatus_Restricted
+                             type:ECPrivacyType_Contacts];
+        }else if (status == CNAuthorizationStatusDenied) {
+            [self executeCallBack:accessStatusCallBack
+                     accessStatus:ECAuthorizationStatus_Denied
+                             type:ECPrivacyType_Contacts];
+        }else{
+            // CNAuthorizationStatusAuthorized
+            [self executeCallBack:accessStatusCallBack
+                     accessStatus:ECAuthorizationStatus_Authorized
+                             type:ECPrivacyType_Contacts];
+        }
+    }else{}
 }
 #pragma mark -------------------- Calendars --------------------
 + (void)checkAndRequestAccessForCalendarsWithAccessStatus:(AccessForTypeResultBlock)accessStatusCallBack{
@@ -576,10 +578,10 @@ didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
             self.HomeAccessCallBackBlock(YES);
         }
     } else {
-        __weak HMHomeManager *weakHomeManager = manager;
-        [manager addHomeWithName:@"Test Home"
-               completionHandler:^(HMHome * _Nullable home,
-                                   NSError * _Nullable error) {
+        @weakify(manager)
+        [manager_weak_ addHomeWithName:@"Test Home"
+                     completionHandler:^(HMHome * _Nullable home,
+                                         NSError * _Nullable error) {
             if (!error) {
                 NSLog(@"We have access for home.");
                 if (self.HomeAccessCallBackBlock) {
@@ -598,8 +600,8 @@ didChangeAuthorizationStatus:(CLAuthorizationStatus)status{
                 }
             }
             if (home) {
-                [weakHomeManager removeHome:home
-                          completionHandler:^(NSError * _Nullable error) {
+                [manager_weak_ removeHome:home
+                        completionHandler:^(NSError * _Nullable error) {
                     // ... do something with the result of removing the home ...
                 }];
             }
