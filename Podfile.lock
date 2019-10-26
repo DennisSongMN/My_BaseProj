@@ -40,6 +40,7 @@ PODS:
     - EARestrictedScrollView (~> 1.1.0)
   - EARestrictedScrollView (1.1.0)
   - EScrollPageView (1.0.0)
+  - FBRetainCycleDetector (0.1.4)
   - FDFullscreenPopGesture (1.1)
   - FLEX (3.0.0)
   - FMDB (2.7.5):
@@ -56,6 +57,8 @@ PODS:
   - "MBProgressHUD+WJExtension (1.3.1)"
   - MJExtension (3.0.17)
   - MJRefresh (3.2.0)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
   - NJKWebViewProgress (0.2.3):
     - NJKWebViewProgress/Core (= 0.2.3)
     - NJKWebViewProgress/ProgressView (= 0.2.3)
@@ -152,6 +155,7 @@ DEPENDENCIES:
   - "MBProgressHUD+WJExtension"
   - MJExtension
   - MJRefresh
+  - MLeaksFinder
   - NJKWebViewProgress
   - OpenUDID
   - PGBanner
@@ -191,6 +195,7 @@ SPEC REPOS:
     - EAIntroView
     - EARestrictedScrollView
     - EScrollPageView
+    - FBRetainCycleDetector
     - FDFullscreenPopGesture
     - FLEX
     - FMDB
@@ -205,6 +210,7 @@ SPEC REPOS:
     - "MBProgressHUD+WJExtension"
     - MJExtension
     - MJRefresh
+    - MLeaksFinder
     - NJKWebViewProgress
     - OpenUDID
     - PGBanner
@@ -246,6 +252,7 @@ SPEC CHECKSUMS:
   EAIntroView: 249559079ddfdbe80e5bcb755c04c3b964b2ac27
   EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
   EScrollPageView: 6fd67fd563fa0a806f58d9c0c14ebceef9788164
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FLEX: d66c759bce0f6ebbbf472c742380874d846f2883
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
@@ -260,6 +267,7 @@ SPEC CHECKSUMS:
   "MBProgressHUD+WJExtension": 1d9c93951b49e8c711fef6e6089aa6d7d3321192
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
   PGBanner: 0c52ab4ce9e04ad17f8dd0627b45951b96770c67
@@ -289,6 +297,6 @@ SPEC CHECKSUMS:
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
   ZYSuspensionView: 40731a4c873d67f5c4aa4b2c3172aeae9a776440
 
-PODFILE CHECKSUM: dfb3441bdc1e77276108ae6af1800d23ae58bbcc
+PODFILE CHECKSUM: b1f8649ee972fc4f11ee8fe6b906652d130bbd0c
 
 COCOAPODS: 1.8.4

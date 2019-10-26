@@ -62,6 +62,7 @@ pod 'LYEmptyView'#https://github.com/dev-liyang/LYEmptyView iOS一行代码集�
 pod 'TZImagePickerController'#https://github.com/banchichen/TZImagePickerController 一个支持多选，选原图和视频的图片选择器，同时有预览，裁剪功能，支持iOS6 +。一个UIImagePickerController的克隆，支持挑选多张照片，原始照片，视频，还允许预览照片和视频，支持iOS6 +
 pod 'BRPickerView'
 pod 'Reveal-SDK', :configurations => ['Debug']
+pod 'MLeaksFinder' #在开发时在iOS应用中查找内存泄漏 https://github.com/Tencent/MLeaksFinder
 
 #视频相关框架
 #pod 'ZFPlayer/ControlView'
