@@ -64,6 +64,7 @@ typedef void (^ActionBlock)(id data);
                      borderWidth:(float)borderWidth
                      borderColor:(UIColor*)borderColor
                           action:(SEL)operationAction;
+//指定描边
 - (void)setBorderWithView:(UIView *)view
               borderColor:(UIColor *)color
               borderWidth:(CGFloat)width
