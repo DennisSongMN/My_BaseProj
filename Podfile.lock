@@ -51,6 +51,7 @@ PODS:
   - HCSStarRatingView (1.5)
   - IQKeyboardManager (6.3.0)
   - JDStatusBarNotification (1.6.0)
+  - JJStockView (0.0.7)
   - JXCategoryView (1.3.14)
   - LYEmptyView (1.2.5)
   - Masonry (1.1.0)
@@ -155,6 +156,7 @@ DEPENDENCIES:
   - HCSStarRatingView
   - IQKeyboardManager
   - JDStatusBarNotification
+  - JJStockView
   - JXCategoryView
   - LYEmptyView
   - Masonry
@@ -211,6 +213,7 @@ SPEC REPOS:
     - HCSStarRatingView
     - IQKeyboardManager
     - JDStatusBarNotification
+    - JJStockView
     - JXCategoryView
     - LYEmptyView
     - Masonry
@@ -271,6 +274,7 @@ SPEC CHECKSUMS:
   HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
   IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
   JDStatusBarNotification: 21b616e7432284fea6eb0ce9eadc37c8038a5544
+  JJStockView: 7921a6e05e06b217f10c7c36114bdb098f785cf7
   JXCategoryView: 008a9d2eb3ba6035eb2df9a2b3e9a4806d6601a3
   LYEmptyView: b17adfc2dd9ad2988ecaf7c9606efa916e24c767
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -310,6 +314,6 @@ SPEC CHECKSUMS:
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
   ZYSuspensionView: 40731a4c873d67f5c4aa4b2c3172aeae9a776440
 
-PODFILE CHECKSUM: ddbcedf72c6796beb48ae0cfb509965319dc3e30
+PODFILE CHECKSUM: c1aa8c8ff2dda73b9322dbb97a0a762d5aefc135
 
 COCOAPODS: 1.8.4

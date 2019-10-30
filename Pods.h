@@ -55,5 +55,6 @@
 //#import <YYText/YYText.h>
 #import <YYKit/YYKit.h>
 #import "BRPickerView.h"
+#import "JJStockView.h"
 
 #endif /* Pods_h */
