@@ -85,7 +85,7 @@
 
 -(void)viewDidLoad{
     
-    self.view.backgroundColor = RandomColor;
+    self.view.backgroundColor = kRedColor;//RandomColor;
     
     [self setView:self.mainView];
 
