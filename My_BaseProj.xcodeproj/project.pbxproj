@@ -597,8 +597,6 @@
 		8B7A54EE236D92EF006B12F8 /* PopMenuView */ = {
 			isa = PBXGroup;
 			children = (
-				8B7A54F6236D92FE006B12F8 /* WBPopMenuModel.h */,
-				8B7A54FA236D92FF006B12F8 /* WBPopMenuModel.m */,
 				8B7A54F0236D92FE006B12F8 /* WBPopMenuSingleton.h */,
 				8B7A54F8236D92FF006B12F8 /* WBPopMenuSingleton.m */,
 				8B7A54F1236D92FE006B12F8 /* WBPopMenuView.h */,
@@ -609,6 +607,8 @@
 				8B7A54F4236D92FE006B12F8 /* WBTableViewDataSource.m */,
 				8B7A54EF236D92FE006B12F8 /* WBTableViewDelegate.h */,
 				8B7A54F5236D92FE006B12F8 /* WBTableViewDelegate.m */,
+				8B7A54F6236D92FE006B12F8 /* WBPopMenuModel.h */,
+				8B7A54FA236D92FF006B12F8 /* WBPopMenuModel.m */,
 			);
 			path = PopMenuView;
 			sourceTree = "<group>";

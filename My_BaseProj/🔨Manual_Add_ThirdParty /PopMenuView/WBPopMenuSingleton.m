@@ -22,13 +22,14 @@
 @implementation WBPopMenuSingleton
 
 + (WBPopMenuSingleton *) shareManager {
-    static WBPopMenuSingleton *_PopMenuSingleton;
+    static WBPopMenuSingleton *popMenuSingleton;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _PopMenuSingleton = WBPopMenuSingleton.new;
-    });return _PopMenuSingleton;
+        if (!popMenuSingleton) {
+            popMenuSingleton = WBPopMenuSingleton.new;
+        }
+    });return popMenuSingleton;
 }
-
 - (void)showPopMenuSelecteWithFrame:(CGRect)frame
                           menuWidth:(CGFloat)width
                                 item:(NSArray *)item
