@@ -35,7 +35,20 @@
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;   //状态栏字体白色 UIStatusBarStyleDefault黑色
 }
-
+#pragma mark —— 截取 UIViewController 手势返回事件
+//进 & 出 均调用
+- (void)willMoveToParentViewController:(UIViewController*)parent{
+    [super willMoveToParentViewController:parent];
+    NSLog(@"%s,%@",__FUNCTION__,parent);
+}
+//只有 出 才调用
+- (void)didMoveToParentViewController:(UIViewController*)parent{
+    [super didMoveToParentViewController:parent];
+    NSLog(@"%s,%@",__FUNCTION__,parent);
+    if(!parent){
+      NSLog(@"页面pop成功了");
+    }
+}
 #pragma mark —— JXCategoryListContentViewDelegate
 /**
  如果列表是VC，就返回VC.view

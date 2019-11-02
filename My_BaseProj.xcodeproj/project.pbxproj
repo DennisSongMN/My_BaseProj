@@ -21,6 +21,12 @@
 		8B6EB80A230A6F1E00F3995E /* ZHKeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB809230A6F1E00F3995E /* ZHKeyChainManager.m */; };
 		8B6EB81A230A713900F3995E /* NSArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB818230A713900F3995E /* NSArray+Extension.m */; };
 		8B6F2B9E234611FC00801607 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6F2B9C234611FC00801607 /* NSString+Emoji.m */; };
+		8B7A54FB236D92FF006B12F8 /* WBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A54F3236D92FE006B12F8 /* WBTableViewCell.m */; };
+		8B7A54FC236D92FF006B12F8 /* WBTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A54F4236D92FE006B12F8 /* WBTableViewDataSource.m */; };
+		8B7A54FD236D92FF006B12F8 /* WBTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A54F5236D92FE006B12F8 /* WBTableViewDelegate.m */; };
+		8B7A54FE236D92FF006B12F8 /* WBPopMenuSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A54F8236D92FF006B12F8 /* WBPopMenuSingleton.m */; };
+		8B7A54FF236D92FF006B12F8 /* WBPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A54F9236D92FF006B12F8 /* WBPopMenuView.m */; };
+		8B7A5500236D92FF006B12F8 /* WBPopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A54FA236D92FF006B12F8 /* WBPopMenuModel.m */; };
 		8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A499F22F2C42B00AFDC59 /* HQTextField.m */; };
 		8BA94BFB235AE6C800B00786 /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA94BF9235AE6C700B00786 /* HQCollectionViewFlowLayout.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
@@ -193,6 +199,18 @@
 		8B6EB819230A713900F3995E /* NSArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Extension.h"; sourceTree = "<group>"; };
 		8B6F2B9C234611FC00801607 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		8B6F2B9D234611FC00801607 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		8B7A54EF236D92FE006B12F8 /* WBTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTableViewDelegate.h; sourceTree = "<group>"; };
+		8B7A54F0236D92FE006B12F8 /* WBPopMenuSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPopMenuSingleton.h; sourceTree = "<group>"; };
+		8B7A54F1236D92FE006B12F8 /* WBPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPopMenuView.h; sourceTree = "<group>"; };
+		8B7A54F2236D92FE006B12F8 /* WBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTableViewCell.h; sourceTree = "<group>"; };
+		8B7A54F3236D92FE006B12F8 /* WBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTableViewCell.m; sourceTree = "<group>"; };
+		8B7A54F4236D92FE006B12F8 /* WBTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTableViewDataSource.m; sourceTree = "<group>"; };
+		8B7A54F5236D92FE006B12F8 /* WBTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTableViewDelegate.m; sourceTree = "<group>"; };
+		8B7A54F6236D92FE006B12F8 /* WBPopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPopMenuModel.h; sourceTree = "<group>"; };
+		8B7A54F7236D92FE006B12F8 /* WBTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTableViewDataSource.h; sourceTree = "<group>"; };
+		8B7A54F8236D92FF006B12F8 /* WBPopMenuSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPopMenuSingleton.m; sourceTree = "<group>"; };
+		8B7A54F9236D92FF006B12F8 /* WBPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPopMenuView.m; sourceTree = "<group>"; };
+		8B7A54FA236D92FF006B12F8 /* WBPopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPopMenuModel.m; sourceTree = "<group>"; };
 		8B8A499E22F2C42B00AFDC59 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
 		8B8A499F22F2C42B00AFDC59 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
 		8BA94BF9235AE6C700B00786 /* HQCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQCollectionViewFlowLayout.m; sourceTree = "<group>"; };
@@ -576,6 +594,25 @@
 			path = NSArray;
 			sourceTree = "<group>";
 		};
+		8B7A54EE236D92EF006B12F8 /* PopMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A54F6236D92FE006B12F8 /* WBPopMenuModel.h */,
+				8B7A54FA236D92FF006B12F8 /* WBPopMenuModel.m */,
+				8B7A54F0236D92FE006B12F8 /* WBPopMenuSingleton.h */,
+				8B7A54F8236D92FF006B12F8 /* WBPopMenuSingleton.m */,
+				8B7A54F1236D92FE006B12F8 /* WBPopMenuView.h */,
+				8B7A54F9236D92FF006B12F8 /* WBPopMenuView.m */,
+				8B7A54F2236D92FE006B12F8 /* WBTableViewCell.h */,
+				8B7A54F3236D92FE006B12F8 /* WBTableViewCell.m */,
+				8B7A54F7236D92FE006B12F8 /* WBTableViewDataSource.h */,
+				8B7A54F4236D92FE006B12F8 /* WBTableViewDataSource.m */,
+				8B7A54EF236D92FE006B12F8 /* WBTableViewDelegate.h */,
+				8B7A54F5236D92FE006B12F8 /* WBTableViewDelegate.m */,
+			);
+			path = PopMenuView;
+			sourceTree = "<group>";
+		};
 		8B8A499C22F2C41600AFDC59 /* ZYTextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -834,6 +871,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				8B7A54EE236D92EF006B12F8 /* PopMenuView */,
 				8B070A402362EBF800462976 /* 圆形倒计时进度条（中间有字，可点击回调） */,
 				8B128BEA2345A5750039B590 /* IconFont */,
 				8B29BAF8232E5E5D002114A0 /* ECAuthorizationTools */,
@@ -1660,6 +1698,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7A54FD236D92FF006B12F8 /* WBTableViewDelegate.m in Sources */,
 				C3229A9622B21D400044BB5E /* TAAbstractDotView.m in Sources */,
 				8B38342323164BB300091A6F /* SocketRocketUtility.m in Sources */,
 				C3F570A022A50F83009E9691 /* UIColor+Hex.m in Sources */,
@@ -1695,6 +1734,7 @@
 				C3F56FB622A4F749009E9691 /* SoundBtn.m in Sources */,
 				C3F5705C22A4FB29009E9691 /* RYCuteView.m in Sources */,
 				C3F56FEF22A4F7CE009E9691 /* UIControl+XY.m in Sources */,
+				8B7A54FC236D92FF006B12F8 /* WBTableViewDataSource.m in Sources */,
 				C3F570BE22A538D2009E9691 /* BaseVC.m in Sources */,
 				C3F56FAF22A4F4E7009E9691 /* LZBTabBarViewController.m in Sources */,
 				8B6F2B9E234611FC00801607 /* NSString+Emoji.m in Sources */,
@@ -1729,6 +1769,7 @@
 				C3229A8722B21D110044BB5E /* SDCycleScrollView+UICollectionViewDataSource.m in Sources */,
 				8BB8BD29235ED1A5008C7578 /* ZYTextField.m in Sources */,
 				C3F56F7B22A4C732009E9691 /* main.m in Sources */,
+				8B7A54FE236D92FF006B12F8 /* WBPopMenuSingleton.m in Sources */,
 				C3F570E822A60D0A009E9691 /* ViewController@1.m in Sources */,
 				C3229A7A22B0D39F0044BB5E /* XDTextBtnView.m in Sources */,
 				C3F5700C22A4F8B1009E9691 /* AnimateToSpecifiedDate_Init.m in Sources */,
@@ -1750,8 +1791,10 @@
 				C3F5710222A612AD009E9691 /* BaseNavigationVC.m in Sources */,
 				8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */,
 				C3F56FF022A4F7CE009E9691 /* WJItemsControlView.m in Sources */,
+				8B7A5500236D92FF006B12F8 /* WBPopMenuModel.m in Sources */,
 				C3F56FF922A4F7CE009E9691 /* LXTagsView.m in Sources */,
 				C3229A8922B21D110044BB5E /* SDCollectionViewCell.m in Sources */,
+				8B7A54FB236D92FF006B12F8 /* WBTableViewCell.m in Sources */,
 				C3F56FF222A4F7CE009E9691 /* VerifyCodeButton.m in Sources */,
 				8BD6DC2B234B1C7F003F1EE0 /* NSString+Password.m in Sources */,
 				C3F5705322A4FA9F009E9691 /* XWCountryCodeController.m in Sources */,
@@ -1763,6 +1806,7 @@
 				C3F5700022A4F7CE009E9691 /* BadgeButton.m in Sources */,
 				C3F5708222A50419009E9691 /* UIView+Extras.m in Sources */,
 				C3229A8622B21D110044BB5E /* UIView+SDExtension.m in Sources */,
+				8B7A54FF236D92FF006B12F8 /* WBPopMenuView.m in Sources */,
 				CE1319C022CDB7DB002BA1A7 /* LGiOSBtn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
