@@ -10,6 +10,7 @@
  *  网络请求工具类
  */
 #import <Foundation/Foundation.h>
+
 @class FMHttpRequest;
 
 @interface FMARCNetwork : NSObject
@@ -22,7 +23,6 @@
  @return RACSignal
  */
 - (RACSignal *)requestNetworkData:(FMHttpRequest *)req;
-
 /**
  网络请求，简便方案
 
@@ -32,8 +32,6 @@
  */
 - (RACSignal *)requestSimpleNetworkPath:(NSString *)path
                                  params:(NSDictionary *)params;
-
-
 /**
  文件上传、可以当个文件、也可以多个文件
 

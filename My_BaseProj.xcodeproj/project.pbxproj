@@ -27,6 +27,9 @@
 		8B7A54FE236D92FF006B12F8 /* WBPopMenuSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A54F8236D92FF006B12F8 /* WBPopMenuSingleton.m */; };
 		8B7A54FF236D92FF006B12F8 /* WBPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A54F9236D92FF006B12F8 /* WBPopMenuView.m */; };
 		8B7A5500236D92FF006B12F8 /* WBPopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A54FA236D92FF006B12F8 /* WBPopMenuModel.m */; };
+		8B7A5548236F0461006B12F8 /* FMHttpResonse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A553F236F0461006B12F8 /* FMHttpResonse.m */; };
+		8B7A5549236F0461006B12F8 /* FMARCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5544236F0461006B12F8 /* FMARCNetwork.m */; };
+		8B7A554A236F0461006B12F8 /* FMHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5547236F0461006B12F8 /* FMHttpRequest.m */; };
 		8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A499F22F2C42B00AFDC59 /* HQTextField.m */; };
 		8BA94BFB235AE6C800B00786 /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA94BF9235AE6C700B00786 /* HQCollectionViewFlowLayout.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
@@ -211,6 +214,14 @@
 		8B7A54F8236D92FF006B12F8 /* WBPopMenuSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPopMenuSingleton.m; sourceTree = "<group>"; };
 		8B7A54F9236D92FF006B12F8 /* WBPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPopMenuView.m; sourceTree = "<group>"; };
 		8B7A54FA236D92FF006B12F8 /* WBPopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPopMenuModel.m; sourceTree = "<group>"; };
+		8B7A553E236F0461006B12F8 /* FMHttpResonse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMHttpResonse.h; sourceTree = "<group>"; };
+		8B7A553F236F0461006B12F8 /* FMHttpResonse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMHttpResonse.m; sourceTree = "<group>"; };
+		8B7A5540236F0461006B12F8 /* ZFMRACNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMRACNetworkTool.h; sourceTree = "<group>"; };
+		8B7A5542236F0461006B12F8 /* FMHttpConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMHttpConstant.h; sourceTree = "<group>"; };
+		8B7A5544236F0461006B12F8 /* FMARCNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMARCNetwork.m; sourceTree = "<group>"; };
+		8B7A5545236F0461006B12F8 /* FMHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMHttpRequest.h; sourceTree = "<group>"; };
+		8B7A5546236F0461006B12F8 /* FMARCNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMARCNetwork.h; sourceTree = "<group>"; };
+		8B7A5547236F0461006B12F8 /* FMHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMHttpRequest.m; sourceTree = "<group>"; };
 		8B8A499E22F2C42B00AFDC59 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
 		8B8A499F22F2C42B00AFDC59 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
 		8BA94BF9235AE6C700B00786 /* HQCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQCollectionViewFlowLayout.m; sourceTree = "<group>"; };
@@ -241,14 +252,6 @@
 		A6996B71A6D6BF0E1E2DCDBC /* libPods-My_BaseProj.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-My_BaseProj.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C301CEF622ADF94E00C0DCCC /* ArcTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcTBVCell.h; sourceTree = "<group>"; };
 		C301CEF722ADF94E00C0DCCC /* ArcTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcTBVCell.m; sourceTree = "<group>"; };
-		C301CF0122AE59E800C0DCCC /* FMHttpResonse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMHttpResonse.h; sourceTree = "<group>"; };
-		C301CF0222AE59E800C0DCCC /* FMHttpResonse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMHttpResonse.m; sourceTree = "<group>"; };
-		C301CF0322AE59E800C0DCCC /* ZFMRACNetworkTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFMRACNetworkTool.h; sourceTree = "<group>"; };
-		C301CF0522AE59E800C0DCCC /* FMHttpConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMHttpConstant.h; sourceTree = "<group>"; };
-		C301CF0722AE59E800C0DCCC /* FMARCNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMARCNetwork.m; sourceTree = "<group>"; };
-		C301CF0822AE59E800C0DCCC /* FMHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMHttpRequest.h; sourceTree = "<group>"; };
-		C301CF0922AE59E800C0DCCC /* FMARCNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMARCNetwork.h; sourceTree = "<group>"; };
-		C301CF0A22AE59E800C0DCCC /* FMHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMHttpRequest.m; sourceTree = "<group>"; };
 		C301CF0C22AE72BE00C0DCCC /* YKToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YKToastView.h; sourceTree = "<group>"; };
 		C301CF0D22AE72BE00C0DCCC /* YKToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YKToastView.m; sourceTree = "<group>"; };
 		C3229A7822B0D39F0044BB5E /* XDTextBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XDTextBtnView.h; sourceTree = "<group>"; };
@@ -613,6 +616,45 @@
 			path = PopMenuView;
 			sourceTree = "<group>";
 		};
+		8B7A553C236F0461006B12F8 /* 🌍ZFMRACNetworkTool */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A553D236F0461006B12F8 /* Response */,
+				8B7A5540236F0461006B12F8 /* ZFMRACNetworkTool.h */,
+				8B7A5541236F0461006B12F8 /* Constant */,
+				8B7A5543236F0461006B12F8 /* Request */,
+			);
+			path = "🌍ZFMRACNetworkTool";
+			sourceTree = "<group>";
+		};
+		8B7A553D236F0461006B12F8 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A553E236F0461006B12F8 /* FMHttpResonse.h */,
+				8B7A553F236F0461006B12F8 /* FMHttpResonse.m */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		8B7A5541236F0461006B12F8 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A5542236F0461006B12F8 /* FMHttpConstant.h */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		8B7A5543236F0461006B12F8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A5544236F0461006B12F8 /* FMARCNetwork.m */,
+				8B7A5545236F0461006B12F8 /* FMHttpRequest.h */,
+				8B7A5546236F0461006B12F8 /* FMARCNetwork.h */,
+				8B7A5547236F0461006B12F8 /* FMHttpRequest.m */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		8B8A499C22F2C41600AFDC59 /* ZYTextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -682,45 +724,6 @@
 				8BD6DC49234B23B0003F1EE0 /* CALayer+Transition.m */,
 			);
 			path = CALayer;
-			sourceTree = "<group>";
-		};
-		C301CEFF22AE59E800C0DCCC /* 🌍ZFMRACNetworkTool */ = {
-			isa = PBXGroup;
-			children = (
-				C301CF0422AE59E800C0DCCC /* Constant */,
-				C301CF0622AE59E800C0DCCC /* Request */,
-				C301CF0022AE59E800C0DCCC /* Response */,
-				C301CF0322AE59E800C0DCCC /* ZFMRACNetworkTool.h */,
-			);
-			path = "🌍ZFMRACNetworkTool";
-			sourceTree = "<group>";
-		};
-		C301CF0022AE59E800C0DCCC /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				C301CF0122AE59E800C0DCCC /* FMHttpResonse.h */,
-				C301CF0222AE59E800C0DCCC /* FMHttpResonse.m */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		C301CF0422AE59E800C0DCCC /* Constant */ = {
-			isa = PBXGroup;
-			children = (
-				C301CF0522AE59E800C0DCCC /* FMHttpConstant.h */,
-			);
-			path = Constant;
-			sourceTree = "<group>";
-		};
-		C301CF0622AE59E800C0DCCC /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				C301CF0922AE59E800C0DCCC /* FMARCNetwork.h */,
-				C301CF0722AE59E800C0DCCC /* FMARCNetwork.m */,
-				C301CF0822AE59E800C0DCCC /* FMHttpRequest.h */,
-				C301CF0A22AE59E800C0DCCC /* FMHttpRequest.m */,
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 		C301CF0B22AE72B300C0DCCC /* ToastView */ = {
@@ -871,6 +874,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				8B7A553C236F0461006B12F8 /* 🌍ZFMRACNetworkTool */,
 				8B7A54EE236D92EF006B12F8 /* PopMenuView */,
 				8B070A402362EBF800462976 /* 圆形倒计时进度条（中间有字，可点击回调） */,
 				8B128BEA2345A5750039B590 /* IconFont */,
@@ -879,7 +883,6 @@
 				8B6EB807230A6F1400F3995E /* KeyChainManager */,
 				8BB8108322F1403D00F2FD8E /* 截获导航控制器系统返回按钮的点击pop及右滑pop事件 */,
 				8BB8107F22F13F8C00F2FD8E /* 程肖斌封装的WKWebView */,
-				C301CEFF22AE59E800C0DCCC /* 🌍ZFMRACNetworkTool */,
 				CE1319BD22CDB7A9002BA1A7 /* 高仿iOS长按删除+抖动 */,
 				C3F56FB822A4F762009E9691 /* AESCrypt-ObjC */,
 				C3F5700622A4F892009E9691 /* AnimateToSpecifiedDateView */,
@@ -1744,6 +1747,7 @@
 				C3F5700D22A4F8B1009E9691 /* AnimateToSpecifiedDateView.m in Sources */,
 				8B55869E233C899B00132CF6 /* ViewForFooter.m in Sources */,
 				C3F570A322A5128A009E9691 /* IsLogin.m in Sources */,
+				8B7A554A236F0461006B12F8 /* FMHttpRequest.m in Sources */,
 				C3F570DF22A60B8C009E9691 /* CustomSYSUITabBarController.m in Sources */,
 				C3229A8522B21D110044BB5E /* SDCycleScrollView.m in Sources */,
 				8B070A432362EBF800462976 /* CountdownView.m in Sources */,
@@ -1772,6 +1776,7 @@
 				8B7A54FE236D92FF006B12F8 /* WBPopMenuSingleton.m in Sources */,
 				C3F570E822A60D0A009E9691 /* ViewController@1.m in Sources */,
 				C3229A7A22B0D39F0044BB5E /* XDTextBtnView.m in Sources */,
+				8B7A5548236F0461006B12F8 /* FMHttpResonse.m in Sources */,
 				C3F5700C22A4F8B1009E9691 /* AnimateToSpecifiedDate_Init.m in Sources */,
 				8BD6DC4B234B23B0003F1EE0 /* CALayer+Transition.m in Sources */,
 				C3F56F6A22A4C731009E9691 /* AppDelegate.m in Sources */,
@@ -1789,6 +1794,7 @@
 				8B55869D233C899B00132CF6 /* ViewForHeader.m in Sources */,
 				C3F5707E22A50316009E9691 /* TouchID.m in Sources */,
 				C3F5710222A612AD009E9691 /* BaseNavigationVC.m in Sources */,
+				8B7A5549236F0461006B12F8 /* FMARCNetwork.m in Sources */,
 				8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */,
 				C3F56FF022A4F7CE009E9691 /* WJItemsControlView.m in Sources */,
 				8B7A5500236D92FF006B12F8 /* WBPopMenuModel.m in Sources */,

@@ -11,22 +11,17 @@
 @implementation ExtendsParameters
 
 + (instancetype)extendsParameters{
-    
     return self.new;
 }
 
 - (instancetype)init{
-    
     if (self = [super init]) {
     }return self;
 }
 
 - (NSString *)version{
-    
     static NSString *version = nil;
-    
-    if (version == nil) version = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
-    
+    if (!version) version = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
     return (version.length > 0) ? version:@"";
 }
 
@@ -34,25 +29,21 @@
     // token 自己的逻辑
     return @"";
 }
-
-- (NSString *)deviceid {
+//设备ID 自行逻辑获取
+- (NSString *)deviceid{
     static NSString *deviceidStr = nil;
-    //设备ID 自行逻辑获取
-    return deviceidStr.length>0?deviceidStr:@"";
+    return deviceidStr.length > 0 ? deviceidStr:@"";
 }
 
 - (NSString *)platform{
-    
     return @"iOS";
 }
 
 - (NSString *)channel{
-    
     return @"AppStore";
 }
 
 - (NSString *)t{
-    
     return [NSString stringWithFormat:@"%.f", [NSDate date].timeIntervalSince1970];
 }
 
@@ -63,7 +54,6 @@
 +(instancetype)urlParametersWithMethod:(NSString *)method
                                   path:(NSString *)path
                             parameters:(NSDictionary *)parameters{
-    
     return [[self alloc]initUrlParametersWithMethod:method
                                                path:path
                                          parameters:parameters];
@@ -72,19 +62,12 @@
 -(instancetype)initUrlParametersWithMethod:(NSString *)method
                                       path:(NSString *)path
                                 parameters:(NSDictionary *)parameters{
-    
     if (self = [super init]) {
-        
         self.method = method;
-        
         self.path = path;
-        
         self.parameters = parameters;
-        
         self.extendsParameters = ExtendsParameters.new;
-    }
-    
-    return self;
+    }return self;
 }
 
 @end
