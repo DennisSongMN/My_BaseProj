@@ -41,7 +41,6 @@
 		8BCB98F123715DA20063E01E /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98E323715DA10063E01E /* AES.m */; };
 		8BCB98F223715DA20063E01E /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98E423715DA20063E01E /* NSString+Base64.m */; };
 		8BCB98F323715DA20063E01E /* AESCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98E623715DA20063E01E /* AESCipher.m */; };
-		8BCB98F423715DA20063E01E /* File in Resources */ = {isa = PBXBuildFile; fileRef = 8BCB98E723715DA20063E01E /* File */; };
 		8BCB98F523715DA20063E01E /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98ED23715DA20063E01E /* NSData+CommonCrypto.m */; };
 		8BCB98F623715DA20063E01E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98EE23715DA20063E01E /* NSData+Base64.m */; };
 		8BD6DC28234B1C61003F1EE0 /* NSString+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD6DC26234B1C61003F1EE0 /* NSString+File.m */; };
@@ -81,9 +80,6 @@
 		C3F56FB622A4F749009E9691 /* SoundBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F56FB322A4F749009E9691 /* SoundBtn.m */; };
 		C3F56FB722A4F749009E9691 /* Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3F56FB522A4F749009E9691 /* Sound.wav */; };
 		C3F56FC222A4F783009E9691 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F56FBA22A4F782009E9691 /* AESCrypt.m */; };
-		C3F56FC322A4F783009E9691 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F56FBF22A4F782009E9691 /* NSData+CommonCrypto.m */; };
-		C3F56FC422A4F783009E9691 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F56FC022A4F782009E9691 /* NSString+Base64.m */; };
-		C3F56FC522A4F783009E9691 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F56FC122A4F782009E9691 /* NSData+Base64.m */; };
 		C3F56FEF22A4F7CE009E9691 /* UIControl+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F56FC922A4F7CD009E9691 /* UIControl+XY.m */; };
 		C3F56FF022A4F7CE009E9691 /* WJItemsControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F56FCB22A4F7CD009E9691 /* WJItemsControlView.m */; };
 		C3F56FF222A4F7CE009E9691 /* VerifyCodeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F56FD022A4F7CD009E9691 /* VerifyCodeButton.m */; };
@@ -343,13 +339,7 @@
 		C3F56FB522A4F749009E9691 /* Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Sound.wav; sourceTree = "<group>"; };
 		C3F56FB922A4F773009E9691 /* 手势解锁 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "手势解锁"; sourceTree = "<group>"; };
 		C3F56FBA22A4F782009E9691 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
-		C3F56FBB22A4F782009E9691 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		C3F56FBC22A4F782009E9691 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
-		C3F56FBD22A4F782009E9691 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
-		C3F56FBE22A4F782009E9691 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
-		C3F56FBF22A4F782009E9691 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
-		C3F56FC022A4F782009E9691 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
-		C3F56FC122A4F782009E9691 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		C3F56FC722A4F7CD009E9691 /* UIControl+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+XY.h"; sourceTree = "<group>"; };
 		C3F56FC822A4F7CD009E9691 /* iOS小技巧：用runtime 解决UIButton 重复点击问题 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "iOS小技巧：用runtime 解决UIButton 重复点击问题"; sourceTree = "<group>"; };
 		C3F56FC922A4F7CD009E9691 /* UIControl+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+XY.m"; sourceTree = "<group>"; };
@@ -1030,12 +1020,6 @@
 				C3F56FB922A4F773009E9691 /* 手势解锁 */,
 				C3F56FBC22A4F782009E9691 /* AESCrypt.h */,
 				C3F56FBA22A4F782009E9691 /* AESCrypt.m */,
-				C3F56FBB22A4F782009E9691 /* NSData+Base64.h */,
-				C3F56FC122A4F782009E9691 /* NSData+Base64.m */,
-				C3F56FBE22A4F782009E9691 /* NSData+CommonCrypto.h */,
-				C3F56FBF22A4F782009E9691 /* NSData+CommonCrypto.m */,
-				C3F56FBD22A4F782009E9691 /* NSString+Base64.h */,
-				C3F56FC022A4F782009E9691 /* NSString+Base64.m */,
 			);
 			path = "AESCrypt-ObjC";
 			sourceTree = "<group>";
@@ -1631,7 +1615,6 @@
 				C3F570FB22A60E5F009E9691 /* My@3x.png in Resources */,
 				C3EDA78F22B740E8002F49D6 /* readme in Resources */,
 				C3F570F322A60E1C009E9691 /* MyStore@3x.png in Resources */,
-				8BCB98F423715DA20063E01E /* File in Resources */,
 				8B9EAF9D237439B00012884C /* 专治UITableView相应链断裂 in Resources */,
 				C3F5705222A4FA9F009E9691 /* sortedNameCH.plist in Resources */,
 				C3F5707522A4FC92009E9691 /* area.db in Resources */,
@@ -1783,7 +1766,6 @@
 				C3F5709A22A50E5F009E9691 /* UIButton+Extras.m in Sources */,
 				C3F56F7322A4C731009E9691 /* My_BaseProj.xcdatamodeld in Sources */,
 				8BD6DC4A234B23B0003F1EE0 /* CALayer+Anim.m in Sources */,
-				C3F56FC322A4F783009E9691 /* NSData+CommonCrypto.m in Sources */,
 				CE2C16E022D0526D00433397 /* UITableView+EmptyData.m in Sources */,
 				C3F5709D22A50EB2009E9691 /* PlaySound.m in Sources */,
 				C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */,
@@ -1835,7 +1817,6 @@
 				8B38342423164BB300091A6F /* MessageModel.m in Sources */,
 				C3F5706922A4FC71009E9691 /* LongPressToDeleteImageView.m in Sources */,
 				C3B1565922A7E242009061F3 /* HistoryDataListTBV.m in Sources */,
-				C3F56FC522A4F783009E9691 /* NSData+Base64.m in Sources */,
 				C3F56FAE22A4F4E7009E9691 /* LZBTabBar.m in Sources */,
 				C3F56FFD22A4F7CE009E9691 /* MMButton.m in Sources */,
 				C3F56FFC22A4F7CE009E9691 /* XDSDropDownMenu+DelegateProtocol.m in Sources */,
@@ -1844,7 +1825,6 @@
 				C3F5708B22A50502009E9691 /* YBGeneralFont.m in Sources */,
 				C3F5707722A4FC92009E9691 /* DHAreaPickerView.m in Sources */,
 				8B6EB80A230A6F1E00F3995E /* ZHKeyChainManager.m in Sources */,
-				C3F56FC422A4F783009E9691 /* NSString+Base64.m in Sources */,
 				C3F5704B22A4FA7F009E9691 /* YBNotificationManager.m in Sources */,
 				C3229A8722B21D110044BB5E /* SDCycleScrollView+UICollectionViewDataSource.m in Sources */,
 				8BB8BD29235ED1A5008C7578 /* ZYTextField.m in Sources */,
