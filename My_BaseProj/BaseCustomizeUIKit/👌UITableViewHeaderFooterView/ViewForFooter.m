@@ -16,12 +16,11 @@
 
 @implementation ViewForFooter
 
-- (instancetype)initWithRequestParams:(id)requestParams{
-    if (self = [super init]) {
-
+- (instancetype)initWithReuseIdentifier:(nullable NSString *)reuseIdentifier
+                               withData:(id)data{
+    if (self = [super initWithReuseIdentifier:reuseIdentifier]) {
     }return self;
 }
-
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     if (self.block) {

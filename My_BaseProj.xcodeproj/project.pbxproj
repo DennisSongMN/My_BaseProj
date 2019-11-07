@@ -31,6 +31,8 @@
 		8B7A5549236F0461006B12F8 /* FMARCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5544236F0461006B12F8 /* FMARCNetwork.m */; };
 		8B7A554A236F0461006B12F8 /* FMHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5547236F0461006B12F8 /* FMHttpRequest.m */; };
 		8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A499F22F2C42B00AFDC59 /* HQTextField.m */; };
+		8B9EAF9D237439B00012884C /* 专治UITableView相应链断裂 in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EAF9A237439B00012884C /* 专治UITableView相应链断裂 */; };
+		8B9EAF9E237439B00012884C /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EAF9C237439B00012884C /* BaseTableViewer.m */; };
 		8BA94BFB235AE6C800B00786 /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA94BF9235AE6C700B00786 /* HQCollectionViewFlowLayout.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
 		8BB8BD29235ED1A5008C7578 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8BD27235ED1A5008C7578 /* ZYTextField.m */; };
@@ -232,6 +234,9 @@
 		8B7A5547236F0461006B12F8 /* FMHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMHttpRequest.m; sourceTree = "<group>"; };
 		8B8A499E22F2C42B00AFDC59 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
 		8B8A499F22F2C42B00AFDC59 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
+		8B9EAF9A237439B00012884C /* 专治UITableView相应链断裂 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "专治UITableView相应链断裂"; sourceTree = "<group>"; };
+		8B9EAF9B237439B00012884C /* BaseTableViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewer.h; sourceTree = "<group>"; };
+		8B9EAF9C237439B00012884C /* BaseTableViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewer.m; sourceTree = "<group>"; };
 		8BA94BF9235AE6C700B00786 /* HQCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		8BA94BFA235AE6C700B00786 /* HQCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		8BB8107C22F13F3700F2FD8E /* 获取当前视图控制器.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "获取当前视图控制器.png"; sourceTree = "<group>"; };
@@ -1332,6 +1337,9 @@
 		C3F570A522A51B4B009E9691 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				8B9EAF9A237439B00012884C /* 专治UITableView相应链断裂 */,
+				8B9EAF9B237439B00012884C /* BaseTableViewer.h */,
+				8B9EAF9C237439B00012884C /* BaseTableViewer.m */,
 				CE2C16DE22D0526C00433397 /* UITableView+EmptyData.h */,
 				CE2C16DF22D0526D00433397 /* UITableView+EmptyData.m */,
 			);
@@ -1624,6 +1632,7 @@
 				C3EDA78F22B740E8002F49D6 /* readme in Resources */,
 				C3F570F322A60E1C009E9691 /* MyStore@3x.png in Resources */,
 				8BCB98F423715DA20063E01E /* File in Resources */,
+				8B9EAF9D237439B00012884C /* 专治UITableView相应链断裂 in Resources */,
 				C3F5705222A4FA9F009E9691 /* sortedNameCH.plist in Resources */,
 				C3F5707522A4FC92009E9691 /* area.db in Resources */,
 				C3F5707622A4FC92009E9691 /* hotelcity.json in Resources */,
@@ -1792,6 +1801,7 @@
 				C3F5708E22A5055C009E9691 /* NSObject+Extras.m in Sources */,
 				C3F570B622A534E7009E9691 /* CollectionAccountEditor.m in Sources */,
 				C3F56FF822A4F7CE009E9691 /* UIColor+LXExpand.m in Sources */,
+				8B9EAF9E237439B00012884C /* BaseTableViewer.m in Sources */,
 				C3B1566222AA3863009061F3 /* WaterMark.m in Sources */,
 				C3F5704522A4FA40009E9691 /* TBVCell_style_01.m in Sources */,
 				C3F570DA22A5403F009E9691 /* DeleteSystemUITabBarButton.m in Sources */,
