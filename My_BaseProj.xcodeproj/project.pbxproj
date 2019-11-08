@@ -14,8 +14,6 @@
 		8B128BF22345A5750039B590 /* TBCityIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B128BEC2345A5750039B590 /* TBCityIconInfo.m */; };
 		8B128BF32345A5750039B590 /* UIImage+TBCityIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B128BED2345A5750039B590 /* UIImage+TBCityIconFont.m */; };
 		8B29BAFB232E5E67002114A0 /* ECAuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B29BAFA232E5E67002114A0 /* ECAuthorizationTools.m */; };
-		8B38342323164BB300091A6F /* SocketRocketUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38341F23164BB300091A6F /* SocketRocketUtility.m */; };
-		8B38342423164BB300091A6F /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B38342023164BB300091A6F /* MessageModel.m */; };
 		8B55869D233C899B00132CF6 /* ViewForHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B558699233C899B00132CF6 /* ViewForHeader.m */; };
 		8B55869E233C899B00132CF6 /* ViewForFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B55869A233C899B00132CF6 /* ViewForFooter.m */; };
 		8B6EB80A230A6F1E00F3995E /* ZHKeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB809230A6F1E00F3995E /* ZHKeyChainManager.m */; };
@@ -34,6 +32,7 @@
 		8B9EAF9D237439B00012884C /* 专治UITableView相应链断裂 in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EAF9A237439B00012884C /* 专治UITableView相应链断裂 */; };
 		8B9EAF9E237439B00012884C /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EAF9C237439B00012884C /* BaseTableViewer.m */; };
 		8BA94BFB235AE6C800B00786 /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA94BF9235AE6C700B00786 /* HQCollectionViewFlowLayout.m */; };
+		8BB1E8172375B5E500871ECA /* SocketRocketUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1E8152375B5E400871ECA /* SocketRocketUtility.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
 		8BB8BD29235ED1A5008C7578 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8BD27235ED1A5008C7578 /* ZYTextField.m */; };
 		8BCB98EF23715DA20063E01E /* RSAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98DE23715DA10063E01E /* RSAUtil.m */; };
@@ -191,10 +190,6 @@
 		8B128BF02345A5750039B590 /* UIImage+TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBCityIconFont.h"; sourceTree = "<group>"; };
 		8B29BAF9232E5E67002114A0 /* ECAuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAuthorizationTools.h; sourceTree = "<group>"; };
 		8B29BAFA232E5E67002114A0 /* ECAuthorizationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAuthorizationTools.m; sourceTree = "<group>"; };
-		8B38341F23164BB300091A6F /* SocketRocketUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketRocketUtility.m; sourceTree = "<group>"; };
-		8B38342023164BB300091A6F /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
-		8B38342123164BB300091A6F /* SocketRocketUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketRocketUtility.h; sourceTree = "<group>"; };
-		8B38342223164BB300091A6F /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
 		8B558699233C899B00132CF6 /* ViewForHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewForHeader.m; sourceTree = "<group>"; };
 		8B55869A233C899B00132CF6 /* ViewForFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewForFooter.m; sourceTree = "<group>"; };
 		8B55869B233C899B00132CF6 /* ViewForFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewForFooter.h; sourceTree = "<group>"; };
@@ -235,6 +230,8 @@
 		8B9EAF9C237439B00012884C /* BaseTableViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewer.m; sourceTree = "<group>"; };
 		8BA94BF9235AE6C700B00786 /* HQCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		8BA94BFA235AE6C700B00786 /* HQCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		8BB1E8152375B5E400871ECA /* SocketRocketUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocketRocketUtility.m; sourceTree = "<group>"; };
+		8BB1E8162375B5E500871ECA /* SocketRocketUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketRocketUtility.h; sourceTree = "<group>"; };
 		8BB8107C22F13F3700F2FD8E /* 获取当前视图控制器.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "获取当前视图控制器.png"; sourceTree = "<group>"; };
 		8BB8107D22F13F3700F2FD8E /* cell重用.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell重用.png"; sourceTree = "<group>"; };
 		8BB8107E22F13F3700F2FD8E /* 葵花宝典.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "葵花宝典.m"; sourceTree = "<group>"; };
@@ -576,10 +573,8 @@
 		8B38341E23164BB300091A6F /* WebSocket */ = {
 			isa = PBXGroup;
 			children = (
-				8B38341F23164BB300091A6F /* SocketRocketUtility.m */,
-				8B38342023164BB300091A6F /* MessageModel.m */,
-				8B38342123164BB300091A6F /* SocketRocketUtility.h */,
-				8B38342223164BB300091A6F /* MessageModel.h */,
+				8BB1E8162375B5E500871ECA /* SocketRocketUtility.h */,
+				8BB1E8152375B5E400871ECA /* SocketRocketUtility.m */,
 			);
 			path = WebSocket;
 			sourceTree = "<group>";
@@ -1757,9 +1752,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BCB98F223715DA20063E01E /* NSString+Base64.m in Sources */,
+				8BB1E8172375B5E500871ECA /* SocketRocketUtility.m in Sources */,
 				8B7A54FD236D92FF006B12F8 /* WBTableViewDelegate.m in Sources */,
 				C3229A9622B21D400044BB5E /* TAAbstractDotView.m in Sources */,
-				8B38342323164BB300091A6F /* SocketRocketUtility.m in Sources */,
 				C3F570A022A50F83009E9691 /* UIColor+Hex.m in Sources */,
 				C3F5709722A50E3A009E9691 /* UIImage+Extras.m in Sources */,
 				8BCB98F523715DA20063E01E /* NSData+CommonCrypto.m in Sources */,
@@ -1814,7 +1809,6 @@
 				8BCB98F123715DA20063E01E /* AES.m in Sources */,
 				C3F5707822A4FC92009E9691 /* DHAreasModel.m in Sources */,
 				C3F5709122A50D60009E9691 /* NSString+Extras.m in Sources */,
-				8B38342423164BB300091A6F /* MessageModel.m in Sources */,
 				C3F5706922A4FC71009E9691 /* LongPressToDeleteImageView.m in Sources */,
 				C3B1565922A7E242009061F3 /* HistoryDataListTBV.m in Sources */,
 				C3F56FAE22A4F4E7009E9691 /* LZBTabBar.m in Sources */,
