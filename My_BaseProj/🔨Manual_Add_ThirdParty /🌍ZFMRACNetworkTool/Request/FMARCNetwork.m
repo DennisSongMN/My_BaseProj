@@ -117,9 +117,9 @@ static FMARCNetwork *_instance = nil;
         @strongify(self);
         /// 获取request KKK
         NSError *serializationError = nil;
+        NSString *url = [BaseUrl stringByAppendingString:req.path];
         NSMutableURLRequest *request = [self.manager.requestSerializer requestWithMethod:req.method
-                                                                               URLString:[[NSURL URLWithString:req.path
-                                                                                                 relativeToURL:[NSURL URLWithString:BaseUrl]] absoluteString]
+                                                                               URLString:url
                                                                               parameters:req.parameters
                                                                                    error:&serializationError];
         if (serializationError) {
@@ -253,10 +253,9 @@ static FMARCNetwork *_instance = nil;
     RACSignal *signal = [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
         @strongify(self);
         NSError *serializationError = nil;
+        NSString *url = [ImgBaseURL stringByAppendingString:path];
         NSMutableURLRequest *request = [self.manager.requestSerializer multipartFormRequestWithMethod:@"POST"
-                                                                                            URLString:[[NSURL URLWithString:path
-                                                                                                              relativeToURL:[NSURL URLWithString:ImgBaseURL]]
-                                                                                                       absoluteString]
+                                                                                            URLString:url
                                                                                            parameters:parameters
                                                                             constructingBodyWithBlock:block
                                                                                                 error:&serializationError];
