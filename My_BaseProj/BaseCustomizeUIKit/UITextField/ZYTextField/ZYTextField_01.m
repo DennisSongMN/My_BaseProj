@@ -139,7 +139,8 @@
 #pragma mark —— lazyLoad
 -(HistoryDataListTBV *)historyDataListTBV{
     if (!_historyDataListTBV) {
-        _historyDataListTBV = [HistoryDataListTBV initWithRequestParams:self.dataMutArr];
+        _historyDataListTBV = [HistoryDataListTBV initWithRequestParams:self.dataMutArr
+                                                              triggerBy:self];
 //        @weakify(self)
 //        [_historyDataListTBV dele];
         

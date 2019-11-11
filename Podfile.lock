@@ -18,6 +18,9 @@ PODS:
   - AYCheckVersion (1.3.5)
   - BEMCheckBox (1.4.1)
   - BRPickerView (2.3.1)
+  - CocoaLumberjack (3.6.0):
+    - CocoaLumberjack/Core (= 3.6.0)
+  - CocoaLumberjack/Core (3.6.0)
   - DDProgressView (0.1)
   - DTCoreText (1.6.21):
     - DTCoreText/Core (= 1.6.21)
@@ -144,6 +147,7 @@ DEPENDENCIES:
   - AYCheckVersion
   - BEMCheckBox
   - BRPickerView
+  - CocoaLumberjack
   - DDProgressView
   - DTCoreText
   - EAIntroView
@@ -198,6 +202,7 @@ SPEC REPOS:
     - AYCheckVersion
     - BEMCheckBox
     - BRPickerView
+    - CocoaLumberjack
     - DDProgressView
     - DTCoreText
     - DTFoundation
@@ -259,6 +264,7 @@ SPEC CHECKSUMS:
   AYCheckVersion: 3a313028a34ddfc5ccd16417d0a364fce2bb0add
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   BRPickerView: 46c9c2a5fce2590554402961acca694557521712
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
   DDProgressView: d5a8983e5585217ee58f4a046bb4038f6e1b6306
   DTCoreText: e5d688cffc9f6a61eddd1a4f94e2046851230de3
   DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
@@ -314,6 +320,6 @@ SPEC CHECKSUMS:
   ZXingObjC: fdbb269f25dd2032da343e06f10224d62f537bdb
   ZYSuspensionView: 40731a4c873d67f5c4aa4b2c3172aeae9a776440
 
-PODFILE CHECKSUM: c1aa8c8ff2dda73b9322dbb97a0a762d5aefc135
+PODFILE CHECKSUM: 4b9c51b0db61cfca319b0becd62588f30daedf6d
 
 COCOAPODS: 1.8.4

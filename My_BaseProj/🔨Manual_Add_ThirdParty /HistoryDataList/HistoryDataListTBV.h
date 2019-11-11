@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "HistoryDataListTBVCell.h"
+#import "AABlock.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

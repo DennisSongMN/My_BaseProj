@@ -193,23 +193,22 @@
     
     if (!_historyDataListTBV) {
         
-        _historyDataListTBV = [HistoryDataListTBV initWithRequestParams:self.dataMutArr];
+        _historyDataListTBV = [HistoryDataListTBV initWithRequestParams:self.dataMutArr
+                                                              triggerBy:self.btn];
         
         @weakify(self)
-        
-        [_historyDataListTBV deleteData:^(id  _Nullable data) {
-            
-            @strongify(self)
-            
-            NSLog(@"%@",data);
-            
-            [self.dataMutArr removeObject:data];
-            
-            [self->_historyDataListTBV reloadData];
-        }];
-        
-        [_historyDataListTBV showSelectedData:^(id data) {
-            
+//
+//        [_historyDataListTBV deleteData:^(id  _Nullable data) {
+//
+//            @strongify(self)
+//
+//            NSLog(@"%@",data);
+//
+//            [self.dataMutArr removeObject:data];
+//
+//            [self->_historyDataListTBV reloadData];
+//        }];
+        [_historyDataListTBV showSelectedData:^(id data, id data2) {
             @strongify(self)
             
             [self.btn setTitle:(NSString *)data
