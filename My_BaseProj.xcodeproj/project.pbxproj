@@ -29,6 +29,8 @@
 		8B7A5549236F0461006B12F8 /* FMARCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5544236F0461006B12F8 /* FMARCNetwork.m */; };
 		8B7A554A236F0461006B12F8 /* FMHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5547236F0461006B12F8 /* FMHttpRequest.m */; };
 		8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A499F22F2C42B00AFDC59 /* HQTextField.m */; };
+		8B90B38A2379184B0023E394 /* HistoryDataListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B90B3882379184A0023E394 /* HistoryDataListTBVCell.m */; };
+		8B90B38B2379184B0023E394 /* HistoryDataListTBV.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B90B3892379184B0023E394 /* HistoryDataListTBV.m */; };
 		8B9EAF9D237439B00012884C /* 专治UITableView相应链断裂 in Resources */ = {isa = PBXBuildFile; fileRef = 8B9EAF9A237439B00012884C /* 专治UITableView相应链断裂 */; };
 		8B9EAF9E237439B00012884C /* BaseTableViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9EAF9C237439B00012884C /* BaseTableViewer.m */; };
 		8BA94BFB235AE6C800B00786 /* HQCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA94BF9235AE6C700B00786 /* HQCollectionViewFlowLayout.m */; };
@@ -61,8 +63,6 @@
 		C3229A9522B21D400044BB5E /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3229A8E22B21D400044BB5E /* TAAnimatedDotView.m */; };
 		C3229A9622B21D400044BB5E /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3229A8F22B21D400044BB5E /* TAAbstractDotView.m */; };
 		C3229A9A22B21DA30044BB5E /* 无限循环自动图片轮播器（可点击图片） in Resources */ = {isa = PBXBuildFile; fileRef = C3229A9922B21DA30044BB5E /* 无限循环自动图片轮播器（可点击图片） */; };
-		C3B1565922A7E242009061F3 /* HistoryDataListTBV.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */; };
-		C3B1565C22A7E45A009061F3 /* HistoryDataListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1565B22A7E45A009061F3 /* HistoryDataListTBVCell.m */; };
 		C3B1566222AA3863009061F3 /* WaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1566122AA3863009061F3 /* WaterMark.m */; };
 		C3B1566622AB555C009061F3 /* HotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1566522AB555C009061F3 /* HotLabel.m */; };
 		C3EDA78F22B740E8002F49D6 /* readme in Resources */ = {isa = PBXBuildFile; fileRef = C3EDA78E22B740E8002F49D6 /* readme */; };
@@ -225,6 +225,10 @@
 		8B7A5547236F0461006B12F8 /* FMHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMHttpRequest.m; sourceTree = "<group>"; };
 		8B8A499E22F2C42B00AFDC59 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
 		8B8A499F22F2C42B00AFDC59 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
+		8B90B3862379184A0023E394 /* HistoryDataListTBV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBV.h; sourceTree = "<group>"; };
+		8B90B3872379184A0023E394 /* HistoryDataListTBVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBVCell.h; sourceTree = "<group>"; };
+		8B90B3882379184A0023E394 /* HistoryDataListTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDataListTBVCell.m; sourceTree = "<group>"; };
+		8B90B3892379184B0023E394 /* HistoryDataListTBV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDataListTBV.m; sourceTree = "<group>"; };
 		8B9EAF9A237439B00012884C /* 专治UITableView相应链断裂 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "专治UITableView相应链断裂"; sourceTree = "<group>"; };
 		8B9EAF9B237439B00012884C /* BaseTableViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewer.h; sourceTree = "<group>"; };
 		8B9EAF9C237439B00012884C /* BaseTableViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewer.m; sourceTree = "<group>"; };
@@ -296,10 +300,6 @@
 		C3229A9122B21D400044BB5E /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
 		C3229A9222B21D400044BB5E /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
 		C3229A9922B21DA30044BB5E /* 无限循环自动图片轮播器（可点击图片） */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "无限循环自动图片轮播器（可点击图片）"; sourceTree = "<group>"; };
-		C3B1565722A7E242009061F3 /* HistoryDataListTBV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBV.h; sourceTree = "<group>"; };
-		C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDataListTBV.m; sourceTree = "<group>"; };
-		C3B1565A22A7E45A009061F3 /* HistoryDataListTBVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBVCell.h; sourceTree = "<group>"; };
-		C3B1565B22A7E45A009061F3 /* HistoryDataListTBVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDataListTBVCell.m; sourceTree = "<group>"; };
 		C3B1566022AA3863009061F3 /* WaterMark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterMark.h; sourceTree = "<group>"; };
 		C3B1566122AA3863009061F3 /* WaterMark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterMark.m; sourceTree = "<group>"; };
 		C3B1566422AB555C009061F3 /* HotLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotLabel.h; sourceTree = "<group>"; };
@@ -813,10 +813,10 @@
 		C3B1565622A7E20E009061F3 /* HistoryDataList */ = {
 			isa = PBXGroup;
 			children = (
-				C3B1565722A7E242009061F3 /* HistoryDataListTBV.h */,
-				C3B1565822A7E242009061F3 /* HistoryDataListTBV.m */,
-				C3B1565A22A7E45A009061F3 /* HistoryDataListTBVCell.h */,
-				C3B1565B22A7E45A009061F3 /* HistoryDataListTBVCell.m */,
+				8B90B3862379184A0023E394 /* HistoryDataListTBV.h */,
+				8B90B3892379184B0023E394 /* HistoryDataListTBV.m */,
+				8B90B3872379184A0023E394 /* HistoryDataListTBVCell.h */,
+				8B90B3882379184A0023E394 /* HistoryDataListTBVCell.m */,
 			);
 			path = HistoryDataList;
 			sourceTree = "<group>";
@@ -1762,6 +1762,7 @@
 				C3F56F7322A4C731009E9691 /* My_BaseProj.xcdatamodeld in Sources */,
 				8BD6DC4A234B23B0003F1EE0 /* CALayer+Anim.m in Sources */,
 				CE2C16E022D0526D00433397 /* UITableView+EmptyData.m in Sources */,
+				8B90B38B2379184B0023E394 /* HistoryDataListTBV.m in Sources */,
 				C3F5709D22A50EB2009E9691 /* PlaySound.m in Sources */,
 				C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */,
 				C3229A9522B21D400044BB5E /* TAAnimatedDotView.m in Sources */,
@@ -1782,7 +1783,6 @@
 				C3B1566222AA3863009061F3 /* WaterMark.m in Sources */,
 				C3F5704522A4FA40009E9691 /* TBVCell_style_01.m in Sources */,
 				C3F570DA22A5403F009E9691 /* DeleteSystemUITabBarButton.m in Sources */,
-				C3B1565C22A7E45A009061F3 /* HistoryDataListTBVCell.m in Sources */,
 				8B128BF12345A5750039B590 /* TBCityIconFont.m in Sources */,
 				C3F5708822A504B8009E9691 /* YBGeneralColor.m in Sources */,
 				CE1319A522CDA6F6002BA1A7 /* XLChannelItem.m in Sources */,
@@ -1799,6 +1799,7 @@
 				C3F5700D22A4F8B1009E9691 /* AnimateToSpecifiedDateView.m in Sources */,
 				8B55869E233C899B00132CF6 /* ViewForFooter.m in Sources */,
 				C3F570A322A5128A009E9691 /* IsLogin.m in Sources */,
+				8B90B38A2379184B0023E394 /* HistoryDataListTBVCell.m in Sources */,
 				8B7A554A236F0461006B12F8 /* FMHttpRequest.m in Sources */,
 				C3F570DF22A60B8C009E9691 /* CustomSYSUITabBarController.m in Sources */,
 				C3229A8522B21D110044BB5E /* SDCycleScrollView.m in Sources */,
@@ -1810,7 +1811,6 @@
 				C3F5707822A4FC92009E9691 /* DHAreasModel.m in Sources */,
 				C3F5709122A50D60009E9691 /* NSString+Extras.m in Sources */,
 				C3F5706922A4FC71009E9691 /* LongPressToDeleteImageView.m in Sources */,
-				C3B1565922A7E242009061F3 /* HistoryDataListTBV.m in Sources */,
 				C3F56FAE22A4F4E7009E9691 /* LZBTabBar.m in Sources */,
 				C3F56FFD22A4F7CE009E9691 /* MMButton.m in Sources */,
 				C3F56FFC22A4F7CE009E9691 /* XDSDropDownMenu+DelegateProtocol.m in Sources */,

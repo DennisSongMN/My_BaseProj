@@ -7,16 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HistoryDataListTBVCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HistoryDataListTBV : UITableView
 
-+(instancetype)initWithRequestParams:(id)requestParams;
-
--(void)deleteData:(ActionBlock)block;
-
--(void)showSelectedData:(ActionBlock)block;
++(instancetype)initWithRequestParams:(id)requestParams
+                           triggerBy:(id __nonnull)trigger;
+-(void)showSelectedData:(TwoDataBlock)block;//点击的内容、触发点
 
 @end
 
