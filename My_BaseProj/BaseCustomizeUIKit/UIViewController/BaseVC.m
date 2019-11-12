@@ -10,6 +10,11 @@
 #import "BaseVC.h"
 @interface BaseVC ()<JXCategoryListContentViewDelegate>
 
+@property(nonatomic,copy)DataBlock willComingBlock;
+@property(nonatomic,copy)DataBlock didComingBlock;
+@property(nonatomic,copy)DataBlock willBackBlock;
+@property(nonatomic,copy)DataBlock didBackBlock;
+
 @end
 
 @implementation BaseVC
@@ -35,19 +40,52 @@
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;   //状态栏字体白色 UIStatusBarStyleDefault黑色
 }
-#pragma mark —— 截取 UIViewController 手势返回事件
-//进 & 出 均调用
+#pragma mark —— 截取 UIViewController 手势返回事件 这两个方法进出均调用，只不过进场的时候parent有值，出场的时候是nil
 - (void)willMoveToParentViewController:(UIViewController*)parent{
     [super willMoveToParentViewController:parent];
-    NSLog(@"%s,%@",__FUNCTION__,parent);
+    if (parent) {
+        NSLog(@"进场:%s,%@",__FUNCTION__,parent);
+        if (self.willComingBlock) {//即将进来
+            self.willComingBlock(parent);
+        }
+    }else{
+        NSLog(@"出场:%s,%@",__FUNCTION__,parent);
+        if (self.willBackBlock) {//即将出去
+            self.willBackBlock(parent);
+        }
+    }
 }
-//只有 出 才调用
+
 - (void)didMoveToParentViewController:(UIViewController*)parent{
     [super didMoveToParentViewController:parent];
-    NSLog(@"%s,%@",__FUNCTION__,parent);
-    if(!parent){
-      NSLog(@"页面pop成功了");
+    if(parent){
+        NSLog(@"进场:%s,%@",__FUNCTION__,parent);
+        if (self.didComingBlock) {//已经进来
+            self.didComingBlock(parent);
+        }
+    }else{
+        NSLog(@"出场:%s,%@",__FUNCTION__,parent);
+//        NSLog(@"页面pop成功了");
+        if (self.didBackBlock) {//已经出去
+            self.didBackBlock(parent);
+        }
     }
+}
+
+-(void)VCwillComingBlock:(DataBlock)block{//即将进来
+    self.willComingBlock = block;
+}
+
+-(void)VCdidComingBlock:(DataBlock)block{//已经进来
+    self.didComingBlock = block;
+}
+
+-(void)VCwillBackBlock:(DataBlock)block{//即将出去
+    self.willBackBlock = block;
+}
+
+-(void)VCdidBackBlock:(DataBlock)block{//已经出去
+    self.didBackBlock = block;
 }
 #pragma mark —— JXCategoryListContentViewDelegate
 /**
