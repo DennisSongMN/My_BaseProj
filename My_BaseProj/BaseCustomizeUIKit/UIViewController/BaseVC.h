@@ -12,13 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseVC : GKNavigationBarViewController
 <
-UIGestureRecognizerDelegate
-,UINavigationControllerDelegate
+UIGestureRecognizerDelegate,
+UINavigationControllerDelegate,
+TZImagePickerControllerDelegate
 >
 
 @property(nonatomic,strong)MJRefreshAutoGifFooter *tableViewFooter;
 @property(nonatomic,strong)MJRefreshGifHeader *tableViewHeader;
-
+@property(nonatomic,weak)TZImagePickerController *imagePickerVC;
 @property(nonatomic,assign)BOOL isRequestFinish;//数据请求是否完毕
 @property(nonatomic,copy)void (^UnknownNetWorking)(void);
 @property(nonatomic,copy)void (^NotReachableNetWorking)(void);
@@ -28,6 +29,7 @@ UIGestureRecognizerDelegate
 -(void)VCdidComingBlock:(DataBlock)block;//已经进来
 -(void)VCwillBackBlock:(DataBlock)block;//即将出去
 -(void)VCdidBackBlock:(DataBlock)block;//已经出去
+-(void)GettingPicBlock:(DataBlock)block;//点选的图片
 
 -(void)AFNReachability;
 -(void)showLoginAlertView;
@@ -38,6 +40,7 @@ UIGestureRecognizerDelegate
 
 -(void)locateTabBar:(NSInteger)index;
 -(void)setStatusBarBackgroundColor:(UIColor *)color;
+-(void)choosePic;//选择图片
 
 @end
 
