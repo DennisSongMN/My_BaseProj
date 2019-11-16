@@ -8,13 +8,18 @@
 //
 
 #import "BaseVC.h"
-@interface BaseVC ()<JXCategoryListContentViewDelegate>
+
+@interface BaseVC ()
+<
+JXCategoryListContentViewDelegate
+>
 
 @property(nonatomic,copy)DataBlock willComingBlock;
 @property(nonatomic,copy)DataBlock didComingBlock;
 @property(nonatomic,copy)DataBlock willBackBlock;
 @property(nonatomic,copy)DataBlock didBackBlock;
 @property(nonatomic,copy)DataBlock picBlock;
+@property(nonatomic,copy)DataBlock brStringPickerViewBlock;
 
 @end
 
@@ -87,6 +92,14 @@
 
 -(void)VCdidBackBlock:(DataBlock)block{//已经出去
     self.didBackBlock = block;
+}
+
+-(void)GettingPicBlock:(DataBlock)block{//点选的图片
+    self.picBlock = block;
+}
+
+-(void)BRStringPickerViewBlock:(DataBlock)block{
+    self.brStringPickerViewBlock = block;
 }
 #pragma mark —— JXCategoryListContentViewDelegate
 /**
@@ -234,7 +247,6 @@
         [self.navigationController popToRootViewControllerAnimated:YES];
     }
 }
-
 //设置状态栏背景颜色
 - (void)setStatusBarBackgroundColor:(UIColor *)color {
     UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
@@ -266,6 +278,9 @@
     }];
 }
 #pragma mark —— 子类需要覆写
+-(void)backBtnClickEvent:(UIButton *)sender{
+    NSLog(@"返回");
+}
 // 下拉刷新
 -(void)pullToRefresh{
     NSLog(@"下拉刷新");
@@ -274,7 +289,9 @@
 - (void)loadMoreRefresh{
     NSLog(@"上拉加载更多");
 }
-
+-(void)OK{
+    
+}
 #pragma mark —— lazyLoad
 -(MJRefreshGifHeader *)tableViewHeader{
     if (!_tableViewHeader) {
@@ -290,9 +307,12 @@
         [_tableViewHeader setImages:@[kIMG(@"猫爪")]
                            forState:MJRefreshStateRefreshing];
         // 设置文字
-        [_tableViewHeader setTitle:@"Click or drag down to refresh" forState:MJRefreshStateIdle];
-        [_tableViewHeader setTitle:@"Loading more ..." forState:MJRefreshStateRefreshing];
-        [_tableViewHeader setTitle:@"No more data" forState:MJRefreshStateNoMoreData];
+        [_tableViewHeader setTitle:@"Click or drag down to refresh"
+                          forState:MJRefreshStateIdle];
+        [_tableViewHeader setTitle:@"Loading more ..."
+                          forState:MJRefreshStateRefreshing];
+        [_tableViewHeader setTitle:@"No more data"
+                          forState:MJRefreshStateNoMoreData];
         // 设置字体
         _tableViewHeader.stateLabel.font = [UIFont systemFontOfSize:17];
         // 设置颜色
@@ -314,15 +334,33 @@
         [_tableViewFooter setImages:@[kIMG(@"猫爪")]
                            forState:MJRefreshStateRefreshing];
         // 设置文字
-        [_tableViewFooter setTitle:@"Click or drag up to refresh" forState:MJRefreshStateIdle];
-        [_tableViewFooter setTitle:@"Loading more ..." forState:MJRefreshStateRefreshing];
-        [_tableViewFooter setTitle:@"No more data" forState:MJRefreshStateNoMoreData];
+        [_tableViewFooter setTitle:@"Click or drag up to refresh"
+                          forState:MJRefreshStateIdle];
+        [_tableViewFooter setTitle:@"Loading more ..."
+                          forState:MJRefreshStateRefreshing];
+        [_tableViewFooter setTitle:@"No more data"
+                          forState:MJRefreshStateNoMoreData];
         // 设置字体
         _tableViewFooter.stateLabel.font = [UIFont systemFontOfSize:17];
         // 设置颜色
         _tableViewFooter.stateLabel.textColor = KLightGrayColor;
         _tableViewFooter.hidden = YES;
     }return _tableViewFooter;
+}
+
+-(UIButton *)backBtn{
+    if (!_backBtn) {
+        _backBtn = UIButton.new;
+        [_backBtn setTitleColor:kBlackColor
+                       forState:UIControlStateNormal];
+        [_backBtn setTitle:@"返回"
+                  forState:UIControlStateNormal];
+        [_backBtn setImage:kIMG(@"返回")
+                  forState:UIControlStateNormal];
+        [_backBtn addTarget:self
+                     action:@selector(backBtnClickEvent:)
+           forControlEvents:UIControlEventTouchUpInside];
+    }return _backBtn;
 }
 
 -(TZImagePickerController *)imagePickerVC{
@@ -341,6 +379,26 @@
     }return _imagePickerVC;
 }
 
+-(BRStringPickerView *)stringPickerView{
+    if (!_stringPickerView) {
+        _stringPickerView = [[BRStringPickerView alloc]initWithPickerMode:self.brStringPickerMode];
+        if (self.BRStringPickerViewDataMutArr.count > 2) {
+            _stringPickerView.title = self.BRStringPickerViewDataMutArr[0];
+            NSMutableArray *temp = NSMutableArray.array;
+            temp = self.BRStringPickerViewDataMutArr.copy;
+            [temp removeObjectAtIndex:0];
+            _stringPickerView.dataSourceArr = temp;
+        }
+        @weakify(self)
+        _stringPickerView.resultModelBlock = ^(BRResultModel *resultModel) {
+            NSLog(@"选择的值：%@", resultModel.selectValue);
+            @strongify(self)
+            if (self.brStringPickerViewBlock) {
+                self.brStringPickerViewBlock(resultModel);
+            }
+        };
+    }return _stringPickerView;
+}
 
 @end
 
