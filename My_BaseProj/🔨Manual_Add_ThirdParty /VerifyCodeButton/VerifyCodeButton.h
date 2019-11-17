@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    ShowTimeType_SS = 0,//秒
+    ShowTimeType_MMSS,//分秒
+    ShowTimeType_HHMMSS,//时分秒
+} ShowTimeType;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface VerifyCodeButton : UIButton
@@ -22,9 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIFont *titleLabelFont;
 @property(nonatomic,assign)CGFloat layerCornerRadius;
 @property(nonatomic,assign)CGFloat layerBorderWidth;
-@property(nonatomic,assign)BOOL isClipsToBounds;
+@property(nonatomic,assign)ShowTimeType showTimeType;
 
 - (void)timeFailBeginFrom:(NSInteger)timeCount;//倒计时时间次数
+
 
 @end
 
