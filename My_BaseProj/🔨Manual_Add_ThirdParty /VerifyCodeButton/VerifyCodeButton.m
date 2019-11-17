@@ -81,13 +81,13 @@
 
 -(UIColor *)bgBeginColor{
     if (!_bgBeginColor) {
-        _bgBeginColor = [UIColor whiteColor];
+        _bgBeginColor = [UIColor lightGrayColor];
     }return _bgBeginColor;
 }
 
 -(UIColor *)titleColor{
     if (!_titleColor) {
-        _titleColor = [UIColor whiteColor];
+        _titleColor = [UIColor blackColor];
     }return _titleColor;
 }
 
