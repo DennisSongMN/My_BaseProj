@@ -17,6 +17,10 @@
 //获取验证码 —— 倒计时
 @implementation VerifyCodeButton
 
+-(void)dealloc{
+   [self.timer invalidate];
+}
+
 -(void)drawRect:(CGRect)rect{
     self.backgroundColor = self.bgBeginColor;
     self.layer.borderColor = self.layerBorderColor.CGColor;
