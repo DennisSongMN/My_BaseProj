@@ -27,18 +27,15 @@
     self.layer.cornerRadius = self.layerCornerRadius;
     self.titleLabel.font = self.titleLabelFont;
     self.titleColor = self.titleColor;
-    [self setTitle:self.titleBeginStr
-          forState:UIControlStateNormal];
     self.layer.borderWidth = self.layerBorderWidth;
     [self.titleLabel sizeToFit];
     self.titleLabel.adjustsFontSizeToFitWidth = YES;
-
-//    @property(nonatomic,assign)ShowTimeType showTimeType;
 }
 
 //倒计时方法:
 - (void)timeFailBeginFrom:(NSInteger)timeCount{
-
+    [self setTitle:self.titleBeginStr
+          forState:UIControlStateNormal];
     self.count = timeCount;
     self.enabled = NO;
     // 加1个计时器
