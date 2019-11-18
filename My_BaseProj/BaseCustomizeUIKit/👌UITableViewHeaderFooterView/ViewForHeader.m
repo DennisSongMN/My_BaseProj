@@ -10,7 +10,7 @@
 
 @interface ViewForHeader()
 
-@property(nonatomic,weak)DataBlock block;
+@property(nonatomic,copy)DataBlock block;
 
 @end
 
