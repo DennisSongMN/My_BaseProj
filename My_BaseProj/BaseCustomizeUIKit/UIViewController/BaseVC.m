@@ -289,8 +289,16 @@ JXCategoryListContentViewDelegate
 - (void)loadMoreRefresh{
     NSLog(@"上拉加载更多");
 }
+
 -(void)OK{
     
+}
+//跳转系统设置
+-(void)pushToSysConfig{
+    NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+        [[UIApplication sharedApplication] openURL:url];
+    }
 }
 #pragma mark —— lazyLoad
 -(MJRefreshGifHeader *)tableViewHeader{
