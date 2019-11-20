@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    ComingStyle_PUSH = 0,
+    ComingStyle_PRESENT
+} ComingStyle;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseVC : GKNavigationBarViewController
@@ -49,6 +54,12 @@ TZImagePickerControllerDelegate
 -(void)locateTabBar:(NSInteger)index;
 -(void)setStatusBarBackgroundColor:(UIColor *)color;
 -(void)choosePic;//选择图片
+
++ (instancetype)CominngFromVC:(UIViewController *)rootVC
+                    withStyle:(ComingStyle)comingStyle
+                requestParams:(nullable id)requestParams
+                      success:(DataBlock)block
+                     animated:(BOOL)animated;
 
 @end
 
