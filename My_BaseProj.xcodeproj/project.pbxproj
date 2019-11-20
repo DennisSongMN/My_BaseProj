@@ -28,6 +28,8 @@
 		8B7A5548236F0461006B12F8 /* FMHttpResonse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A553F236F0461006B12F8 /* FMHttpResonse.m */; };
 		8B7A5549236F0461006B12F8 /* FMARCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5544236F0461006B12F8 /* FMARCNetwork.m */; };
 		8B7A554A236F0461006B12F8 /* FMHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A5547236F0461006B12F8 /* FMHttpRequest.m */; };
+		8B86E03923856093004D4C0A /* PersonalInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B86E03823856093004D4C0A /* PersonalInfo.m */; };
+		8B86E03C238560C5004D4C0A /* ModelLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B86E03B238560C5004D4C0A /* ModelLogin.m */; };
 		8B8A49A022F2C42B00AFDC59 /* HQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8A499F22F2C42B00AFDC59 /* HQTextField.m */; };
 		8B90B38A2379184B0023E394 /* HistoryDataListTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B90B3882379184A0023E394 /* HistoryDataListTBVCell.m */; };
 		8B90B38B2379184B0023E394 /* HistoryDataListTBV.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B90B3892379184B0023E394 /* HistoryDataListTBV.m */; };
@@ -223,6 +225,10 @@
 		8B7A5545236F0461006B12F8 /* FMHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMHttpRequest.h; sourceTree = "<group>"; };
 		8B7A5546236F0461006B12F8 /* FMARCNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMARCNetwork.h; sourceTree = "<group>"; };
 		8B7A5547236F0461006B12F8 /* FMHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMHttpRequest.m; sourceTree = "<group>"; };
+		8B86E03723856093004D4C0A /* PersonalInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalInfo.h; sourceTree = "<group>"; };
+		8B86E03823856093004D4C0A /* PersonalInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalInfo.m; sourceTree = "<group>"; };
+		8B86E03A238560BA004D4C0A /* ModelLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelLogin.h; sourceTree = "<group>"; };
+		8B86E03B238560C5004D4C0A /* ModelLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelLogin.m; sourceTree = "<group>"; };
 		8B8A499E22F2C42B00AFDC59 /* HQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQTextField.h; sourceTree = "<group>"; };
 		8B8A499F22F2C42B00AFDC59 /* HQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQTextField.m; sourceTree = "<group>"; };
 		8B90B3862379184A0023E394 /* HistoryDataListTBV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDataListTBV.h; sourceTree = "<group>"; };
@@ -668,6 +674,19 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		8B86E0362385606C004D4C0A /* 用户信息 */ = {
+			isa = PBXGroup;
+			children = (
+				C3F570A222A5128A009E9691 /* IsLogin.h */,
+				C3F570A122A5128A009E9691 /* IsLogin.m */,
+				8B86E03A238560BA004D4C0A /* ModelLogin.h */,
+				8B86E03B238560C5004D4C0A /* ModelLogin.m */,
+				8B86E03723856093004D4C0A /* PersonalInfo.h */,
+				8B86E03823856093004D4C0A /* PersonalInfo.m */,
+			);
+			path = "用户信息";
+			sourceTree = "<group>";
+		};
 		8B8A499C22F2C41600AFDC59 /* ZYTextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -868,12 +887,11 @@
 		C3F56F6722A4C731009E9691 /* My_BaseProj */ = {
 			isa = PBXGroup;
 			children = (
+				8B86E0362385606C004D4C0A /* 用户信息 */,
 				C3F56F6822A4C731009E9691 /* AppDelegate.h */,
 				C3F56F6922A4C731009E9691 /* AppDelegate.m */,
 				C3F570DD22A60B8C009E9691 /* CustomSYSUITabBarController.h */,
 				C3F570DE22A60B8C009E9691 /* CustomSYSUITabBarController.m */,
-				C3F570A222A5128A009E9691 /* IsLogin.h */,
-				C3F570A122A5128A009E9691 /* IsLogin.m */,
 				C3F56F7922A4C732009E9691 /* Info.plist */,
 				C3F5703A22A4FA13009E9691 /* BaseCustomizeUIKit */,
 				CEA4C98722C1CF18004E89B7 /* 🍌Manual_Add_ThirdFont */,
@@ -1786,6 +1804,7 @@
 				8B128BF12345A5750039B590 /* TBCityIconFont.m in Sources */,
 				C3F5708822A504B8009E9691 /* YBGeneralColor.m in Sources */,
 				CE1319A522CDA6F6002BA1A7 /* XLChannelItem.m in Sources */,
+				8B86E03923856093004D4C0A /* PersonalInfo.m in Sources */,
 				C3F56FB622A4F749009E9691 /* SoundBtn.m in Sources */,
 				C3F5705C22A4FB29009E9691 /* RYCuteView.m in Sources */,
 				C3F56FEF22A4F7CE009E9691 /* UIControl+XY.m in Sources */,
@@ -1819,6 +1838,7 @@
 				C3F5708B22A50502009E9691 /* YBGeneralFont.m in Sources */,
 				C3F5707722A4FC92009E9691 /* DHAreaPickerView.m in Sources */,
 				8B6EB80A230A6F1E00F3995E /* ZHKeyChainManager.m in Sources */,
+				8B86E03C238560C5004D4C0A /* ModelLogin.m in Sources */,
 				C3F5704B22A4FA7F009E9691 /* YBNotificationManager.m in Sources */,
 				C3229A8722B21D110044BB5E /* SDCycleScrollView+UICollectionViewDataSource.m in Sources */,
 				8BB8BD29235ED1A5008C7578 /* ZYTextField.m in Sources */,

@@ -161,15 +161,18 @@
     return dateString;
 }
 
-+(BOOL)isEmpty:(NSString *)text{
-    
-    if ([[NSString isValueNSStringWith:text] isEqualToString:@""] ||
-        [NSString isValueNSStringWith:text] == nil){
-        
-        return true;
++(BOOL)isEmpty:(NSString *)string{
+    if (string == nil ||
+        string == NULL ||
+        [string isKindOfClass:[NSNull class]]) {
+        return YES;
     }
-    
-    return false;
+    string = StringFormat(@"%@",string);
+    NSCharacterSet *whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+    string = [string stringByTrimmingCharactersInSet:whitespace];
+    if (string.length == 0) {
+        return YES;
+    }return NO;
 }
 
 +(id)isValueNSStringWith:(NSString *)str{

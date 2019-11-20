@@ -36,6 +36,7 @@
 #pragma mark - 本地化字符串
 /** NSLocalizedString宏做的其实就是在当前bundle中查找资源文件名“Localizable.strings”(参数:键＋注释) */
 #define LocalString(x, ...)     NSLocalizedString(x, nil)
+#define StringFormat(format,...) [NSString stringWithFormat:format, ##__VA_ARGS__]
 /** NSLocalizedStringFromTable宏做的其实就是在当前bundle中查找资源文件名“xxx.strings”(参数:键＋文件名＋注释) */
 #define AppLocalString(x, ...)  NSLocalizedStringFromTable(x, @"someName", nil)
 #define LRToast(str) [NSString stringWithFormat:@"%@",@#str]
