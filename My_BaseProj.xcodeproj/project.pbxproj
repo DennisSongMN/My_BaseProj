@@ -190,6 +190,7 @@
 		8B128BEE2345A5750039B590 /* TBCityIconInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityIconInfo.h; sourceTree = "<group>"; };
 		8B128BEF2345A5750039B590 /* TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityIconFont.h; sourceTree = "<group>"; };
 		8B128BF02345A5750039B590 /* UIImage+TBCityIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TBCityIconFont.h"; sourceTree = "<group>"; };
+		8B16F050238690B8003941B4 /* DefineStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineStructure.h; sourceTree = "<group>"; };
 		8B29BAF9232E5E67002114A0 /* ECAuthorizationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECAuthorizationTools.h; sourceTree = "<group>"; };
 		8B29BAFA232E5E67002114A0 /* ECAuthorizationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECAuthorizationTools.m; sourceTree = "<group>"; };
 		8B558699233C899B00132CF6 /* ViewForHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewForHeader.m; sourceTree = "<group>"; };
@@ -862,6 +863,7 @@
 			isa = PBXGroup;
 			children = (
 				C3F56F9D22A4F1D1009E9691 /* PrefixHeader.pch */,
+				8B16F050238690B8003941B4 /* DefineStructure.h */,
 				8B5586A0233C8BA300132CF6 /* Pods.h */,
 				8B5586A1233C8BB900132CF6 /* Manual_Add_ThirdParty.h */,
 				8B5586A2233C8BC900132CF6 /* Other.h */,
