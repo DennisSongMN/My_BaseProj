@@ -28,6 +28,8 @@
     self.titleLabel.font = self.titleLabelFont;
     self.titleColor = self.titleColor;
     self.layer.borderWidth = self.layerBorderWidth;
+    [self setTitle:self.titleBeginStr
+          forState:UIControlStateNormal];
     [self.titleLabel sizeToFit];
     self.titleLabel.adjustsFontSizeToFitWidth = YES;
 }
