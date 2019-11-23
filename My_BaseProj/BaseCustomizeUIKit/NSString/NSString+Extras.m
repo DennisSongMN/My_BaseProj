@@ -11,6 +11,15 @@
 
 @implementation NSString (Extras)
 
+-(NSString *)test:(NSArray <NSString *>*)arr{
+    NSString *resultStr;
+    for (int i = 0; i < arr.count; i++) {
+        NSString *tempStr = arr[i];
+        tempStr = [tempStr stringByReplacingOccurrencesOfString:@"/" withString:@""];//去除字符 /
+        [resultStr stringByAppendingString:[NSString stringWithFormat:@"/%@",tempStr]];
+    }return resultStr;
+}
+
 /**
  *  判断对象 / 数组是否为空
  *  为空返回 YES
