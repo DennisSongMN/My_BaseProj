@@ -133,6 +133,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 -(SearchBar *)searchBar{
     if (!_searchBar) {
         _searchBar = SearchBar.new;
+        _searchBar.textField.keyboardType = UIKeyboardTypeDecimalPad;
         [self.view addSubview:_searchBar];
         [_searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.equalTo(self.view).offset(rectOfStatusbar);
@@ -141,24 +142,38 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
         }];
         [self.view bringSubviewToFront:_searchBar];
         @weakify(self)
-        __block UITextField *textField;
-        [_searchBar actionBlock:^(id data,//textField 他的text是最终结果
-                                  id data2,//searchBar
-                                  id data3,//即将输入的字符
-                                  id data4) {//调的方法
+        [_searchBar actionBlock:^(CJTextField *data,//textField 他的text是最终结果 ?
+                                  SearchBar *data2,//searchBar
+                                  NSString *data3,//即将输入的字符
+                                  NSString *data4) {//调的方法
             @strongify(self)
-            if ([data4 isEqualToString:@"CJTextFieldDeleteDelegate_cjTextFieldDeleteBackward"]) {//删除
-                textField = (UITextField *)data;
-                if ([textField.text isEqualToString:@""]) {
-                    NSLog(@"没了");
-                    //没有内容则不请求数据
+            if ([data4 isEqualToString:@"CJTextFieldDeleteDelegate_cjTextFieldDeleteBackward"]) {//直接按键盘删除键
+                //此时的textField.text为变动后的值
+                if (data.text.length > 0) {//输入框有值
+                    [self networking_type:data.text];
+                }else{ //输入框无值 到顶了
                     [self.dataMutArr removeAllObjects];
                     [self.tableView reloadData];
-                }else{
-                    [self networking_type:textField.text];
                 }
-            }else{
-                [self networking_type:textField.text];
+            }else if ([data4 isEqualToString:@"CJTextFieldDeleteDelegate_textFieldDidEndEditing"]){//确定了输入框的目前值，然后按下done键
+                //此时的textField.text为变动前的值
+                NSString *str = [data.text stringByAppendingString:data3];
+                [self networking_type:str];
+            }else if ([data4 isEqualToString:@"CJTextFieldDeleteDelegate_textFieldDidEndEditing"]){//停止编辑模式，确定一个输入框的值，按下搜索键
+                //此时的textField.text为变动前的值
+                NSString *str = [data.text stringByAppendingString:data3];
+                [self networking_type:str];
+            }else{//正常的正向输入        CJTextFieldDeleteDelegate_shouldChangeCharactersInRange
+                if ([NSString isNullString:data3]) {//退
+                    if ([NSString isNullString:data.text]) {
+                        [self networking_type:data.text];
+                    }else{
+                        [self.dataMutArr removeAllObjects];//到顶了
+                    }
+                }else{//进
+                    NSString *str = [data.text stringByAppendingString:data3];
+                    [self networking_type:str];
+                }
             }
         }];
     }return _searchBar;

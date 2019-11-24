@@ -7,7 +7,6 @@
 //
 
 #import "SearchBar.h"
-#import "CJTextField.h"
 
 @interface SearchBar ()
 <
@@ -15,9 +14,8 @@ UITextFieldDelegate,
 CJTextFieldDeleteDelegate
 >
 
-@property(nonatomic,strong)CJTextField *textField;
 @property(nonatomic,strong)UIButton *cancelBtn;
-@property(nonatomic,strong)FourDataBlock block;//textField,string
+@property(nonatomic,strong)FourDataBlock block;
 
 @end
 
