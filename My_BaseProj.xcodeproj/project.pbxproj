@@ -39,6 +39,11 @@
 		8BB1E8172375B5E500871ECA /* SocketRocketUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1E8152375B5E400871ECA /* SocketRocketUtility.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
 		8BB8BD29235ED1A5008C7578 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8BD27235ED1A5008C7578 /* ZYTextField.m */; };
+		8BCAB673238AC52E000B0360 /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB669238AC52D000B0360 /* SearchVC.m */; };
+		8BCAB674238AC52E000B0360 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB66A238AC52D000B0360 /* SearchBar.m */; };
+		8BCAB675238AC52E000B0360 /* SearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB66F238AC52E000B0360 /* SearchModel.m */; };
+		8BCAB676238AC52E000B0360 /* SearchVC+VM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB671238AC52E000B0360 /* SearchVC+VM.m */; };
+		8BCAB677238AC52E000B0360 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB672238AC52E000B0360 /* CJTextField.m */; };
 		8BCB98EF23715DA20063E01E /* RSAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98DE23715DA10063E01E /* RSAUtil.m */; };
 		8BCB98F023715DA20063E01E /* EncryptUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98E123715DA10063E01E /* EncryptUtils.m */; };
 		8BCB98F123715DA20063E01E /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98E323715DA10063E01E /* AES.m */; };
@@ -253,6 +258,16 @@
 		8BB8BD27235ED1A5008C7578 /* ZYTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
 		8BB8BD28235ED1A5008C7578 /* ZYTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
 		8BC2781C2359DD92004AA5F4 /* Computer_Config */ = {isa = PBXFileReference; lastKnownFileType = text; path = Computer_Config; sourceTree = "<group>"; };
+		8BCAB669238AC52D000B0360 /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
+		8BCAB66A238AC52D000B0360 /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
+		8BCAB66B238AC52D000B0360 /* SearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchModel.h; sourceTree = "<group>"; };
+		8BCAB66C238AC52E000B0360 /* SearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
+		8BCAB66D238AC52E000B0360 /* SearchVC+VM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SearchVC+VM.h"; sourceTree = "<group>"; };
+		8BCAB66E238AC52E000B0360 /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
+		8BCAB66F238AC52E000B0360 /* SearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchModel.m; sourceTree = "<group>"; };
+		8BCAB670238AC52E000B0360 /* CJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTextField.h; sourceTree = "<group>"; };
+		8BCAB671238AC52E000B0360 /* SearchVC+VM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SearchVC+VM.m"; sourceTree = "<group>"; };
+		8BCAB672238AC52E000B0360 /* CJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTextField.m; sourceTree = "<group>"; };
 		8BCB98DE23715DA10063E01E /* RSAUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAUtil.m; sourceTree = "<group>"; };
 		8BCB98DF23715DA10063E01E /* EncryptUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtils.h; sourceTree = "<group>"; };
 		8BCB98E023715DA10063E01E /* RSAUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAUtil.h; sourceTree = "<group>"; };
@@ -748,6 +763,23 @@
 			path = "截获导航控制器系统返回按钮的点击pop及右滑pop事件";
 			sourceTree = "<group>";
 		};
+		8BCAB657238AC4F8000B0360 /* 搜索框 */ = {
+			isa = PBXGroup;
+			children = (
+				8BCAB66E238AC52E000B0360 /* SearchVC.h */,
+				8BCAB669238AC52D000B0360 /* SearchVC.m */,
+				8BCAB66C238AC52E000B0360 /* SearchBar.h */,
+				8BCAB66A238AC52D000B0360 /* SearchBar.m */,
+				8BCAB66B238AC52D000B0360 /* SearchModel.h */,
+				8BCAB66F238AC52E000B0360 /* SearchModel.m */,
+				8BCAB66D238AC52E000B0360 /* SearchVC+VM.h */,
+				8BCAB671238AC52E000B0360 /* SearchVC+VM.m */,
+				8BCAB670238AC52E000B0360 /* CJTextField.h */,
+				8BCAB672238AC52E000B0360 /* CJTextField.m */,
+			);
+			path = "搜索框";
+			sourceTree = "<group>";
+		};
 		8BCB98DD23715DA10063E01E /* 加密体系 */ = {
 			isa = PBXGroup;
 			children = (
@@ -945,6 +977,7 @@
 		C3F56FA722A4F4B9009E9691 /* 🔨Manual_Add_ThirdParty  */ = {
 			isa = PBXGroup;
 			children = (
+				8BCAB657238AC4F8000B0360 /* 搜索框 */,
 				8BCB98DD23715DA10063E01E /* 加密体系 */,
 				8B7A553C236F0461006B12F8 /* 🌍ZFMRACNetworkTool */,
 				8B7A54EE236D92EF006B12F8 /* PopMenuView */,
@@ -1785,6 +1818,7 @@
 				8B90B38B2379184B0023E394 /* HistoryDataListTBV.m in Sources */,
 				C3F5709D22A50EB2009E9691 /* PlaySound.m in Sources */,
 				C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */,
+				8BCAB676238AC52E000B0360 /* SearchVC+VM.m in Sources */,
 				C3229A9522B21D400044BB5E /* TAAnimatedDotView.m in Sources */,
 				8B128BF32345A5750039B590 /* UIImage+TBCityIconFont.m in Sources */,
 				C3F5701422A4F94D009E9691 /* XLSphereView.m in Sources */,
@@ -1799,6 +1833,7 @@
 				C3F5708E22A5055C009E9691 /* NSObject+Extras.m in Sources */,
 				C3F570B622A534E7009E9691 /* CollectionAccountEditor.m in Sources */,
 				C3F56FF822A4F7CE009E9691 /* UIColor+LXExpand.m in Sources */,
+				8BCAB673238AC52E000B0360 /* SearchVC.m in Sources */,
 				8B9EAF9E237439B00012884C /* BaseTableViewer.m in Sources */,
 				C3B1566222AA3863009061F3 /* WaterMark.m in Sources */,
 				C3F5704522A4FA40009E9691 /* TBVCell_style_01.m in Sources */,
@@ -1823,6 +1858,7 @@
 				8B90B38A2379184B0023E394 /* HistoryDataListTBVCell.m in Sources */,
 				8B7A554A236F0461006B12F8 /* FMHttpRequest.m in Sources */,
 				C3F570DF22A60B8C009E9691 /* CustomSYSUITabBarController.m in Sources */,
+				8BCAB677238AC52E000B0360 /* CJTextField.m in Sources */,
 				C3229A8522B21D110044BB5E /* SDCycleScrollView.m in Sources */,
 				8B070A432362EBF800462976 /* CountdownView.m in Sources */,
 				8BD6DC2E234B1D15003F1EE0 /* NSArray+Extend.m in Sources */,
@@ -1847,6 +1883,7 @@
 				C3F56F7B22A4C732009E9691 /* main.m in Sources */,
 				8B7A54FE236D92FF006B12F8 /* WBPopMenuSingleton.m in Sources */,
 				C3F570E822A60D0A009E9691 /* ViewController@1.m in Sources */,
+				8BCAB675238AC52E000B0360 /* SearchModel.m in Sources */,
 				8BCB98F623715DA20063E01E /* NSData+Base64.m in Sources */,
 				C3229A7A22B0D39F0044BB5E /* XDTextBtnView.m in Sources */,
 				8B7A5548236F0461006B12F8 /* FMHttpResonse.m in Sources */,
@@ -1863,6 +1900,7 @@
 				C3229A9422B21D400044BB5E /* TAPageControl.m in Sources */,
 				C3F5710922A63B0A009E9691 /* NSlogToDocumentFolder.m in Sources */,
 				C3F56FC222A4F783009E9691 /* AESCrypt.m in Sources */,
+				8BCAB674238AC52E000B0360 /* SearchBar.m in Sources */,
 				C3F570C722A53933009E9691 /* UIScrollView+YBGeneral.m in Sources */,
 				C3229A8822B21D110044BB5E /* SDCycleScrollView+UIScrollViewDelegate.m in Sources */,
 				8B55869D233C899B00132CF6 /* ViewForHeader.m in Sources */,

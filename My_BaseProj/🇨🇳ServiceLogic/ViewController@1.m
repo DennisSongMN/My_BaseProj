@@ -143,7 +143,7 @@
 
 //询问委托人文本字段是否应处理按下返回按钮
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    
+    kRedColor;
     return YES;
 }
 
