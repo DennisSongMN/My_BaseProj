@@ -16,13 +16,17 @@
         @"pagesize":@"",//分页大小 默认12
         @"order_status":@"",//状态：0、已支付;1、已发单;2、已下单;3、已作废;4、已发货;5、已完成;默认查全部
         @"type":@"",//买家1;卖家2;默认查全部
-        @"order_code":@"",//搜索订单号
+        @"order_code":inputStr,//搜索订单号
         @"order_type":@""//1、转转;2、批发;3、厂家;默认查全部
     };
     [self networkingWithArgument:dic];
 }
 //正式请求
 -(void)networkingWithArgument:(NSDictionary *)dic{
+    if (self.dataMutArr.count) {
+        [self.dataMutArr removeAllObjects];
+    }
+    
     extern NSString *randomStr;
     FMHttpRequest *req = [FMHttpRequest urlParametersWithMethod:HTTTP_METHOD_POST
                                                            path:buyer_CatfoodRecord_listURL

@@ -82,7 +82,8 @@ UITableViewDelegate
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.view.backgroundColor = kWhiteColor;
+    self.gk_navigationBar.hidden = YES;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -96,7 +97,7 @@ UITableViewDelegate
     [super viewWillDisappear:animated];
     self.tabBarController.tabBar.hidden = NO;
 }
-#pragma mark —— ,UITableViewDelegate & UITableViewDataSource
+#pragma mark —— UITableViewDelegate & UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section{
     return self.dataMutArr.count;
@@ -115,6 +116,39 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return [SearchTBVCell cellHeightWithModel:self.dataMutArr[indexPath.row]];
 }
 
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath
+                             animated:NO];
+    if (self.dataMutArr.count) {
+        @weakify(self)
+//        订单类型 1、转转;2、批发;3、平台
+        OrderListModel *orderListModel = self.dataMutArr[indexPath.row];
+        if ([orderListModel.order_type intValue] == 1) {//1、转转 StallListModel
+            StallListModel *model = (StallListModel *)orderListModel;
+            [OrderDetailVC ComingFromVC:self_weak_
+                              withStyle:ComingStyle_PUSH
+                          requestParams:model
+                                success:^(id data) {}
+                               animated:YES];
+        }else if ([orderListModel.order_type intValue] == 2){//2、批发 WholesaleMarket_Advance_purchaseModel
+            WholesaleMarket_Advance_purchaseModel *model = (WholesaleMarket_Advance_purchaseModel *)orderListModel;
+            [OrderDetailVC ComingFromVC:self_weak_
+                              withStyle:ComingStyle_PUSH
+                          requestParams:model
+                                success:^(id data) {}
+                               animated:YES];
+        }else if ([orderListModel.order_type intValue] == 3){//3、平台 CatFoodProducingAreaModel
+            CatFoodProducingAreaModel *model = (CatFoodProducingAreaModel *)orderListModel;
+            [OrderDetailVC ComingFromVC:self_weak_
+                              withStyle:ComingStyle_PUSH
+                          requestParams:model
+                                success:^(id data) {}
+                               animated:YES];
+        }else{}
+    }
+}
+#pragma mark —— lazyLoad
 - (UITableView *)tableView{
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectZero
@@ -134,6 +168,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 -(SearchBar *)searchBar{
     if (!_searchBar) {
         _searchBar = SearchBar.new;
+        _searchBar.dataMutArr = self.dataMutArr;//本地搜索
         _searchBar.textField.keyboardType = UIKeyboardTypeDecimalPad;
         [self.view addSubview:_searchBar];
         [_searchBar mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -143,6 +178,14 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
         }];
         [self.view bringSubviewToFront:_searchBar];
         @weakify(self)
+        [_searchBar clickBlock:^(id data) {//btn点击事件
+            @strongify(self)
+            if (self.navigationController) {
+                [self.navigationController popViewControllerAnimated:YES];
+            }else{
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
+        }];
         [_searchBar actionBlock:^(CJTextField *data,//textField 他的text是最终结果 ?
                                   SearchBar *data2,//searchBar
                                   NSString *data3,//即将输入的字符
@@ -201,7 +244,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
         [UIView colourToLayerOfView:cell.contentView
                          WithColour:KGreenColor
                      AndBorderWidth:.1f];
-        cell.backgroundColor = RandomColor;
+        cell.backgroundColor = KLightGrayColor;;
     }return cell;
 }
 

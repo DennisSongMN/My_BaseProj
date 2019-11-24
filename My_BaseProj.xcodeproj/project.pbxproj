@@ -39,11 +39,11 @@
 		8BB1E8172375B5E500871ECA /* SocketRocketUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB1E8152375B5E400871ECA /* SocketRocketUtility.m */; };
 		8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8108422F1404900F2FD8E /* UIViewController+BackButtonHandler.m */; };
 		8BB8BD29235ED1A5008C7578 /* ZYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB8BD27235ED1A5008C7578 /* ZYTextField.m */; };
-		8BCAB6A2238ADD57000B0360 /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB69A238ADD56000B0360 /* SearchVC.m */; };
-		8BCAB6A3238ADD57000B0360 /* SearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB69B238ADD56000B0360 /* SearchModel.m */; };
-		8BCAB6A4238ADD57000B0360 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB69D238ADD57000B0360 /* SearchBar.m */; };
-		8BCAB6A5238ADD57000B0360 /* SearchVC+VM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB69F238ADD57000B0360 /* SearchVC+VM.m */; };
-		8BCAB6A6238ADD57000B0360 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB6A1238ADD57000B0360 /* CJTextField.m */; };
+		8BCAB6CF238AF669000B0360 /* SearchVC+VM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB6C5238AF668000B0360 /* SearchVC+VM.m */; };
+		8BCAB6D0238AF669000B0360 /* SearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB6C6238AF668000B0360 /* SearchModel.m */; };
+		8BCAB6D1238AF669000B0360 /* SearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB6C8238AF669000B0360 /* SearchVC.m */; };
+		8BCAB6D2238AF669000B0360 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB6CC238AF669000B0360 /* SearchBar.m */; };
+		8BCAB6D3238AF669000B0360 /* CJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAB6CE238AF669000B0360 /* CJTextField.m */; };
 		8BCB98EF23715DA20063E01E /* RSAUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98DE23715DA10063E01E /* RSAUtil.m */; };
 		8BCB98F023715DA20063E01E /* EncryptUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98E123715DA10063E01E /* EncryptUtils.m */; };
 		8BCB98F123715DA20063E01E /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BCB98E323715DA10063E01E /* AES.m */; };
@@ -258,16 +258,16 @@
 		8BB8BD27235ED1A5008C7578 /* ZYTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYTextField.m; sourceTree = "<group>"; };
 		8BB8BD28235ED1A5008C7578 /* ZYTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYTextField.h; sourceTree = "<group>"; };
 		8BC2781C2359DD92004AA5F4 /* Computer_Config */ = {isa = PBXFileReference; lastKnownFileType = text; path = Computer_Config; sourceTree = "<group>"; };
-		8BCAB698238ADD56000B0360 /* CJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTextField.h; sourceTree = "<group>"; };
-		8BCAB699238ADD56000B0360 /* SearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
-		8BCAB69A238ADD56000B0360 /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
-		8BCAB69B238ADD56000B0360 /* SearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchModel.m; sourceTree = "<group>"; };
-		8BCAB69C238ADD57000B0360 /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
-		8BCAB69D238ADD57000B0360 /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
-		8BCAB69E238ADD57000B0360 /* SearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchModel.h; sourceTree = "<group>"; };
-		8BCAB69F238ADD57000B0360 /* SearchVC+VM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SearchVC+VM.m"; sourceTree = "<group>"; };
-		8BCAB6A0238ADD57000B0360 /* SearchVC+VM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SearchVC+VM.h"; sourceTree = "<group>"; };
-		8BCAB6A1238ADD57000B0360 /* CJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTextField.m; sourceTree = "<group>"; };
+		8BCAB6C5238AF668000B0360 /* SearchVC+VM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SearchVC+VM.m"; sourceTree = "<group>"; };
+		8BCAB6C6238AF668000B0360 /* SearchModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchModel.m; sourceTree = "<group>"; };
+		8BCAB6C7238AF669000B0360 /* SearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVC.h; sourceTree = "<group>"; };
+		8BCAB6C8238AF669000B0360 /* SearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVC.m; sourceTree = "<group>"; };
+		8BCAB6C9238AF669000B0360 /* CJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJTextField.h; sourceTree = "<group>"; };
+		8BCAB6CA238AF669000B0360 /* SearchModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchModel.h; sourceTree = "<group>"; };
+		8BCAB6CB238AF669000B0360 /* SearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchBar.h; sourceTree = "<group>"; };
+		8BCAB6CC238AF669000B0360 /* SearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchBar.m; sourceTree = "<group>"; };
+		8BCAB6CD238AF669000B0360 /* SearchVC+VM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SearchVC+VM.h"; sourceTree = "<group>"; };
+		8BCAB6CE238AF669000B0360 /* CJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJTextField.m; sourceTree = "<group>"; };
 		8BCB98DE23715DA10063E01E /* RSAUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAUtil.m; sourceTree = "<group>"; };
 		8BCB98DF23715DA10063E01E /* EncryptUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtils.h; sourceTree = "<group>"; };
 		8BCB98E023715DA10063E01E /* RSAUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAUtil.h; sourceTree = "<group>"; };
@@ -766,16 +766,16 @@
 		8BCAB657238AC4F8000B0360 /* 搜索框 */ = {
 			isa = PBXGroup;
 			children = (
-				8BCAB698238ADD56000B0360 /* CJTextField.h */,
-				8BCAB6A1238ADD57000B0360 /* CJTextField.m */,
-				8BCAB699238ADD56000B0360 /* SearchBar.h */,
-				8BCAB69D238ADD57000B0360 /* SearchBar.m */,
-				8BCAB69E238ADD57000B0360 /* SearchModel.h */,
-				8BCAB69B238ADD56000B0360 /* SearchModel.m */,
-				8BCAB69C238ADD57000B0360 /* SearchVC.h */,
-				8BCAB69A238ADD56000B0360 /* SearchVC.m */,
-				8BCAB6A0238ADD57000B0360 /* SearchVC+VM.h */,
-				8BCAB69F238ADD57000B0360 /* SearchVC+VM.m */,
+				8BCAB6C9238AF669000B0360 /* CJTextField.h */,
+				8BCAB6CE238AF669000B0360 /* CJTextField.m */,
+				8BCAB6CB238AF669000B0360 /* SearchBar.h */,
+				8BCAB6CC238AF669000B0360 /* SearchBar.m */,
+				8BCAB6CA238AF669000B0360 /* SearchModel.h */,
+				8BCAB6C6238AF668000B0360 /* SearchModel.m */,
+				8BCAB6C7238AF669000B0360 /* SearchVC.h */,
+				8BCAB6C8238AF669000B0360 /* SearchVC.m */,
+				8BCAB6CD238AF669000B0360 /* SearchVC+VM.h */,
+				8BCAB6C5238AF668000B0360 /* SearchVC+VM.m */,
 			);
 			path = "搜索框";
 			sourceTree = "<group>";
@@ -1805,11 +1805,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BCB98F223715DA20063E01E /* NSString+Base64.m in Sources */,
-				8BCAB6A4238ADD57000B0360 /* SearchBar.m in Sources */,
 				8BB1E8172375B5E500871ECA /* SocketRocketUtility.m in Sources */,
 				8B7A54FD236D92FF006B12F8 /* WBTableViewDelegate.m in Sources */,
 				C3229A9622B21D400044BB5E /* TAAbstractDotView.m in Sources */,
 				C3F570A022A50F83009E9691 /* UIColor+Hex.m in Sources */,
+				8BCAB6CF238AF669000B0360 /* SearchVC+VM.m in Sources */,
 				C3F5709722A50E3A009E9691 /* UIImage+Extras.m in Sources */,
 				8BCB98F523715DA20063E01E /* NSData+CommonCrypto.m in Sources */,
 				C3F5709A22A50E5F009E9691 /* UIButton+Extras.m in Sources */,
@@ -1818,7 +1818,6 @@
 				CE2C16E022D0526D00433397 /* UITableView+EmptyData.m in Sources */,
 				8B90B38B2379184B0023E394 /* HistoryDataListTBV.m in Sources */,
 				C3F5709D22A50EB2009E9691 /* PlaySound.m in Sources */,
-				8BCAB6A5238ADD57000B0360 /* SearchVC+VM.m in Sources */,
 				C3F570D622A53FFA009E9691 /* NSString+Url_Chinese.m in Sources */,
 				C3229A9522B21D400044BB5E /* TAAnimatedDotView.m in Sources */,
 				8B128BF32345A5750039B590 /* UIImage+TBCityIconFont.m in Sources */,
@@ -1834,7 +1833,6 @@
 				C3F5708E22A5055C009E9691 /* NSObject+Extras.m in Sources */,
 				C3F570B622A534E7009E9691 /* CollectionAccountEditor.m in Sources */,
 				C3F56FF822A4F7CE009E9691 /* UIColor+LXExpand.m in Sources */,
-				8BCAB6A2238ADD57000B0360 /* SearchVC.m in Sources */,
 				8B9EAF9E237439B00012884C /* BaseTableViewer.m in Sources */,
 				C3B1566222AA3863009061F3 /* WaterMark.m in Sources */,
 				C3F5704522A4FA40009E9691 /* TBVCell_style_01.m in Sources */,
@@ -1858,17 +1856,18 @@
 				C3F570A322A5128A009E9691 /* IsLogin.m in Sources */,
 				8B90B38A2379184B0023E394 /* HistoryDataListTBVCell.m in Sources */,
 				8B7A554A236F0461006B12F8 /* FMHttpRequest.m in Sources */,
-				8BCAB6A6238ADD57000B0360 /* CJTextField.m in Sources */,
 				C3F570DF22A60B8C009E9691 /* CustomSYSUITabBarController.m in Sources */,
 				C3229A8522B21D110044BB5E /* SDCycleScrollView.m in Sources */,
+				8BCAB6D3238AF669000B0360 /* CJTextField.m in Sources */,
 				8B070A432362EBF800462976 /* CountdownView.m in Sources */,
 				8BD6DC2E234B1D15003F1EE0 /* NSArray+Extend.m in Sources */,
+				8BCAB6D1238AF669000B0360 /* SearchVC.m in Sources */,
 				C3F570FF22A61052009E9691 /* ViewController@4.m in Sources */,
 				C3F570C022A538D2009E9691 /* UIViewController+YBGeneralHook.m in Sources */,
 				8BCB98F123715DA20063E01E /* AES.m in Sources */,
 				C3F5707822A4FC92009E9691 /* DHAreasModel.m in Sources */,
 				C3F5709122A50D60009E9691 /* NSString+Extras.m in Sources */,
-				8BCAB6A3238ADD57000B0360 /* SearchModel.m in Sources */,
+				8BCAB6D0238AF669000B0360 /* SearchModel.m in Sources */,
 				C3F5706922A4FC71009E9691 /* LongPressToDeleteImageView.m in Sources */,
 				C3F56FAE22A4F4E7009E9691 /* LZBTabBar.m in Sources */,
 				C3F56FFD22A4F7CE009E9691 /* MMButton.m in Sources */,
@@ -1910,6 +1909,7 @@
 				8BB8108622F1404900F2FD8E /* UIViewController+BackButtonHandler.m in Sources */,
 				C3F56FF022A4F7CE009E9691 /* WJItemsControlView.m in Sources */,
 				8B7A5500236D92FF006B12F8 /* WBPopMenuModel.m in Sources */,
+				8BCAB6D2238AF669000B0360 /* SearchBar.m in Sources */,
 				8BCB98F323715DA20063E01E /* AESCipher.m in Sources */,
 				C3F56FF922A4F7CE009E9691 /* LXTagsView.m in Sources */,
 				C3229A8922B21D110044BB5E /* SDCollectionViewCell.m in Sources */,
