@@ -105,8 +105,9 @@ UITableViewDelegate
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     SearchTBVCell *cell = [SearchTBVCell cellWith:tableView];
-    [cell richElementsInCellWithModel:self.dataMutArr[indexPath.row]];
-    return cell;
+    if (self.dataMutArr.count) {
+        [cell richElementsInCellWithModel:self.dataMutArr[indexPath.row]];
+    }return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView
