@@ -326,7 +326,11 @@ JXCategoryListContentViewDelegate
 }
 #pragma mark —— 子类需要覆写
 -(void)backBtnClickEvent:(UIButton *)sender{
-    NSLog(@"返回");
+    if (self.navigationController) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 // 下拉刷新
 -(void)pullToRefresh{
